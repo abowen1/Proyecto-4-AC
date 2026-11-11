@@ -462,7 +462,7 @@ Se rescató el ensamblador de P2 y se prepararon:
 
 Latencias máximas observadas en esas pruebas: mantener 18 ciclos / 720 ns; diagnóstico 20 ciclos / 800 ns. **No corresponden a A, D ni sus protecciones.** Las mediciones de instrucciones de esa base usan commits observados en una ventana desde recepción hasta escritura; no son todavía el CPI aislado del futuro kernel bursátil.
 
-La síntesis quedó bloqueada al iniciar Yosys por una biblioteca Tcl faltante en la Mac. No se modificó la instalación. No se han obtenido métricas válidas de área/frecuencia/bitstream de la estrategia final y no se ha comprobado físicamente que el diseño completo funcione a 25 MHz.
+Actualización posterior del 11 de noviembre: se reparó la instalación reinstalando Yosys (ahora 0.70+post). Se generaron las imágenes de mantener y del ejemplo original de botones/LED: 1.082/1.280 celdas lógicas, 911 LUT4 y 12/16 BRAM; cierre de timing a 25 MHz, con Fmax estimada 44,81 MHz. No se cambió el reloj ni el RTL. Se cargó botones/LED con `VERIFY OK`; el usuario confirmó los cuatro botones y su funcionamiento después de desconectar/reconectar alimentación. Esto comprueba el arranque de esa base a 25 MHz; **no valida SPI físico ni la estrategia final**, cuyas métricas siguen pendientes. Detalles en `docs/evidencias/validacion_placa_2026-11-11.md`.
 
 ## 10. Qué verifican las pruebas y qué no
 

@@ -17,24 +17,25 @@ Revisión local: 11 de noviembre de 2026. Estrategia bursátil pendiente.
 - CSV de evidencia en `docs/evidencias/`; `resumen_spi.csv` contiene promedios y máximos. No se ejecutaron los 20.000 precios completos contra el SoC.
 - Comparación posterior de cuatro estrategias de referencia Python más mantener con 20.000 precios: ver `docs/estrategia/comparacion/RESULTADOS.md`. Su contabilidad se contrastó con la tarea original de Canvas en 100.020 ejecuciones de órdenes, contando cinco series completas más casos límite. Esto no extiende la validación de ejecución del SoC a esas cuatro estrategias.
 
-## Herramientas y bloqueo de síntesis
+## Herramientas y compilación: bloqueo reparado
 
 - Python 3.10; Icarus Verilog/vvp 13.0 (stable).
-- Modelo de BRAM usado: instalación local de Yosys 0.69, `share/yosys/ice40/cells_sim.v`.
-- nextpnr-ice40 responde a `--version`, pero no imprime una versión numérica útil.
-- `make build` se intentó y falló al iniciar Yosys: falta `/opt/homebrew/opt/tcl-tk/lib/libtcl9.0.dylib`. La instalación visible de Tcl/Tk es 9.1.0. No se cambió la instalación del computador.
-- No hay síntesis, LUTs/BRAM, frecuencia máxima ni bitstream AC4 validados todavía. El cierre de timing a 25 MHz queda pendiente.
+- El bloqueo inicial de Yosys 0.69 con Tcl/Tk 9.1.0 se reparó reinstalando Yosys mediante Homebrew. Ahora se utiliza Yosys 0.70+post y su modelo BRAM; se repitieron las seis pruebas SPI y todas pasaron.
+- nextpnr-ice40 instalado: 0.11.1_1; IceStorm: 1.1.
+- `make build` terminó: mantener ocupa 1.082/1.280 celdas lógicas, 911 LUT4 y 12/16 BRAM; timing cumple a 25 MHz. Fmax estimada de esa imagen: 44,81 MHz, sin cambiar el reloj implementado.
+- Se compiló y cargó también el programa original de botones/LED, con los mismos recursos y timing. Programación `VERIFY OK`; el usuario confirmó los cuatro botones y confirmó que siguen funcionando tras desconectar/reconectar USB. Los 13 archivos RTL y los programas se conservaron sin modificaciones.
+- La prueba física valida el arranque y el ejemplo botones/LED a 25 MHz. SPI físico y las estrategias bursátiles siguen pendientes. Evidencia detallada en `docs/evidencias/validacion_placa_2026-11-11.md`.
 - Icarus advierte que las imágenes HEX tienen menos de 512 palabras; se debe a que los programas ocupan 8/9 palabras. Se mantiene el comportamiento original de RAM; estas pruebas no acceden al espacio no inicializado. No silenciar ni extrapolar esta prueba al futuro uso de memoria de datos.
 
 ## Pendientes independientes de la estrategia
 
-1. Reparar o disponer de una instalación de síntesis funcional y completar `make build`.
-2. Probar en la Go Board el arranque real y el intercambio SPI; la simulación no confirma que se resolvieron los fallos físicos históricos de P2.
-3. Probar con la FPGA maestra del curso.
-4. Confirmar inicio/reinicio de rondas, parámetros oficiales y fecha de entrega.
-5. Mantener avances y propuestas en la rama compartida `pre-entrega`; seleccionar explícitamente lo que se incorpore a `main` para evaluación. La publicación se prepara sobre la historia del repositorio del grupo y conserva el README inicial, sin force-push.
+1. Probar el intercambio SPI físicamente con un emisor/maestra apropiado y luego con la FPGA maestra del curso.
+2. Confirmar inicio/reinicio de rondas, parámetros oficiales y fecha de entrega.
+3. Mantener avances y propuestas en la rama compartida `pre-entrega`; seleccionar explícitamente lo que se incorpore a `main` para evaluación. La publicación se prepara sobre la historia del repositorio del grupo y conserva el README inicial, sin force-push.
 
 ## Pendientes dependientes de la estrategia
+
+**Acuerdo del 11 de noviembre:** generar series nuevas y comparar las estrategias queda para otro día, sin fecha definida. El usuario pidió expresamente no hacerlo hoy. Retomar este pendiente al planificar una próxima sesión de evaluación; no generar ni correr ese lote durante esta sesión.
 
 - Reglas de decisión, cantidades, parámetros y representación numérica.
 - Seleccionar o ajustar referencia Python y verificar equivalencia completa de decisiones con assembly.
