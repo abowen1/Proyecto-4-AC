@@ -1,0 +1,6 @@
+strategy,label,ticks,equity,profit,orders,commissions,max_drawdown,cash,shares,ventana,banda
+reversion_A,Reversión A,20000,18502,8502,729,3645,5630,18502,0,32,2
+reversion_B,Reversión B,20000,13983,3983,676,3380,5375,7809,63,16,2
+reversion_C,Reversión C,20000,14193,4193,524,2620,6629,14193,0,64,2
+reversion_D,Reversión D,20000,17909,7909,1415,7075,7017,11735,63,32,1
+reversion_E,Reversión E,20000,8559,-1441,148,740,6123,2385,63,32,4

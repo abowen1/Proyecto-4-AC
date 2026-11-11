@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "compared_ticks": 100020,
+  "source": "Tarea ejecutar y estado copiados literalmente de tb/tb_proyecto_4.sv",
+  "scope": "Contabilidad, no ejecuci\u00f3n de estrategias en Espino ni deadlines",
+  "output": "PASS contabilidad Canvas: cinco estrategias completas y casos l\u00edmite\noracle.sv:41: $finish called at 0 (1s)"
+}

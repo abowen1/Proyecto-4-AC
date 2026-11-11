@@ -1,0 +1,11 @@
+strategy,label,ticks,equity,profit,orders,commissions,max_drawdown,cash,shares,scope
+mantener,Mantener,20000,10000,0,0,0,0,10000,0,completa
+medias_moviles,Medias móviles,20000,3817,-6183,474,2370,8260,3817,0,completa
+momentum,Momentum,20000,2048,-7952,597,2985,9526,88,20,completa
+regresion,Regresión lineal,20000,90,-9910,1264,6320,10495,90,0,completa
+reversion_media,Reversión a la media,20000,18502,8502,729,3645,5630,18502,0,completa
+mantener,Mantener,2000,10000,0,0,0,0,10000,0,canvas_2000
+medias_moviles,Medias móviles,2000,6452,-3548,79,395,5296,6452,0,canvas_2000
+momentum,Momentum,2000,7722,-2278,105,525,3755,7722,0,canvas_2000
+regresion,Regresión lineal,2000,6400,-3600,206,1030,4248,37,63,canvas_2000
+reversion_media,Reversión a la media,2000,10529,529,99,495,1968,25,104,canvas_2000

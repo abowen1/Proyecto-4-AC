@@ -1,0 +1,32 @@
+{
+  "series_sha256": "9db90594ce790c7d046f4045a0affcefdb04012a7f2e2ab989ba45d15794ec7f",
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "parameters": {
+    "mantener": {},
+    "medias_moviles": {
+      "corta": 8,
+      "larga": 32,
+      "banda": 1
+    },
+    "momentum": {
+      "retardo": 8,
+      "banda": 2
+    },
+    "regresion": {
+      "ventana": 16,
+      "horizonte": 1,
+      "banda": 1
+    },
+    "reversion_media": {
+      "ventana": 32,
+      "banda": 2
+    }
+  },
+  "buy_hold_complete": 6497,
+  "buy_hold_2000": 6695,
+  "model": "Respuesta en n+1; sin l\u00edmites de tiempo CPU; sin liquidaci\u00f3n final",
+  "source_sha256": "7b2d30280acc59f87edc384f1338aec1492586600053af581916c7a9a9620e0f"
+}

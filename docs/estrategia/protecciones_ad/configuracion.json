@@ -1,0 +1,43 @@
+{
+  "variants": [
+    "A",
+    "D",
+    "AP",
+    "DP",
+    "AF",
+    "DF",
+    "AE",
+    "DE"
+  ],
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "ticks": 20000,
+  "base": {
+    "ventana": 32,
+    "banda_A": 2,
+    "banda_D": 1
+  },
+  "panic": {
+    "caida_porcentual": 10,
+    "referencia": "máximo del precio observado mientras haya inventario",
+    "salida": "vender hasta quedar sin acciones, máximo 63 por tick",
+    "reentrada": "esperar 32 ticks completos tras quedar sin acciones y luego seguir señal base"
+  },
+  "trend": {
+    "corta": 8,
+    "larga": 32,
+    "regla": "bloquear compras si SMA8 < SMA32; no cambia ventas"
+  },
+  "exposure": {
+    "objetivo_porcentual": 50,
+    "regla": "limitar compras y vender exceso respecto del objetivo con precio actual y comisión reservada; corrección hasta 63 por tick"
+  },
+  "series_sha256": "9db90594ce790c7d046f4045a0affcefdb04012a7f2e2ab989ba45d15794ec7f",
+  "source_sha256": {
+    "backtest.py": "a62f2760da3a80e3e893dc80dba7666a8fabed3a005b7df813497803cdd81a1d",
+    "compare_protections.py": "2ae43d1de7405f5ebce4a1660fecc94b414f327526da134ba2650048850e5ce0",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467"
+  }
+}

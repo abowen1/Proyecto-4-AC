@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "A": {
+      "ventana": 32,
+      "banda": 2
+    },
+    "B": {
+      "ventana": 16,
+      "banda": 2
+    },
+    "C": {
+      "ventana": 64,
+      "banda": 2
+    },
+    "D": {
+      "ventana": 32,
+      "banda": 1
+    },
+    "E": {
+      "ventana": 32,
+      "banda": 4
+    }
+  },
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "ticks": 20000,
+  "series_sha256": "9db90594ce790c7d046f4045a0affcefdb04012a7f2e2ab989ba45d15794ec7f",
+  "source_sha256": {
+    "backtest.py": "d5ab0513513ad4ac5654cc73eff3c9d54f5da0fbca2243da5b80149142f42eac",
+    "compare_reversion.py": "495260168885caf5b1dd5163754d3e2ddc830aa89f91d844f35265b38974ea72",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467"
+  },
+  "protocol": "Orden calculada en n se ejecuta en n+1; sin liquidación final",
+  "quantities": "Misma política: comprar con caja disponible y vender inventario; máximo 63 por orden",
+  "scope": "Comparación exploratoria sobre la misma serie, sin validar deadlines FPGA"
+}

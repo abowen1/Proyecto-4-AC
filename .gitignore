@@ -1,0 +1,34 @@
+# Virtual Environments & Editor Files
+.venv/
+venv/
+.DS_Store
+
+# Python & Test Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# FPGA Synthesis & Bitstream Artifacts (Yosys / nextpnr / icepack)
+*.json
+*.asc
+*.bin
+*.log
+module_stats/
+
+# Simulation Artifacts (Iverilog / GTKWave / Cocotb)
+sim/sim
+*.vcd
+*.csv
+# AC4: fuentes de práctica versionadas, resultados regenerables
+build/
+decisiones.csv
+!tb/practica.csv
+!docs/evidencias/*.csv
+!docs/procedencia.json
+!docs/estrategia/comparacion/*.csv
+!docs/estrategia/comparacion/*.json
+!docs/estrategia/reversion_abcde/*.csv
+!docs/estrategia/reversion_abcde/*.json
+!docs/estrategia/protecciones_ad/*.csv
+!docs/estrategia/protecciones_ad/*.json
