@@ -12,6 +12,10 @@ Los borradores, estrategias candidatas, simulaciones, código experimental y con
 
 ## Rama de entrega
 
-`main` se reserva para incorporar el material que el equipo seleccione para evaluación. Por ahora contiene únicamente este índice; todavía no constituye una entrega final.
+`main` se reserva para incorporar el material que el equipo seleccione para evaluación. Por ahora contiene este índice y el enunciado original como referencia; todavía no constituye una entrega final.
 
 Publicar avances y propuestas en `pre-entrega` o en ramas derivadas de ella. El equipo revisará explícitamente qué cambios pasan a `main` antes de entregar. La separación por ramas organiza el trabajo; no restringe la visibilidad entre personas con acceso al repositorio.
+
+## Material del curso
+
+[Enunciado original de AC4 (PDF)](material/enunciado/Proyecto_4_arq.pdf). Las fechas del PDF están pendientes de confirmación frente a los cambios del curso.
