@@ -65,3 +65,7 @@ Las cuatro familias sugeridas por el enunciado y mantener están implementadas c
 El segundo lote compara reversión A/B/C/D/E con ventanas 32/16/64/32/32 y bandas 2/2/2/1/4. A conserva la referencia original; cada otra variante cambia un solo parámetro respecto de A. Resultados, configuración, trazas completas y validación en `docs/estrategia/reversion_abcde/`. Se mantienen los resultados del primer lote.
 
 El tercer lote compara A, D, AP, DP, AF, DF, AE y DE. P: salida por caída del precio del 10% desde máximo de la posición y espera de 32 ticks tras liquidar. F: bloquea compras con SMA8 < SMA32. E: objetivo de exposición del 50%, limita compras y vende exceso. Reglas exactas y límites en `docs/estrategia/protecciones_ad/RESULTADOS.md`. Todas siguen siendo referencias Python, sin validación de plazos de Espino.
+
+## Material del curso
+
+[Enunciado original de AC4 (PDF)](material/enunciado/Proyecto_4_arq.pdf), conservado sin editar y disponible también en `main`. Las fechas están pendientes de confirmación frente a los cambios del curso.
