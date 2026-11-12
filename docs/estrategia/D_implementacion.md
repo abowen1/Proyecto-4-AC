@@ -64,7 +64,9 @@ Para comprobar también los 20.000 con período fijo, ejecutar `python3 tools/ve
 
 ## Trabajo necesario siguiente
 
-1. Perfilar ciclos por sección: recepción/contabilidad, actualización de ventana, señal y tamaño de orden. Esta evidencia aún no divide el costo por kernel.
+**Perfil completado el 12 de noviembre:** [mediciones, Amdahl y gráficos para el informe](../informe/01_perfil_D_2026-11-12/README.md). Se conserva abajo el orden previsto; el punto 1 ya está resuelto. La siguiente prueba recomendada es un atajo para cantidades saturadas a 63, seguido de nuevo perfil antes de diseñar los dos aceleradores.
+
+1. Perfil realizado: recepción/contabilidad, actualización de ventana, señal y tamaño de orden. Los tres bucles de órdenes ocupan 43,69% del servicio promedio; los dos de compra dominan 93,80% del tick más lento.
 2. Usar ese perfil para estimar Amdahl y seleccionar, implementar y comparar **al menos dos alternativas de hardware**, como exige §3.3 del enunciado, contra esta base solo software. Cumplir el plazo con esta base no elimina ese requisito.
 3. Mantener las decisiones de D idénticas al comparar variantes, para distinguir aceleración de un cambio bursátil. Medir ciclos, CPI, recursos, Fmax, Ops/s y roofline; justificar la variante final.
 4. Probar la imagen seleccionada con SPI físico y preparar la entrega evaluada desde `pre-entrega` hacia `main`.

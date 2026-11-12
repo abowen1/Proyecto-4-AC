@@ -24,10 +24,11 @@ compare:
 	$(PYTHON) tools/verify_market.py
 test-market:
 	$(PYTHON) -B -m unittest discover -s tests -p 'test_backtest.py' -v
-.PHONY: help assemble test test-spi test-canvas test-d build program
+.PHONY: help assemble test test-spi test-canvas test-d profile-d build program
 help:
 	@echo "make test: ensamblador y SPI en tres rondas; make test-canvas: ejemplo oficial"
 	@echo "make build: bitstream a 25 MHz; make program: cargar placa explícitamente"
+	@echo "make profile-d: perfil por seccion y figuras de Amdahl para el informe"
 assemble: sw/trade.hex sw/spi_diagnostic.hex sw/hold.hex
 sw/%.hex: sw/%.s tools/assembler.py
 	$(PYTHON) tools/assembler.py $< -o $@
@@ -45,6 +46,11 @@ test-canvas: assemble
 	vvp -n build/tb_canvas
 test-d: assemble
 	$(PYTHON) tools/verify_strategy_d.py --fast --name practica_20000_fast
+profile-d: assemble
+	$(PYTHON) tools/verify_strategy_d.py --fast --profile --name perfil_D_20000
+	$(PYTHON) tools/verify_strategy_d.py --ticks 2000 --profile --name perfil_D_2000_ronda3
+	$(PYTHON) tools/profile_d.py build/strategy_d/perfil_D_20000 docs/informe/01_perfil_D_2026-11-12/practica_20000
+	$(PYTHON) tools/profile_d.py build/strategy_d/perfil_D_2000_ronda3 docs/informe/01_perfil_D_2026-11-12/ronda3_2000
 build: build/ac4.bin
 build/ac4.json: $(SRC) sw/trade.hex Makefile
 	mkdir -p build

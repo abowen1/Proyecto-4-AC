@@ -6,6 +6,8 @@ Fecha: 12 de noviembre de 2026.
 
 El equipo confirmó **D original: SMA32, banda 1, sin techo de retiro de 20.000 ni 30.000**, sin filtro, pánico ni límite de exposición. D ya está escrita en `sw/trade.s` sobre Espino original a 25 MHz. Ver [especificación y evidencia](D_implementacion.md). La elección bursátil está resuelta; sigue la validación de ejecución y la comparación de al menos dos alternativas de hardware exigidas por el enunciado.
 
+Perfil completado: [medición por secciones y Amdahl, con figuras y datos archivados para el informe](../informe/01_perfil_D_2026-11-12/README.md). La instrumentación conserva las 22.000 filas previas, incluidos tiempos; no hay cambios a D ni al procesador. Siguiente prueba propuesta: atajo para compras de 63 y nuevo perfil antes de las alternativas de hardware.
+
 ## Historia anterior al acuerdo vigente
 
 Las selecciones y propuestas pendientes descritas a continuación son anteriores al acuerdo de arriba.

@@ -15,6 +15,13 @@ module tb_strategy_d;
   reg pending=0;
   reg [7:0] received, previous=0;
   wire commit = dut.u_core.instr_valid_id && !dut.u_core.stall;
+  // Instrumentacion pasiva: no agrega instrucciones ni modifica el DUT.
+  integer profile_enabled=0, profile_fd, pc_fd, profile_pc=0, group_id;
+  integer group_map [0:511];
+  integer group_cycles [0:11], group_ic [0:11];
+  integer pc_cycles [0:511], pc_ic [0:511], pc_stalls [0:511], pc_bubbles [0:511];
+  integer profile_sum;
+  string profile_path, map_path;
   always @(posedge clk) begin
     cycle=cycle+1;
     if(dut.rst_ni) begin
@@ -27,6 +34,28 @@ module tb_strategy_d;
       if(dut.u_spi.byte_done) begin
         if(pending || dut.u_spi.new_price_q) $fatal(1,"precio perdido en %0d",tick);
         arrivals=arrivals+1; pending=1; start_cycle=cycle; instructions=0;
+        if(profile_enabled) begin
+          profile_pc=0; // grupo de E/S hasta observar el primer ID valido
+          for(integer g=0;g<12;g=g+1) begin group_cycles[g]=0; group_ic[g]=0; end
+        end
+      end
+      // El borde de llegada no cuenta como ciclo transcurrido; si hay retiro
+      // en ese borde si cuenta como instruccion, igual que la metrica previa.
+      if(profile_enabled && pending) begin
+        if(dut.u_core.instr_valid_id) profile_pc=dut.u_core.pc_id/4;
+        if(profile_pc<0 || profile_pc>511) $fatal(1,"PC fuera de RAM");
+        group_id=group_map[profile_pc];
+        if(group_id<0 || group_id>11) $fatal(1,"grupo no definido");
+        if(!dut.u_spi.byte_done) begin
+          group_cycles[group_id]=group_cycles[group_id]+1;
+          pc_cycles[profile_pc]=pc_cycles[profile_pc]+1;
+          if(dut.u_core.instr_valid_id && dut.u_core.stall) pc_stalls[profile_pc]=pc_stalls[profile_pc]+1;
+          if(!dut.u_core.instr_valid_id) pc_bubbles[profile_pc]=pc_bubbles[profile_pc]+1;
+        end
+        if(commit) begin
+          group_ic[group_id]=group_ic[group_id]+1;
+          pc_ic[profile_pc]=pc_ic[profile_pc]+1;
+        end
       end
       if(pending && commit) instructions=instructions+1;
       if(dut.u_spi.price_read) reads=reads+1;
@@ -40,6 +69,17 @@ module tb_strategy_d;
         if(cycle-start_cycle>max_cycles) max_cycles=cycle-start_cycle;
         if(instructions>max_instructions) max_instructions=instructions;
         $fdisplay(fd,"%0d,%0d,%0d,%0d,%0d,%0d,%0d",tick,reference[tick][31:0],dut.data_wdata,cash,shares,instructions,cycle-start_cycle);
+        if(profile_enabled) begin
+          profile_sum=0;
+          for(integer g=0;g<12;g=g+1) profile_sum=profile_sum+group_cycles[g];
+          if(profile_sum!=cycle-start_cycle) $fatal(1,"perfil no conserva ciclos");
+          profile_sum=0;
+          for(integer g=0;g<12;g=g+1) profile_sum=profile_sum+group_ic[g];
+          if(profile_sum!=instructions) $fatal(1,"perfil no conserva instrucciones");
+          $fwrite(profile_fd,"%0d",tick);
+          for(integer g=0;g<12;g=g+1) $fwrite(profile_fd,",%0d,%0d",group_cycles[g],group_ic[g]);
+          $fwrite(profile_fd,"\n");
+        end
         pending=0; responses=responses+1;
       end
     end
@@ -62,6 +102,18 @@ module tb_strategy_d;
     budget=(period-9500)/40;
     if(!$value$plusargs("REF=%s",reference_path)) $fatal(1,"falta REF");
     if(!$value$plusargs("METRICS=%s",metrics_path)) $fatal(1,"falta METRICS");
+    profile_enabled=$value$plusargs("PROFILE=%s",profile_path);
+    if(profile_enabled) begin
+      if(!$value$plusargs("PROFILE_MAP=%s",map_path)) $fatal(1,"falta PROFILE_MAP");
+      $readmemh(map_path,group_map,0,511);
+      for(integer p=0;p<512;p=p+1) begin pc_cycles[p]=0; pc_ic[p]=0; pc_stalls[p]=0; pc_bubbles[p]=0; end
+      profile_fd=$fopen({profile_path,"_ticks.csv"},"w");
+      pc_fd=$fopen({profile_path,"_pc.csv"},"w");
+      if(!profile_fd || !pc_fd) $fatal(1,"no se pudo abrir perfil");
+      $fwrite(profile_fd,"tick");
+      for(integer g=0;g<12;g=g+1) $fwrite(profile_fd,",g%0d_cycles,g%0d_ic",g,g);
+      $fwrite(profile_fd,"\n");
+    end
     $readmemh(reference_path,reference,0,ticks-1);
     fd=$fopen(metrics_path,"w");
     if(!fd) $fatal(1,"no se pudo abrir METRICS");
@@ -89,6 +141,12 @@ module tb_strategy_d;
     end
     if(arrivals!=ticks) $fatal(1,"conteo de llegadas incorrecto");
     $fclose(fd);
+    if(profile_enabled) begin
+      $fdisplay(pc_fd,"pc,cycles,instructions,stall_cycles,bubble_cycles");
+      for(integer p=0;p<512;p=p+1)
+        if(pc_cycles[p]!=0 || pc_ic[p]!=0) $fdisplay(pc_fd,"%0d,%0d,%0d,%0d,%0d",4*p,pc_cycles[p],pc_ic[p],pc_stalls[p],pc_bubbles[p]);
+      $fclose(profile_fd); $fclose(pc_fd);
+    end
     $display("PASS D: %0d ticks; ordenes, caja, inventario y MISO exactos; max %0d ciclos, %0d instrucciones; presupuesto %0d",ticks,max_cycles,max_instructions,budget);
     $finish;
   end

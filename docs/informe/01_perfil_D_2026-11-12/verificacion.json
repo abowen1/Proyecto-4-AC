@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "profile": "practica_20000",
+      "baseline": "docs/evidencias/D_2026-11-12/practica_20000_fast.csv",
+      "ticks": 20000,
+      "all_fields_exactly_equal": true
+    },
+    {
+      "profile": "ronda3_2000",
+      "baseline": "docs/evidencias/D_2026-11-12/practica_2000_ronda3.csv",
+      "ticks": 2000,
+      "all_fields_exactly_equal": true
+    }
+  ],
+  "unit_tests_passed": 29,
+  "rtl_and_pin_diff_from_upstream_empty": true
+}

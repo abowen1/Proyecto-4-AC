@@ -27,6 +27,8 @@ decisiones.csv
 !docs/evidencias/*.csv
 !docs/evidencias/D_2026-11-12/*.csv
 !docs/evidencias/D_2026-11-12/*.json
+!docs/informe/**/*.csv
+!docs/informe/**/*.json
 !docs/procedencia.json
 !docs/estrategia/comparacion/*.csv
 !docs/estrategia/comparacion/*.json

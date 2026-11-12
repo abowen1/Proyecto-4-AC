@@ -1,0 +1,30 @@
+{
+  "published_baseline_commit": "d874d4e12c08b66d78e3fe22a32766499930eb22",
+  "upstream_rtl_commit": "33e8b5ae78faad7a9a36431d5ee8cf145e8573ec",
+  "python": "3.10.2",
+  "clock_hz": 25000000,
+  "spi_hz": 1000000,
+  "profile_changes_dut": false,
+  "source_sha256": {
+    "sw/trade.s": "c470110cfd5df6bdf936047ae6dcb78f87865f26a4e4a74ac4354f62b32182c9",
+    "sw/trade.hex": "bc5b2ce13fbb1c5cf36486943c6afbb3ead9516582711ef253c0475462bb3b80",
+    "tb/practica.csv": "9db90594ce790c7d046f4045a0affcefdb04012a7f2e2ab989ba45d15794ec7f",
+    "tb/tb_strategy_d.sv": "62fe9f80b33d3be7466bd73aa2aef477d9717259f4e8caa5471d86c2e78a41ce",
+    "tools/profile_d.py": "6ac3a721487d60dce8e1f5cd3fdea1b8f20fbc7cc4194ecc8f765114817016eb",
+    "tools/verify_strategy_d.py": "420d2aa218e87003e64a341c02d443cf33ec9cb3a6971ff746cc42637c30763e",
+    "rtl/espino_core/espino_alu.v": "1b958157b3fb1224857e4171d9df8c910523bae6f15d2a84e6ba0dd18b617601",
+    "rtl/espino_core/espino_controller.v": "bd82d8404d8f09de2a6968da87e6a7e9c750af9138a4b74c43b3ec89a742c215",
+    "rtl/espino_core/espino_core.v": "9e3e3cae616a4ff057ddcb01728bf8f912eab721d26e3a5fe68daf1c68e9905c",
+    "rtl/espino_core/espino_decoder.v": "33e913fec63d9fc899e27a10a31493b3bcb634a86cc0fc10d70ed391febf7ad3",
+    "rtl/espino_core/espino_id_stage.v": "740698037d1e4372e3e26c3a828143debb71b62992d7a69e21ed3b6fc128c704",
+    "rtl/espino_core/espino_if_stage.v": "4734ae2fb9cd60c8f5019be50303504e50e6d25bc09d09a3f06d396d1c5902f4",
+    "rtl/espino_core/espino_load_store_unit.v": "76051d9aba219452dc4e80fd47f306d024c40aea47050dd59fc3c821ea7f5954",
+    "rtl/espino_core/espino_register_file.v": "a19d94587e54d05373a257c95e515979d2f7910328ec8920f649d280bc07b212",
+    "rtl/pochoco_periph.v": "795bcc27c1a4a93c7f67086f0634be7cf0f9d104f93869eecc0ae21cc47aec66",
+    "rtl/pochoco_ram.v": "0eda65a86c53f468ec10342706a9be87c3cfdf1b64f4b7c6ec64c57db0ba1fd8",
+    "rtl/pochoco_soc.v": "b28561814003a201d40bb5e41f5969a8fd3c99d187f95b2631dcf4e1b36b99cf",
+    "rtl/pochoco_spi_slave.v": "dab33af8b2cb654590bc708afd3f68f46a6121705cee21f7bc33bb6b61e7e443"
+  },
+  "matplotlib": "3.10.9",
+  "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)"
+}
