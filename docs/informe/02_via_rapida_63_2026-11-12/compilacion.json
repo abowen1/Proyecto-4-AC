@@ -1,0 +1,35 @@
+{
+  "clock_hz": 25000000,
+  "fmax": {
+    "i_Clk$SB_IO_IN_$glb_clk": {
+      "achieved": 44.80889129638672,
+      "constraint": 25
+    }
+  },
+  "utilization": {
+    "ICESTORM_LC": {
+      "available": 1280,
+      "used": 1082
+    },
+    "ICESTORM_RAM": {
+      "available": 16,
+      "used": 12
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 3
+    },
+    "SB_IO": {
+      "available": 72,
+      "used": 27
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "image_bytes": 32220,
+  "image_sha256": "9ba6b4d745b27e29e01bf5b0d2117e0db62f868ba0f62fc3a81c3d77a66b16a3",
+  "hardware_modified": false,
+  "board_programmed": false
+}

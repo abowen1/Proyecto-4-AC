@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "case": "practica_20000",
+      "ticks": 20000,
+      "functional_parity": true,
+      "base_mean_cycles": 121.31505,
+      "new_mean_cycles": 89.3779,
+      "mean_speedup": 1.3573271468674024,
+      "time_reduction": 0.26325793873060266,
+      "base_max_cycles": 1484,
+      "new_max_cycles": 802,
+      "max_speedup": 1.8503740648379052,
+      "faster_ticks": 5463,
+      "equal_ticks": 14392,
+      "slower_ticks": 145,
+      "largest_regression_cycles": 21,
+      "largest_saving_cycles": 1374,
+      "base_total_ic": 1101345,
+      "new_total_ic": 811539
+    },
+    {
+      "case": "ronda3_2000",
+      "ticks": 2000,
+      "functional_parity": true,
+      "base_mean_cycles": 112.338,
+      "new_mean_cycles": 83.566,
+      "mean_speedup": 1.3443027068424958,
+      "time_reduction": 0.25611992380138515,
+      "base_max_cycles": 1227,
+      "new_max_cycles": 539,
+      "max_speedup": 2.2764378478664193,
+      "faster_ticks": 1206,
+      "equal_ticks": 123,
+      "slower_ticks": 671,
+      "largest_regression_cycles": 16,
+      "largest_saving_cycles": 699,
+      "base_total_ic": 101422,
+      "new_total_ic": 75306
+    },
+    {
+      "case": "extremos",
+      "ticks": 816,
+      "functional_parity": true,
+      "base_mean_cycles": 843.6482843137255,
+      "new_mean_cycles": 267.78063725490193,
+      "mean_speedup": 3.150520115876234,
+      "time_reduction": 0.6825920917118549,
+      "base_max_cycles": 1484,
+      "new_max_cycles": 537,
+      "max_speedup": 2.7635009310986964,
+      "faster_ticks": 467,
+      "equal_ticks": 349,
+      "slower_ticks": 0,
+      "largest_regression_cycles": 0,
+      "largest_saving_cycles": 1374,
+      "base_total_ic": 309805,
+      "new_total_ic": 96739
+    }
+  ],
+  "amdahl": {
+    "target_groups": [
+      "fill_buy_control",
+      "fill_buy_loop",
+      "size_buy_control",
+      "size_buy_loop"
+    ],
+    "base_fraction": 0.3654505356095554,
+    "measured_local_speedup": 3.576095987094172,
+    "predicted_global_speedup": 1.3573271468674024,
+    "measured_global_speedup": 1.3573271468674024,
+    "explanation": "Estimacion retrospectiva con aceleracion local medida, no prediccion independiente. Incluye costo de controles y atajos; se conserva tambien la prediccion previa en carpeta 01."
+  },
+  "fast_path_coverage": {
+    "propose_fast_hits": 433,
+    "account_fast_hits": 427,
+    "expected_proposals_63": 433,
+    "expected_fills_63": 427,
+    "requested_63_but_filled_less": 6
+  }
+}

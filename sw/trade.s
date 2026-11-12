@@ -2,7 +2,8 @@
 # Orden previa ejecutada al precio actual, comision 5.
 # x1=anillo RAM 0x600..0x67c, x2=SPI, x3=caja, x4=acciones,
 # x5=precio, x6=suma32, x7=offset anillo, x8=muestras, x9=orden previa.
-# x10..x13 temporales. Sin multiplicacion, division ni shifts.
+# x10..x14 temporales. Sin multiplicacion, division ni shifts.
+# Via rapida 63; x14 conserva 32*precio despues del calculo de senal.
 .text
 .global start
 start:
@@ -29,7 +30,21 @@ wait_price:
     bge x9, x11, fill_sell
 fill_buy:
     addi x11, x3, -5
-    blt x11, x0, accounted
+    blt x11, x5, accounted
+    addi x12, x0, 63
+    bne x10, x12, fill_buy_slow
+    add x14, x5, x5
+    add x14, x14, x14
+    add x14, x14, x14
+    add x14, x14, x14
+    add x14, x14, x14
+    add x14, x14, x14
+    sub x14, x14, x5
+    blt x11, x14, fill_buy_slow
+    sub x3, x11, x14
+    addi x4, x4, 63
+    jal x0, accounted
+fill_buy_slow:
     addi x12, x0, 0
 fill_buy_loop:
     beq x12, x10, fill_buy_done
@@ -78,20 +93,28 @@ append_price:
 
 # suma32 - 32*precio >32 compra, <-32 vende; igualdad mantiene.
 # Incluye el precio actual y evita redondear la media.
-    add x10, x5, x5
-    add x10, x10, x10
-    add x10, x10, x10
-    add x10, x10, x10
-    add x10, x10, x10
-    sub x10, x6, x10
+signal_times32:
+    add x14, x5, x5
+    add x14, x14, x14
+    add x14, x14, x14
+    add x14, x14, x14
+    add x14, x14, x14
+signal_compare:
+    sub x10, x6, x14
     blt x12, x10, propose_buy
     addi x12, x0, -32
     blt x10, x12, propose_sell
     jal x0, publish
 propose_buy:
     addi x11, x3, -5
-    blt x11, x0, publish
+    blt x11, x5, publish
     addi x12, x0, 63
+    add x14, x14, x14
+    sub x14, x14, x5
+    blt x11, x14, size_buy_slow
+    addi x9, x0, 127
+    jal x0, publish
+size_buy_slow:
     addi x13, x0, 0
 size_buy_loop:
     beq x13, x12, size_buy_done

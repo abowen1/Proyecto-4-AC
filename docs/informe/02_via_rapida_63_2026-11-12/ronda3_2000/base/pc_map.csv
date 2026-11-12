@@ -1,0 +1,85 @@
+pc,line,instruction,group,key,label
+0,9,"addi x1, x0, 1536",0,io,Recepción y publicación
+4,10,"lui x2, 0x80010",0,io,Recepción y publicación
+8,11,"lui x3, 2",0,io,Recepción y publicación
+12,12,"addi x3, x3, 1808",0,io,Recepción y publicación
+16,13,"addi x4, x0, 0",0,io,Recepción y publicación
+20,14,"addi x6, x0, 0",0,io,Recepción y publicación
+24,15,"addi x7, x0, 0",0,io,Recepción y publicación
+28,16,"addi x8, x0, 0",0,io,Recepción y publicación
+32,17,"addi x9, x0, 0",0,io,Recepción y publicación
+36,18,"sw x0, 8(x2)",0,io,Recepción y publicación
+40,20,"lw x10, 0(x2)",0,io,Recepción y publicación
+44,21,"andi x10, x10, 1",0,io,Recepción y publicación
+48,22,"beq x10, x0, wait_price",0,io,Recepción y publicación
+52,23,"lw x5, 4(x2)",0,io,Recepción y publicación
+56,26,"andi x10, x9, 63",1,account_control,Despacho contable
+60,27,"beq x10, x0, accounted",1,account_control,Despacho contable
+64,28,"addi x11, x0, 128",1,account_control,Despacho contable
+68,29,"bge x9, x11, fill_sell",1,account_control,Despacho contable
+72,31,"addi x11, x3, -5",2,fill_buy_control,Compra ejecutada: control
+76,32,"blt x11, x0, accounted",2,fill_buy_control,Compra ejecutada: control
+80,33,"addi x12, x0, 0",2,fill_buy_control,Compra ejecutada: control
+84,35,"beq x12, x10, fill_buy_done",3,fill_buy_loop,Compra ejecutada: bucle
+88,36,"blt x11, x5, fill_buy_done",3,fill_buy_loop,Compra ejecutada: bucle
+92,37,"sub x11, x11, x5",3,fill_buy_loop,Compra ejecutada: bucle
+96,38,"addi x12, x12, 1",3,fill_buy_loop,Compra ejecutada: bucle
+100,39,"jal x0, fill_buy_loop",3,fill_buy_loop,Compra ejecutada: bucle
+104,41,"beq x12, x0, accounted",2,fill_buy_control,Compra ejecutada: control
+108,42,"addi x3, x11, 0",2,fill_buy_control,Compra ejecutada: control
+112,43,"add x4, x4, x12",2,fill_buy_control,Compra ejecutada: control
+116,44,"jal x0, accounted",2,fill_buy_control,Compra ejecutada: control
+120,46,"bge x4, x10, fill_sell_quantity",4,fill_sell_control,Venta ejecutada: control
+124,47,"addi x10, x4, 0",4,fill_sell_control,Venta ejecutada: control
+128,49,"beq x10, x0, accounted",4,fill_sell_control,Venta ejecutada: control
+132,50,"addi x11, x3, 0",4,fill_sell_control,Venta ejecutada: control
+136,51,"addi x12, x10, 0",4,fill_sell_control,Venta ejecutada: control
+140,53,"add x11, x11, x5",5,fill_sell_loop,Venta ejecutada: bucle
+144,54,"addi x12, x12, -1",5,fill_sell_loop,Venta ejecutada: bucle
+148,55,"bne x12, x0, fill_sell_loop",5,fill_sell_loop,Venta ejecutada: bucle
+152,56,"addi x11, x11, -5",4,fill_sell_control,Venta ejecutada: control
+156,57,"blt x11, x0, accounted",4,fill_sell_control,Venta ejecutada: control
+160,58,"addi x3, x11, 0",4,fill_sell_control,Venta ejecutada: control
+164,59,"sub x4, x4, x10",4,fill_sell_control,Venta ejecutada: control
+168,61,"addi x9, x0, 0",6,window,Actualizar ventana de 32
+172,64,"add x11, x1, x7",6,window,Actualizar ventana de 32
+176,65,"addi x12, x0, 32",6,window,Actualizar ventana de 32
+180,66,"beq x8, x12, remove_old",6,window,Actualizar ventana de 32
+184,67,"addi x8, x8, 1",6,window,Actualizar ventana de 32
+188,68,"jal x0, append_price",6,window,Actualizar ventana de 32
+192,70,"lw x10, 0(x11)",6,window,Actualizar ventana de 32
+196,71,"sub x6, x6, x10",6,window,Actualizar ventana de 32
+200,73,"sw x5, 0(x11)",6,window,Actualizar ventana de 32
+204,74,"add x6, x6, x5",6,window,Actualizar ventana de 32
+208,75,"addi x7, x7, 4",6,window,Actualizar ventana de 32
+212,76,"andi x7, x7, 127",6,window,Actualizar ventana de 32
+216,77,"bne x8, x12, publish",6,window,Actualizar ventana de 32
+220,81,"add x10, x5, x5",7,times32,Calcular 32 × precio
+224,82,"add x10, x10, x10",7,times32,Calcular 32 × precio
+228,83,"add x10, x10, x10",7,times32,Calcular 32 × precio
+232,84,"add x10, x10, x10",7,times32,Calcular 32 × precio
+236,85,"add x10, x10, x10",7,times32,Calcular 32 × precio
+240,86,"sub x10, x6, x10",8,signal,Comparar señal
+244,87,"blt x12, x10, propose_buy",8,signal,Comparar señal
+248,88,"addi x12, x0, -32",8,signal,Comparar señal
+252,89,"blt x10, x12, propose_sell",8,signal,Comparar señal
+256,90,"jal x0, publish",8,signal,Comparar señal
+260,92,"addi x11, x3, -5",9,size_buy_control,Nueva compra: control
+264,93,"blt x11, x0, publish",9,size_buy_control,Nueva compra: control
+268,94,"addi x12, x0, 63",9,size_buy_control,Nueva compra: control
+272,95,"addi x13, x0, 0",9,size_buy_control,Nueva compra: control
+276,97,"beq x13, x12, size_buy_done",10,size_buy_loop,Nueva compra: bucle
+280,98,"blt x11, x5, size_buy_done",10,size_buy_loop,Nueva compra: bucle
+284,99,"sub x11, x11, x5",10,size_buy_loop,Nueva compra: bucle
+288,100,"addi x13, x13, 1",10,size_buy_loop,Nueva compra: bucle
+292,101,"jal x0, size_buy_loop",10,size_buy_loop,Nueva compra: bucle
+296,103,"beq x13, x0, publish",9,size_buy_control,Nueva compra: control
+300,104,"ori x9, x13, 64",9,size_buy_control,Nueva compra: control
+304,105,"jal x0, publish",9,size_buy_control,Nueva compra: control
+308,107,"beq x4, x0, publish",11,size_sell,Nueva venta: cantidad
+312,108,"addi x10, x0, 63",11,size_sell,Nueva venta: cantidad
+316,109,"bge x4, x10, size_sell_done",11,size_sell,Nueva venta: cantidad
+320,110,"addi x10, x4, 0",11,size_sell,Nueva venta: cantidad
+324,112,"ori x9, x10, 128",11,size_sell,Nueva venta: cantidad
+328,114,"sw x9, 8(x2)",0,io,Recepción y publicación
+332,115,"jal x0, wait_price",0,io,Recepción y publicación

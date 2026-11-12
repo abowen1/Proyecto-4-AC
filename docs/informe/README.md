@@ -3,6 +3,7 @@
 Esta carpeta conserva resultados, figuras y explicaciones del desarrollo, según lo solicitado por el equipo. Se publica en `pre-entrega`; el informe evaluado se preparará después.
 
 - [01 · Perfil de D y ley de Amdahl](01_perfil_D_2026-11-12/README.md): mediciones por sección, código de medición, datos por precio e instrucción, gráficos PNG/SVG, predicciones y prioridades de optimización.
+- [02 · Vía rápida de 63, implementada y conservada](02_via_rapida_63_2026-11-12/README.md): equivalencia en 22.816 precios, reducción de tiempo promedio 26,33% en la práctica completa, perfil nuevo, regresiones individuales y ambos programas conservados.
 - [Reglas e implementación base de D](../estrategia/D_implementacion.md).
 - [Evidencia previa de equivalencia D/Python](../evidencias/D_2026-11-12/).
 - [Compilación y prueba física inicial](../evidencias/validacion_placa_2026-11-11.md).

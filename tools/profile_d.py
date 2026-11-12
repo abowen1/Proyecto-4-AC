@@ -26,10 +26,12 @@ GROUPS = [
 ]
 
 
-def prepare_profile(output):
-    source = (ROOT / 'sw/trade.s').read_text()
+def prepare_profile(output, program=None, program_hex=None):
+    program = program or ROOT / 'sw/trade.s'
+    source = program.read_text()
     words = assemble(source)
-    if words != [int(s, 16) for s in (ROOT / 'sw/trade.hex').read_text().split()]:
+    program_hex = program_hex or program.with_suffix('.hex')
+    if words != [int(s, 16) for s in program_hex.read_text().split()]:
         raise ValueError('HEX y assembly no coinciden')
     labels, code = {}, []
     for number, raw in enumerate(source.splitlines(), 1):
@@ -38,7 +40,9 @@ def prepare_profile(output):
             labels[line[:-1]] = len(code) * 4
         elif line and not line.startswith('.'):
             code.append(dict(pc=len(code)*4, line=number, instruction=line))
-    times32 = next(r['pc'] for r in code if r['instruction']=='add x10, x5, x5')
+    times32 = labels.get('signal_times32')
+    if times32 is None:
+        times32 = next(r['pc'] for r in code if r['instruction']=='add x10, x5, x5')
     boundaries = [
         (0, 0), (labels['wait_price']+16, 1), (labels['fill_buy'], 2),
         (labels['fill_buy_loop'], 3), (labels['fill_buy_done'], 2),
@@ -59,7 +63,7 @@ def prepare_profile(output):
     (output / 'profile_map.mem').write_text(''.join(f"{code[i]['group'] if i<len(code) else 0:08x}\n" for i in range(512)))
     (output / 'profile_metadata.json').write_text(json.dumps(dict(
         assembly_sha256=hashlib.sha256(source.encode()).hexdigest(),
-        hex_sha256=hashlib.sha256((ROOT/'sw/trade.hex').read_bytes()).hexdigest(),
+        hex_sha256=hashlib.sha256(program_hex.read_bytes()).hexdigest(),
         groups=[dict(id=i,key=k,label=l,major=m) for i,(k,l,m) in enumerate(GROUPS)],
         labels=labels, clock_hz=25000000,
         attribution='ID valido: PC observado, incluyendo stalls; ID invalido: ultimo PC valido; ventana (byte_done, DECISION] para ciclos e incluye byte_done para IC, como metrica original.'

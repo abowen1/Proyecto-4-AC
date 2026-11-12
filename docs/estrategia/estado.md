@@ -6,7 +6,7 @@ Fecha: 12 de noviembre de 2026.
 
 El equipo confirmó **D original: SMA32, banda 1, sin techo de retiro de 20.000 ni 30.000**, sin filtro, pánico ni límite de exposición. D ya está escrita en `sw/trade.s` sobre Espino original a 25 MHz. Ver [especificación y evidencia](D_implementacion.md). La elección bursátil está resuelta; sigue la validación de ejecución y la comparación de al menos dos alternativas de hardware exigidas por el enunciado.
 
-Perfil completado: [medición por secciones y Amdahl, con figuras y datos archivados para el informe](../informe/01_perfil_D_2026-11-12/README.md). La instrumentación conserva las 22.000 filas previas, incluidos tiempos; no hay cambios a D ni al procesador. Siguiente prueba propuesta: atajo para compras de 63 y nuevo perfil antes de las alternativas de hardware.
+Perfil completado: [medición por secciones y Amdahl, con figuras y datos archivados para el informe](../informe/01_perfil_D_2026-11-12/README.md). La instrumentación conserva las 22.000 filas previas, incluidos tiempos; no hay cambios a D ni al procesador. La [vía rápida de 63](../informe/02_via_rapida_63_2026-11-12/README.md) ya se implementó y conservó: 102 instrucciones, equivalencia en 22.816 precios; promedio 121,315 → 89,378 ciclos y máximo observado 1.484 → 802 en la práctica completa. La base de 84 instrucciones permanece en `sw/trade_base_84.s/.hex`. El próximo co-diseño debe usar el perfil nuevo; esta etapa solo cambia software.
 
 ## Historia anterior al acuerdo vigente
 

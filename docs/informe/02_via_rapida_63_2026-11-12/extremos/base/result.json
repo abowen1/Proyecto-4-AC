@@ -1,0 +1,33 @@
+{
+  "strategy": "D",
+  "window": 32,
+  "band": 1,
+  "retirement_threshold": null,
+  "period_ns": null,
+  "deadline_budget_period_ns": 100000,
+  "idle_wait_omitted": true,
+  "expected_summary": {
+    "strategy": "reversion_media",
+    "label": "Reversi\u00f3n a la media",
+    "ticks": 816,
+    "equity": 1513073,
+    "profit": 1503073,
+    "orders": 664,
+    "commissions": 3320,
+    "max_drawdown": 487194,
+    "cash": 1210673,
+    "shares": 1260
+  },
+  "program": "sw/trade_base_84.s",
+  "hex_sha256": "bc5b2ce13fbb1c5cf36486943c6afbb3ead9516582711ef253c0475462bb3b80",
+  "prices_sha256": "cfebf3511d2bbabcb82639f2fe764007873431c42ff9e1d8f3a7fa871ac728d1",
+  "metrics": {
+    "ticks": 816,
+    "max_cycles": 1484,
+    "mean_cycles": 843.6482843137255,
+    "max_instructions": 675,
+    "mean_instructions": 379.66299019607845,
+    "cpi_service": 2.2220977711786447
+  },
+  "verified": "RTL, SPI, every next decision, cash and shares, deadlines"
+}

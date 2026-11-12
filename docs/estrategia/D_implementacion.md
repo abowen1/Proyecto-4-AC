@@ -1,5 +1,7 @@
 # D elegida e implementada en Espino
 
+**Versión actual:** la [vía rápida de 63](../informe/02_via_rapida_63_2026-11-12/README.md) se implementó, validó y conservó. `sw/trade.s` tiene 102 instrucciones y utiliza x14; `sw/trade_base_84.s/.hex` conserva la base inicial descrita abajo, de 84 instrucciones. La estrategia y las reglas contables son idénticas. En la práctica completa el promedio baja de 121,315 a 89,378 ciclos y el máximo observado de 1.484 a 802. La imagen se regeneró sin programar la placa. Los apartados siguientes conservan la evidencia inicial, anterior a esa mejora.
+
 Acuerdo del equipo confirmado el 12 de noviembre de 2026: **reversión a la media de 32 muestras, banda 1, sin retiro por patrimonio**. No incluye pánico, filtro de tendencia ni límite de exposición. Las pruebas previas de retiro en 20.000 o 30.000 quedan descartadas para esta versión.
 
 ## Reglas reproducibles
@@ -14,7 +16,7 @@ Acuerdo del equipo confirmado el 12 de noviembre de 2026: **reversión a la medi
 
 Referencia: `tools/backtest.py`, `run(prices,'reversion_media',Rules(),{'ventana':32,'banda':1})`, sin política adicional. Ejecutable: `sw/trade.s` y `sw/trade.hex`.
 
-## Implementación base, sin cambios al procesador
+## Implementación inicial: base de 84, sin cambios al procesador
 
 84 instrucciones estáticas, 336 bytes de programa. Anillo de 32 palabras, 128 bytes, en RAM `0x600..0x67c`; no se solapa con el código. Las entradas se escriben antes de leerse; no depende de valores iniciales en RAM sin inicializar. Estado contable y acumuladores permanecen en registros x1..x13. Todos los registros usados se inicializan o se asignan antes de consultarlos.
 
@@ -64,7 +66,7 @@ Para comprobar también los 20.000 con período fijo, ejecutar `python3 tools/ve
 
 ## Trabajo necesario siguiente
 
-**Perfil completado el 12 de noviembre:** [mediciones, Amdahl y gráficos para el informe](../informe/01_perfil_D_2026-11-12/README.md). Se conserva abajo el orden previsto; el punto 1 ya está resuelto. La siguiente prueba recomendada es un atajo para cantidades saturadas a 63, seguido de nuevo perfil antes de diseñar los dos aceleradores.
+**Perfil y atajo completados el 12 de noviembre:** [perfil inicial y Amdahl](../informe/01_perfil_D_2026-11-12/README.md) y [evaluación del atajo con nuevo perfil](../informe/02_via_rapida_63_2026-11-12/README.md). Se conserva abajo el orden previsto; el punto 1 y la mejora de software ya están resueltos. Las alternativas de hardware se deben diseñar usando el perfil nuevo.
 
 1. Perfil realizado: recepción/contabilidad, actualización de ventana, señal y tamaño de orden. Los tres bucles de órdenes ocupan 43,69% del servicio promedio; los dos de compra dominan 93,80% del tick más lento.
 2. Usar ese perfil para estimar Amdahl y seleccionar, implementar y comparar **al menos dos alternativas de hardware**, como exige §3.3 del enunciado, contra esta base solo software. Cumplir el plazo con esta base no elimina ese requisito.

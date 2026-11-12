@@ -1,5 +1,7 @@
 # Perfil de D: qué conviene optimizar
 
+**Archivo histórico de la base de 84 instrucciones.** La [etapa 02](../02_via_rapida_63_2026-11-12/README.md) conserva la mejora posterior y el perfil nuevo. Para reproducir hoy esta base, añadir `--program sw/trade_base_84.s` a los comandos de verificación registrados al final y elegir carpetas nuevas de salida; `sw/trade.s` ya contiene la optimización. Los datos y figuras de esta carpeta permanecen como referencia anterior.
+
 Medición del 12 de noviembre de 2026. Estrategia fija: D, reversión a la media SMA32, banda 1, sin techo de retiro. Espino y Pochoco originales a 25 MHz. Esta etapa mide y propone; no implementa todavía aceleradores ni modifica el programa bursátil.
 
 **Resultado principal:** los tres bucles de órdenes consumen el **43,69% del tiempo de servicio promedio**. Los dos bucles de compra explican el **93,80% del tick de mayor latencia**. Conviene trabajar en el cálculo de cantidades y en la contabilidad de las órdenes. La media ya se actualiza de forma incremental, sin recorrer 32 muestras en cada precio.

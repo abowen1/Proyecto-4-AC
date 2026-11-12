@@ -1,10 +1,11 @@
 // Equivalencia completa por SPI real contra la referencia Python D.
 `timescale 1ns/1ps
 module tb_strategy_d;
+  parameter PROGRAM = "sw/trade.hex";
   reg clk=0, sclk=0, mosi=0, cs_n=1;
   wire miso;
   always #20 clk=~clk;
-  pochoco_soc #(.MemFile("sw/trade.hex")) dut (
+  pochoco_soc #(.MemFile(PROGRAM)) dut (
     .i_Clk(clk), .i_Switch(4'b0), .o_LED(),
     .i_SPI_SCLK(sclk), .i_SPI_MOSI(mosi), .i_SPI_CS_n(cs_n), .o_SPI_MISO(miso));
   reg [127:0] reference [0:99999]; // caja, acciones, orden siguiente, precio

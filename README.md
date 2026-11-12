@@ -6,6 +6,8 @@ Para el traspaso completo de las 15 configuraciones bursátiles exploradas, sus 
 
 Material guardado para el informe: [carpeta central de evidencia y figuras](docs/informe/README.md). El [perfil de D y Amdahl](docs/informe/01_perfil_D_2026-11-12/README.md) identifica los bucles de órdenes como prioridad, con datos por tick y gráficos PNG/SVG. La instrumentación conserva exactamente los tiempos y resultados de la base anterior.
 
+**Versión actual:** [vía rápida de 63 conservada tras evaluación](docs/informe/02_via_rapida_63_2026-11-12/README.md). `sw/trade.s` tiene 102 instrucciones; la base original de 84 permanece en `sw/trade_base_84.s/.hex`. Mismas órdenes y patrimonio; en 20.000 precios el tiempo promedio baja 26,33% y el máximo observado pasa de 1.484 a 802 ciclos. `make compare-fastpath63` reproduce las verificaciones y los gráficos.
+
 **Actualización del 12 de noviembre:** [informe para decidir entre A, D y DF](docs/estrategia/recomendacion_2026-11-12/README.md), con gráficos SVG/PNG, históricos de seis activos, datos y comandos reproducibles, recomendaciones según escenario, revisión de la transcripción y prueba de salida permanente en patrimonio 20.000. Es historia exploratoria de pre-entrega, anterior a la selección de D sin techo de retiro. El informe distingue los lotes calibrados con 2023 del lote largo cuya normalización usa el máximo futuro.
 
 ## Procedencia y alcance

@@ -1,0 +1,13 @@
+key,cycles
+io,17
+account_control,9
+fill_buy_control,0
+fill_buy_loop,0
+fill_sell_control,17
+fill_sell_loop,440
+window,24
+times32,10
+signal,5
+size_buy_control,17
+size_buy_loop,0
+size_sell,0
