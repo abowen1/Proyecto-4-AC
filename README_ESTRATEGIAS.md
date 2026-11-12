@@ -584,3 +584,65 @@ Conclusiones que no se deben escribir todavía: “A es la mejor para la present
 - Preguntas o decisiones que requieran acuerdo del equipo.
 
 No reemplazar silenciosamente reglas comunes ni borrar los controles históricos. Si una modificación cambia simultáneamente señales, cantidades y protección, identificarla como una estrategia nueva y explicar el cambio de alcance. La versión llamada “final” seguirá siendo una candidata hasta que el equipo la evalúe y confirme.
+
+## 14. Ampliación del 12 de noviembre: bandas por desviación e históricos reales
+
+Se añadieron Ad y Dd, con SMA32 y bandas de 1 y 0,5 desviaciones estándar poblacionales, respectivamente. Son nuevas propuestas; A, D y DF no cambian. La especificación exacta, fuentes, normalización, límites, resultados y reproducción están en [el informe de este lote](docs/estrategia/adaptativas_2026-11-12/RESULTADOS.md). Código: `tools/compare_adaptive.py`; pruebas: `tests/test_adaptive.py`.
+
+El lote incluye la práctica completa y sus primeros 2.000 ticks, más SPY/GOOGL/TSLA con 502 cierres diarios de 2024–2025 por activo. Los 250 cierres de 2023 solo fijan la escala propia de cada activo: `round_half_up(100 * cierre / máximo_2023)`. No se usan extremos futuros del período evaluado, no hay clipping ni puntos inventados y no se buscan parámetros después de ver el resultado. Los históricos originales JSON, metadatos y hashes quedan archivados con las trazas. Las unidades monetarias son las del juego, no retornos reales en dólares; se usa close sin sumar dividendos. La frecuencia diaria hace que 32 observaciones representen 32 sesiones, mientras que la frecuencia temporal de la práctica es desconocida.
+
+Patrimonio final (capital inicial 10.000):
+
+| Serie | A | D | DF | Ad | Dd | Mantener |
+|---|---:|---:|---:|---:|---:|---:|
+| Práctica 20.000 | 18.502 | 17.909 | 16.159 | 10.352 | 12.039 | 10.000 |
+| Práctica 2.000 | 10.529 | 9.923 | 10.723 | 9.114 | 9.151 | 10.000 |
+| SPY diario | 11.159 | 10.822 | 10.739 | 11.293 | 11.207 | 10.000 |
+| GOOGL diario | 9.969 | 9.032 | 9.032 | 9.355 | 9.243 | 10.000 |
+| TSLA diario | 11.856 | 12.858 | 14.635 | 11.717 | 13.636 | 10.000 |
+
+El benchmark ideal de comprar y mantener del enunciado termina con 14.395, 22.418 y 17.951 en SPY, GOOGL y TSLA. Supera a todas las candidatas en estos tres períodos completos, que son alcistas entre inicio y fin. Ese benchmark compra al primer precio sin límite de 63 ni desfase, por lo que no debe presentarse como una estrategia implementada por SPI. Ad/Dd no son una mejora universal; no hay decisión final ni hard stop de patrimonio 20.000 implementado.
+
+Validación: 25 pruebas unitarias pasan, incluidas comparación contra desviación estándar Decimal independiente, calentamiento, igualdad, invariancia ante escala/traslación de enteros sin cuantización y causalidad. La tarea contable original de Canvas concuerda en 141.056 ticks (30 corridas más casos límite); A/D/DF coinciden exactamente con las trazas anteriores. Esto sigue sin validar assembly, deadlines o FPGA para estas estrategias. Los períodos ahora explorados ya no sirven como reserva final independiente.
+
+## 15. TSMC, NVIDIA e Intel: solo A, D y DF
+
+Nuevo lote de 502 cierres diarios de 2024–2025 por activo. TSM corresponde al ADR estadounidense de TSMC. Las reglas de A/D/DF no cambian. [Informe completo y fuentes](docs/estrategia/semiconductores_2026-11-12/RESULTADOS.md); reproducción: `python3 tools/compare_semiconductors.py`.
+
+TSM y NVDA desbordan 255 con la conversión anterior de nivel 100. Para no recortar sus precios, este lote usa nivel 50 para TODOS los activos: `round_half_up(50*cierre/máximo_2023)`. Se repitieron también SPY/GOOGL/TSLA con nivel 50. El cambio se decidió tras detectar el rango incompatible, sin buscar rentabilidad; la constante por activo usa solo 2023. No mezclar los patrimonios de este lote con los del nivel 100: la escala afecta bandas relativas, redondeos, comisiones e inventario. Los anteriores se conservan. No hay puntos inventados ni clipping; NVIDIA usa el histórico del proveedor en una misma base por acción para evitar confundir su split de junio de 2024 con una caída bursátil.
+
+| Serie, nivel 50 | A | D | DF |
+|---|---:|---:|---:|
+| TSM | 11.872 | 12.654 | 13.171 |
+| NVDA | 16.237 | 16.448 | 14.304 |
+| INTC | 17.093 | 15.483 | 10.613 |
+| SPY, control repetido | 11.951 | 11.330 | 10.580 |
+| GOOGL, control repetido | 9.917 | 10.062 | 10.287 |
+| TSLA, control repetido | 12.290 | 12.044 | 12.831 |
+
+DF gana en TSM, D en NVDA y A en INTC; no aparece una ganadora universal. Máxima caída absoluta en TSM: A 4.124, D 4.331, DF 2.243; en NVDA: 4.781, 4.851, 4.320; en INTC: 3.615, 4.258, 917. Son 18 corridas y 20 casos límite: 9.056 ticks concordantes con la contabilidad original, y las 25 pruebas unitarias pasan. Sin hard stop ni validación de estas estrategias en Espino. Los tres activos nuevos son del mismo sector y comparten período; no son pruebas de mercado independientes.
+
+## 16. Ampliación a 2.000 sesiones diarias por activo
+
+Se corrieron A/D/DF sobre las últimas 2.000 fechas comunes hasta el 31-12-2025, comenzando el 18-01-2018, para los seis activos. Son casi ocho años continuos, sin reinicios de capital ni inventario entre años. El TB original tiene `NTICKS=2000` predeterminado, aunque el CSV de práctica contiene 20.000. Un tick es una observación; aquí equivale a un cierre diario y no a una transacción real de bolsa.
+
+**Este lote es exploratorio y usa una escala distinta que conoce el máximo futuro.** Para alojar todo el recorrido de ocho años en un byte sin clipping, se eligió antes de ejecutar las estrategias `round_half_up(255*cierre/máximo_del_tramo_completo)` por activo. No se buscaron escalas para mejorar resultados, pero usar el máximo de todo el período introduce información futura en el preprocesamiento; NO describirlo como validación ciega, fuera de muestra ni completamente causal. La señal de cada candidata solo recibe el precio normalizado actual/pasado. El redondeo pierde movimientos pequeños: NVDA repite precio normalizado en 983 de las 1.999 transiciones. No mezclar estas cifras con los lotes calibrados a nivel 50/100. Los anteriores se conservan.
+
+| Serie, 2.000 sesiones | A | D | DF |
+|---|---:|---:|---:|
+| SPY | 14.098 | 14.723 | 14.488 |
+| GOOGL | 17.509 | 23.180 | 14.977 |
+| TSLA | 11.374 | 15.282 | 7.042 |
+| TSM | 13.648 | 10.013 | 11.361 |
+| NVDA | 27.375 | 48.655 | 18.028 |
+| INTC | 16.272 | 11.458 | 11.510 |
+
+D gana en cuatro activos y A en dos dentro de este lote. Esto no basta para elegir D para presentación: la normalización usa datos futuros, las series comparten fechas y las caídas pueden ser grandes (D/TSLA: máxima caída absoluta 20.186). No se implementó el hard stop ni se validaron algoritmos en Espino. Las 18 corridas completas más 20 casos límite coinciden con la contabilidad Canvas en 36.020 ticks. Datos originales, hashes, decisiones y resultados: [informe del lote largo](docs/estrategia/historicos_2000_2026-11-12/RESULTADOS.md). Reproducir con `python3 tools/compare_long_history.py`.
+
+## 17. Recomendación y prueba de salida en patrimonio 20.000
+
+[Informe para decidir entre A/D/DF](docs/estrategia/recomendacion_2026-11-12/README.md): reúne hallazgos, gráficos SVG/PNG, escenarios, lo que se puede sostener de la transcripción y preguntas pendientes al curso. Recomendación provisional: A como base si hay que fijar una hoy; D como alternativa para maximizar patrimonio bajo oscilaciones recuperables; DF solo tras verificar que el filtro ayuda en el escenario esperado. No hay garantía entendible en la transcripción de un mercado no bajista.
+
+Se añadió una referencia Python de salida permanente al observar patrimonio >=20.000, liquidando hasta 63 por tick al precio siguiente y sin recomprar. Si no alcanza el umbral, sigue la base. No garantiza caja final 20.000. [Resultados completos](docs/estrategia/salida_20000_2026-11-12/RESULTADOS.md): en D/TSLA mejora 15.282 → 21.819; en D/NVDA perjudica 48.655 → 20.308; en D/TB mejora 17.909 → 19.902. No es una mejora universal ni una decisión final. No se añadió al assembly de la FPGA.
+
+La prueba compara las tres bases y sus salidas en el TB completo y seis históricos largos: 42 corridas, 192.020 ticks contrastados con Canvas incluyendo bordes. Las bases reproducen las trazas originales; donde no activa el objetivo, son idénticas. La batería actual contiene 28 pruebas unitarias. Reproducir con `python3 tools/compare_target_exit.py`; gráficos con `python3 tools/plot_findings.py` y dependencia opcional `requirements-plots.txt`. El informe central enlaza todas las fuentes y comandos.

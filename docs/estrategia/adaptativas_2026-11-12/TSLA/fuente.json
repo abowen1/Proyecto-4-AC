@@ -1,0 +1,21 @@
+{
+  "symbol": "TSLA",
+  "source": "https://finance.yahoo.com/quote/TSLA/history/",
+  "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA?period1=1672531200&period2=1767225600&interval=1d",
+  "raw_sha256": "0059c4de5a934d4175bbd3b3a88af17228ea2a56caae723eed3e28d531d802cf",
+  "retrieved": "2026-11-12",
+  "frequency": "1d, cierre; sin completar fines de semana",
+  "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+  "calibration_start": "2023-01-03",
+  "calibration_end": "2023-12-29",
+  "calibration_count": 250,
+  "calibration_max": "293.3399963378906",
+  "transform": "round_half_up(100 * close / max(close de 2023))",
+  "evaluation_start": "2024-01-02",
+  "evaluation_end": "2025-12-31",
+  "observations": 502,
+  "missing_source_closes": 0,
+  "clipped": 0,
+  "min_price": 48,
+  "max_price": 167
+}

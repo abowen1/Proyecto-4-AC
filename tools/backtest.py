@@ -140,8 +140,9 @@ def size_order(signal, market, price):
     return 0
 
 
-def run(prices, kind, rules, parameters=None, policy=None):
-    market, strategy = Market(rules), Strategy(kind, parameters)
+def run(prices, kind, rules, parameters=None, policy=None, *, signal_model=None):
+    market = Market(rules)
+    strategy = signal_model if signal_model is not None else Strategy(kind, parameters)
     pending = 0
     rows = []
     for tick, price in enumerate(prices):

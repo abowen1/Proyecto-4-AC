@@ -1,0 +1,21 @@
+{
+  "symbol": "SPY",
+  "source": "https://finance.yahoo.com/quote/SPY/history/",
+  "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/SPY?period1=1672531200&period2=1767225600&interval=1d",
+  "raw_sha256": "f4f72dd2a2baecb2705c90f68d86f1d58e879c61e01cfa0188f82555b7863b95",
+  "retrieved": "2026-11-12",
+  "frequency": "1d, cierre; sin completar fines de semana",
+  "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+  "calibration_start": "2023-01-03",
+  "calibration_end": "2023-12-29",
+  "calibration_count": 250,
+  "calibration_max": "476.69000244140625",
+  "transform": "round_half_up(100 * close / max(close de 2023))",
+  "evaluation_start": "2024-01-02",
+  "evaluation_end": "2025-12-31",
+  "observations": 502,
+  "missing_source_closes": 0,
+  "clipped": 0,
+  "min_price": 98,
+  "max_price": 145
+}

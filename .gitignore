@@ -32,3 +32,5 @@ decisiones.csv
 !docs/estrategia/reversion_abcde/*.json
 !docs/estrategia/protecciones_ad/*.csv
 !docs/estrategia/protecciones_ad/*.json
+!docs/estrategia/**/*.csv
+!docs/estrategia/**/*.json

@@ -1,0 +1,21 @@
+{
+  "symbol": "TSM",
+  "source": "https://finance.yahoo.com/quote/TSM/history/",
+  "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/TSM?period1=1672531200&period2=1767225600&interval=1d",
+  "raw_sha256": "2315f92dea4a1ddb16eba0fae3d796becfca6511a0a859f095fb8497da564ebd",
+  "retrieved": "2026-11-12",
+  "frequency": "1d, cierre; sin completar fines de semana",
+  "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+  "calibration_start": "2023-01-03",
+  "calibration_end": "2023-12-29",
+  "calibration_count": 250,
+  "calibration_max": "107.41000366210938",
+  "transform": "round_half_up(50 * close / max(close de 2023))",
+  "evaluation_start": "2024-01-02",
+  "evaluation_end": "2025-12-31",
+  "observations": 502,
+  "missing_source_closes": 0,
+  "clipped": 0,
+  "min_price": 46,
+  "max_price": 144
+}

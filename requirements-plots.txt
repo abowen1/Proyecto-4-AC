@@ -1,0 +1,2 @@
+# Solo para regenerar los SVG; backtests usan biblioteca estándar + Icarus.
+matplotlib==3.10.9

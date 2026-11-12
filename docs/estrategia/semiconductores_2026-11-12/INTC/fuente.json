@@ -1,0 +1,21 @@
+{
+  "symbol": "INTC",
+  "source": "https://finance.yahoo.com/quote/INTC/history/",
+  "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/INTC?period1=1672531200&period2=1767225600&interval=1d",
+  "raw_sha256": "5d350d480c8214ab99a2cd4819a97d7fca4d6c188d9bf58e2974fb1990117786",
+  "retrieved": "2026-11-12",
+  "frequency": "1d, cierre; sin completar fines de semana",
+  "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+  "calibration_start": "2023-01-03",
+  "calibration_end": "2023-12-29",
+  "calibration_count": 250,
+  "calibration_max": "50.7599983215332",
+  "transform": "round_half_up(50 * close / max(close de 2023))",
+  "evaluation_start": "2024-01-02",
+  "evaluation_end": "2025-12-31",
+  "observations": 502,
+  "missing_source_closes": 0,
+  "clipped": 0,
+  "min_price": 18,
+  "max_price": 49
+}

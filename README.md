@@ -4,6 +4,8 @@ Base inicial de integración, todavía sin estrategia bursátil. Programa actual
 
 Para el traspaso completo de las 15 configuraciones bursátiles exploradas, sus resultados, especificaciones y trabajo pendiente, consultar [README_ESTRATEGIAS.md](README_ESTRATEGIAS.md). Ese documento es autocontenido y se puede compartir por separado con el Work de la Coni.
 
+**Actualización del 12 de noviembre:** [informe para decidir entre A, D y DF](docs/estrategia/recomendacion_2026-11-12/README.md), con gráficos SVG/PNG, históricos de seis activos, datos y comandos reproducibles, recomendaciones según escenario, revisión de la transcripción y prueba de salida permanente en patrimonio 20.000. Es exploración de pre-entrega; no hay estrategia final ni implementación bursátil en Espino. El informe distingue los lotes calibrados con 2023 del lote largo cuya normalización usa el máximo futuro.
+
 ## Procedencia y alcance
 
 - Pochoco original: https://github.com/nic0villegasc/pochoco_soc

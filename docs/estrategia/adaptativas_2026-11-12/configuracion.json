@@ -1,0 +1,100 @@
+{
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "variants": [
+    "A",
+    "D",
+    "DF",
+    "Ad",
+    "Dd",
+    "Mantener"
+  ],
+  "window": 32,
+  "fixed_bands": {
+    "A": 2,
+    "D": 1,
+    "DF": 1
+  },
+  "adaptive_k": {
+    "Ad": "1",
+    "Dd": "1/2"
+  },
+  "trend_DF": "bloquea solo compras si SMA8 < SMA32; ventas originales",
+  "scope": "Python causal + contabilidad SV; sin ejecución Espino ni deadlines",
+  "no_hard_stop": true,
+  "no_parameter_search": true,
+  "practice_sha256": "9db90594ce790c7d046f4045a0affcefdb04012a7f2e2ab989ba45d15794ec7f",
+  "sources": {
+    "SPY": {
+      "symbol": "SPY",
+      "source": "https://finance.yahoo.com/quote/SPY/history/",
+      "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/SPY?period1=1672531200&period2=1767225600&interval=1d",
+      "raw_sha256": "f4f72dd2a2baecb2705c90f68d86f1d58e879c61e01cfa0188f82555b7863b95",
+      "retrieved": "2026-11-12",
+      "frequency": "1d, cierre; sin completar fines de semana",
+      "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+      "calibration_start": "2023-01-03",
+      "calibration_end": "2023-12-29",
+      "calibration_count": 250,
+      "calibration_max": "476.69000244140625",
+      "transform": "round_half_up(100 * close / max(close de 2023))",
+      "evaluation_start": "2024-01-02",
+      "evaluation_end": "2025-12-31",
+      "observations": 502,
+      "missing_source_closes": 0,
+      "clipped": 0,
+      "min_price": 98,
+      "max_price": 145
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "source": "https://finance.yahoo.com/quote/GOOGL/history/",
+      "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1672531200&period2=1767225600&interval=1d",
+      "raw_sha256": "d0d58a5a0c237d8cdaae0a84f9278777a894d527ceb6f45e0f0d6287cc3a2fc7",
+      "retrieved": "2026-11-12",
+      "frequency": "1d, cierre; sin completar fines de semana",
+      "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+      "calibration_start": "2023-01-03",
+      "calibration_end": "2023-12-29",
+      "calibration_count": 250,
+      "calibration_max": "141.52000427246094",
+      "transform": "round_half_up(100 * close / max(close de 2023))",
+      "evaluation_start": "2024-01-02",
+      "evaluation_end": "2025-12-31",
+      "observations": 502,
+      "missing_source_closes": 0,
+      "clipped": 0,
+      "min_price": 93,
+      "max_price": 229
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "source": "https://finance.yahoo.com/quote/TSLA/history/",
+      "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA?period1=1672531200&period2=1767225600&interval=1d",
+      "raw_sha256": "0059c4de5a934d4175bbd3b3a88af17228ea2a56caae723eed3e28d531d802cf",
+      "retrieved": "2026-11-12",
+      "frequency": "1d, cierre; sin completar fines de semana",
+      "field": "indicators.quote.close, no adjclose; sin pagos de dividendos",
+      "calibration_start": "2023-01-03",
+      "calibration_end": "2023-12-29",
+      "calibration_count": 250,
+      "calibration_max": "293.3399963378906",
+      "transform": "round_half_up(100 * close / max(close de 2023))",
+      "evaluation_start": "2024-01-02",
+      "evaluation_end": "2025-12-31",
+      "observations": 502,
+      "missing_source_closes": 0,
+      "clipped": 0,
+      "min_price": 48,
+      "max_price": 167
+    }
+  },
+  "code_sha256": {
+    "compare_adaptive.py": "af7569659c972f204bdc680fb616963c2e7b31b6591996521ac018462def8e43",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "compare_protections.py": "2ae43d1de7405f5ebce4a1660fecc94b414f327526da134ba2650048850e5ce0",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467"
+  }
+}

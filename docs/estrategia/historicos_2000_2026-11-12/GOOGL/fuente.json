@@ -1,0 +1,21 @@
+{
+  "symbol": "GOOGL",
+  "source": "https://finance.yahoo.com/quote/GOOGL/history/",
+  "endpoint": "https://query2.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1451606400&period2=1767225600&interval=1d",
+  "raw_sha256": "db9b364055f9902560f64980d65c3bc4e62c5c26215a5a32d40a59f8245d3876",
+  "retrieved": "2026-11-12",
+  "field": "quote.close; base por acción provista ajustada por splits; no adjclose/dividendos",
+  "observations": 2000,
+  "start": "2018-01-18",
+  "end": "2025-12-31",
+  "frequency": "cierre diario",
+  "selection": "últimas 2000 fechas comunes hasta 2025-12-31",
+  "transform": "round_half_up(255 * close / max(close del tramo completo))",
+  "max_close": "323.44000244140625",
+  "min_price": 39,
+  "max_price": 255,
+  "clipped": 0,
+  "adjacent_unchanged": 636,
+  "preprocessing_uses_future": true,
+  "limitation": "Escala exploratoria usa el máximo futuro. Afecta señales, inventario y comisiones. No es una prueba financiera ciega ni comparable directamente con lotes a nivel 50/100."
+}
