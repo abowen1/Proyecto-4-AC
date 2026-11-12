@@ -25,6 +25,8 @@ build/
 decisiones.csv
 !tb/practica.csv
 !docs/evidencias/*.csv
+!docs/evidencias/D_2026-11-12/*.csv
+!docs/evidencias/D_2026-11-12/*.json
 !docs/procedencia.json
 !docs/estrategia/comparacion/*.csv
 !docs/estrategia/comparacion/*.json

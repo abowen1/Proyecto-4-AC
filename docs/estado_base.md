@@ -1,6 +1,8 @@
 # Estado de la base AC4
 
-Revisión local: 11 de noviembre de 2026. Estrategia bursátil pendiente.
+**Actualización del 12 de noviembre:** el equipo eligió D/SMA32/banda 1, sin retiro por patrimonio. `sw/trade.s` ya implementa D. El mantener anterior se conserva como `sw/hold.s` y sigue siendo la prueba aislada del protocolo. Ver [implementación y evidencia actual](estrategia/D_implementacion.md).
+
+El registro siguiente describe la base comprobada el 11 de noviembre, antes de implementar D.
 
 ## Comprobado
 

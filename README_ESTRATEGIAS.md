@@ -1,14 +1,16 @@
 # AC4 — Traspaso de estrategias y resultados para Coni y su Work
 
-**Fecha de corte: 11 de noviembre de 2026. Estado: exploración; ninguna estrategia ha sido elegida como final.**
+**Decisión final del equipo, 12 de noviembre de 2026: D original, SMA32 y banda 1, sin subvariaciones y sin techo de retiro en 20.000 ni 30.000.** Los experimentos de salida permanente quedan como historia y no forman parte de la estrategia elegida. D se implementó en `sw/trade.s`; ver [reglas y evidencia de implementación](docs/estrategia/D_implementacion.md).
+
+El contenido original del 11 de noviembre y las recomendaciones provisionales posteriores se conservan como historia del proceso; la elección actual del equipo es D, no A.
 
 Repositorio del grupo: <https://github.com/abowen1/Proyecto-4-AC>.
 
 Zona compartida de trabajo: [rama pre-entrega](https://github.com/abowen1/Proyecto-4-AC/tree/pre-entrega). Preparar allí avances y propuestas; `main` queda reservada para seleccionar el material de entrega. Separar ramas organiza el trabajo, no oculta información a personas con acceso al repositorio.
 
-Este documento es autocontenido: reúne las reglas del simulador, las estrategias exactas, sus parámetros, los resultados y los límites de lo comprobado. Permite reconstruir las variantes y preparar la parte del informe correspondiente al algoritmo y sus pruebas. **No permite afirmar que ya estén implementadas en Espino ni completar las métricas de hardware que aún no se han medido.**
+Este documento es autocontenido: reúne las reglas del simulador, las estrategias exactas, sus parámetros, los resultados y los límites de lo comprobado. Permite reconstruir las variantes y preparar la parte del informe correspondiente al algoritmo y sus pruebas. **El cuerpo original describe las referencias Python; la implementación posterior de D y sus métricas tienen evidencia separada en el enlace anterior. Las demás variantes no están implementadas en Espino.**
 
-El objetivo del trabajo siguiente es encontrar una candidata que funcione en las series desconocidas de la presentación. Obtener el máximo patrimonio en la práctica conocida es solo una observación inicial. No queremos una estrategia que memorice precios, ticks o tramos de este archivo.
+El objetivo de las comparaciones originales era encontrar una candidata que funcionara en las series desconocidas de la presentación. Obtener el máximo patrimonio en la práctica conocida es solo una observación inicial. No queremos una estrategia que memorice precios, ticks o tramos de este archivo.
 
 Las rutas de código y evidencia mencionadas son relativas a la raíz de la rama `pre-entrega`, que reúne la base, pruebas y resultados. Si solo recibes una copia de este documento, las especificaciones siguientes son la referencia para reconstruir el experimento.
 

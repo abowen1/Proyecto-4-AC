@@ -2,6 +2,14 @@
 
 Fecha: 12 de noviembre de 2026.
 
+## Acuerdo vigente
+
+El equipo confirmó **D original: SMA32, banda 1, sin techo de retiro de 20.000 ni 30.000**, sin filtro, pánico ni límite de exposición. D ya está escrita en `sw/trade.s` sobre Espino original a 25 MHz. Ver [especificación y evidencia](D_implementacion.md). La elección bursátil está resuelta; sigue la validación de ejecución y la comparación de al menos dos alternativas de hardware exigidas por el enunciado.
+
+## Historia anterior al acuerdo vigente
+
+Las selecciones y propuestas pendientes descritas a continuación son anteriores al acuerdo de arriba.
+
 Publicación solicitada por el usuario: el informe central `recomendacion_2026-11-12/README.md` reúne datos, gráficos, escenarios y recomendación provisional para conversar con Coni y Chapa. La transcripción NO confirma de forma fiable un mercado no bajista. Se probó la salida permanente al observar patrimonio >=20.000, con liquidación real por tramos y desfase: en D/TSLA 15.282→21.819; en D/NVDA 48.655→20.308; en D/TB 17.909→19.902. Lote `salida_20000_2026-11-12/`: 42 corridas, 192.020 ticks verificados y 28 pruebas unitarias pasan. La política existe como referencia Python, no en Espino ni como estrategia final. Recomendación provisional A como base, D como alternativa según escenario; no imponer la salida por defecto si se busca maximizar patrimonio/ranking.
 
 Última ampliación solicitada: 2.000 sesiones diarias comunes para SPY, GOOGL, TSLA, TSM, NVDA e INTC (18-01-2018 a 31-12-2025), solo A/D/DF. Ver `historicos_2000_2026-11-12/RESULTADOS.md` y `tools/compare_long_history.py`. Se usa una nueva normalización exploratoria `round_half_up(255*cierre/máximo_del_tramo_completo)`: usa información futura en la preparación de precios, por lo que NO es validación financiera ciega ni calibración ex ante. Evita saturar recorridos enormes en un byte, pero cuantiza más los años iniciales. Los lotes previos quedan intactos y sus cifras no se mezclan. D gana en SPY/GOOGL/TSLA/NVDA y A en TSM/INTC; DF termina bajo 10.000 en TSLA. Contabilidad original verificada en 36.020 ticks. Sin reinicios anuales, hard stop, cambio de parámetros o validación de Espino. Aclaración: TB predeterminado 2.000 puntos; archivo de práctica completo 20.000.

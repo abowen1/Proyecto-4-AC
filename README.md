@@ -1,10 +1,10 @@
 # Proyecto 4 AC — Pochoco Trader
 
-Base inicial de integración, todavía sin estrategia bursátil. Programa actual: leer cada precio y responder mantener (0x00).
+**Decisión del equipo, 12 de noviembre: D original, reversión a la media de 32 muestras y banda 1. Sin retiro al alcanzar 20.000 ni 30.000 de patrimonio.** El programa `sw/trade.s` implementa D en Espino original; el diagnóstico mantener se conserva en `sw/hold.s`. Reglas y verificación en [implementación de D](docs/estrategia/D_implementacion.md).
 
 Para el traspaso completo de las 15 configuraciones bursátiles exploradas, sus resultados, especificaciones y trabajo pendiente, consultar [README_ESTRATEGIAS.md](README_ESTRATEGIAS.md). Ese documento es autocontenido y se puede compartir por separado con el Work de la Coni.
 
-**Actualización del 12 de noviembre:** [informe para decidir entre A, D y DF](docs/estrategia/recomendacion_2026-11-12/README.md), con gráficos SVG/PNG, históricos de seis activos, datos y comandos reproducibles, recomendaciones según escenario, revisión de la transcripción y prueba de salida permanente en patrimonio 20.000. Es exploración de pre-entrega; no hay estrategia final ni implementación bursátil en Espino. El informe distingue los lotes calibrados con 2023 del lote largo cuya normalización usa el máximo futuro.
+**Actualización del 12 de noviembre:** [informe para decidir entre A, D y DF](docs/estrategia/recomendacion_2026-11-12/README.md), con gráficos SVG/PNG, históricos de seis activos, datos y comandos reproducibles, recomendaciones según escenario, revisión de la transcripción y prueba de salida permanente en patrimonio 20.000. Es historia exploratoria de pre-entrega, anterior a la selección de D sin techo de retiro. El informe distingue los lotes calibrados con 2023 del lote largo cuya normalización usa el máximo futuro.
 
 ## Procedencia y alcance
 
@@ -22,9 +22,10 @@ Ejecutar desde esta carpeta. Requiere Python 3.10+, Icarus Verilog/vvp, Yosys (i
 
 ```sh
 make                 # muestra ayuda
-make assemble        # genera los dos programas HEX
+make assemble        # genera D, mantener y diagnóstico SPI
 make test            # pruebas del ensamblador y comunicación en tres períodos
 make test-canvas     # testbench original: 2.000 precios, período de 0,1 ms
+make test-d          # equivalencia completa D/RTL; 20.000 precios, sin espera ociosa
 make test-market compare # compara cinco referencias y verifica contabilidad Canvas
 make compare-reversion # compara reversión A/B/C/D/E y verifica contabilidad Canvas
 make compare-protections # compara A/D con pánico, filtro y exposición
@@ -58,7 +59,7 @@ Repositorio del grupo: https://github.com/abowen1/Proyecto-4-AC
 
 La copia local tiene `upstream` apuntando al original y `origin` al repositorio del grupo. La rama compartida de trabajo es [`pre-entrega`](https://github.com/abowen1/Proyecto-4-AC/tree/pre-entrega); `main` se reserva para preparar la entrega evaluada. Las propuestas, resultados exploratorios y contexto de los agentes se publican en `pre-entrega` hasta que el equipo seleccione qué pasa a la entrega. La carpeta local conserva su rama `ac4/base-inicial`; la publicación se prepara aparte, sobre la historia del repositorio del grupo, sin force-push.
 
-La estrategia se documentará en `docs/estrategia/`. No es necesario escogerla para verificar esta base. Las dos alternativas de hardware se elegirán después de medir su algoritmo.
+La estrategia se documentará en `docs/estrategia/`. No es necesario escogerla para verificar esta base. Las dos alternativas de hardware exigidas por el enunciado se elegirán después de medir D.
 
 ## Comparación exploratoria
 

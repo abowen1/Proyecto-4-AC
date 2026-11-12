@@ -24,11 +24,11 @@ compare:
 	$(PYTHON) tools/verify_market.py
 test-market:
 	$(PYTHON) -B -m unittest discover -s tests -p 'test_backtest.py' -v
-.PHONY: help assemble test test-spi test-canvas build program
+.PHONY: help assemble test test-spi test-canvas test-d build program
 help:
 	@echo "make test: ensamblador y SPI en tres rondas; make test-canvas: ejemplo oficial"
 	@echo "make build: bitstream a 25 MHz; make program: cargar placa explícitamente"
-assemble: sw/trade.hex sw/spi_diagnostic.hex
+assemble: sw/trade.hex sw/spi_diagnostic.hex sw/hold.hex
 sw/%.hex: sw/%.s tools/assembler.py
 	$(PYTHON) tools/assembler.py $< -o $@
 test: assemble
@@ -43,6 +43,8 @@ test-canvas: assemble
 	mkdir -p build
 	iverilog -g2012 -DNO_ICE40_DEFAULT_ASSIGNMENTS -s tb_proyecto_4 -o build/tb_canvas $(ICE40_CELLS) $(SRC) tb/tb_proyecto_4.sv
 	vvp -n build/tb_canvas
+test-d: assemble
+	$(PYTHON) tools/verify_strategy_d.py --fast --name practica_20000_fast
 build: build/ac4.bin
 build/ac4.json: $(SRC) sw/trade.hex Makefile
 	mkdir -p build

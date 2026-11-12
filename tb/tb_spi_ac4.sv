@@ -4,7 +4,7 @@ module tb_spi_ac4;
   localparam PROGRAM = "sw/spi_diagnostic.hex";
   localparam DIAG = 1;
 `else
-  localparam PROGRAM = "sw/trade.hex";
+  localparam PROGRAM = "sw/hold.hex";
   localparam DIAG = 0;
 `endif
   reg clk=0, sclk=0, mosi=0, cs_n=1;

@@ -1,0 +1,31 @@
+{
+  "strategy": "D",
+  "window": 32,
+  "band": 1,
+  "retirement_threshold": null,
+  "period_ns": 100000,
+  "deadline_budget_period_ns": 100000,
+  "idle_wait_omitted": false,
+  "expected_summary": {
+    "strategy": "reversion_media",
+    "label": "Reversión a la media",
+    "ticks": 2000,
+    "equity": 9923,
+    "profit": -77,
+    "orders": 140,
+    "commissions": 700,
+    "max_drawdown": 1607,
+    "cash": 25,
+    "shares": 98
+  },
+  "verified": "RTL, SPI, every next decision, cash and shares, deadlines",
+  "hex_sha256": "bc5b2ce13fbb1c5cf36486943c6afbb3ead9516582711ef253c0475462bb3b80",
+  "metrics": {
+    "ticks": 2000,
+    "max_cycles": 1227,
+    "mean_cycles": 112.338,
+    "max_instructions": 547,
+    "mean_instructions": 50.711,
+    "cpi_service": 2.215259016781369
+  }
+}
