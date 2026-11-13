@@ -1,0 +1,2 @@
+PASS QCAP: 6649 casos, fronteras, aleatorios, retencion y reset
+/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tb/tb_qcap_unit.sv:44: $finish called at 2574920000 (1ps)

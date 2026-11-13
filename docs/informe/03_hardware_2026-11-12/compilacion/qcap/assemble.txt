@@ -1,0 +1,1 @@
+sw/trade_qcap.s -> /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/qcap/program.hex: 90 palabras (360 bytes)

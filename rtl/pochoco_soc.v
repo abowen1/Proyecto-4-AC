@@ -31,13 +31,14 @@ module pochoco_soc #(
   wire clk;
   assign clk = i_Clk;
 
-  // Power-on reset
-  reg  [3:0] por_cnt = 4'b0;
+  // Hold Espino and peripherals until the initial RAM fetch is stable on board.
+  // Common to software and both hardware variants; 63 clocks at 25 MHz.
+  reg  [5:0] por_cnt = 6'b0;
   wire       rst_ni;
   always @(posedge clk) begin
-    if (por_cnt != 4'hF) por_cnt <= por_cnt + 4'd1;
+    if (por_cnt != 6'h3f) por_cnt <= por_cnt + 6'd1;
   end
-  assign rst_ni = (por_cnt == 4'hF);
+  assign rst_ni = (por_cnt == 6'h3f);
 
   // Core-memory wiring
   wire        instr_req;

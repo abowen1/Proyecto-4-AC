@@ -1,0 +1,192 @@
+{
+  "ticks": 20000,
+  "total_cycles": 1692640,
+  "total_instructions": 766417,
+  "mean_cycles": 84.632,
+  "cpi": 2.2085105105967116,
+  "worst_tick": {
+    "tick": "4923",
+    "price": "91",
+    "next_decision": "0",
+    "cash": "32",
+    "shares": "98",
+    "instructions": "361",
+    "cycles": "791"
+  },
+  "worst_major_sections": {
+    "io": 15,
+    "contabilidad": 731,
+    "ventana": 24,
+    "senal": 21,
+    "cantidad_compra": 0,
+    "cantidad_venta": 0
+  },
+  "major_sections": [
+    {
+      "section": "io",
+      "cycles": 299997,
+      "cycles_per_tick": 14.99985,
+      "fraction": 0.17723615181019,
+      "instructions": 139998
+    },
+    {
+      "section": "contabilidad",
+      "cycles": 480666,
+      "cycles_per_tick": 24.0333,
+      "fraction": 0.28397414689479156,
+      "instructions": 207916
+    },
+    {
+      "section": "ventana",
+      "cycles": 479999,
+      "cycles_per_tick": 23.99995,
+      "fraction": 0.2835800879100104,
+      "instructions": 220000
+    },
+    {
+      "section": "senal",
+      "cycles": 374625,
+      "cycles_per_tick": 18.73125,
+      "fraction": 0.22132585783155306,
+      "instructions": 177328
+    },
+    {
+      "section": "cantidad_compra",
+      "cycles": 37059,
+      "cycles_per_tick": 1.85295,
+      "fraction": 0.021894200775120522,
+      "instructions": 13553
+    },
+    {
+      "section": "cantidad_venta",
+      "cycles": 20294,
+      "cycles_per_tick": 1.0147,
+      "fraction": 0.011989554778334436,
+      "instructions": 7622
+    }
+  ],
+  "detail": [
+    {
+      "key": "io",
+      "label": "Recepción y publicación",
+      "major": "io",
+      "cycles": 299997,
+      "fraction": 0.17723615181019,
+      "cycles_per_tick": 14.99985,
+      "instructions": 139998,
+      "cpi": 2.1428663266618093
+    },
+    {
+      "key": "account_control",
+      "label": "Despacho contable",
+      "major": "contabilidad",
+      "cycles": 104933,
+      "fraction": 0.061993690329898855,
+      "cycles_per_tick": 5.24665,
+      "instructions": 42830,
+      "cpi": 2.4499883259397617
+    },
+    {
+      "key": "fill_buy_control",
+      "label": "Compra ejecutada: control",
+      "major": "contabilidad",
+      "cycles": 19333,
+      "fraction": 0.011421802627847623,
+      "cycles_per_tick": 0.96665,
+      "instructions": 9153,
+      "cpi": 2.1122036490768052
+    },
+    {
+      "key": "fill_buy_loop",
+      "label": "Compra ejecutada: bucle",
+      "major": "contabilidad",
+      "cycles": 96640,
+      "fraction": 0.05709424331222233,
+      "cycles_per_tick": 4.832,
+      "instructions": 43821,
+      "cpi": 2.2053353415029324
+    },
+    {
+      "key": "fill_sell_control",
+      "label": "Venta ejecutada: control",
+      "major": "contabilidad",
+      "cycles": 11696,
+      "fraction": 0.006909915871065318,
+      "cycles_per_tick": 0.5848,
+      "instructions": 5504,
+      "cpi": 2.125
+    },
+    {
+      "key": "fill_sell_loop",
+      "label": "Venta ejecutada: bucle",
+      "major": "contabilidad",
+      "cycles": 248064,
+      "fraction": 0.14655449475375745,
+      "cycles_per_tick": 12.4032,
+      "instructions": 106608,
+      "cpi": 2.3268797838811346
+    },
+    {
+      "key": "window",
+      "label": "Actualizar ventana de 32",
+      "major": "ventana",
+      "cycles": 479999,
+      "fraction": 0.2835800879100104,
+      "cycles_per_tick": 23.99995,
+      "instructions": 220000,
+      "cpi": 2.1818136363636365
+    },
+    {
+      "key": "times32",
+      "label": "Calcular 32 × precio",
+      "major": "senal",
+      "cycles": 199690,
+      "fraction": 0.11797547027129218,
+      "cycles_per_tick": 9.9845,
+      "instructions": 99845,
+      "cpi": 2.0
+    },
+    {
+      "key": "signal",
+      "label": "Comparar señal",
+      "major": "senal",
+      "cycles": 174935,
+      "fraction": 0.1033503875602609,
+      "cycles_per_tick": 8.74675,
+      "instructions": 77483,
+      "cpi": 2.2577210484880554
+    },
+    {
+      "key": "size_buy_control",
+      "label": "Nueva compra: control",
+      "major": "cantidad_compra",
+      "cycles": 37059,
+      "fraction": 0.021894200775120522,
+      "cycles_per_tick": 1.85295,
+      "instructions": 13553,
+      "cpi": 2.734376152881281
+    },
+    {
+      "key": "size_buy_loop",
+      "label": "Nueva compra: bucle",
+      "major": "cantidad_compra",
+      "cycles": 0,
+      "fraction": 0.0,
+      "cycles_per_tick": 0.0,
+      "instructions": 0,
+      "cpi": null
+    },
+    {
+      "key": "size_sell",
+      "label": "Nueva venta: cantidad",
+      "major": "cantidad_venta",
+      "cycles": 20294,
+      "fraction": 0.011989554778334436,
+      "cycles_per_tick": 1.0147,
+      "instructions": 7622,
+      "cpi": 2.6625557596431384
+    }
+  ],
+  "assumptions": "Amdahl teorico: mismo reloj, otras secciones constantes, sin costos de integracion; no representa acelerador implementado. El tick de maxima latencia puede cambiar al optimizar.",
+  "idle_wait_omitted": true
+}

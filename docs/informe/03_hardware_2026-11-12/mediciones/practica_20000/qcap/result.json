@@ -1,0 +1,34 @@
+{
+  "strategy": "D",
+  "window": 32,
+  "band": 1,
+  "retirement_threshold": null,
+  "variant": "qcap",
+  "period_ns": null,
+  "deadline_budget_period_ns": 100000,
+  "idle_wait_omitted": true,
+  "expected_summary": {
+    "strategy": "reversion_media",
+    "label": "Reversi\u00f3n a la media",
+    "ticks": 20000,
+    "equity": 17909,
+    "profit": 7909,
+    "orders": 1415,
+    "commissions": 7075,
+    "max_drawdown": 7017,
+    "cash": 11735,
+    "shares": 63
+  },
+  "program": "sw/trade_qcap.s",
+  "hex_sha256": "22c0f6b9ed74f65461bb263469fa91779b30b5a8135ccf6371a95eb4775905b0",
+  "prices_sha256": "1f0e504e7e88e77180a625146a14e5e15f114193eb63840219ecca6226573113",
+  "metrics": {
+    "ticks": 20000,
+    "max_cycles": 791,
+    "mean_cycles": 84.632,
+    "max_instructions": 361,
+    "mean_instructions": 38.32085,
+    "cpi_service": 2.2085105105967116
+  },
+  "verified": "RTL, SPI, every next decision, cash and shares, deadlines"
+}

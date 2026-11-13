@@ -1,0 +1,35 @@
+{
+  "variant": "software",
+  "program": "sw/trade.s",
+  "clock_hz": 25000000,
+  "fmax": {
+    "i_Clk$SB_IO_IN_$glb_clk": {
+      "achieved": 46.06808853149414,
+      "constraint": 25
+    }
+  },
+  "utilization": {
+    "ICESTORM_LC": {
+      "available": 1280,
+      "used": 1091
+    },
+    "ICESTORM_RAM": {
+      "available": 16,
+      "used": 12
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 3
+    },
+    "SB_IO": {
+      "available": 72,
+      "used": 27
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "image_bytes": 32220,
+  "image_sha256": "201077046c55ae31ce12a37e5d01e93fa54196954a4fc327918bd450c8af4410"
+}

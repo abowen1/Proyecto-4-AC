@@ -9,6 +9,7 @@ import subprocess
 import sys
 
 from backtest import ROOT, read_prices, run, official_rules
+from hardware_variants import VARIANTS, rtl_sources
 
 
 def main():
@@ -21,7 +22,8 @@ def main():
     parser.add_argument('--name', default='practica')
     parser.add_argument('--fast', action='store_true', help='omitir espera ociosa entre precios: equivalencia funcional, no ronda con periodo fijo')
     parser.add_argument('--profile', action='store_true', help='medir ciclos e instrucciones por seccion sin modificar el programa')
-    parser.add_argument('--program', type=Path, default=ROOT/'sw/trade.s', help='assembly que se ensambla y ejecuta; permite comparar con la base conservada')
+    parser.add_argument('--program', type=Path, default=None, help='assembly alternativo; por defecto el de la variante')
+    parser.add_argument('--variant',choices=list(VARIANTS),default='software')
     args = parser.parse_args()
     if args.edges:
         rng = random.Random(4)
@@ -41,23 +43,25 @@ def main():
     (output / 'result.json').unlink(missing_ok=True)
     reference = output / 'reference.mem'
     reference.write_text(''.join(f"{r['cash']:08x}{r['shares']:08x}{r['next_decision']:08x}{r['price']:08x}\n" for r in rows))
-    program = args.program.resolve()
+    config=VARIANTS[args.variant]
+    program = args.program.resolve() if args.program else ROOT/config['program']
     program_hex = output / 'program.hex'
-    subprocess.run([sys.executable, str(ROOT/'tools/assembler.py'), str(program), '-o', str(program_hex)], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT/'tools/assembler.py'), str(program), '--isa',config['isa'], '-o', str(program_hex)], cwd=ROOT, check=True)
     cells = subprocess.check_output(['yosys-config', '--datdir'], text=True).strip() + '/ice40/cells_sim.v'
     executable = output / 'simulation'
-    sources = sorted(ROOT.glob('rtl/*.v')) + sorted(ROOT.glob('rtl/espino_core/*.v'))
+    sources = rtl_sources(args.variant)
     subprocess.run(['iverilog', '-g2012', '-DNO_ICE40_DEFAULT_ASSIGNMENTS', '-s', 'tb_strategy_d', f'-Ptb_strategy_d.PROGRAM="{program_hex}"', '-o', str(executable), cells, *map(str, sources), str(ROOT / 'tb/tb_strategy_d.sv')], cwd=ROOT, check=True)
     profile_args = []
     if args.profile:
         from profile_d import prepare_profile
-        prepare_profile(output, program, program_hex)
+        prepare_profile(output, program, program_hex,config['isa'])
         profile_args = [f'+PROFILE={output / "profile"}', f'+PROFILE_MAP={output / "profile_map.mem"}']
     subprocess.run(['vvp', '-n', str(executable), f'+REF={reference}', f'+TICKS={len(prices)}', f'+PERIOD={args.period}', f'+FAST={int(args.fast)}', f'+METRICS={output / "metrics.csv"}', *profile_args], cwd=ROOT, check=True)
     metrics = list(csv.DictReader((output / 'metrics.csv').open()))
     cycles = [int(r['cycles']) for r in metrics]
     instructions = [int(r['instructions']) for r in metrics]
     report = dict(strategy='D', window=32, band=1, retirement_threshold=None,
+                  variant=args.variant,
                   period_ns=None if args.fast else args.period,
                   deadline_budget_period_ns=args.period, idle_wait_omitted=args.fast, expected_summary=summary,
                   program=str(program.relative_to(ROOT)) if program.is_relative_to(ROOT) else str(program),

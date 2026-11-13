@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-12",
+  "reset_clocks": 63,
+  "variants": {
+    "shifter": {
+      "display": "A5",
+      "leds": 4,
+      "user_confirmed_after_programming": true,
+      "user_confirmed_after_power_cycle": true,
+      "diagnostic_program": "sw/shifter_diagnostic.s",
+      "image_sha256": "fb2cc9df63685c9a8056d44cb6f5f921ad7407ea935717ecc8ce4b4baab6aae2",
+      "rtl_sha256": {
+        "rtl/pochoco_periph.v": "795bcc27c1a4a93c7f67086f0634be7cf0f9d104f93869eecc0ae21cc47aec66",
+        "rtl/pochoco_ram.v": "0eda65a86c53f468ec10342706a9be87c3cfdf1b64f4b7c6ec64c57db0ba1fd8",
+        "rtl/pochoco_soc.v": "85cf05990213cdc07503104705ab2ee61577fbcc192b0b9d31a9e9213ad9027f",
+        "rtl/pochoco_spi_slave.v": "dab33af8b2cb654590bc708afd3f68f46a6121705cee21f7bc33bb6b61e7e443",
+        "variants/shifter/rtl/espino_alu.v": "89a22a200231c54ead9597a0cffd546b811bf442a20ca78a3cf61342c242d01f",
+        "rtl/espino_core/espino_controller.v": "bd82d8404d8f09de2a6968da87e6a7e9c750af9138a4b74c43b3ec89a742c215",
+        "rtl/espino_core/espino_core.v": "9e3e3cae616a4ff057ddcb01728bf8f912eab721d26e3a5fe68daf1c68e9905c",
+        "variants/shifter/rtl/espino_decoder.v": "c06300dc1a100158d2e44cea0c02e10e300f67db1f19aed74691cc54b35eff59",
+        "rtl/espino_core/espino_id_stage.v": "740698037d1e4372e3e26c3a828143debb71b62992d7a69e21ed3b6fc128c704",
+        "rtl/espino_core/espino_if_stage.v": "4734ae2fb9cd60c8f5019be50303504e50e6d25bc09d09a3f06d396d1c5902f4",
+        "rtl/espino_core/espino_load_store_unit.v": "76051d9aba219452dc4e80fd47f306d024c40aea47050dd59fc3c821ea7f5954",
+        "rtl/espino_core/espino_register_file.v": "a19d94587e54d05373a257c95e515979d2f7910328ec8920f649d280bc07b212"
+      }
+    },
+    "qcap": {
+      "display": "B5",
+      "leds": 4,
+      "user_confirmed_after_programming": true,
+      "user_confirmed_after_power_cycle": true,
+      "diagnostic_program": "sw/qcap_diagnostic.s",
+      "image_sha256": "3c9c4c3607e02f865a9a86b3fe90cee4ba80e723b4c43ae29e4497a16231783a",
+      "rtl_sha256": {
+        "rtl/pochoco_periph.v": "795bcc27c1a4a93c7f67086f0634be7cf0f9d104f93869eecc0ae21cc47aec66",
+        "rtl/pochoco_ram.v": "0eda65a86c53f468ec10342706a9be87c3cfdf1b64f4b7c6ec64c57db0ba1fd8",
+        "rtl/pochoco_soc.v": "85cf05990213cdc07503104705ab2ee61577fbcc192b0b9d31a9e9213ad9027f",
+        "rtl/pochoco_spi_slave.v": "dab33af8b2cb654590bc708afd3f68f46a6121705cee21f7bc33bb6b61e7e443",
+        "rtl/espino_core/espino_alu.v": "1b958157b3fb1224857e4171d9df8c910523bae6f15d2a84e6ba0dd18b617601",
+        "rtl/espino_core/espino_controller.v": "bd82d8404d8f09de2a6968da87e6a7e9c750af9138a4b74c43b3ec89a742c215",
+        "rtl/espino_core/espino_core.v": "9e3e3cae616a4ff057ddcb01728bf8f912eab721d26e3a5fe68daf1c68e9905c",
+        "variants/qcap/rtl/espino_decoder.v": "25c7a4b03256f36c53665e1d1b58fcf2203a7093aba1e246bb50ed6e699a1985",
+        "variants/qcap/rtl/espino_id_stage.v": "d68d75a1cbd1e84436c06ccee26f7d3d1b329dc536b14cb470f979f45e5e2d24",
+        "rtl/espino_core/espino_if_stage.v": "4734ae2fb9cd60c8f5019be50303504e50e6d25bc09d09a3f06d396d1c5902f4",
+        "rtl/espino_core/espino_load_store_unit.v": "76051d9aba219452dc4e80fd47f306d024c40aea47050dd59fc3c821ea7f5954",
+        "rtl/espino_core/espino_register_file.v": "a19d94587e54d05373a257c95e515979d2f7910328ec8920f649d280bc07b212",
+        "variants/qcap/rtl/espino_qcap.v": "d4f13c48541f6874437bde5ad843a2f680ebf5332f47dd887794cbcf8efff81d"
+      }
+    }
+  },
+  "physical_spi_transactions_tested": false,
+  "final_board_image": "shifter_diagnostic_por63",
+  "final_programmer_verify_ok": true,
+  "backup_local_sha256": "1efb1537bcf7dc567a9a0e3f0ac5aee6b38fa640cceb54bceaa8e7a2aa0a580d"
+}

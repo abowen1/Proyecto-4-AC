@@ -1,0 +1,2 @@
+PASS gate diagnostic: LED=f seg1=08 seg2=12
+tb/tb_hw_gate.sv:13: $finish called at 9260000 (1ps)

@@ -1,0 +1,520 @@
+init..
+cdone: high
+reset..
+cdone: low
+Extended Device String Length is 0xFF, this is likely a read error. Ignoring...
+flash ID: 0xFF 0xFF 0xFF 0xFF
+file size: 32220
+erase 64kB sector at 0x000000..
+programming..
+
+addr 0x000000   0%
+
+addr 0x000100   0%
+
+addr 0x000200   1%
+
+addr 0x000300   2%
+
+addr 0x000400   3%
+
+addr 0x000500   3%
+
+addr 0x000600   4%
+
+addr 0x000700   5%
+
+addr 0x000800   6%
+
+addr 0x000900   7%
+
+addr 0x000A00   7%
+
+addr 0x000B00   8%
+
+addr 0x000C00   9%
+
+addr 0x000D00  10%
+
+addr 0x000E00  11%
+
+addr 0x000F00  11%
+
+addr 0x001000  12%
+
+addr 0x001100  13%
+
+addr 0x001200  14%
+
+addr 0x001300  15%
+
+addr 0x001400  15%
+
+addr 0x001500  16%
+
+addr 0x001600  17%
+
+addr 0x001700  18%
+
+addr 0x001800  19%
+
+addr 0x001900  19%
+
+addr 0x001A00  20%
+
+addr 0x001B00  21%
+
+addr 0x001C00  22%
+
+addr 0x001D00  23%
+
+addr 0x001E00  23%
+
+addr 0x001F00  24%
+
+addr 0x002000  25%
+
+addr 0x002100  26%
+
+addr 0x002200  27%
+
+addr 0x002300  27%
+
+addr 0x002400  28%
+
+addr 0x002500  29%
+
+addr 0x002600  30%
+
+addr 0x002700  30%
+
+addr 0x002800  31%
+
+addr 0x002900  32%
+
+addr 0x002A00  33%
+
+addr 0x002B00  34%
+
+addr 0x002C00  34%
+
+addr 0x002D00  35%
+
+addr 0x002E00  36%
+
+addr 0x002F00  37%
+
+addr 0x003000  38%
+
+addr 0x003100  38%
+
+addr 0x003200  39%
+
+addr 0x003300  40%
+
+addr 0x003400  41%
+
+addr 0x003500  42%
+
+addr 0x003600  42%
+
+addr 0x003700  43%
+
+addr 0x003800  44%
+
+addr 0x003900  45%
+
+addr 0x003A00  46%
+
+addr 0x003B00  46%
+
+addr 0x003C00  47%
+
+addr 0x003D00  48%
+
+addr 0x003E00  49%
+
+addr 0x003F00  50%
+
+addr 0x004000  50%
+
+addr 0x004100  51%
+
+addr 0x004200  52%
+
+addr 0x004300  53%
+
+addr 0x004400  54%
+
+addr 0x004500  54%
+
+addr 0x004600  55%
+
+addr 0x004700  56%
+
+addr 0x004800  57%
+
+addr 0x004900  58%
+
+addr 0x004A00  58%
+
+addr 0x004B00  59%
+
+addr 0x004C00  60%
+
+addr 0x004D00  61%
+
+addr 0x004E00  61%
+
+addr 0x004F00  62%
+
+addr 0x005000  63%
+
+addr 0x005100  64%
+
+addr 0x005200  65%
+
+addr 0x005300  65%
+
+addr 0x005400  66%
+
+addr 0x005500  67%
+
+addr 0x005600  68%
+
+addr 0x005700  69%
+
+addr 0x005800  69%
+
+addr 0x005900  70%
+
+addr 0x005A00  71%
+
+addr 0x005B00  72%
+
+addr 0x005C00  73%
+
+addr 0x005D00  73%
+
+addr 0x005E00  74%
+
+addr 0x005F00  75%
+
+addr 0x006000  76%
+
+addr 0x006100  77%
+
+addr 0x006200  77%
+
+addr 0x006300  78%
+
+addr 0x006400  79%
+
+addr 0x006500  80%
+
+addr 0x006600  81%
+
+addr 0x006700  81%
+
+addr 0x006800  82%
+
+addr 0x006900  83%
+
+addr 0x006A00  84%
+
+addr 0x006B00  85%
+
+addr 0x006C00  85%
+
+addr 0x006D00  86%
+
+addr 0x006E00  87%
+
+addr 0x006F00  88%
+
+addr 0x007000  88%
+
+addr 0x007100  89%
+
+addr 0x007200  90%
+
+addr 0x007300  91%
+
+addr 0x007400  92%
+
+addr 0x007500  92%
+
+addr 0x007600  93%
+
+addr 0x007700  94%
+
+addr 0x007800  95%
+
+addr 0x007900  96%
+
+addr 0x007A00  96%
+
+addr 0x007B00  97%
+
+addr 0x007C00  98%
+
+addr 0x007D00  99%
+
+done.
+reading..
+
+addr 0x000000   0%
+
+addr 0x000100   0%
+
+addr 0x000200   1%
+
+addr 0x000300   2%
+
+addr 0x000400   3%
+
+addr 0x000500   3%
+
+addr 0x000600   4%
+
+addr 0x000700   5%
+
+addr 0x000800   6%
+
+addr 0x000900   7%
+
+addr 0x000A00   7%
+
+addr 0x000B00   8%
+
+addr 0x000C00   9%
+
+addr 0x000D00  10%
+
+addr 0x000E00  11%
+
+addr 0x000F00  11%
+
+addr 0x001000  12%
+
+addr 0x001100  13%
+
+addr 0x001200  14%
+
+addr 0x001300  15%
+
+addr 0x001400  15%
+
+addr 0x001500  16%
+
+addr 0x001600  17%
+
+addr 0x001700  18%
+
+addr 0x001800  19%
+
+addr 0x001900  19%
+
+addr 0x001A00  20%
+
+addr 0x001B00  21%
+
+addr 0x001C00  22%
+
+addr 0x001D00  23%
+
+addr 0x001E00  23%
+
+addr 0x001F00  24%
+
+addr 0x002000  25%
+
+addr 0x002100  26%
+
+addr 0x002200  27%
+
+addr 0x002300  27%
+
+addr 0x002400  28%
+
+addr 0x002500  29%
+
+addr 0x002600  30%
+
+addr 0x002700  30%
+
+addr 0x002800  31%
+
+addr 0x002900  32%
+
+addr 0x002A00  33%
+
+addr 0x002B00  34%
+
+addr 0x002C00  34%
+
+addr 0x002D00  35%
+
+addr 0x002E00  36%
+
+addr 0x002F00  37%
+
+addr 0x003000  38%
+
+addr 0x003100  38%
+
+addr 0x003200  39%
+
+addr 0x003300  40%
+
+addr 0x003400  41%
+
+addr 0x003500  42%
+
+addr 0x003600  42%
+
+addr 0x003700  43%
+
+addr 0x003800  44%
+
+addr 0x003900  45%
+
+addr 0x003A00  46%
+
+addr 0x003B00  46%
+
+addr 0x003C00  47%
+
+addr 0x003D00  48%
+
+addr 0x003E00  49%
+
+addr 0x003F00  50%
+
+addr 0x004000  50%
+
+addr 0x004100  51%
+
+addr 0x004200  52%
+
+addr 0x004300  53%
+
+addr 0x004400  54%
+
+addr 0x004500  54%
+
+addr 0x004600  55%
+
+addr 0x004700  56%
+
+addr 0x004800  57%
+
+addr 0x004900  58%
+
+addr 0x004A00  58%
+
+addr 0x004B00  59%
+
+addr 0x004C00  60%
+
+addr 0x004D00  61%
+
+addr 0x004E00  61%
+
+addr 0x004F00  62%
+
+addr 0x005000  63%
+
+addr 0x005100  64%
+
+addr 0x005200  65%
+
+addr 0x005300  65%
+
+addr 0x005400  66%
+
+addr 0x005500  67%
+
+addr 0x005600  68%
+
+addr 0x005700  69%
+
+addr 0x005800  69%
+
+addr 0x005900  70%
+
+addr 0x005A00  71%
+
+addr 0x005B00  72%
+
+addr 0x005C00  73%
+
+addr 0x005D00  73%
+
+addr 0x005E00  74%
+
+addr 0x005F00  75%
+
+addr 0x006000  76%
+
+addr 0x006100  77%
+
+addr 0x006200  77%
+
+addr 0x006300  78%
+
+addr 0x006400  79%
+
+addr 0x006500  80%
+
+addr 0x006600  81%
+
+addr 0x006700  81%
+
+addr 0x006800  82%
+
+addr 0x006900  83%
+
+addr 0x006A00  84%
+
+addr 0x006B00  85%
+
+addr 0x006C00  85%
+
+addr 0x006D00  86%
+
+addr 0x006E00  87%
+
+addr 0x006F00  88%
+
+addr 0x007000  88%
+
+addr 0x007100  89%
+
+addr 0x007200  90%
+
+addr 0x007300  91%
+
+addr 0x007400  92%
+
+addr 0x007500  92%
+
+addr 0x007600  93%
+
+addr 0x007700  94%
+
+addr 0x007800  95%
+
+addr 0x007900  96%
+
+addr 0x007A00  96%
+
+addr 0x007B00  97%
+
+addr 0x007C00  98%
+
+addr 0x007D00  99%
+
+VERIFY OK
+cdone: high
+Bye.

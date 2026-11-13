@@ -1,0 +1,8 @@
+{
+  "reason": "No cabe en HX1K",
+  "logic_cells": 1346,
+  "available": 1280,
+  "excess": 66,
+  "program": "trade_shifter.s",
+  "full_32_bit_logical_barrel": true
+}

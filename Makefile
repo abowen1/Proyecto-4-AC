@@ -24,11 +24,12 @@ compare:
 	$(PYTHON) tools/verify_market.py
 test-market:
 	$(PYTHON) -B -m unittest discover -s tests -p 'test_backtest.py' -v
-.PHONY: help assemble test test-spi test-canvas test-d profile-d compare-fastpath63 build program
+.PHONY: help assemble test test-spi test-canvas test-d profile-d compare-fastpath63 build program test-hardware build-shifter build-qcap compare-hardware
 help:
 	@echo "make test: ensamblador y SPI en tres rondas; make test-canvas: ejemplo oficial"
 	@echo "make build: bitstream a 25 MHz; make program: cargar placa explícitamente"
 	@echo "make profile-d: compara la via rapida 63 contra la base y archiva figuras"
+	@echo "make test-hardware, build-shifter, build-qcap, compare-hardware: variantes separadas"
 assemble: sw/trade.hex sw/spi_diagnostic.hex sw/hold.hex
 sw/%.hex: sw/%.s tools/assembler.py
 	$(PYTHON) tools/assembler.py $< -o $@
@@ -53,6 +54,27 @@ profile-d: assemble
 	$(PYTHON) tools/verify_strategy_d.py --program sw/trade_base_84.s --edges --fast --profile --name base84_extremos
 	$(PYTHON) tools/compare_fastpath63.py
 compare-fastpath63: profile-d
+test-hardware:
+	$(PYTHON) -B -m unittest discover -s tests -v
+	$(PYTHON) tools/test_hardware.py
+build-shifter:
+	$(PYTHON) tools/hardware_variants.py shifter
+build-qcap:
+	$(PYTHON) tools/hardware_variants.py qcap
+compare-hardware: test-hardware
+	$(PYTHON) tools/verify_strategy_d.py --variant software --fast --profile --name hw_software_20000_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant software --ticks 2000 --profile --name hw_software_2000_ronda3_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant software --edges --fast --profile --name hw_software_extremos_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant shifter --fast --profile --name hw_shifter_20000_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant shifter --ticks 2000 --profile --name hw_shifter_2000_ronda3_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant shifter --edges --fast --profile --name hw_shifter_extremos_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant qcap --fast --profile --name hw_qcap_20000_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant qcap --ticks 2000 --profile --name hw_qcap_2000_ronda3_por63
+	$(PYTHON) tools/verify_strategy_d.py --variant qcap --edges --fast --profile --name hw_qcap_extremos_por63
+	$(PYTHON) tools/hardware_variants.py software
+	$(PYTHON) tools/hardware_variants.py shifter
+	$(PYTHON) tools/hardware_variants.py qcap
+	$(PYTHON) tools/compare_hardware.py
 build: build/ac4.bin
 build/ac4.json: $(SRC) sw/trade.hex Makefile
 	mkdir -p build

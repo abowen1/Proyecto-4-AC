@@ -1,0 +1,4 @@
+variant,kernel,useful_add_sub,data_port_bytes,intensity_ops_per_byte,service_cycles,measured_integer_ops_per_second,arithmetic_peak_ops_per_second,data_port_peak_bytes_per_second,ideal_roof_ops_per_second
+software,actualizacion ventana SMA32,39968,159872,0.25,479999,2081671.0034812572,12500000,100000000,12500000
+shifter,actualizacion ventana SMA32,39968,159872,0.25,479999,2081671.0034812572,12500000,100000000,12500000
+qcap,actualizacion ventana SMA32,39968,159872,0.25,479999,2081671.0034812572,12500000,100000000,12500000

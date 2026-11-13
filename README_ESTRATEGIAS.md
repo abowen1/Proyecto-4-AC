@@ -1,5 +1,7 @@
 # AC4 — Traspaso de estrategias y resultados para Coni y su Work
 
+La comparación posterior de hardware conserva exactamente D: [dos alternativas, mediciones y pruebas de placa](docs/informe/03_hardware_2026-11-12/README.md). Se recomienda el desplazador acotado: 28,16 % menos ciclos promedio que el software optimizado. Las alternativas de hardware A/B no son las estrategias bursátiles A/B históricas.
+
 **Decisión final del equipo, 12 de noviembre de 2026: D original, SMA32 y banda 1, sin subvariaciones y sin techo de retiro en 20.000 ni 30.000.** Los experimentos de salida permanente quedan como historia y no forman parte de la estrategia elegida. D se implementó en `sw/trade.s`; ver [reglas y evidencia de implementación](docs/estrategia/D_implementacion.md).
 
 El contenido original del 11 de noviembre y las recomendaciones provisionales posteriores se conservan como historia del proceso; la elección actual del equipo es D, no A.

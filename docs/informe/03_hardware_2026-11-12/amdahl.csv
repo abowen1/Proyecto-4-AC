@@ -1,0 +1,11 @@
+variant,local_speedup,fraction,predicted_global_speedup,kind
+shifter,2,0.3957354111027446,1.2466771465514717,escenario hipotetico con f de software
+shifter,4,0.3957354111027446,1.422073686086326,escenario hipotetico con f de software
+shifter,10,0.3957354111027446,1.5531854256415427,escenario hipotetico con f de software
+shifter,infinito,0.3957354111027446,1.6549041899425827,escenario hipotetico con f de software
+shifter,3.4670352290772217,0.3957354111027446,1.391968814680648,reconstruccion retrospectiva usando costo local medido
+qcap,2,0.07383089108157609,1.0383304304589505,escenario hipotetico con f de software
+qcap,4,0.07383089108157609,1.0586190932266715,escenario hipotetico con f de software
+qcap,10,0.07383089108157609,1.071177382597225,escenario hipotetico con f de software
+qcap,infinito,0.07383089108157609,1.0797164258347975,escenario hipotetico con f de software
+qcap,3.5612671685690387,0.07383089108157609,1.056076897627375,reconstruccion retrospectiva usando costo local medido

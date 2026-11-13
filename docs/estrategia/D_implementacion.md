@@ -1,5 +1,7 @@
 # D elegida e implementada en Espino
 
+**Etapa posterior:** ya se implementaron y compararon [A/shifter acotado y B/QCAP](../informe/03_hardware_2026-11-12/README.md), manteniendo D. A se recomienda con 64,210 ciclos promedio y 257 de máximo observado. Ambos autodiagnósticos físicos pasaron al programar y al reconectar. El reset común del SoC se amplió a 63 ciclos tras detectar un fallo real de arranque; todas las variantes se volvieron a medir con ese reset. SPI físico con la maestra aún está pendiente.
+
 **Versión actual:** la [vía rápida de 63](../informe/02_via_rapida_63_2026-11-12/README.md) se implementó, validó y conservó. `sw/trade.s` tiene 102 instrucciones y utiliza x14; `sw/trade_base_84.s/.hex` conserva la base inicial descrita abajo, de 84 instrucciones. La estrategia y las reglas contables son idénticas. En la práctica completa el promedio baja de 121,315 a 89,378 ciclos y el máximo observado de 1.484 a 802. La imagen se regeneró sin programar la placa. Los apartados siguientes conservan la evidencia inicial, anterior a esa mejora.
 
 Acuerdo del equipo confirmado el 12 de noviembre de 2026: **reversión a la media de 32 muestras, banda 1, sin retiro por patrimonio**. No incluye pánico, filtro de tendencia ni límite de exposición. Las pruebas previas de retiro en 20.000 o 30.000 quedan descartadas para esta versión.

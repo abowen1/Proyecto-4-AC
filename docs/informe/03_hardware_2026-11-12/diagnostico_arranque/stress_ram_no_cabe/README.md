@@ -1,0 +1,1 @@
+Ensayo adicional de instrumentación de RAM, descartado antes de programar: requiere 1331 celdas y no cabe en HX1K. No produjo evidencia física ni modifica las variantes finales. El diagnóstico A5 validado permanece en la placa.

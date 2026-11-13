@@ -26,10 +26,10 @@ GROUPS = [
 ]
 
 
-def prepare_profile(output, program=None, program_hex=None):
+def prepare_profile(output, program=None, program_hex=None, isa='base'):
     program = program or ROOT / 'sw/trade.s'
     source = program.read_text()
-    words = assemble(source)
+    words = assemble(source,isa=isa)
     program_hex = program_hex or program.with_suffix('.hex')
     if words != [int(s, 16) for s in program_hex.read_text().split()]:
         raise ValueError('HEX y assembly no coinciden')
@@ -47,11 +47,12 @@ def prepare_profile(output, program=None, program_hex=None):
         (0, 0), (labels['wait_price']+16, 1), (labels['fill_buy'], 2),
         (labels['fill_buy_loop'], 3), (labels['fill_buy_done'], 2),
         (labels['fill_sell'], 4), (labels['fill_sell_loop'], 5),
-        (labels['fill_sell_loop']+12, 4), (labels['accounted'], 6),
-        (times32, 7), (times32+20, 8), (labels['propose_buy'], 9),
-        (labels['size_buy_loop'], 10), (labels['size_buy_done'], 9),
-        (labels['propose_sell'], 11), (labels['publish'], 0),
+        (labels.get('fill_sell_done',labels['fill_sell_loop']+12), 4), (labels['accounted'], 6),
+        (times32, 7), (labels.get('signal_compare',times32+20), 8), (labels['propose_buy'], 9),
     ]
+    if 'size_buy_loop' in labels:
+        boundaries += [(labels['size_buy_loop'],10),(labels['size_buy_done'],9)]
+    boundaries += [(labels['propose_sell'],11),(labels['publish'],0)]
     if boundaries != sorted(boundaries):
         raise ValueError('Cambio de estructura en D: revisar regiones del perfil')
     for row in code:

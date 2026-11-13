@@ -1,0 +1,5 @@
+{"baud": 115200, "bytes": 9216, "head": "adde55efbeadde55efbeadde55efbeadde55efbeadde55efbeadde55efbeadde55efbeadde55efbe", "packets": [["efbeadde", 1842]]}
+{"baud": 230400, "bytes": 16896, "head": "9966fffff89e9e1eff3f6693fef89e9e1eff3f6633fef89e9e1eff3f6633fef89e9e1eff3f6633fe", "packets": []}
+{"baud": 57600, "bytes": 4608, "head": "7e3366fffff89e9e1eff3f6633fef8fea781dbfa78a781dbfa78a7815bfa78a781dbfa78a781dbfa", "packets": []}
+{"baud": 38400, "bytes": 2092, "head": "e0cf0b4f6bf9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9", "packets": []}
+{"baud": 9600, "bytes": 2, "head": "f9f9", "packets": []}

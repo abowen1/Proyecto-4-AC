@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tools/hardware_variants.py", line 48, in <module>
+    build(args.variant)
+  File "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tools/hardware_variants.py", line 37, in build
+    run(['nextpnr-ice40','--hx1k','--package','vq100','--json',str(output/'soc.json'),'--pcf','goboard.pcf','--asc',str(output/'soc.asc'),'--freq','25','--report',str(output/'timing.json')],'place_route.txt')
+  File "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tools/hardware_variants.py", line 31, in run
+    subprocess.run(command,cwd=ROOT,stdout=f,stderr=subprocess.STDOUT,check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['nextpnr-ice40', '--hx1k', '--package', 'vq100', '--json', '/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/shifter/soc.json', '--pcf', 'goboard.pcf', '--asc', '/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/shifter/soc.asc', '--freq', '25', '--report', '/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/shifter/timing.json']' returned non-zero exit status 125.

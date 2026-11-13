@@ -1,0 +1,2 @@
+PASS shifter: 16387 operaciones RV32 exactas, decoder y restricciones
+/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tb/tb_shifter_unit.sv:34: $finish called at 16454000 (1ps)

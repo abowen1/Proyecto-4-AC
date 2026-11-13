@@ -1,0 +1,66 @@
+python3 tools/assembler.py sw/trade.s -o sw/trade.hex
+sw/trade.s -> sw/trade.hex: 102 palabras (408 bytes)
+python3 tools/assembler.py sw/spi_diagnostic.s -o sw/spi_diagnostic.hex
+sw/spi_diagnostic.s -> sw/spi_diagnostic.hex: 9 palabras (36 bytes)
+python3 tools/assembler.py sw/hold.s -o sw/hold.hex
+sw/hold.s -> sw/hold.hex: 8 palabras (32 bytes)
+python3 -B -m unittest discover -s tests -v
+test_equality_flat_window_and_scaling (test_adaptive.AdaptiveTests) ... ok
+test_run_is_causal_and_executes_next_tick (test_adaptive.AdaptiveTests) ... ok
+test_signal_matches_independent_decimal_standard_deviation (test_adaptive.AdaptiveTests) ... ok
+test_branch_offsets (test_assembler.AssemblerTests) ... ok
+test_cli_preserves_output_on_invalid_source (test_assembler.AssemblerTests) ... ok
+test_every_alu_variant (test_assembler.AssemblerTests) ... ok
+test_forward_and_backward_labels (test_assembler.AssemblerTests) ... ok
+test_invalid_inputs (test_assembler.AssemblerTests) ... ok
+test_jump_offsets (test_assembler.AssemblerTests) ... ok
+test_known_encodings (test_assembler.AssemblerTests) ... ok
+test_original_board_program (test_assembler.AssemblerTests) ... ok
+test_ram_limit (test_assembler.AssemblerTests) ... ok
+test_signed_immediate_limits (test_assembler.AssemblerTests) ... ok
+test_cash_clipping_no_debt_no_short_and_fees (test_backtest.BacktestTests) ... ok
+test_delayed_execution_and_last_order_not_executed (test_backtest.BacktestTests) ... ok
+test_every_strategy_is_causal (test_backtest.BacktestTests) ... ok
+test_hold_reference_and_mark_to_market_without_final_sale (test_backtest.BacktestTests) ... ok
+test_incremental_regression_matches_recomputed_window (test_backtest.BacktestTests) ... ok
+test_reserved_zero_quantity_and_unaffordable_sale_fee (test_backtest.BacktestTests) ... ok
+test_reversion_parameters_against_exact_window (test_backtest.BacktestTests) ... ok
+test_reversion_rejects_invalid_parameters (test_backtest.BacktestTests) ... ok
+test_exact_encoding_of_supported_extensions (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_extensions_do_not_leak_into_baseline_or_each_other (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_unsupported_shift_and_registers_rejected (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_exposure_caps_buy_and_corrects_after_price_increase (test_protections.ProtectionTests) ... ok
+test_panic_liquidates_in_chunks_and_waits_before_reentry (test_protections.ProtectionTests) ... ok
+test_protected_strategies_are_causal (test_protections.ProtectionTests) ... ok
+test_trend_blocks_buy_but_not_sell (test_protections.ProtectionTests) ... ok
+test_custom_target_30000_is_strictly_different_from_20000 (test_target_exit.TargetExitTests) ... ok
+test_liquidation_requires_multiple_delayed_orders (test_target_exit.TargetExitTests) ... ok
+test_trigger_uses_wealth_and_does_not_guarantee_cash_floor (test_target_exit.TargetExitTests) ... ok
+test_unreached_target_matches_base_and_is_causal (test_target_exit.TargetExitTests) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.188s
+
+OK
+/Library/Developer/CommandLineTools/usr/bin/make test-spi
+mkdir -p build
+iverilog -g2012 -DNO_ICE40_DEFAULT_ASSIGNMENTS -s tb_spi_ac4 -o build/tb_spi /opt/homebrew/Cellar/yosys/0.70/share/yosys/ice40/cells_sim.v rtl/pochoco_periph.v rtl/pochoco_ram.v rtl/pochoco_soc.v rtl/pochoco_spi_slave.v rtl/espino_core/espino_alu.v rtl/espino_core/espino_controller.v rtl/espino_core/espino_core.v rtl/espino_core/espino_decoder.v rtl/espino_core/espino_id_stage.v rtl/espino_core/espino_if_stage.v rtl/espino_core/espino_load_store_unit.v rtl/espino_core/espino_register_file.v tb/tb_spi_ac4.sv
+iverilog -g2012 -DNO_ICE40_DEFAULT_ASSIGNMENTS -DDIAGNOSTIC -s tb_spi_ac4 -o build/tb_spi_diag /opt/homebrew/Cellar/yosys/0.70/share/yosys/ice40/cells_sim.v rtl/pochoco_periph.v rtl/pochoco_ram.v rtl/pochoco_soc.v rtl/pochoco_spi_slave.v rtl/espino_core/espino_alu.v rtl/espino_core/espino_controller.v rtl/espino_core/espino_core.v rtl/espino_core/espino_decoder.v rtl/espino_core/espino_id_stage.v rtl/espino_core/espino_if_stage.v rtl/espino_core/espino_load_store_unit.v rtl/espino_core/espino_register_file.v tb/tb_spi_ac4.sv
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/hold.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=0 T=10000000 ns: 12 precios y respuestas; max=18 ciclos (720 ns), max_IC=8; presupuesto=249762
+tb/tb_spi_ac4.sv:88: $finish called at 120004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/spi_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=1 T=10000000 ns: 12 precios y respuestas; max=20 ciclos (800 ns), max_IC=9; presupuesto=249762
+tb/tb_spi_ac4.sv:88: $finish called at 120004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/hold.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=0 T=1000000 ns: 12 precios y respuestas; max=18 ciclos (720 ns), max_IC=8; presupuesto=24762
+tb/tb_spi_ac4.sv:88: $finish called at 12004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/spi_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=1 T=1000000 ns: 12 precios y respuestas; max=20 ciclos (800 ns), max_IC=9; presupuesto=24762
+tb/tb_spi_ac4.sv:88: $finish called at 12004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/hold.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=0 T=100000 ns: 12 precios y respuestas; max=18 ciclos (720 ns), max_IC=8; presupuesto=2262
+tb/tb_spi_ac4.sv:88: $finish called at 1204013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/spi_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=1 T=100000 ns: 12 precios y respuestas; max=20 ciclos (800 ns), max_IC=9; presupuesto=2262
+tb/tb_spi_ac4.sv:88: $finish called at 1204013000 (1ps)

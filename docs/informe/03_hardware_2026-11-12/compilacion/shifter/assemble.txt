@@ -1,0 +1,1 @@
+sw/trade_shifter.s -> /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/shifter/program.hex: 105 palabras (420 bytes)

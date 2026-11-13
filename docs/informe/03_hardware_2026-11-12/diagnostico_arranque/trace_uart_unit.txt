@@ -1,0 +1,2 @@
+PASS trace UART: 10 paquetes completos de 8 bytes
+tb/tb_trace_uart.sv:29: $finish called at 6939800000 (1ps)

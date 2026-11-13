@@ -62,9 +62,23 @@ def relative(token, pc, labels, bits):
     return signed(offset, bits)
 
 
-def encode(op, args, pc, labels):
+def encode(op, args, pc, labels, isa='base'):
     if op in SHIFTS:
-        raise AssemblyError('desplazamientos desactivados en la ALU de Espino Core')
+        if isa!='shifter':
+            raise AssemblyError('desplazamientos desactivados en la ALU de Espino Core')
+        if op not in ('slli','srli'):
+            raise AssemblyError('la variante shifter solo implementa SLLI 1/5/6 y SRLI 1')
+        operands(args,3)
+        rd,rs1=map(register,args[:2]);f3=1 if op.startswith('sll') else 5
+        shift=number(args[2])
+        if not 0<=shift<32:raise AssemblyError('shift inmediato debe estar entre 0 y 31')
+        if shift not in ((1,5,6) if op=='slli' else (1,)):
+            raise AssemblyError('la variante shifter solo implementa SLLI 1/5/6 y SRLI 1')
+        return shift<<20 | rs1<<15 | f3<<12 | rd<<7 | 0x13
+    if op=='qcap':
+        if isa!='qcap':raise AssemblyError('QCAP requiere la variante de hardware qcap')
+        operands(args,3);rd,rs1,rs2=map(register,args)
+        return rs2<<20 | rs1<<15 | rd<<7 | 0x0b
     if op in R_OPS:
         operands(args, 3)
         rd, rs1, rs2 = map(register, args)
@@ -101,7 +115,7 @@ def encode(op, args, pc, labels):
     raise AssemblyError(f'instrucción no admitida: {op}')
 
 
-def assemble(source, max_words=512):
+def assemble(source, max_words=512, *, isa='base'):
     """Primera pasada: direcciones. Segunda pasada: codificación y etiquetas."""
     labels, instructions, globals_ = {}, [], []
     for line_no, raw in enumerate(source.splitlines(), 1):
@@ -139,7 +153,7 @@ def assemble(source, max_words=512):
     words = []
     for index, (line_no, op, args) in enumerate(instructions):
         try:
-            words.append(encode(op, args, 4 * index, labels))
+            words.append(encode(op, args, 4 * index, labels, isa))
         except AssemblyError as error:
             raise AssemblyError(f'línea {line_no}: {error}') from None
     return words
@@ -149,11 +163,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('source', type=Path)
     parser.add_argument('-o', '--output', type=Path, required=True)
+    parser.add_argument('--isa', choices=['base','shifter','qcap'], default='base')
     args = parser.parse_args()
     try:
         if args.source.resolve() == args.output.resolve():
             raise AssemblyError('entrada y salida deben ser archivos distintos')
-        words = assemble(args.source.read_text(encoding='utf-8'))
+        words = assemble(args.source.read_text(encoding='utf-8'),isa=args.isa)
         # No escribir hasta validar el programa completo.
         args.output.write_text(''.join(f'{word:08x}\n' for word in words), encoding='ascii')
     except (AssemblyError, OSError, UnicodeError) as error:

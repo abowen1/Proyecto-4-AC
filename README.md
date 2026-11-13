@@ -8,15 +8,17 @@ Material guardado para el informe: [carpeta central de evidencia y figuras](docs
 
 **Versión actual:** [vía rápida de 63 conservada tras evaluación](docs/informe/02_via_rapida_63_2026-11-12/README.md). `sw/trade.s` tiene 102 instrucciones; la base original de 84 permanece en `sw/trade_base_84.s/.hex`. Mismas órdenes y patrimonio; en 20.000 precios el tiempo promedio baja 26,33% y el máximo observado pasa de 1.484 a 802 ciclos. `make compare-fastpath63` reproduce las verificaciones y los gráficos.
 
+**Co-diseño completado:** [dos variantes de hardware y pruebas físicas](docs/informe/03_hardware_2026-11-12/README.md). A/shifter acotado se recomienda frente a B/QCAP: 64,21 frente a 84,63 ciclos promedio, contra 89,38 de software. Las tres conservan D y cierran timing a 25 MHz. Ambos autodiagnósticos pasaron tras programar y tras reconectar. Se corrigió el arranque común de 15 a 63 ciclos tras un fallo real detectado en placa; se repitieron todas las comparaciones. La placa queda con el diagnóstico A5; el ensayo SPI físico de mercado sigue pendiente. `make compare-hardware` reproduce la comparación.
+
 **Actualización del 12 de noviembre:** [informe para decidir entre A, D y DF](docs/estrategia/recomendacion_2026-11-12/README.md), con gráficos SVG/PNG, históricos de seis activos, datos y comandos reproducibles, recomendaciones según escenario, revisión de la transcripción y prueba de salida permanente en patrimonio 20.000. Es historia exploratoria de pre-entrega, anterior a la selección de D sin techo de retiro. El informe distingue los lotes calibrados con 2023 del lote largo cuya normalización usa el máximo futuro.
 
 ## Procedencia y alcance
 
 - Pochoco original: https://github.com/nic0villegasc/pochoco_soc
 - Revisión fijada: `33e8b5ae78faad7a9a36431d5ee8cf145e8573ec`.
-- Los 13 archivos de `rtl/` y los pines de la placa se conservan sin modificar.
+- Los pines y 12 de los 13 archivos de `rtl/` se conservan sin modificar; `pochoco_soc.v` solo amplía el reset inicial a 63 ciclos, común a todas las variantes. Los reemplazos de ALU/decoder/ID están separados en `variants/`.
 - Reloj directo de 25 MHz; no se incorpora el divisor de P2 ni las variantes ASIC de P3.
-- Se rescatan de P2 solamente el ensamblador propio y sus pruebas. El ensamblador rechaza shifts y registros fuera de x0–x15.
+- Se rescatan de P2 el ensamblador propio y sus pruebas. Por defecto rechaza shifts y siempre rechaza registros fuera de x0–x15. Las extensiones requieren `--isa shifter` o `--isa qcap` y su hardware correspondiente.
 - `tb/tb_proyecto_4.sv` y `tb/practica.csv` son copias exactas del material de Canvas. Los originales siguen en la carpeta hermana.
 - Historial y hashes en `docs/procedencia.json`; documentación del autor en `README_UPSTREAM.md`.
 

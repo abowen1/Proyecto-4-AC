@@ -1,0 +1,34 @@
+{
+  "variant": "shifter",
+  "program": "sw/shifter_diagnostic.s",
+  "clock_hz": 25000000,
+  "fmax": {
+    "i_Clk$SB_IO_IN_$glb_clk": {
+      "achieved": 42.238651275634766,
+      "constraint": 25
+    }
+  },
+  "utilization": {
+    "ICESTORM_LC": {
+      "available": 1280,
+      "used": 1202
+    },
+    "ICESTORM_RAM": {
+      "available": 16,
+      "used": 12
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 3
+    },
+    "SB_IO": {
+      "available": 72,
+      "used": 27
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "image_bytes": 32220
+}

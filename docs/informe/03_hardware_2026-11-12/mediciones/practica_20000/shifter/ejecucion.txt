@@ -1,0 +1,15 @@
+/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/sw/trade_shifter.s -> /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/strategy_d/hw_shifter_20000_por63/program.hex: 105 palabras (420 bytes)
+WARNING: /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/rtl/pochoco_ram.v:36: $readmemh(/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/strategy_d/hw_shifter_20000_por63/program.hex): Not enough words in the file for the requested range [0:511].
+D: 2000/20000 ticks verificados
+D: 4000/20000 ticks verificados
+D: 6000/20000 ticks verificados
+D: 8000/20000 ticks verificados
+D: 10000/20000 ticks verificados
+D: 12000/20000 ticks verificados
+D: 14000/20000 ticks verificados
+D: 16000/20000 ticks verificados
+D: 18000/20000 ticks verificados
+D: 20000/20000 ticks verificados
+PASS D: 20000 ticks; ordenes, caja, inventario y MISO exactos; max 257 ciclos, 116 instrucciones; presupuesto 2262
+/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tb/tb_strategy_d.sv:152: $finish called at 243371780000 (1ps)
+{"strategy": "D", "window": 32, "band": 1, "retirement_threshold": null, "variant": "shifter", "period_ns": null, "deadline_budget_period_ns": 100000, "idle_wait_omitted": true, "expected_summary": {"strategy": "reversion_media", "label": "Reversión a la media", "ticks": 20000, "equity": 17909, "profit": 7909, "orders": 1415, "commissions": 7075, "max_drawdown": 7017, "cash": 11735, "shares": 63}, "program": "sw/trade_shifter.s", "hex_sha256": "86c7ea1bab59ec39782afaca3bba5a369da8affcaf0acc0e0a3bc417395e2494", "prices_sha256": "1f0e504e7e88e77180a625146a14e5e15f114193eb63840219ecca6226573113", "metrics": {"ticks": 20000, "max_cycles": 257, "mean_cycles": 64.2097, "max_instructions": 116, "mean_instructions": 29.088, "cpi_service": 2.2074291804180417}, "verified": "RTL, SPI, every next decision, cash and shares, deadlines"}

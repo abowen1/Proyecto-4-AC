@@ -4,6 +4,7 @@ Esta carpeta conserva resultados, figuras y explicaciones del desarrollo, según
 
 - [01 · Perfil de D y ley de Amdahl](01_perfil_D_2026-11-12/README.md): mediciones por sección, código de medición, datos por precio e instrucción, gráficos PNG/SVG, predicciones y prioridades de optimización.
 - [02 · Vía rápida de 63, implementada y conservada](02_via_rapida_63_2026-11-12/README.md): equivalencia en 22.816 precios, reducción de tiempo promedio 26,33% en la práctica completa, perfil nuevo, regresiones individuales y ambos programas conservados.
+- [03 · Dos alternativas de hardware y validación física](03_hardware_2026-11-12/README.md): shifter acotado y QCAP, comparación contra software, recursos/Fmax, Amdahl, Ops/s, roofline, autodiagnósticos A5/B5 y corrección de arranque común comprobada al reconectar.
 - [Reglas e implementación base de D](../estrategia/D_implementacion.md).
 - [Evidencia previa de equivalencia D/Python](../evidencias/D_2026-11-12/).
 - [Compilación y prueba física inicial](../evidencias/validacion_placa_2026-11-11.md).
