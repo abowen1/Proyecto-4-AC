@@ -1,5 +1,7 @@
 # Dos alternativas de hardware para D
 
+**Actualización del 14/11:** este documento conserva las pruebas del 12/11. El equipo ya eligió el shifter y reemplazó el diagnóstico A5 por D bursátil en la placa. Ver [estado vigente y carga final](../04_seleccion_final_2026-11-14/README.md).
+
 12 de noviembre de 2026. **Recomendación: alternativa A, desplazamientos inmediatos acotados y algoritmos binarios.** Se implementaron, simularon y compilaron A y B/QCAP, comparándolas con la mejor versión solo software de 102 instrucciones. Los autodiagnósticos de ambas variantes también pasaron en la Go Board, antes y después de desconectar USB. El intercambio SPI físico con la maestra del curso todavía no se ha probado.
 
 La estrategia sigue siendo **D: SMA32, banda 1, sin techo de retiro**, con las mismas cantidades, comisiones y ejecución al precio siguiente. Los nombres A/B de esta carpeta corresponden a implementaciones de hardware; no son las antiguas estrategias bursátiles A y B.

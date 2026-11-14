@@ -1,5 +1,8 @@
 # Proyecto 4 AC — Pochoco Trader
 
+**Selección final del equipo, 14/11:** D con **shifter acotado**. Ya se cargó esa imagen bursátil en la Go Board (VERIFY OK); reemplaza A5. Usar `make test-final`, `make build-final` y `make program-final`. [Estado, evidencia y prueba con la maestra simulada de Canvas](docs/informe/04_seleccion_final_2026-11-14/README.md). No hace falta una segunda placa propia: la conexión física se probará con la maestra del curso.
+
+
 **Decisión del equipo, 12 de noviembre: D original, reversión a la media de 32 muestras y banda 1. Sin retiro al alcanzar 20.000 ni 30.000 de patrimonio.** El programa `sw/trade.s` implementa D en Espino original; el diagnóstico mantener se conserva en `sw/hold.s`. Reglas y verificación en [implementación de D](docs/estrategia/D_implementacion.md).
 
 Para el traspaso completo de las 15 configuraciones bursátiles exploradas, sus resultados, especificaciones y trabajo pendiente, consultar [README_ESTRATEGIAS.md](README_ESTRATEGIAS.md). Ese documento es autocontenido y se puede compartir por separado con el Work de la Coni.
@@ -8,7 +11,7 @@ Material guardado para el informe: [carpeta central de evidencia y figuras](docs
 
 **Versión actual:** [vía rápida de 63 conservada tras evaluación](docs/informe/02_via_rapida_63_2026-11-12/README.md). `sw/trade.s` tiene 102 instrucciones; la base original de 84 permanece en `sw/trade_base_84.s/.hex`. Mismas órdenes y patrimonio; en 20.000 precios el tiempo promedio baja 26,33% y el máximo observado pasa de 1.484 a 802 ciclos. `make compare-fastpath63` reproduce las verificaciones y los gráficos.
 
-**Co-diseño completado:** [dos variantes de hardware y pruebas físicas](docs/informe/03_hardware_2026-11-12/README.md). A/shifter acotado se recomienda frente a B/QCAP: 64,21 frente a 84,63 ciclos promedio, contra 89,38 de software. Las tres conservan D y cierran timing a 25 MHz. Ambos autodiagnósticos pasaron tras programar y tras reconectar. Se corrigió el arranque común de 15 a 63 ciclos tras un fallo real detectado en placa; se repitieron todas las comparaciones. La placa queda con el diagnóstico A5; el ensayo SPI físico de mercado sigue pendiente. `make compare-hardware` reproduce la comparación.
+**Co-diseño completado:** [dos variantes de hardware y pruebas físicas](docs/informe/03_hardware_2026-11-12/README.md). A/shifter acotado se recomienda frente a B/QCAP: 64,21 frente a 84,63 ciclos promedio, contra 89,38 de software. Las tres conservan D y cierran timing a 25 MHz. Ambos autodiagnósticos pasaron tras programar y tras reconectar. Se corrigió el arranque común de 15 a 63 ciclos tras un fallo real detectado en placa; se repitieron todas las comparaciones. El 12/11 la placa quedó con el diagnóstico A5; ver la actualización de selección y carga del 14/11. El ensayo SPI físico de mercado sigue pendiente. `make compare-hardware` reproduce la comparación.
 
 **Actualización del 12 de noviembre:** [informe para decidir entre A, D y DF](docs/estrategia/recomendacion_2026-11-12/README.md), con gráficos SVG/PNG, históricos de seis activos, datos y comandos reproducibles, recomendaciones según escenario, revisión de la transcripción y prueba de salida permanente en patrimonio 20.000. Es historia exploratoria de pre-entrega, anterior a la selección de D sin techo de retiro. El informe distingue los lotes calibrados con 2023 del lote largo cuya normalización usa el máximo futuro.
 

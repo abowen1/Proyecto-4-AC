@@ -1,5 +1,7 @@
 # AC4 — Traspaso de estrategias y resultados para Coni y su Work
 
+**Actualización del 14/11:** el equipo eligió D con shifter acotado como implementación final y se cargó la imagen bursátil en la placa, reemplazando A5. [Selección, evidencia y próximos pasos](docs/informe/04_seleccion_final_2026-11-14/README.md). La prueba de conexión física queda para la maestra del curso; no hace falta otra placa propia.
+
 La comparación posterior de hardware conserva exactamente D: [dos alternativas, mediciones y pruebas de placa](docs/informe/03_hardware_2026-11-12/README.md). Se recomienda el desplazador acotado: 28,16 % menos ciclos promedio que el software optimizado. Las alternativas de hardware A/B no son las estrategias bursátiles A/B históricas.
 
 **Decisión final del equipo, 12 de noviembre de 2026: D original, SMA32 y banda 1, sin subvariaciones y sin techo de retiro en 20.000 ni 30.000.** Los experimentos de salida permanente quedan como historia y no forman parte de la estrategia elegida. D se implementó en `sw/trade.s`; ver [reglas y evidencia de implementación](docs/estrategia/D_implementacion.md).

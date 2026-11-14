@@ -12,3 +12,5 @@ Esta carpeta conserva resultados, figuras y explicaciones del desarrollo, según
 Para las próximas variantes conservar en una carpeta propia: código o revisión exacta, comandos, configuración y hashes, mediciones originales, resultados resumidos, figuras PNG y SVG, interpretación y límites. Mantener separadas las predicciones de Amdahl de los speedups medidos. Registrar también los resultados que descarten una alternativa; sirven para justificar la elección final.
 
 Las figuras se regeneran con herramientas de gráficos convencionales; no son capturas de una conversación. La referencia bursátil elegida sigue siendo D/SMA32/banda 1 sin techo de retiro. Comparar implementaciones de hardware manteniendo las mismas decisiones permite atribuir las diferencias de tiempo al hardware y al software que lo utiliza.
+
+- [04 · Selección final D/shifter y carga en placa](04_seleccion_final_2026-11-14/README.md): decisión confirmada, maestra simulada de Canvas, programación física y alcance pendiente con la maestra del curso.

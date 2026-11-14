@@ -85,3 +85,11 @@ build/ac4.bin: build/ac4.asc
 	icepack $< $@
 program: build/ac4.bin
 	iceprog $<
+
+# Selección del equipo (14/11): D con shifter acotado; la base queda disponible.
+.PHONY: test-final build-final program-final
+test-final:
+	$(PYTHON) tools/verify_canvas_final.py
+build-final: build-shifter
+program-final: build-final
+	iceprog build/hardware/shifter/soc.bin

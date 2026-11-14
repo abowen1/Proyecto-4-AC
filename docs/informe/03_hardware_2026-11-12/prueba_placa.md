@@ -1,5 +1,7 @@
 # Prueba física: Go Board, 12 de noviembre de 2026
 
+**Actualización del 14/11:** este documento conserva las pruebas del 12/11. El equipo ya eligió el shifter y reemplazó el diagnóstico A5 por D bursátil en la placa. Ver [estado vigente y carga final](../04_seleccion_final_2026-11-14/README.md).
+
 Estado final: **ambos autodiagnósticos de cálculo aprobados**. La placa queda con A5, diagnóstico del shifter acotado. La estrategia sigue siendo D; A5 identifica el hardware, no una estrategia bursátil distinta.
 
 ## Respaldo y programación

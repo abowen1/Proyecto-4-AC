@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "variant": "shifter",
+  "strategy": "D",
+  "ticks": 2000,
+  "period_ns": 100000,
+  "canvas_checks": "4/4",
+  "every_applied_decision_and_accounting_match": true,
+  "original_testbench_sha256": "f83486755fe2b3de385a2bdc39c2f275b9dd690342fb4fc0391401706876f8f3",
+  "program_hex_sha256": "86c7ea1bab59ec39782afaca3bba5a369da8affcaf0acc0e0a3bc417395e2494",
+  "expected_summary": {
+    "strategy": "reversion_media",
+    "label": "Reversión a la media",
+    "ticks": 2000,
+    "equity": 9923,
+    "profit": -77,
+    "orders": 140,
+    "commissions": 700,
+    "max_drawdown": 1607,
+    "cash": 25,
+    "shares": 98
+  },
+  "scope": "Simulación de la maestra Canvas y del SoC; no señales físicas USB/SPI"
+}
