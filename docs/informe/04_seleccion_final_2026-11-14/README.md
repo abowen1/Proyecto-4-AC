@@ -1,5 +1,8 @@
 # Selección final y carga de D en placa — 14 de noviembre de 2026
 
+**Actualización del 17/11:** la serie oficial cambió a Meta. [Resultados vigentes](../05_meta_2026-11-17/README.md). Los números de este documento son históricos. `make test-final` usa ahora Meta por defecto; para reproducir este ensayo anterior usar `python3 tools/verify_canvas_final.py --series tb/practica.csv`. La nueva práctica no exige cambiar la imagen cargada.
+
+
 ## Decisión del equipo
 
 Se elige **shifter acotado** como implementación final. La estrategia bursátil sigue siendo **D original: SMA32, banda 1, sin techo de retiro, comisión 5 y ejecución al precio siguiente**. QCAP queda como alternativa comparada para el informe. No se cambiaron el algoritmo, el RTL ni la imagen medida el 12/11.

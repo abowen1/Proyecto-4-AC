@@ -93,3 +93,13 @@ test-final:
 build-final: build-shifter
 program-final: build-final
 	iceprog build/hardware/shifter/soc.bin
+
+# Nueva práctica oficial Meta (anuncio del 17/11); conserva la anterior.
+.PHONY: verify-meta
+verify-meta:
+	mkdir -p build
+	$(PYTHON) tools/verify_strategy_d.py --variant software --series tb/practica_meta.csv --fast --profile --name meta_software_20000 > build/meta_software_20000.txt 2>&1
+	$(PYTHON) tools/verify_strategy_d.py --variant shifter --series tb/practica_meta.csv --fast --profile --name meta_shifter_20000 > build/meta_shifter_20000.txt 2>&1
+	$(PYTHON) tools/verify_strategy_d.py --variant qcap --series tb/practica_meta.csv --fast --profile --name meta_qcap_20000 > build/meta_qcap_20000.txt 2>&1
+	$(PYTHON) tools/verify_canvas_final.py
+	$(PYTHON) tools/archive_meta.py

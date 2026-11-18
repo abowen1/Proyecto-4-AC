@@ -1,5 +1,8 @@
 # Proyecto 4 AC — Pochoco Trader
 
+**Nueva práctica oficial Meta, 17/11:** [evaluación actual y gráficos](docs/informe/05_meta_2026-11-17/README.md). D sin cambios termina en **5.926**, frente a **9.695** de comprar y mantener y **10.000** de no operar. Coincidencia completa con Python en 20.000 precios y 4/4 chequeos Canvas en 2.000 de ronda rápida. El shifter sigue elegido (25,44 % menos ciclos promedio); no hace falta reprogramar por el nuevo CSV. La rentabilidad requiere revisión del equipo. `make test-final` usa ahora Meta; `make verify-meta` reproduce esta evaluación.
+
+
 **Selección final del equipo, 14/11:** D con **shifter acotado**. Ya se cargó esa imagen bursátil en la Go Board (VERIFY OK); reemplaza A5. Usar `make test-final`, `make build-final` y `make program-final`. [Estado, evidencia y prueba con la maestra simulada de Canvas](docs/informe/04_seleccion_final_2026-11-14/README.md). No hace falta una segunda placa propia: la conexión física se probará con la maestra del curso.
 
 

@@ -1,0 +1,109 @@
+{
+  "series": {
+    "series": "Meta oficial, anuncio del 17/11",
+    "ticks": 20000,
+    "price_min": 100,
+    "price_max": 255,
+    "first_price": 165,
+    "last_price": 160,
+    "csv_sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+    "rules": {
+      "cash": 10000,
+      "commission": 5
+    },
+    "D": {
+      "strategy": "reversion_media",
+      "label": "Reversión a la media",
+      "ticks": 20000,
+      "equity": 5926,
+      "profit": -4074,
+      "orders": 722,
+      "commissions": 3610,
+      "max_drawdown": 8785,
+      "cash": 6,
+      "shares": 37
+    },
+    "no_trade": 10000,
+    "buy_hold": 9695,
+    "buy_hold_orders": 1,
+    "buy_hold_commissions": 5,
+    "buy_hold_max_drawdown": 9300,
+    "D_peak_equity": 14711
+  },
+  "hardware": [
+    {
+      "variant": "software",
+      "mean_cycles": 82.58305,
+      "max_cycles": 1132,
+      "mean_instructions": 37.6108,
+      "cpi": 2.1957270252161614,
+      "mean_us": 3.303322,
+      "max_us": 45.28,
+      "logic_cells": 1091,
+      "bram": 12,
+      "fmax_mhz": 46.06808853149414,
+      "speedup": 1.0,
+      "time_reduction": 0.0
+    },
+    {
+      "variant": "shifter",
+      "mean_cycles": 61.57205,
+      "max_cycles": 262,
+      "mean_instructions": 27.84705,
+      "cpi": 2.211079809171887,
+      "mean_us": 2.462882,
+      "max_us": 10.48,
+      "logic_cells": 1202,
+      "bram": 12,
+      "fmax_mhz": 42.238651275634766,
+      "speedup": 1.341242495580381,
+      "time_reduction": 0.2544226690586022
+    },
+    {
+      "variant": "qcap",
+      "mean_cycles": 77.21155,
+      "max_cycles": 791,
+      "mean_instructions": 35.1123,
+      "cpi": 2.19898867348479,
+      "mean_us": 3.0884620000000003,
+      "max_us": 31.64,
+      "logic_cells": 1186,
+      "bram": 12,
+      "fmax_mhz": 43.871192932128906,
+      "speedup": 1.0695686072873811,
+      "time_reduction": 0.06504361367132838
+    }
+  ],
+  "canvas": {
+    "status": "PASS",
+    "variant": "shifter",
+    "strategy": "D",
+    "ticks": 2000,
+    "period_ns": 100000,
+    "series": "/private/tmp/ac4-publicacion-20261114/tb/practica_meta.csv",
+    "series_csv_sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+    "canvas_checks": "4/4",
+    "every_applied_decision_and_accounting_match": true,
+    "original_testbench_sha256": "f83486755fe2b3de385a2bdc39c2f275b9dd690342fb4fc0391401706876f8f3",
+    "program_hex_sha256": "86c7ea1bab59ec39782afaca3bba5a369da8affcaf0acc0e0a3bc417395e2494",
+    "expected_summary": {
+      "strategy": "reversion_media",
+      "label": "Reversión a la media",
+      "ticks": 2000,
+      "equity": 12498,
+      "profit": 2498,
+      "orders": 82,
+      "commissions": 410,
+      "max_drawdown": 965,
+      "cash": 90,
+      "shares": 66
+    },
+    "scope": "Simulación de la maestra Canvas y del SoC; no señales físicas USB/SPI"
+  },
+  "physical_reflash_required_by_announcement": false,
+  "physical_spi_tested": false,
+  "production_code_changed": false,
+  "full_series_idle_wait_omitted": true,
+  "clock_hz": 25000000,
+  "report_date": "2026-11-17"
+}

@@ -1,0 +1,11 @@
+variant,fraction,local_speedup,global_speedup,kind
+shifter,0.3484570986419126,2,1.2109888264818136,escenario hipotetico
+shifter,0.3484570986419126,4,1.3538080079179597,escenario hipotetico
+shifter,0.3484570986419126,10,1.4569006298330935,escenario hipotetico
+shifter,0.3484570986419126,infinito,1.5348183487466176,escenario hipotetico
+shifter,0.3484570986419126,3.7056331408188625,1.341242495580381,"reconstruccion retrospectiva, no prediccion independiente"
+qcap,0.08497688084903621,2,1.0443738146026722,escenario hipotetico
+qcap,0.08497688084903621,4,1.0680710070268213,escenario hipotetico
+qcap,0.08497688084903621,10,1.082812636342258,escenario hipotetico
+qcap,0.08497688084903621,infinito,1.0928685615374232,escenario hipotetico
+qcap,0.08497688084903621,4.263068371655074,1.0695686072873811,"reconstruccion retrospectiva, no prediccion independiente"

@@ -38,3 +38,6 @@ decisiones.csv
 !docs/estrategia/protecciones_ad/*.json
 !docs/estrategia/**/*.csv
 !docs/estrategia/**/*.json
+
+# Nueva práctica oficial Meta; la anterior se conserva como historia.
+!tb/practica_meta.csv

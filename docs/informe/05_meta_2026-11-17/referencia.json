@@ -1,0 +1,31 @@
+{
+  "series": "Meta oficial, anuncio del 17/11",
+  "ticks": 20000,
+  "price_min": 100,
+  "price_max": 255,
+  "first_price": 165,
+  "last_price": 160,
+  "csv_sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "D": {
+    "strategy": "reversion_media",
+    "label": "Reversión a la media",
+    "ticks": 20000,
+    "equity": 5926,
+    "profit": -4074,
+    "orders": 722,
+    "commissions": 3610,
+    "max_drawdown": 8785,
+    "cash": 6,
+    "shares": 37
+  },
+  "no_trade": 10000,
+  "buy_hold": 9695,
+  "buy_hold_orders": 1,
+  "buy_hold_commissions": 5,
+  "buy_hold_max_drawdown": 9300,
+  "D_peak_equity": 14711
+}

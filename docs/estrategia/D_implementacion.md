@@ -1,5 +1,7 @@
 # D elegida e implementada en Espino
 
+**Alerta con Meta, 17/11:** D permanece sin cambios y pasa equivalencia, pero finaliza en **5.926** contra **9.695** de comprar y mantener. El equipo debe revisar su rendimiento bursátil antes de competir. El shifter conserva una mejora de **25,44 %** de tiempo promedio. [Nueva evaluación oficial y evidencia](../informe/05_meta_2026-11-17/README.md). Los resultados con la práctica anterior se conservan como historia; no representan la nueva serie.
+
 **Actualización del 14/11:** el equipo eligió D con shifter acotado como implementación final y se cargó la imagen bursátil en la placa, reemplazando A5. [Selección, evidencia y próximos pasos](../informe/04_seleccion_final_2026-11-14/README.md). La prueba de conexión física queda para la maestra del curso; no hace falta otra placa propia.
 
 **Etapa posterior:** ya se implementaron y compararon [A/shifter acotado y B/QCAP](../informe/03_hardware_2026-11-12/README.md), manteniendo D. A se recomienda con 64,210 ciclos promedio y 257 de máximo observado. Ambos autodiagnósticos físicos pasaron al programar y al reconectar. El reset común del SoC se amplió a 63 ciclos tras detectar un fallo real de arranque; todas las variantes se volvieron a medir con ese reset. SPI físico con la maestra aún está pendiente.

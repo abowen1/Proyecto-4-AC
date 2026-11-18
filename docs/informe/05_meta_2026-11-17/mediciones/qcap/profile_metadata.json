@@ -1,0 +1,100 @@
+{
+  "assembly_sha256": "583bceef549dbf1def64ebe8872a82b49f9b6c681261a448ae5ca18f33a11d32",
+  "hex_sha256": "22c0f6b9ed74f65461bb263469fa91779b30b5a8135ccf6371a95eb4775905b0",
+  "groups": [
+    {
+      "id": 0,
+      "key": "io",
+      "label": "Recepción y publicación",
+      "major": "io"
+    },
+    {
+      "id": 1,
+      "key": "account_control",
+      "label": "Despacho contable",
+      "major": "contabilidad"
+    },
+    {
+      "id": 2,
+      "key": "fill_buy_control",
+      "label": "Compra ejecutada: control",
+      "major": "contabilidad"
+    },
+    {
+      "id": 3,
+      "key": "fill_buy_loop",
+      "label": "Compra ejecutada: bucle",
+      "major": "contabilidad"
+    },
+    {
+      "id": 4,
+      "key": "fill_sell_control",
+      "label": "Venta ejecutada: control",
+      "major": "contabilidad"
+    },
+    {
+      "id": 5,
+      "key": "fill_sell_loop",
+      "label": "Venta ejecutada: bucle",
+      "major": "contabilidad"
+    },
+    {
+      "id": 6,
+      "key": "window",
+      "label": "Actualizar ventana de 32",
+      "major": "ventana"
+    },
+    {
+      "id": 7,
+      "key": "times32",
+      "label": "Calcular 32 × precio",
+      "major": "senal"
+    },
+    {
+      "id": 8,
+      "key": "signal",
+      "label": "Comparar señal",
+      "major": "senal"
+    },
+    {
+      "id": 9,
+      "key": "size_buy_control",
+      "label": "Nueva compra: control",
+      "major": "cantidad_compra"
+    },
+    {
+      "id": 10,
+      "key": "size_buy_loop",
+      "label": "Nueva compra: bucle",
+      "major": "cantidad_compra"
+    },
+    {
+      "id": 11,
+      "key": "size_sell",
+      "label": "Nueva venta: cantidad",
+      "major": "cantidad_venta"
+    }
+  ],
+  "labels": {
+    "start": 0,
+    "wait_price": 40,
+    "fill_buy": 72,
+    "fill_buy_slow": 132,
+    "fill_buy_loop": 136,
+    "fill_buy_done": 156,
+    "fill_sell": 172,
+    "fill_sell_quantity": 180,
+    "fill_sell_loop": 192,
+    "accounted": 220,
+    "remove_old": 244,
+    "append_price": 252,
+    "signal_times32": 272,
+    "signal_compare": 292,
+    "propose_buy": 312,
+    "propose_sell": 332,
+    "size_sell_done": 348,
+    "publish": 352
+  },
+  "clock_hz": 25000000,
+  "attribution": "ID valido: PC observado, incluyendo stalls; ID invalido: ultimo PC valido; ventana (byte_done, DECISION] para ciclos e incluye byte_done para IC, como metrica original."
+}

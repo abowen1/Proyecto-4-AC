@@ -14,13 +14,14 @@ from hardware_variants import rtl_sources
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--series', type=Path, default=ROOT/'tb/practica_meta.csv')
     parser.add_argument('--ticks', type=int, default=2000)
     parser.add_argument('--period', type=int, choices=(100000, 1000000, 10000000), default=100000)
     args = parser.parse_args()
-    prices = read_prices(ROOT/'tb/practica.csv')
+    prices = read_prices(args.series)
     if not 1 <= args.ticks <= len(prices):
         parser.error('Cantidad de precios fuera de la serie disponible')
-    output = ROOT/'build/canvas_final'/f'{args.ticks}_{args.period}'
+    output = ROOT/'build/canvas_final'/args.series.stem/f'{args.ticks}_{args.period}'
     output.mkdir(parents=True, exist_ok=True)
     (output/'result.json').unlink(missing_ok=True)
     image = output/'program.hex'
@@ -30,7 +31,7 @@ def main():
     bench = original.read_text()
     # Icarus no admite localparam string; quitar el tipo no cambia su valor.
     bench = bench.replace('localparam string', 'localparam')
-    for name, value in [('PROGRAMA', f'"{image}"'), ('SERIE', f'"{ROOT / "tb/practica.csv"}"'),
+    for name, value in [('PROGRAMA', f'"{image}"'), ('SERIE', f'"{args.series.resolve()}"'),
                         ('NTICKS', str(args.ticks)), ('PERIODO_NS', str(args.period))]:
         bench, count = re.subn(r'(localparam\s+(?:int\s+)?'+name+r'\s*=\s*)[^;]+;',
                                lambda m: m[1]+value+';', bench)
@@ -58,6 +59,7 @@ def main():
         if any(int(a[k]) != b[v] for k, v in pairs) or int(a['decision'], 16) != b['applied_decision']:
             raise AssertionError(f'Diferencia en tick {b["tick"]}: {a} vs {b}')
     result = dict(status='PASS', variant='shifter', strategy='D', ticks=args.ticks, period_ns=args.period,
+                  series=str(args.series), series_csv_sha256=hashlib.sha256(args.series.read_bytes()).hexdigest(),
                   canvas_checks='4/4', every_applied_decision_and_accounting_match=True,
                   original_testbench_sha256=hashlib.sha256(original.read_bytes()).hexdigest(),
                   program_hex_sha256=hashlib.sha256(image.read_bytes()).hexdigest(), expected_summary=summary,

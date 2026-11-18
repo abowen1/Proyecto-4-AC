@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "variant": "shifter",
+  "strategy": "D",
+  "ticks": 2000,
+  "period_ns": 100000,
+  "series": "/private/tmp/ac4-publicacion-20261114/tb/practica_meta.csv",
+  "series_csv_sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+  "canvas_checks": "4/4",
+  "every_applied_decision_and_accounting_match": true,
+  "original_testbench_sha256": "f83486755fe2b3de385a2bdc39c2f275b9dd690342fb4fc0391401706876f8f3",
+  "program_hex_sha256": "86c7ea1bab59ec39782afaca3bba5a369da8affcaf0acc0e0a3bc417395e2494",
+  "expected_summary": {
+    "strategy": "reversion_media",
+    "label": "Reversión a la media",
+    "ticks": 2000,
+    "equity": 12498,
+    "profit": 2498,
+    "orders": 82,
+    "commissions": 410,
+    "max_drawdown": 965,
+    "cash": 90,
+    "shares": 66
+  },
+  "scope": "Simulación de la maestra Canvas y del SoC; no señales físicas USB/SPI"
+}

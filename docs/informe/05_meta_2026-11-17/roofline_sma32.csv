@@ -1,0 +1,4 @@
+variant,useful_add_sub,data_bytes,cycles,intensity_ops_per_byte,measured_ops_per_second,theoretical_peak_ops_per_second,theoretical_data_port_bytes_per_second
+software,39968,159872,479999,0.25,2081671.0034812572,12500000,100000000
+shifter,39968,159872,479999,0.25,2081671.0034812572,12500000,100000000
+qcap,39968,159872,479999,0.25,2081671.0034812572,12500000,100000000

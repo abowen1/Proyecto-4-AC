@@ -1,5 +1,7 @@
 # Estado de la estrategia
 
+**Alerta con Meta, 17/11:** D permanece sin cambios y pasa equivalencia, pero finaliza en **5.926** contra **9.695** de comprar y mantener. El equipo debe revisar su rendimiento bursátil antes de competir. El shifter conserva una mejora de **25,44 %** de tiempo promedio. [Nueva evaluación oficial y evidencia](../informe/05_meta_2026-11-17/README.md). Los resultados con la práctica anterior se conservan como historia; no representan la nueva serie.
+
 **Actualización del 14/11:** el equipo eligió D con shifter acotado como implementación final y se cargó la imagen bursátil en la placa, reemplazando A5. [Selección, evidencia y próximos pasos](../informe/04_seleccion_final_2026-11-14/README.md). La prueba de conexión física queda para la maestra del curso; no hace falta otra placa propia.
 
 Fecha: 12 de noviembre de 2026.

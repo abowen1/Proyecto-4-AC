@@ -1,0 +1,15 @@
+/private/tmp/ac4-publicacion-20261114/sw/trade_shifter.s -> /private/tmp/ac4-publicacion-20261114/build/strategy_d/meta_shifter_20000/program.hex: 105 palabras (420 bytes)
+WARNING: /private/tmp/ac4-publicacion-20261114/rtl/pochoco_ram.v:36: $readmemh(/private/tmp/ac4-publicacion-20261114/build/strategy_d/meta_shifter_20000/program.hex): Not enough words in the file for the requested range [0:511].
+D: 2000/20000 ticks verificados
+D: 4000/20000 ticks verificados
+D: 6000/20000 ticks verificados
+D: 8000/20000 ticks verificados
+D: 10000/20000 ticks verificados
+D: 12000/20000 ticks verificados
+D: 14000/20000 ticks verificados
+D: 16000/20000 ticks verificados
+D: 18000/20000 ticks verificados
+D: 20000/20000 ticks verificados
+PASS D: 20000 ticks; ordenes, caja, inventario y MISO exactos; max 262 ciclos, 119 instrucciones; presupuesto 2262
+/private/tmp/ac4-publicacion-20261114/tb/tb_strategy_d.sv:152: $finish called at 241261660000 (1ps)
+{"strategy": "D", "window": 32, "band": 1, "retirement_threshold": null, "variant": "shifter", "period_ns": null, "deadline_budget_period_ns": 100000, "idle_wait_omitted": true, "expected_summary": {"strategy": "reversion_media", "label": "Reversión a la media", "ticks": 20000, "equity": 5926, "profit": -4074, "orders": 722, "commissions": 3610, "max_drawdown": 8785, "cash": 6, "shares": 37}, "program": "sw/trade_shifter.s", "hex_sha256": "86c7ea1bab59ec39782afaca3bba5a369da8affcaf0acc0e0a3bc417395e2494", "prices_sha256": "1ac24e6305fcb81fa2e3598b3c7a292a2c7b9113acfe74821c9065495dfc1fea", "metrics": {"ticks": 20000, "max_cycles": 262, "mean_cycles": 61.57205, "max_instructions": 119, "mean_instructions": 27.84705, "cpi_service": 2.211079809171887}, "verified": "RTL, SPI, every next decision, cash and shares, deadlines"}

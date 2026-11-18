@@ -1,0 +1,13 @@
+key,label,major,cycles,fraction,cycles_per_tick,instructions,cpi
+io,Recepción y publicación,io,299997,0.1942695101963372,14.99985,139998,2.1428663266618093
+account_control,Despacho contable,contabilidad,102525,0.06639226903228856,5.12625,41448,2.473581354950782
+fill_buy_control,Compra ejecutada: control,contabilidad,8588,0.0055613441253284,0.4294,3977,2.1594166457128487
+fill_buy_loop,Compra ejecutada: bucle,contabilidad,107126,0.06937174554843155,5.3563,48600,2.204238683127572
+fill_sell_control,Venta ejecutada: control,contabilidad,6001,0.0038860766297270292,0.30005,2824,2.125
+fill_sell_loop,Venta ejecutada: bucle,contabilidad,113775,0.07367744851644605,5.68875,48912,2.3261162904808637
+window,Actualizar ventana de 32,ventana,479999,0.3108336770858764,23.99995,220000,2.1818136363636365
+times32,Calcular 32 × precio,senal,199690,0.12931355477256964,9.9845,99845,2.0
+signal,Comparar señal,senal,175329,0.1135380652246976,8.76645,77680,2.25706745623069
+size_buy_control,Nueva compra: control,cantidad_compra,32923,0.021319996813948174,1.64615,12353,2.665182546749777
+size_buy_loop,Nueva compra: bucle,cantidad_compra,0,0.0,0.0,0,
+size_sell,Nueva venta: cantidad,cantidad_venta,18278,0.011836312054349383,0.9139,6609,2.765622635799667
