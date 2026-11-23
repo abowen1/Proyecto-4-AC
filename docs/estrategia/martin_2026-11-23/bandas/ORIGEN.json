@@ -1,0 +1,19 @@
+{
+  "original_experiment": "2026-11-23_Martin_1_2_3_4_5",
+  "original_sources_sha256": {
+    "check_bands.py": "81906a9299c42e9be838f99cc7bdb733d7b802019452d934a7103b57529fa07c",
+    "martin_bands.py": "66296d21bfd8d4680bd1424bbd56aaff5e743c9210fc22b7ae7c5b084f2b2580",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "compare_bands.py": "5d36a3aefefb55419e2cadd2489b89d90cfe16875cbb9f9493f5b60267eb735b"
+  },
+  "published_sources_sha256": {
+    "check_bands.py": "81906a9299c42e9be838f99cc7bdb733d7b802019452d934a7103b57529fa07c",
+    "martin_bands.py": "66296d21bfd8d4680bd1424bbd56aaff5e743c9210fc22b7ae7c5b084f2b2580",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "compare_bands.py": "bbcd9edcb80485cfdfa8634c8878483916ef17a7cc04d074b3f76f3e73c09c27"
+  },
+  "adaptation": "Only SERIES input path changed to sibling datos/oficiales; strategy, market and tests unchanged",
+  "trace_archive_sha256": "17f7dd50b67edf73eca9e38d566658482341d62308f338aaa0450c6deedde3ad"
+}

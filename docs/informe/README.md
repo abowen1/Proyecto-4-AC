@@ -16,3 +16,5 @@ Las figuras se regeneran con herramientas de gráficos convencionales; no son ca
 - [04 · Selección final D/shifter y carga en placa](04_seleccion_final_2026-11-14/README.md): decisión confirmada, maestra simulada de Canvas, programación física y alcance pendiente con la maestra del curso.
 
 - [05 · Nueva práctica oficial Meta](05_meta_2026-11-17/README.md): D pierde frente a ambas referencias, equivalencia completa de tres implementaciones, ronda rápida Canvas aprobada y métricas/gráficos actualizados.
+
+- [Iteraciones de Martín del 23/11](../estrategia/martin_2026-11-23/README.md): corto plazo A/B/C y bandas 1-5; ocho oficiales, resultados completos y validación. Pendiente probar las bandas sobre las 70 recreadas.

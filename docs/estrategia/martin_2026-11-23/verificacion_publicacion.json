@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "status": "PASS",
+      "stage": "corto",
+      "runs": 24,
+      "ticks": 480000,
+      "comparison": "all12 numeric trace fields and6 final accounting fields"
+    },
+    {
+      "status": "PASS",
+      "stage": "bandas",
+      "runs": 40,
+      "ticks": 800000,
+      "comparison": "all12 numeric trace fields and6 final accounting fields"
+    }
+  ],
+  "independent_strategy_configurations": 8,
+  "total_runs": 64,
+  "total_trace_ticks": 1280000,
+  "recreated_series_tested_for_numbered_martin": 0,
+  "publication_scope": "Martin only; pre-entrega; no FPGA or production edits"
+}
