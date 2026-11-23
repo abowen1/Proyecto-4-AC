@@ -1,0 +1,26 @@
+{
+  "M_A": {
+    "mean_equity": 207.125,
+    "worst_equity": 199,
+    "wins_vs_initial": 0,
+    "mean_commissions": 9470.0,
+    "mean_orders": 1894.0,
+    "max_drawdown_percent": 98.00999999999999
+  },
+  "M_B": {
+    "mean_equity": 5369.875,
+    "worst_equity": 2757,
+    "wins_vs_initial": 0,
+    "mean_commissions": 4203.75,
+    "mean_orders": 840.75,
+    "max_drawdown_percent": 72.45
+  },
+  "M_C": {
+    "mean_equity": 1292.5,
+    "worst_equity": 222,
+    "wins_vs_initial": 0,
+    "mean_commissions": 8315.0,
+    "mean_orders": 1663.0,
+    "max_drawdown_percent": 97.78
+  }
+}

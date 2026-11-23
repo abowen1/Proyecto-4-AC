@@ -1,6 +1,6 @@
 # Proyecto 4 AC — Pochoco Trader
 
-**Actualización 23/11 - Martín:** [historia de las dos iteraciones, parámetros, gráficos y reproducción](docs/estrategia/martin_2026-11-23/README.md). A/B/C perdió en las ocho oficiales; las bandas Martín 1-5 ganaron en las ocho. La evaluación de estas cinco en las 70 recreadas está pendiente. Son prototipos Python; la estrategia de la placa no se cambió.
+**Actualización 23/11 - M:** [Reporte M con las dos iteraciones, parámetros, gráficos y reproducción](docs/estrategia/reporte_M_2026-11-23/README.md). A/B/C perdió en las ocho oficiales; las bandas M1-5 ganaron en las ocho. La evaluación de estas cinco en las 70 recreadas está pendiente. Son prototipos Python; la estrategia de la placa no se cambió.
 
 **Nueva práctica oficial Meta, 17/11:** [evaluación actual y gráficos](docs/informe/05_meta_2026-11-17/README.md). D sin cambios termina en **5.926**, frente a **9.695** de comprar y mantener y **10.000** de no operar. Coincidencia completa con Python en 20.000 precios y 4/4 chequeos Canvas en 2.000 de ronda rápida. El shifter sigue elegido (25,44 % menos ciclos promedio); no hace falta reprogramar por el nuevo CSV. La rentabilidad requiere revisión del equipo. `make test-final` usa ahora Meta; `make verify-meta` reproduce esta evaluación.
 

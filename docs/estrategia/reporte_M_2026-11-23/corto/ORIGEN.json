@@ -1,0 +1,13 @@
+{
+  "baseline_commit": "48935e7429a822c3318da95bca9c04efeed4dc09",
+  "change": "Nomenclatura M, rutas y contexto editorial; reglas y resultados numéricos sin cambios",
+  "archived_numeric_payload_identical": true,
+  "published_sources_sha256": {
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "check_m.py": "bb76efc9653da9c5d32f2816b99c96991df815e3335377ae9580007712aaeb6c",
+    "m.py": "969f5195a2da13e2bca2480f551d1c8ebe04b8b5d15d206eefb65745d94d3b74",
+    "compare_m.py": "cd412988fb7b1884ba7ae45308fd5a930434befb160a7de18b2dd93dfd731554",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb"
+  },
+  "trace_archive_sha256": "00814c83ce11b12c767974f6c3d4ffde9f30fa6849184c237099579ac7e9f4ea"
+}
