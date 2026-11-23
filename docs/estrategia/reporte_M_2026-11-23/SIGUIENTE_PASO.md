@@ -1,6 +1,6 @@
-# Evaluación pendiente de los cinco M en las recreadas
+# Evaluación pendiente de M1 a M5 en las recreadas
 
-Estado al 23 de noviembre de 2026: existen dos etapas publicadas de M. A/B/C perdió en las ocho series oficiales; 1/2/3/4/5 ganó en esas mismas ocho. M3 tiene el mejor promedio de ese lote, pero no hay decisión final. **Ninguno de las cinco variantes M1–M5 ha sido ejecutado sobre las 70 recreadas en esta investigación.**
+Estado al 23 de noviembre de 2026: existen dos etapas publicadas de M. M A/B/C perdió en las ocho series oficiales; M1–M5 ganó en esas mismas ocho. M3 tiene el mejor promedio de ese lote, pero no hay decisión final. **Ninguna de las cinco variantes M1–M5 ha sido ejecutada sobre las 70 recreadas en esta investigación.**
 
 ## Entradas para la próxima prueba
 
