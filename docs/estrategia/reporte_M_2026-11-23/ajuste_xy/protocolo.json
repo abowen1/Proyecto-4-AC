@@ -1,0 +1,74 @@
+{
+  "X_candidates": [
+    110,
+    120,
+    130,
+    140,
+    150
+  ],
+  "Y_initial": 210,
+  "Y_candidates": [
+    190,
+    200,
+    210,
+    220,
+    230
+  ],
+  "exposure": 100,
+  "criterion": "Maximum arithmetic mean final equity over8 equal-weight official series. Tie: higher worst final, lower max drawdown, lower X, lower Y.",
+  "rule": "Choose X in stage1, freeze it, then compare five Y candidates. No changing either grid after results.",
+  "common": {
+    "buy": "price<=buy threshold; inclusive",
+    "sell": "price>=sell threshold; inclusive",
+    "allocation": "Fixed episode budget exposure% of equity observed at first entry signal; includes buy fees",
+    "accumulation": "While still inside buy band, buy remaining budget in orders<=63; stop adding once outside band or budget exhausted",
+    "liquidation": "Latch sell after first exit signal and drain inventory in orders<=63 even if price leaves exit band",
+    "reentry": "After flat, wait until price<=buy threshold again; no added cooldown",
+    "execution": "Every request executes next tick; price gaps may exceed the observed-price budget",
+    "horizon": "No date/ticker/future values, no end-of-series sale, no retirement threshold",
+    "risk": "No separate stop/trailing/TP based on profit; exit is absolute normalized price band"
+  },
+  "scope": "Coordinate tuning on the same8 known official inputs, not independent validation. No recreated series tested.",
+  "sources": {
+    "Meta_2022": {
+      "label": "Meta 2022",
+      "filename": "practica_meta_2022.csv",
+      "sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f"
+    },
+    "AMD_2022_ene": {
+      "label": "AMD enero 2022",
+      "filename": "practica_amd_2022_ene.csv",
+      "sha256": "0c1c5e791578a59ec0f077d263f6103a4d1fde8e0f8ffbe1e775c05f442a0bc7"
+    },
+    "AMD_2022_may": {
+      "label": "AMD mayo 2022",
+      "filename": "practica_amd_2022_may.csv",
+      "sha256": "20e2ead37cdeb3ba0d38c4feba9f0b606665f277bde8214e1c7fdb6d92a69a2a"
+    },
+    "Tesla_2022": {
+      "label": "Tesla enero 2022",
+      "filename": "practica_tesla_2022.csv",
+      "sha256": "a48617cc5a91023f16731d24f86814204bdad9d48367d7559c0c6fac6bfd7db6"
+    },
+    "Apple_2022": {
+      "label": "Apple julio 2022",
+      "filename": "practica_apple_2022.csv",
+      "sha256": "0c28c0a53f6fd55ee6216916c1d7d529a5998bbe7ad4d8f940e439d78fe2dbb8"
+    },
+    "Apple_2023": {
+      "label": "Apple 2023",
+      "filename": "practica_apple_2023.csv",
+      "sha256": "6a28f5a36754f82cf17187100a5d1e55554ebc17b6c40528167e8525d16fa675"
+    },
+    "Netflix_2022": {
+      "label": "Netflix 2022",
+      "filename": "practica_netflix_2022.csv",
+      "sha256": "71e96fc05c3dca67e30d27a8baf8cbef39d0186a385ebf3e9a719ab1bef19846"
+    },
+    "Netflix_2023": {
+      "label": "Netflix 2023",
+      "filename": "practica_netflix_2023.csv",
+      "sha256": "30b59beaa67efe60949fa00f020a3f38981fa72aa4d2ccb1a7230a03de214bcd"
+    }
+  }
+}

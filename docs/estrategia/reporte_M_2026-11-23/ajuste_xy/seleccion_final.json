@@ -1,0 +1,17 @@
+{
+  "stage1_winner": "M110-210",
+  "stage2_winner": "M110-220",
+  "metrics": {
+    "buy": 110,
+    "sell": 220,
+    "exposure": 100,
+    "mean_equity": 18961.875,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 19.375,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  "comparisons": 80,
+  "unique_simulations": 72,
+  "selection_is_out_of_sample": false
+}

@@ -17,4 +17,4 @@ Las figuras se regeneran con herramientas de gráficos convencionales; no son ca
 
 - [05 · Nueva práctica oficial Meta](05_meta_2026-11-17/README.md): D pierde frente a ambas referencias, equivalencia completa de tres implementaciones, ronda rápida Canvas aprobada y métricas/gráficos actualizados.
 
-- [Reporte M del 23/11](../estrategia/reporte_M_2026-11-23/README.md): corto plazo A/B/C y bandas 1-5; ocho oficiales, resultados completos y validación. Pendiente probar las bandas sobre las 70 recreadas.
+- [Reporte M del 23/11](../estrategia/reporte_M_2026-11-23/README.md): historia desde A/B/C y M1–M5, ajuste sucesivo X/Y y [malla vigente de 15 candidatas](../estrategia/reporte_M_2026-11-23/malla_15/README.md). Ocho gráficos, 120 corridas, parámetros, comisiones, caídas y trazas reproducibles para fundamentar la elección final. M105-220 lidera la muestra conocida; selección definitiva y evaluación en recreadas pendientes.

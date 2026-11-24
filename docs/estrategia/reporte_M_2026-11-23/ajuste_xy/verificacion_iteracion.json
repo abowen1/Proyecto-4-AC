@@ -1,0 +1,26 @@
+{
+  "01_X": {
+    "status": "PASS",
+    "compared_ticks": 800160,
+    "stage_evaluations": 40,
+    "new_simulations": 40,
+    "reused_identical_baselines": 0
+  },
+  "02_Y": {
+    "status": "PASS",
+    "compared_ticks": 800160,
+    "stage_evaluations": 40,
+    "new_simulations": 32,
+    "reused_identical_baselines": 8
+  },
+  "policy_unchanged": true,
+  "inputs_unchanged": true,
+  "means_and_selection_verified": true,
+  "reused_baselines_byte_identical": true,
+  "source_sha256": {
+    "iterate_xy.py": "413971797751ef7dcb94bef1180601c4004973d8881fa8966b2e59d2b46ec088",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "m_bands.py": "a3768f9bc3b15ea942acaf40afc9b444bbc31b529cc030a27e6300b2c5a59703"
+  }
+}

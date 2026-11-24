@@ -1,8 +1,10 @@
 # Reporte M
 
-Actualización del 23 de noviembre de 2026. M A/B/C exploró operaciones breves y perdió en las ocho series oficiales. M1–M5 cambió a bandas amplias de precio, mantuvo posiciones durante recorridos grandes y terminó sobre 10.000 en las ocho series. M3 tuvo el mayor patrimonio promedio de esta muestra: **18.283,625**, con **19,375 de comisión media** y una caída máxima desde un pico del **34,8 %** en el peor caso.
+Actualización del 23 de noviembre de 2026. Se conserva el recorrido desde M A/B/C y M1–M5 hasta el ajuste de bandas M X-Y. La comparación vigente es la [malla de 15 candidatas sobre ocho series oficiales](malla_15/README.md): **120 corridas**, ocho gráficos con patrimonio final en cada leyenda, resultados, comisiones, caídas, código y trazas reproducibles. **M105-220 lidera esa muestra con media $19.453,625**; no se ha elegido una estrategia definitiva.
 
-Estos resultados corresponden a prototipos Python sobre ocho series conocidas. **La evaluación de las cinco variantes M1–M5 en las 70 series recreadas está pendiente.** No se seleccionó una estrategia final ni se cambió el programa de la FPGA.
+El [ajuste anterior de X y luego Y](ajuste_xy/README.md) dejó como referencia M110-220 antes de ampliar la grilla. Las tablas de M1–M5 siguientes conservan la historia de su propio lote: M3 lideró ese lote, no la comparación actual.
+
+Todas son simulaciones Python sobre series conocidas. La evaluación de las candidatas actuales en las 70 recreadas está pendiente. La estrategia de la FPGA no se cambió. [Contexto para continuar](SIGUIENTE_PASO.md).
 
 ## Reglas y datos comunes
 
@@ -152,6 +154,6 @@ Cada archivo se extrae dentro de su propia carpeta y crea `resultados/`. Sus has
 
 ## Próximo paso pendiente
 
-**Probar las cinco variantes M1–M5 en las 70 series recreadas, conservando estos parámetros, antes de elegir.** Las ocho series ya eran conocidas y se usaron durante la exploración; 8/8 positivos no equivale a validación independiente.
+Evaluar las candidatas actuales M X-Y sobre las series recreadas antes de cerrar la elección. La grilla vigente y sus parámetros están en [malla_15/README.md](malla_15/README.md); no confundirla con las cinco M1–M5 históricas. El equipo prevé escoger una de estas candidatas, pero todavía no confirmó cuál. Las ocho oficiales se usaron para ajustar bandas; 8/8 positivos no equivale a validación independiente.
 
-El contexto y el plan para continuar están en [SIGUIENTE_PASO.md](SIGUIENTE_PASO.md). Esta publicación no ejecuta ese paso ni selecciona un ganador definitivo. No incluye las otras iteraciones de estrategias.
+El contexto está en [SIGUIENTE_PASO.md](SIGUIENTE_PASO.md). Esta publicación documenta lo ya realizado; no ejecuta la evaluación pendiente ni modifica la placa.

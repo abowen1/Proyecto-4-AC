@@ -1,0 +1,52 @@
+{
+  "M110-210": {
+    "buy": 110,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 18283.625,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 19.375,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  "M120-210": {
+    "buy": 120,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 16233.75,
+    "min_equity": 11286,
+    "wins_vs_initial": 8,
+    "mean_commissions": 18.125,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  "M130-210": {
+    "buy": 130,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 15957.25,
+    "min_equity": 10294,
+    "wins_vs_initial": 8,
+    "mean_commissions": 20.625,
+    "max_drawdown_percent": 46.776050662061024
+  },
+  "M140-210": {
+    "buy": 140,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 16490.875,
+    "min_equity": 11570,
+    "wins_vs_initial": 8,
+    "mean_commissions": 23.125,
+    "max_drawdown_percent": 46.947322018955255
+  },
+  "M150-210": {
+    "buy": 150,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 15243.875,
+    "min_equity": 12683,
+    "wins_vs_initial": 8,
+    "mean_commissions": 27.5,
+    "max_drawdown_percent": 47.357260661273855
+  }
+}

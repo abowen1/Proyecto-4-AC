@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "compared_ticks": 800160,
+  "stage_evaluations": 40,
+  "new_simulations": 40,
+  "reused_identical_baselines": 0
+}

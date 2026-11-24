@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "simulations": 120,
+  "compared_ticks": 2400160,
+  "identical_previous_trace_controls": 16,
+  "official_series": 8,
+  "strategy_variants": 15
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "runs": 120,
+  "ticks": 2400000,
+  "source_hashes_checked": 8,
+  "comparison": "All12 numeric columns,4 policy columns,7 final fields and closed episodes; no graph changes"
+}

@@ -20,5 +20,26 @@
   "total_trace_ticks": 1280000,
   "archived_trace_files_identical_except_names": 64,
   "recreated_series_tested_for_numbered_m": 0,
-  "publication_scope": "Reporte M; pre-entrega; no FPGA or production edits"
+  "publication_scope": "Reporte M; pre-entrega; no FPGA or production edits",
+  "malla_15": {
+    "status": "PASS",
+    "runs": 120,
+    "ticks": 2400000,
+    "source_hashes_checked": 8,
+    "comparison": "All12 numeric columns,4 policy columns,7 final fields and closed episodes; no graph changes",
+    "unchanged_strategy_ast": true,
+    "unchanged_simulate_ast": true,
+    "identical_official_accounting_source": true,
+    "graphs_identical_to_local": 8,
+    "source_accounting_verification": {
+      "status": "PASS",
+      "simulations": 120,
+      "compared_ticks": 2400160,
+      "identical_previous_trace_controls": 16,
+      "official_series": 8,
+      "strategy_variants": 15
+    }
+  },
+  "intermediate_XY_history_included": true,
+  "latest_scope": "15 M X-Y candidates, eight known official series; selection pending; no recreated runs or FPGA changes"
 }

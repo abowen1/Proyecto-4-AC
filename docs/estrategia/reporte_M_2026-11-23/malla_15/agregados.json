@@ -1,0 +1,167 @@
+[
+  {
+    "strategy": "M105-220",
+    "buy": 105,
+    "sell": 220,
+    "exposure": 100,
+    "mean_equity": 19453.625,
+    "min_equity": 12685,
+    "wins_vs_initial": 8,
+    "mean_commissions": 17.5,
+    "max_drawdown_percent": 33.01555444054189
+  },
+  {
+    "strategy": "M105-225",
+    "buy": 105,
+    "sell": 225,
+    "exposure": 100,
+    "mean_equity": 19311.875,
+    "min_equity": 12685,
+    "wins_vs_initial": 8,
+    "mean_commissions": 16.875,
+    "max_drawdown_percent": 33.01555444054189
+  },
+  {
+    "strategy": "M105-215",
+    "buy": 105,
+    "sell": 215,
+    "exposure": 100,
+    "mean_equity": 19116.25,
+    "min_equity": 12685,
+    "wins_vs_initial": 8,
+    "mean_commissions": 17.5,
+    "max_drawdown_percent": 33.01555444054189
+  },
+  {
+    "strategy": "M110-220",
+    "buy": 110,
+    "sell": 220,
+    "exposure": 100,
+    "mean_equity": 18961.875,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 19.375,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M110-225",
+    "buy": 110,
+    "sell": 225,
+    "exposure": 100,
+    "mean_equity": 18893.875,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 20.0,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M105-210",
+    "buy": 105,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 18768.25,
+    "min_equity": 12685,
+    "wins_vs_initial": 8,
+    "mean_commissions": 17.5,
+    "max_drawdown_percent": 33.01555444054189
+  },
+  {
+    "strategy": "M115-220",
+    "buy": 115,
+    "sell": 220,
+    "exposure": 100,
+    "mean_equity": 18638.0,
+    "min_equity": 11129,
+    "wins_vs_initial": 8,
+    "mean_commissions": 18.125,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M110-215",
+    "buy": 110,
+    "sell": 215,
+    "exposure": 100,
+    "mean_equity": 18630.125,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 19.375,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M115-225",
+    "buy": 115,
+    "sell": 225,
+    "exposure": 100,
+    "mean_equity": 18572.25,
+    "min_equity": 11129,
+    "wins_vs_initial": 8,
+    "mean_commissions": 18.125,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M105-205",
+    "buy": 105,
+    "sell": 205,
+    "exposure": 100,
+    "mean_equity": 18571.625,
+    "min_equity": 12685,
+    "wins_vs_initial": 8,
+    "mean_commissions": 16.875,
+    "max_drawdown_percent": 33.01555444054189
+  },
+  {
+    "strategy": "M115-215",
+    "buy": 115,
+    "sell": 215,
+    "exposure": 100,
+    "mean_equity": 18301.875,
+    "min_equity": 11129,
+    "wins_vs_initial": 8,
+    "mean_commissions": 18.125,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M110-210",
+    "buy": 110,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 18283.625,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 19.375,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M110-205",
+    "buy": 110,
+    "sell": 205,
+    "exposure": 100,
+    "mean_equity": 18128.5,
+    "min_equity": 12411,
+    "wins_vs_initial": 8,
+    "mean_commissions": 19.375,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M115-210",
+    "buy": 115,
+    "sell": 210,
+    "exposure": 100,
+    "mean_equity": 17939.25,
+    "min_equity": 11129,
+    "wins_vs_initial": 8,
+    "mean_commissions": 18.125,
+    "max_drawdown_percent": 34.79410403860136
+  },
+  {
+    "strategy": "M115-205",
+    "buy": 115,
+    "sell": 205,
+    "exposure": 100,
+    "mean_equity": 17728.625,
+    "min_equity": 11129,
+    "wins_vs_initial": 8,
+    "mean_commissions": 18.125,
+    "max_drawdown_percent": 34.79410403860136
+  }
+]
