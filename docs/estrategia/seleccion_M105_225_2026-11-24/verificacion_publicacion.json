@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "decision": "M105-225",
+  "selection_confirmed": "2026-11-24",
+  "report_series": 78,
+  "report_evaluations": 312,
+  "reference_reproduction": {
+    "status": "PASS",
+    "strategy": "M105-225",
+    "runs": 78,
+    "ticks": 1560000,
+    "source_hashes_checked": 78,
+    "comparison": "Seven final accounting fields,percentage drawdown and closed episode count versus saved results; same frozen policy classes",
+    "scope": "Python reference reproduction; no assembly, RTL, timing or physical validation"
+  },
+  "pdf_pages": 10,
+  "average_charts": 6,
+  "pdf_identical_to_reviewed_chat_report": true,
+  "unchanged_strategy_classes": true,
+  "unchanged_accounting_source": true,
+  "unchanged_simulator": true,
+  "group_statistics_recomputed_from_saved_results": true,
+  "implementation_changes": false,
+  "fpga_programmed": false,
+  "scope": "Documentation, selection reference, evidence and reproducible input archive; operating assembly/RTL remains D"
+}

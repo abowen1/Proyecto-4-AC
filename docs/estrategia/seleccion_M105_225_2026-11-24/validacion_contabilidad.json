@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "reused_runs": 312,
+  "new_backtests": 0,
+  "selected_trace_ticks": 6240000,
+  "recreated_source": {
+    "status": "PASS",
+    "compared_ticks": 5601400,
+    "series": 70,
+    "runs": 280,
+    "source": "Accounting copied from official tb_proyecto_4.sv",
+    "scope": "Python ledger and official Verilog accounting; not Espino execution or SPI timing"
+  },
+  "official_source": {
+    "status": "PASS",
+    "simulations": 120,
+    "compared_ticks": 2400160,
+    "identical_previous_trace_controls": 16,
+    "official_series": 8,
+    "strategy_variants": 15
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "strategy": "M105-225",
+  "runs": 78,
+  "ticks": 1560000,
+  "source_hashes_checked": 78,
+  "comparison": "Seven final accounting fields,percentage drawdown and closed episode count versus saved results; same frozen policy classes",
+  "scope": "Python reference reproduction; no assembly, RTL, timing or physical validation"
+}

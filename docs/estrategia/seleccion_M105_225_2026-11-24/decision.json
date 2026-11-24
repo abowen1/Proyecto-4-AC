@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-24",
+  "strategy": "M105-225",
+  "buy_threshold_inclusive": 105,
+  "sell_threshold_inclusive": 225,
+  "entry_budget_percent": 100,
+  "cash_initial": 10000,
+  "commission_per_executed_order": 5,
+  "max_quantity": 63,
+  "execution": "next_tick_price",
+  "liquidation_latched": true,
+  "no_forced_final_sale": true,
+  "no_permanent_wealth_stop": true,
+  "no_stop_loss": true,
+  "status": "Selected by team; not yet implemented in Espino/RTL or loaded on FPGA",
+  "evidence": {
+    "total_series": 78,
+    "recreated": 70,
+    "official": 8,
+    "existing_evaluations": 312,
+    "selected_strategy_mean_equity": 18079.333333333332,
+    "selected_strategy_max_equity": 32555
+  }
+}

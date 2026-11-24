@@ -1,5 +1,7 @@
 # M X-Y: 15 candidatas sobre las ocho series oficiales
 
+**Actualización 24/11: se eligió M105-225 tras el contraste posterior sobre 78 series.** [Decisión y reporte vigente](../../seleccion_M105_225_2026-11-24/README.md). Este documento conserva la comparación previa de 15 variantes en ocho oficiales; sus referencias a una selección pendiente corresponden a esa etapa.
+
 Experimento del 23/11/2026. Se compararon **120 corridas: 15 configuraciones por ocho CSV oficiales**, cada una de 20.000 ticks. Se conservaron las reglas de bandas de M, el presupuesto del 100 % y las reglas contables del curso. Se variaron únicamente X = 105, 110, 115 y Y = 205, 210, 215, 220, 225. La grilla se fijó antes de observar estos resultados.
 
 **M X-Y** significa comprar con precio observado menor o igual a X y comenzar a liquidar con precio mayor o igual a Y. Todas usan el mismo algoritmo: acumular dentro de la banda baja en órdenes de hasta 63; dejar de acumular al salir de ella o agotar presupuesto; mantener; liquidar completamente en órdenes de hasta 63 al alcanzar la banda alta; esperar otra entrada. No hay stop de patrimonio, stop loss separado ni retiro permanente. La salida queda enclavada aunque el precio baje de Y durante la venta. El detalle completo está en [las reglas de M](../README.md#funcionamiento-exacto-de-las-bandas).

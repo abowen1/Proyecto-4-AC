@@ -1,5 +1,7 @@
 # Reporte M
 
+**Actualización 24/11: el equipo eligió M105-225.** El contraste posterior de cuatro finalistas sobre 78 series ya se completó. [Decisión, fundamento, datos y PDF](../seleccion_M105_225_2026-11-24/README.md). Las secciones siguientes conservan los resultados y el estado histórico del 23/11; el siguiente trabajo vigente es incorporar la elegida y validarla en Espino y FPGA.
+
 Actualización del 23 de noviembre de 2026. Se conserva el recorrido desde M A/B/C y M1–M5 hasta el ajuste de bandas M X-Y. La comparación vigente es la [malla de 15 candidatas sobre ocho series oficiales](malla_15/README.md): **120 corridas**, ocho gráficos con patrimonio final en cada leyenda, resultados, comisiones, caídas, código y trazas reproducibles. **M105-220 lidera esa muestra con media $19.453,625**; no se ha elegido una estrategia definitiva.
 
 El [ajuste anterior de X y luego Y](ajuste_xy/README.md) dejó como referencia M110-220 antes de ampliar la grilla. Las tablas de M1–M5 siguientes conservan la historia de su propio lote: M3 lideró ese lote, no la comparación actual.

@@ -1,5 +1,7 @@
 # Estado de la base AC4
 
+**Estado 24/11/2026:** M105-225 es la estrategia bursátil elegida. [Decisión y evidencia](estrategia/seleccion_M105_225_2026-11-24/README.md). La incorporación al código operativo y la validación de M en Espino/FPGA siguen pendientes. Las comprobaciones de D y de diagnósticos que se conservan abajo son históricas; no certifican automáticamente el nuevo algoritmo.
+
 **Actualización del 12 de noviembre:** el equipo eligió D/SMA32/banda 1, sin retiro por patrimonio. `sw/trade.s` ya implementa D. El mantener anterior se conserva como `sw/hold.s` y sigue siendo la prueba aislada del protocolo. Ver [implementación y evidencia actual](estrategia/D_implementacion.md).
 
 El registro siguiente describe la base comprobada el 11 de noviembre, antes de implementar D.

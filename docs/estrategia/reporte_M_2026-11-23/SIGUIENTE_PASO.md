@@ -1,21 +1,9 @@
-# Evaluación pendiente de las candidatas M X-Y
+# Siguiente paso vigente: incorporar M105-225
 
-Estado al 23/11/2026: el recorrido publicado incluye M A/B/C, M1–M5, el ajuste sucesivo de X/Y y la malla de 15 variantes. La líder media del último lote es M105-220; el equipo aún no eligió una estrategia definitiva. **Las 15 variantes vigentes no se han probado en las 70 series recreadas.** Esta publicación no autoriza por sí sola a ejecutar el próximo experimento ni a cambiar el programa de la placa.
+El 24/11/2026 el equipo confirmó M105-225 como estrategia definitiva tras comparar cuatro finalistas en 70 recreadas y 8 oficiales. Esa evaluación está completa. Las otras 11 configuraciones de la malla anterior no se ampliaron a 70 recreadas: no se presentan como ejecutadas.
 
-## Entradas para la próxima prueba
+- [Decisión, justificación y evidencia](../seleccion_M105_225_2026-11-24/README.md).
+- [Plan detallado: assembly, equivalencia, regresiones, optimización, timing y FPGA](../seleccion_M105_225_2026-11-24/PROXIMOS_PASOS.md).
+- [PDF comparativo vigente](../seleccion_M105_225_2026-11-24/Informe_M_78_series.pdf).
 
-En el equipo local los 70 CSV están en `Proyecto/Totalidad Proyecto 4/series recreadas`, carpeta hermana de `Material de Canvas AC4` y `Desarrollo AC4`. Son 14 bloques por acción: META, AAPL, NFLX, AMD y TSLA. Cada CSV tiene columnas `tick,price` y 20.000 precios; son bloques consecutivos de observaciones existentes de 2022 a noviembre de 2024, sin solapamiento por acción según el índice.
-
-Se adjunta una copia del [índice de las recreadas](datos/indice_recreadas_pendiente.json) con archivos, fechas y SHA256. **Los 70 CSV recreados no están incluidos en este paquete de publicación.** Para la prueba siguiente deben obtenerse desde esa carpeta o incorporarse de forma explícita; no reemplazarlos por las primeras reconstrucciones aproximadas de Tesla ni volver a interpolar precios.
-
-## Configuraciones vigentes
-
-La referencia actual está en [malla_15/protocolo.json](malla_15/protocolo.json): producto de X = 105, 110, 115 por Y = 205, 210, 215, 220, 225. Todas usan presupuesto del 100 %. Código en `malla_15/tools/m_bands.py`; ejecución de referencia en `malla_15/tools/compare_grid.py`. Las cinco M1–M5 permanecen como historia, no como el lote más reciente.
-
-Capital inicial 10.000 por corrida, comisión 5 por orden ejecutada, máximo 63 por orden, ejecución al precio siguiente y sin venta final obligatoria. Mantener presupuesto, acumulación, liquidación enclavada y posibilidades de reentrada. No añadir stops ni elegir parámetros según nombre o fecha del archivo.
-
-## Próxima evaluación, cuando el equipo la solicite
-
-Si se conservan las 15 candidatas, 70 recreadas implican 1.050 corridas. Si el equipo reduce la selección antes de probarlas, fijar esa lista previamente y registrar el motivo. Conservar hashes, trazas, caja, inventario, órdenes, comisiones, patrimonio y caída porcentual; verificar la contabilidad original. Comparar por bloque y activo y mostrar por separado los resultados oficiales usados para ajustar. Algunos períodos oficiales pueden coincidir con las recreadas; no tratar todo el lote como datos independientes.
-
-No trasladar automáticamente la selección a assembly/RTL. La placa requiere su propia implementación y validación después de decidir la estrategia.
+Los 70 CSV recreados ya están publicados comprimidos junto con el índice y los hashes en el nuevo reporte. No hace falta volver a generarlos. La política elegida sigue siendo una referencia Python: su traslado y validación en la placa son el trabajo pendiente. El código y las imágenes de D no se modifican por esta publicación.
