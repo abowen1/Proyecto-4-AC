@@ -1,0 +1,14 @@
+WARNING: /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/rtl/pochoco_ram.v:36: $readmemh(/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/canvas_m105_225/practica_meta/2000_100000/program.hex): Not enough words in the file for the requested range [0:511].
+Patrimonio final:          10000
+Ordenes ejecutadas:        0
+Perdida maxima:            0
+No operar:                 10000
+Comprar y mantener:        11375
+Peor caso precio->decision: 34 ciclos (disponibles: 2262)
+Detalle por tick en decisiones.csv
+PASS MISO sin valores X
+PASS el programa escribe DECISION
+PASS el programa lee todos los precios
+PASS la decision llega antes del siguiente tick
+Testbenchs aprobados: 4/4
+/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/canvas_m105_225/practica_meta/2000_100000/tb_canvas_configurado.sv:149: $finish called at 200004000000 (1ps)

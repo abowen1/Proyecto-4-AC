@@ -1,5 +1,8 @@
 # Decisión del equipo: M105-225
 
+**Actualización de implementación:** [Las etapas1-3 ya están aprobadas](../M105_225_implementacion/README.md), incluidas78 series completas en el SoC simulado. Las referencias posteriores a implementación pendiente describen el momento de la elección.
+
+
 **24 de noviembre de 2026. Elegimos M105-225 como estrategia bursátil definitiva del equipo.** La decisión fue confirmada por Andrés Bowen después de comparar las cuatro finalistas sobre 70 series recreadas y 8 oficiales: 78 entradas, 312 evaluaciones guardadas y 20.000 ticks por corrida.
 
 **Priorizamos el mayor patrimonio promedio entre los períodos y acciones evaluados, aunque la estrategia elegida pueda ser superada en una corrida particular.** No elegimos el mayor máximo aislado. M105-225 obtuvo **$18.079,33 de media**, frente a $17.826,79 de M105-220. Esta última alcanzó **$34.316 en AMD enero 2022**, por encima de los **$32.555 de M105-225** en esa serie. Aceptamos esa diferencia puntual para escoger la alternativa con mejor desempeño medio del conjunto.

@@ -26,6 +26,7 @@ test-market:
 	$(PYTHON) -B -m unittest discover -s tests -p 'test_backtest.py' -v
 .PHONY: help assemble test test-spi test-canvas test-d profile-d compare-fastpath63 build program test-hardware build-shifter build-qcap compare-hardware
 help:
+	@echo "make test-m105-225: implementacion M105-225 y validacion completa, sin bitstream"
 	@echo "make test: ensamblador y SPI en tres rondas; make test-canvas: ejemplo oficial"
 	@echo "make build: bitstream a 25 MHz; make program: cargar placa explícitamente"
 	@echo "make profile-d: compara la via rapida 63 contra la base y archiva figuras"
@@ -103,3 +104,20 @@ verify-meta:
 	$(PYTHON) tools/verify_strategy_d.py --variant qcap --series tb/practica_meta.csv --fast --profile --name meta_qcap_20000 > build/meta_qcap_20000.txt 2>&1
 	$(PYTHON) tools/verify_canvas_final.py
 	$(PYTHON) tools/archive_meta.py
+
+# M105-225 funcional, ISA original. Pausa antes de perfil/optimizacion/bitstream.
+# Los objetivos build-final/program-final anteriores conservan D historico.
+.PHONY: assemble-m105-225 test-m105-225 test-m105-225-unit test-m105-225-equivalence test-m105-225-integration
+assemble-m105-225: sw/trade_m105_225.hex
+test-m105-225-unit: assemble-m105-225
+	$(PYTHON) -B -m unittest discover -s tests -p 'test_m105_225.py' -v
+test-m105-225-equivalence: assemble-m105-225
+	$(PYTHON) -B tools/test_all_m105_225.py
+test-m105-225-integration: assemble-m105-225
+	$(PYTHON) -B tools/verify_m105_225.py --technical --engine iverilog
+	$(PYTHON) -B tools/verify_canvas_m105_225.py --ticks 2000
+	$(PYTHON) -B tools/test_m105_225_integration.py
+test-m105-225: assemble-m105-225
+	$(MAKE) test
+	$(MAKE) test-m105-225-equivalence
+	$(MAKE) test-m105-225-integration

@@ -1,5 +1,8 @@
 # Proyecto 4 AC — Pochoco Trader
 
+**M105-225 implementada y validada (24/11):** [78 series RTL completas, integración y comandos](docs/estrategia/M105_225_implementacion/README.md). Las etapas1-3 están aprobadas; la optimización y su imagen FPGA se preparan como etapa posterior. Los objetivos históricos `build-final/program-final` aún corresponden a D.
+
+
 **Decisión del 24/11: M105-225 es la estrategia bursátil definitiva elegida por el equipo.** [Justificación, PDF de 78 series, seis gráficos promedio y reproducción](docs/estrategia/seleccion_M105_225_2026-11-24/README.md). Mayor media conjunta ($18.079,33), aunque M105-220 tuvo un máximo puntual mayor. [Plan de incorporación y pruebas](docs/estrategia/seleccion_M105_225_2026-11-24/PROXIMOS_PASOS.md). La elección está confirmada; el assembly/RTL y los objetivos operativos aún corresponden a D hasta aprobar la transición. Los resultados anteriores quedan como historia del desarrollo.
 
 **Actualización 23/11 - M:** [Reporte M: historia e iteraciones](docs/estrategia/reporte_M_2026-11-23/README.md). [Comparación vigente: 15 bandas M X-Y, 120 corridas y ocho gráficos](docs/estrategia/reporte_M_2026-11-23/malla_15/README.md), con patrimonio final en cada leyenda. M105-220 lidera la media conocida ($19.453,625). El equipo aún no selecciona la estrategia definitiva; la evaluación en recreadas está pendiente. Son prototipos Python; no se modificó la placa.

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "variant": "software",
+  "strategy": "M105-225",
+  "ticks": 2000,
+  "period_ns": 100000,
+  "series": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/tb/practica_meta.csv",
+  "series_csv_sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+  "canvas_checks": "4/4",
+  "every_applied_decision_and_accounting_match": true,
+  "original_testbench_sha256": "f83486755fe2b3de385a2bdc39c2f275b9dd690342fb4fc0391401706876f8f3",
+  "program_hex_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+  "expected_summary": {
+    "strategy": "M105-225",
+    "label": "M105-225",
+    "ticks": 2000,
+    "equity": 10000,
+    "profit": 0,
+    "orders": 0,
+    "commissions": 0,
+    "max_drawdown": 0,
+    "cash": 10000,
+    "shares": 0,
+    "buy": 105,
+    "sell": 225,
+    "exposure": 100,
+    "drawdown_percent": 0,
+    "closed_episodes": 0
+  },
+  "scope": "Simulación de la maestra Canvas y del SoC; no señales físicas USB/SPI"
+}
