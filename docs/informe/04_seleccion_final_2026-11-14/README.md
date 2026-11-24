@@ -1,5 +1,8 @@
 # Selección final y carga de D en placa — 14 de noviembre de 2026
 
+**Registro histórico:** desde el 24/11 los objetivos `test-final/build-final/program-final` corresponden a M105-225, no a D. [Estado actual](../../estrategia/M105_225_optimizacion/README.md). Las evidencias de D archivadas aquí conservan su valor histórico; para sus bancos específicos usar `tools/verify_canvas_final.py` y las variantes D conservadas.
+
+
 **Actualización del 17/11:** la serie oficial cambió a Meta. [Resultados vigentes](../05_meta_2026-11-17/README.md). Los números de este documento son históricos. `make test-final` usa ahora Meta por defecto; para reproducir este ensayo anterior usar `python3 tools/verify_canvas_final.py --series tb/practica.csv`. La nueva práctica no exige cambiar la imagen cargada.
 
 

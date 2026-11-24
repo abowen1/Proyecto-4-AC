@@ -1,0 +1,4 @@
+*.pdf binary
+*.csv whitespace=cr-at-eol
+*.bin binary
+*.txt -whitespace

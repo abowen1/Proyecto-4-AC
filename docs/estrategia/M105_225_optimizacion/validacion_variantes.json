@@ -1,0 +1,2191 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "case": "base",
+      "dataset": "AAPL_01",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_02",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_03",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_04",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_05",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_06",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_07",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_08",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_09",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_10",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_11",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_12",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_13",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AAPL_14",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_01",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_02",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_03",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_04",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_05",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_06",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_07",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_08",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_09",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_10",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_11",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_12",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_13",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "AMD_14",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_AMD_2022_ene",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_AMD_2022_may",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_Apple_2022",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_Apple_2023",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_Meta_2022",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_Netflix_2022",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_Netflix_2023",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "C_Tesla_2022",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_01",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_02",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_03",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_04",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_05",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_06",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_07",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_08",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_09",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_10",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_11",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_12",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_13",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "META_14",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_01",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_02",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_03",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_04",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_05",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_06",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_07",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_08",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_09",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_10",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_11",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_12",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_13",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "NFLX_14",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_01",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_02",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_03",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_04",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_05",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_06",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_07",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_08",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_09",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_10",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_11",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_12",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_13",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "base",
+      "dataset": "TSLA_14",
+      "ticks": 20000,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_01",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_02",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_03",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_04",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_05",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_06",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_07",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_08",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_09",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_10",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_11",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_12",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_13",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AAPL_14",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_01",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_02",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_03",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_04",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_05",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_06",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_07",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_08",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_09",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_10",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_11",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_12",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_13",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "AMD_14",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_AMD_2022_ene",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_AMD_2022_may",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_Apple_2022",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_Apple_2023",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_Meta_2022",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_Netflix_2022",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_Netflix_2023",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "C_Tesla_2022",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_01",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_02",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_03",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_04",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_05",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_06",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_07",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_08",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_09",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_10",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_11",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_12",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_13",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "META_14",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_01",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_02",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_03",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_04",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_05",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_06",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_07",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_08",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_09",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_10",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_11",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_12",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_13",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "NFLX_14",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_01",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_02",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_03",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_04",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_05",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_06",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_07",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_08",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_09",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_10",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_11",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_12",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_13",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "qcap",
+      "dataset": "TSLA_14",
+      "ticks": 20000,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_01",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_02",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_03",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_04",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_05",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_06",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_07",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_08",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_09",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_10",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_11",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_12",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_13",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AAPL_14",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_01",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_02",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_03",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_04",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_05",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_06",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_07",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_08",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_09",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_10",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_11",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_12",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_13",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "AMD_14",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_AMD_2022_ene",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_AMD_2022_may",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_Apple_2022",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_Apple_2023",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_Meta_2022",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_Netflix_2022",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_Netflix_2023",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "C_Tesla_2022",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_01",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_02",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_03",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_04",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_05",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_06",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_07",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_08",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_09",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_10",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_11",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_12",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_13",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "META_14",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_01",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_02",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_03",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_04",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_05",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_06",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_07",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_08",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_09",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_10",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_11",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_12",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_13",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "NFLX_14",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_01",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_02",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_03",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_04",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_05",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_06",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_07",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_08",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_09",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_10",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_11",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_12",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_13",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "shifter",
+      "dataset": "TSLA_14",
+      "ticks": 20000,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_01",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_02",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_03",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_04",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_05",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_06",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_07",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_08",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_09",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_10",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_11",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_12",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_13",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AAPL_14",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_01",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_02",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_03",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_04",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_05",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_06",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_07",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_08",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_09",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_10",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_11",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_12",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_13",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "AMD_14",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_AMD_2022_ene",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_AMD_2022_may",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_Apple_2022",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_Apple_2023",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_Meta_2022",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_Netflix_2022",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_Netflix_2023",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "C_Tesla_2022",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_01",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_02",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_03",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_04",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_05",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_06",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_07",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_08",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_09",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_10",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_11",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_12",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_13",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "META_14",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_01",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_02",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_03",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_04",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_05",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_06",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_07",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_08",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_09",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_10",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_11",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_12",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_13",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "NFLX_14",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_01",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_02",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_03",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_04",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_05",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_06",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_07",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_08",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_09",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_10",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_11",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_12",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_13",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    },
+    {
+      "case": "soft",
+      "dataset": "TSLA_14",
+      "ticks": 20000,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "status": "PASS"
+    }
+  ],
+  "series_per_case": 78,
+  "profile_baselines_reused": 78
+}

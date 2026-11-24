@@ -44,7 +44,7 @@ def compile_simulator(engine):
     with (dest/'compile.log').open('w') as log:subprocess.run(command,cwd=(temp if engine=='verilator' else ROOT),stdout=log,stderr=subprocess.STDOUT,check=True)
     signature.write_text(stamp);return executable
 
-def verify(prices,name,executable,period=100000,fast=True):
+def verify(prices,name,executable,period=100000,fast=True,program_hex=None):
     summary,rows,policy=simulate(prices)
     out=ROOT/'build/m105_225/runs'/name;out.mkdir(parents=True,exist_ok=True)
     result=out/'result.json';result.unlink(missing_ok=True)
@@ -65,7 +65,7 @@ def verify(prices,name,executable,period=100000,fast=True):
         assert market.orders==r['orders'] and market.orders*5==r['commissions'] and market.max_dd==r['max_drawdown']
         previous=int(a['next_decision'])
     report=dict(status='PASS',strategy='M105-225',ticks=len(rows),summary=summary,engine='iverilog' if executable.parent.name=='iverilog' else 'verilator',fixed_period_ns=None if fast else period,
-        deadline_period_ns=period,program_sha256=hashlib.sha256((ROOT/'build/m105_225/program.hex').read_bytes()).hexdigest(),price_bytes_sha256=hashlib.sha256(bytes(prices)).hexdigest(),
+        deadline_period_ns=period,program_sha256=hashlib.sha256((program_hex or ROOT/'build/m105_225/program.hex').read_bytes()).hexdigest(),price_bytes_sha256=hashlib.sha256(bytes(prices)).hexdigest(),
         verified='SoC RTL,physical SPI protocol in simulation,every next decision,cash,shares,policy state,remaining budget;actual decisions replayed for equity,orders,fees,drawdown',
         scope='Simulation only. Deadline is a safety check; no performance profile,optimization,FPGA bitstream or physical programming.')
     result.write_text(json.dumps(report,indent=2)+'\n')

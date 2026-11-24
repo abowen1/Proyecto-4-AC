@@ -1,0 +1,55 @@
+test_equality_flat_window_and_scaling (test_adaptive.AdaptiveTests) ... ok
+test_run_is_causal_and_executes_next_tick (test_adaptive.AdaptiveTests) ... ok
+test_signal_matches_independent_decimal_standard_deviation (test_adaptive.AdaptiveTests) ... ok
+test_branch_offsets (test_assembler.AssemblerTests) ... ok
+test_cli_preserves_output_on_invalid_source (test_assembler.AssemblerTests) ... ok
+test_every_alu_variant (test_assembler.AssemblerTests) ... ok
+test_forward_and_backward_labels (test_assembler.AssemblerTests) ... ok
+test_invalid_inputs (test_assembler.AssemblerTests) ... ok
+test_jump_offsets (test_assembler.AssemblerTests) ... ok
+test_known_encodings (test_assembler.AssemblerTests) ... ok
+test_original_board_program (test_assembler.AssemblerTests) ... ok
+test_ram_limit (test_assembler.AssemblerTests) ... ok
+test_signed_immediate_limits (test_assembler.AssemblerTests) ... ok
+test_cash_clipping_no_debt_no_short_and_fees (test_backtest.BacktestTests) ... ok
+test_delayed_execution_and_last_order_not_executed (test_backtest.BacktestTests) ... ok
+test_every_strategy_is_causal (test_backtest.BacktestTests) ... ok
+test_hold_reference_and_mark_to_market_without_final_sale (test_backtest.BacktestTests) ... ok
+test_incremental_regression_matches_recomputed_window (test_backtest.BacktestTests) ... ok
+test_reserved_zero_quantity_and_unaffordable_sale_fee (test_backtest.BacktestTests) ... ok
+test_reversion_parameters_against_exact_window (test_backtest.BacktestTests) ... ok
+test_reversion_rejects_invalid_parameters (test_backtest.BacktestTests) ... ok
+test_exact_encoding_of_supported_extensions (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_extensions_do_not_leak_into_baseline_or_each_other (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_unsupported_shift_and_registers_rejected (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_base_isa_program_fits_ram (test_m105_225.TestM105225) ... ok
+test_delayed_fills_commissions_latched_sale (test_m105_225.TestM105225) ... ok
+test_entry_threshold_and_abandoned_accumulation (test_m105_225.TestM105225) ... ok
+test_no_forced_end_sale_or_execution (test_m105_225.TestM105225) ... ok
+test_prefixes_do_not_depend_on_future (test_m105_225.TestM105225) ... ok
+test_reentry_after_flat (test_m105_225.TestM105225) ... ok
+test_official_trade_is_selected_optimized_software (test_m105_225_delivery.DeliveryM105225) ... ok
+test_variants_fit_soc_and_use_their_own_isa (test_m105_225_delivery.DeliveryM105225) ... ok
+test_all_experiments_are_causal (test_position_exit.PositionExitTests) ... ok
+test_asymmetric_reversion_matches_independent_window_sums (test_position_exit.PositionExitTests) ... ok
+test_breakout_excludes_current_and_uses_short_exit (test_position_exit.PositionExitTests) ... ok
+test_cap_does_not_rebalance_or_sell_against_signal (test_position_exit.PositionExitTests) ... ok
+test_half_selling_and_small_lots (test_position_exit.PositionExitTests) ... ok
+test_rsi_boundaries_and_flat_window (test_position_exit.PositionExitTests) ... ok
+test_uptick_blocks_buy_without_blocking_sell (test_position_exit.PositionExitTests) ... ok
+test_exposure_caps_buy_and_corrects_after_price_increase (test_protections.ProtectionTests) ... ok
+test_panic_liquidates_in_chunks_and_waits_before_reentry (test_protections.ProtectionTests) ... ok
+test_protected_strategies_are_causal (test_protections.ProtectionTests) ... ok
+test_trend_blocks_buy_but_not_sell (test_protections.ProtectionTests) ... ok
+test_100_255_range_rounding_and_scale_invariance (test_reconstruct_tsla.TeslaReconstructionTests) ... ok
+test_binary_order_timezone_and_filler (test_reconstruct_tsla.TeslaReconstructionTests) ... ok
+test_rejects_corrupt_record_length_and_inconsistent_ohlc (test_reconstruct_tsla.TeslaReconstructionTests) ... ok
+test_custom_target_30000_is_strictly_different_from_20000 (test_target_exit.TargetExitTests) ... ok
+test_liquidation_requires_multiple_delayed_orders (test_target_exit.TargetExitTests) ... ok
+test_trigger_uses_wealth_and_does_not_guarantee_cash_floor (test_target_exit.TargetExitTests) ... ok
+test_unreached_target_matches_base_and_is_causal (test_target_exit.TargetExitTests) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.202s
+
+OK

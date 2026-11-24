@@ -27,7 +27,7 @@ GROUPS = [
 
 
 def prepare_profile(output, program=None, program_hex=None, isa='base'):
-    program = program or ROOT / 'sw/trade.s'
+    program = program or ROOT / 'sw/trade_d_legacy.s'
     source = program.read_text()
     words = assemble(source,isa=isa)
     program_hex = program_hex or program.with_suffix('.hex')

@@ -1,5 +1,8 @@
 # Decisión del equipo: M105-225
 
+**Actualización de las etapas 4-5:** [M105-225 ya está optimizada y tiene imagen generada](../M105_225_optimizacion/README.md), con dos alternativas de hardware comparadas. La elegida es software optimizado sobre ISA base. La prueba física sigue pendiente; no se programó la FPGA.
+
+
 **Actualización de implementación:** [Las etapas1-3 ya están aprobadas](../M105_225_implementacion/README.md), incluidas78 series completas en el SoC simulado. Las referencias posteriores a implementación pendiente describen el momento de la elección.
 
 
@@ -7,7 +10,7 @@
 
 **Priorizamos el mayor patrimonio promedio entre los períodos y acciones evaluados, aunque la estrategia elegida pueda ser superada en una corrida particular.** No elegimos el mayor máximo aislado. M105-225 obtuvo **$18.079,33 de media**, frente a $17.826,79 de M105-220. Esta última alcanzó **$34.316 en AMD enero 2022**, por encima de los **$32.555 de M105-225** en esa serie. Aceptamos esa diferencia puntual para escoger la alternativa con mejor desempeño medio del conjunto.
 
-La selección del algoritmo queda cerrada; **su incorporación a Espino/RTL y la FPGA sigue pendiente**. Esta publicación documenta y congela la referencia Python. El programa operativo existente continúa siendo D hasta completar y aprobar la transición.
+La selección del algoritmo queda cerrada; **su implementación y optimización en Espino están aprobadas; la prueba física en FPGA sigue pendiente**. Esta publicación documenta y congela la referencia Python. La fuente oficial `sw/trade.s` ya contiene M105-225; D quedó conservada como versión histórica.
 
 ## Justificación de la elección
 

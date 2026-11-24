@@ -1,0 +1,11 @@
+{
+  "strategy": "M105-225",
+  "case": "soft",
+  "variant": "software",
+  "isa": "base",
+  "program": "sw/trade.s",
+  "measured_program": "sw/trade_m105_225_soft.s",
+  "clock_hz": 25000000,
+  "selection_reason": "All tested implementations have identical decisions. Prefer optimized base ISA: deadline margin already ample, lower LUT usage; extra hardware improves average service only marginally.",
+  "physical_programming": false
+}

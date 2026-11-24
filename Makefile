@@ -26,8 +26,8 @@ test-market:
 	$(PYTHON) -B -m unittest discover -s tests -p 'test_backtest.py' -v
 .PHONY: help assemble test test-spi test-canvas test-d profile-d compare-fastpath63 build program test-hardware build-shifter build-qcap compare-hardware
 help:
-	@echo "make test-m105-225: implementacion M105-225 y validacion completa, sin bitstream"
 	@echo "make test: ensamblador y SPI en tres rondas; make test-canvas: ejemplo oficial"
+	@echo "make test-m105-225: referencia M105-225, 78 equivalencias completas e integracion; sin bitstream"
 	@echo "make build: bitstream a 25 MHz; make program: cargar placa explícitamente"
 	@echo "make profile-d: compara la via rapida 63 contra la base y archiva figuras"
 	@echo "make test-hardware, build-shifter, build-qcap, compare-hardware: variantes separadas"
@@ -87,13 +87,14 @@ build/ac4.bin: build/ac4.asc
 program: build/ac4.bin
 	iceprog $<
 
-# Selección del equipo (14/11): D con shifter acotado; la base queda disponible.
+# Seleccion vigente: M105-225 optimizada, ISA base. D se conserva como historia.
 .PHONY: test-final build-final program-final
 test-final:
-	$(PYTHON) tools/verify_canvas_final.py
-build-final: build-shifter
+	$(PYTHON) tools/verify_canvas_m105_225.py --program sw/trade.s --variant software --ticks 2000
+build-final:
+	$(PYTHON) tools/build_m105_225_final.py
 program-final: build-final
-	iceprog build/hardware/shifter/soc.bin
+	iceprog build/final/M105_225.bin
 
 # Nueva práctica oficial Meta (anuncio del 17/11); conserva la anterior.
 .PHONY: verify-meta
@@ -106,7 +107,7 @@ verify-meta:
 	$(PYTHON) tools/archive_meta.py
 
 # M105-225 funcional, ISA original. Pausa antes de perfil/optimizacion/bitstream.
-# Los objetivos build-final/program-final anteriores conservan D historico.
+# La base funcional85 se conserva; build-final/program-final usan la seleccion vigente.
 .PHONY: assemble-m105-225 test-m105-225 test-m105-225-unit test-m105-225-equivalence test-m105-225-integration
 assemble-m105-225: sw/trade_m105_225.hex
 test-m105-225-unit: assemble-m105-225
@@ -121,3 +122,11 @@ test-m105-225: assemble-m105-225
 	$(MAKE) test
 	$(MAKE) test-m105-225-equivalence
 	$(MAKE) test-m105-225-integration
+
+.PHONY: measure-m105-225 compare-m105-225-implementations test-m105-225-optimized
+measure-m105-225:
+	$(PYTHON) -B tools/measure_m105_225.py
+compare-m105-225-implementations:
+	$(PYTHON) -B tools/compare_m105_225_implementations.py
+test-m105-225-optimized:
+	$(PYTHON) -B tools/test_m105_225_optimized_integration.py --case soft --fixed

@@ -1,0 +1,10 @@
+{
+  "python": "Python 3.10.2",
+  "yosys": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)",
+  "nextpnr": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version )",
+  "verilator": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+  "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+  "clang": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "icestorm": "icestorm 1.1",
+  "nextpnr_package": "nextpnr-ice40 0.11.1_1"
+}

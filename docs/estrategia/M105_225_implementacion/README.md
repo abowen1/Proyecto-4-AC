@@ -1,5 +1,8 @@
 # M105-225: implementación funcional y validación de las etapas 1 a 3
 
+**Actualización posterior: etapas 4-5 completadas.** [Reporte vigente, variantes e imagen](../M105_225_optimizacion/README.md). Este registro conserva la base 85 y la pausa anterior, publicada en el commit `af5ea70`. Los hashes de esta etapa identifican esas fuentes históricas; los verificadores actuales admiten parámetros adicionales compatibles. Los objetivos `build-final/program-final` ya corresponden a M, no a D.
+
+
 24 de noviembre de 2026. **Implementación base completada y pruebas aprobadas.** Se conserva M105-225 como nombre oficial. El equipo ya seleccionó sus bandas 105/225 y presupuesto del 100%; este trabajo las traslada a Espino sin cambiar la estrategia ni las reglas del mercado.
 
 **Punto de parada solicitado: después de implementar, comprobar equivalencia y pasar integración.** No se hizo perfil de rendimiento, optimización de software o hardware, síntesis, place-and-route, generación de bitstream ni programación de la placa. El plazo por precio se verificó como requisito de integración, no como estudio de optimización.

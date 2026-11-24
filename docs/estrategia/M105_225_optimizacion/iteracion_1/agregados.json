@@ -1,0 +1,102 @@
+{
+  "base": {
+    "ticks": 1560000,
+    "series": 78,
+    "total_cycles": 55492724,
+    "total_instructions": 24318253,
+    "mean_cycles": 35.572258974358974,
+    "max_cycles": 1474,
+    "mean_ic": 15.588623717948717,
+    "max_ic": 670,
+    "cpi": 2.2819371111896896,
+    "mean_us": 1.422890358974359,
+    "max_us": 58.96,
+    "service_decisions_per_second": 702794.838472878,
+    "sections": {
+      "io": 23400078,
+      "account_control": 7800778,
+      "buy_account": 82736,
+      "sell_account": 31708,
+      "policy": 24093978,
+      "size_buy": 82645,
+      "sell_quantity": 801
+    },
+    "words": 85,
+    "mean_equity": 18079.333333333332
+  },
+  "soft": {
+    "ticks": 1560000,
+    "series": 78,
+    "total_cycles": 49315504,
+    "total_instructions": 21720115,
+    "mean_cycles": 31.612502564102563,
+    "max_cycles": 274,
+    "mean_ic": 13.923150641025641,
+    "max_ic": 127,
+    "cpi": 2.270499212366049,
+    "mean_us": 1.2645001025641025,
+    "max_us": 10.96,
+    "service_decisions_per_second": 790826.3494579718,
+    "sections": {
+      "io": 23399922,
+      "account_control": 7800778,
+      "buy_account": 16673,
+      "sell_account": 5957,
+      "policy": 18083919,
+      "size_buy": 7454,
+      "sell_quantity": 801
+    },
+    "words": 214,
+    "mean_equity": 18079.333333333332
+  },
+  "shifter": {
+    "ticks": 1560000,
+    "series": 78,
+    "total_cycles": 49310144,
+    "total_instructions": 21717435,
+    "mean_cycles": 31.609066666666667,
+    "max_cycles": 214,
+    "mean_ic": 13.921432692307691,
+    "max_ic": 97,
+    "cpi": 2.2705325928223106,
+    "mean_us": 1.2643626666666667,
+    "max_us": 8.56,
+    "service_decisions_per_second": 790912.3120792346,
+    "sections": {
+      "io": 23399922,
+      "account_control": 7800778,
+      "buy_account": 13993,
+      "sell_account": 5957,
+      "policy": 18083919,
+      "size_buy": 4774,
+      "sell_quantity": 801
+    },
+    "words": 184,
+    "mean_equity": 18079.333333333332
+  },
+  "qcap": {
+    "ticks": 1560000,
+    "series": 78,
+    "total_cycles": 49305403,
+    "total_instructions": 21714463,
+    "mean_cycles": 31.606027564102565,
+    "max_cycles": 147,
+    "mean_ic": 13.919527564102564,
+    "max_ic": 63,
+    "cpi": 2.2706250207522976,
+    "mean_us": 1.2642411025641027,
+    "max_us": 5.88,
+    "service_decisions_per_second": 790988.3628777965,
+    "sections": {
+      "io": 23399922,
+      "account_control": 7800778,
+      "buy_account": 11573,
+      "sell_account": 5957,
+      "policy": 18083919,
+      "size_buy": 2453,
+      "sell_quantity": 801
+    },
+    "words": 126,
+    "mean_equity": 18079.333333333332
+  }
+}

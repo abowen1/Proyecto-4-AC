@@ -1,5 +1,8 @@
 # Estado de la base AC4
 
+**Estado actual 24/11:** M105-225 optimizada y validada en Espino; imagen generada con timing 25 MHz aprobado. [Reporte y artefacto](estrategia/M105_225_optimizacion/README.md). `trade.s` y los objetivos finales ya son M. La placa no fue programada y su prueba física está pendiente; los datos siguientes de D son historia.
+
+
 **Estado 24/11/2026:** M105-225 es la estrategia bursátil elegida. [Decisión y evidencia](estrategia/seleccion_M105_225_2026-11-24/README.md). La incorporación al código operativo y la validación de M en Espino/FPGA siguen pendientes. Las comprobaciones de D y de diagnósticos que se conservan abajo son históricas; no certifican automáticamente el nuevo algoritmo.
 
 **Actualización del 12 de noviembre:** el equipo eligió D/SMA32/banda 1, sin retiro por patrimonio. `sw/trade.s` ya implementa D. El mantener anterior se conserva como `sw/hold.s` y sigue siendo la prueba aislada del protocolo. Ver [implementación y evidencia actual](estrategia/D_implementacion.md).

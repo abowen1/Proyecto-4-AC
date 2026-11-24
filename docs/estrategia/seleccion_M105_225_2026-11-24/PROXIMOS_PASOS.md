@@ -1,5 +1,8 @@
 # Incorporación de M105-225: plan y criterios de aprobación
 
+**Estado vigente: etapas 1-5 completadas.** [Evidencia de implementación](../M105_225_implementacion/README.md) y [mediciones, dos alternativas e imagen final](../M105_225_optimizacion/README.md). La fuente oficial y los objetivos `test-final/build-final/program-final` ya corresponden a M105-225. La placa no fue programada: la etapa 6 física queda pendiente. El plan siguiente conserva el recorrido previsto originalmente.
+
+
 La elección bursátil quedó cerrada por el equipo el 24/11/2026. Este documento ordena el trabajo siguiente; **esta publicación no cambia assembly, RTL, imágenes ni la placa**. La referencia bursátil Python seleccionada es M105-225. El código operativo existente y los objetivos `test-final/build-final/program-final` siguen apuntando a D hasta que se adapte y apruebe la transición.
 
 ## 1. Congelar la referencia y el contrato de mercado

@@ -1,0 +1,18 @@
+{
+  "sw/trade.s": "d6f781894f460f2baa7c72de2ab9ba25d59f2e48ea52f2da3f6f55539dedea12",
+  "sw/trade.hex": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+  "sw/trade_m105_225.s": "be5f697774f39925ea3c42ff1c7a2ffe1f19b787f5d16a10ba6c89c1dff27931",
+  "sw/trade_m105_225_soft.s": "d6f781894f460f2baa7c72de2ab9ba25d59f2e48ea52f2da3f6f55539dedea12",
+  "sw/trade_m105_225_shifter.s": "974c921b191127bf612771a1e053d1b234ae88eab5e3d2938172a4b2bfc1362e",
+  "sw/trade_m105_225_qcap.s": "c14e472312f9f1cc93edd53591eb7049d521386413f7deccbc90b63c7473cfcd",
+  "tb/tb_m105_225_profile.sv": "ff1158ab9adaebab3b6858ebb42dd265cdf1939711ad13ba8cbf678afd8f6ab4",
+  "tools/generate_m105_225_variants.py": "40fb3c7e3dad78843276efddcec38837d420db3efe8c6a89bf4b7ce2207c17d6",
+  "tools/measure_m105_225.py": "2bccfb838267179320c763f4ed105606a155513bec3e1de4a926189b62369641",
+  "tools/compare_m105_225_implementations.py": "1b9e994a022d811f714b674ff3a3c845588e00caa274e18c784b72212669eb4f",
+  "tools/build_m105_225_final.py": "7e587b7d77bb4c7f1d73784a77f5cbab3cb92554d66f58e9b75090626aab2c15",
+  "tools/report_m105_225_optimization.py": "9363237e32780b683d89cd9983e3fcf6e69549ae1ab0062cdbd7767a11a8c418",
+  "tools/build_m105_225_optimization_pdf.py": "bad7f03ee2e688df7b3af69da84233dd33cbb72d15338d92f2315c0e90606620",
+  "tools/test_m105_225_optimized_integration.py": "183b2ae0d9d75d13641e4c70cce5fb6e8988f1d60d193aacf01aeb146e179282",
+  "tools/hardware_variants.py": "5243dba8c7b8a536d529b5a4beb651f0d3c5d9c8add619937ea703b689088b2f",
+  "material/enunciado/Proyecto_4_arq.pdf": "9ad3b386d8766d7fa6ae11ebe9adf050c9a9b8bb63dff4d89d60639bc03fc051"
+}

@@ -1,5 +1,8 @@
 # Material para preparar el informe AC4
 
+**Reporte vigente de M105-225:** [optimización, co-diseño, PDF, mediciones por tick e imagen](../estrategia/M105_225_optimizacion/README.md). Etapas 1-5 completas; pausa antes de programar y probar físicamente. Los informes de D siguientes son antecedentes históricos.
+
+
 **Estado 24/11: M105-225 elegida.** [Reporte de selección y evidencia](../estrategia/seleccion_M105_225_2026-11-24/README.md) con 78 series, 312 evaluaciones y el PDF compacto. La incorporación a Espino/RTL y su prueba física siguen pendientes; el material de D se conserva como historia y como infraestructura reutilizable.
 
 Esta carpeta conserva resultados, figuras y explicaciones del desarrollo, según lo solicitado por el equipo. Se publica en `pre-entrega`; el informe evaluado se preparará después.

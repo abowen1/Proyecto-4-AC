@@ -1,5 +1,8 @@
 # Proyecto 4 AC — Pochoco Trader
 
+**Estado 24/11: M105-225 optimizada e imagen generada.** [Reporte técnico, PDF, mediciones por tick y bitstream](docs/estrategia/M105_225_optimizacion/README.md). `sw/trade.s` contiene la elegida: software optimizado, ISA base; 19,73% menos tiempo medio y 81,28% menos máxima latencia observada. Se compararon dos extensiones hardware y se eligió conservar recursos: aportan menos de 0,03% adicional en promedio. `make test-final` prueba M; `make build-final` genera `build/final/M105_225.bin`. **La FPGA no se programó; pausa antes de la prueba física.** D se conserva en `sw/trade_d_legacy.s`. Los registros anteriores quedan como historia del desarrollo.
+
+
 **M105-225 implementada y validada (24/11):** [78 series RTL completas, integración y comandos](docs/estrategia/M105_225_implementacion/README.md). Las etapas1-3 están aprobadas; la optimización y su imagen FPGA se preparan como etapa posterior. Los objetivos históricos `build-final/program-final` aún corresponden a D.
 
 
@@ -56,7 +59,7 @@ make program         # carga explícita en la placa
 
 ## Programas y pruebas
 
-- `sw/trade.s`: programa mínimo de 8 instrucciones estáticas; esperar NEW_PRICE, leer PRICE y escribir DECISION=0. No representa la estrategia final.
+- `sw/trade.s`: M105-225 optimizada,217 instrucciones base. La referencia Python y las alternativas están en el reporte técnico vigente. D y el diagnóstico mantener se conservan separados.
 - `sw/spi_diagnostic.s`: diagnóstico de 9 instrucciones; devuelve `precio & 63` con acción mantener. Sirve para comprobar MISO y el desfase de una transacción.
 - `tb/tb_spi_ac4.sv`: 12 precios por ejecución, incluidos 1 y 255; SPI modo 0 a 1 MHz, fase de inicio distinta del reloj; los tres períodos de ronda y ambos programas. Comprueba dato leído por CPU, una respuesta por precio, flag consumido, plazo y byte de respuesta anterior.
 - `tb/tb_proyecto_4.sv`: ejemplo oficial, sin modificaciones. Deja `decisiones.csv` en la raíz.

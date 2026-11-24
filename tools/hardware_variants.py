@@ -7,7 +7,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 VARIANTS={
-    'software': dict(isa='base',program='sw/trade.s'),
+    'software': dict(isa='base',program='sw/trade_d_legacy.s'),
     'shifter': dict(isa='shifter',program='sw/trade_shifter.s'),
     'qcap': dict(isa='qcap',program='sw/trade_qcap.s'),
 }

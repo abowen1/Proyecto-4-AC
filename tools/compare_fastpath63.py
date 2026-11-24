@@ -138,7 +138,7 @@ def main():
     for name,source in [('base','sw/trade_base_84'),('optimizada','sw/trade')]:
         p=DEST/'codigo'/name;p.mkdir(parents=True,exist_ok=True)
         for suffix in ('.s','.hex'):shutil.copy2(ROOT/(source+suffix),p/('trade'+suffix))
-    files=['Makefile','sw/trade_base_84.s','sw/trade_base_84.hex','sw/trade.s','sw/trade.hex','tb/practica.csv','tb/tb_strategy_d.sv','tools/profile_d.py','tools/verify_strategy_d.py','tools/compare_fastpath63.py']
+    files=['Makefile','sw/trade_base_84.s','sw/trade_base_84.hex','sw/trade_d_legacy.s','sw/trade_d_legacy.hex','tb/practica.csv','tb/tb_strategy_d.sv','tools/profile_d.py','tools/verify_strategy_d.py','tools/compare_fastpath63.py']
     files += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'rtl').rglob('*.v'))]
     (DEST/'procedencia.json').write_text(json.dumps(dict(baseline_publication='d87656d7d8d92476eeac14da33a6cb6497a237e2',clock_hz=25000000,spi_hz=1000000,source_sha256={f:digest(ROOT/f) for f in files}),ensure_ascii=False,indent=2)+'\n')
     # Git y las herramientas de figuras usan finales LF.

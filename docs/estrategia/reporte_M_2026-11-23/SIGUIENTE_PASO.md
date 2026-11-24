@@ -1,9 +1,9 @@
-# Siguiente paso vigente: incorporar M105-225
+# Siguiente paso: prueba física de M105-225
 
-El 24/11/2026 el equipo confirmó M105-225 como estrategia definitiva tras comparar cuatro finalistas en 70 recreadas y 8 oficiales. Esa evaluación está completa. Las otras 11 configuraciones de la malla anterior no se ampliaron a 70 recreadas: no se presentan como ejecutadas.
+Las etapas 1-3 de implementación/equivalencia/integración y 4-5 de medición/optimización/generación de imagen están completas. Se eligió software optimizado en ISA base después de comparar shifter y QCAP; la mejora media es 19,73% con idénticas decisiones.
 
-- [Decisión, justificación y evidencia](../seleccion_M105_225_2026-11-24/README.md).
-- [Plan detallado: assembly, equivalencia, regresiones, optimización, timing y FPGA](../seleccion_M105_225_2026-11-24/PROXIMOS_PASOS.md).
-- [PDF comparativo vigente](../seleccion_M105_225_2026-11-24/Informe_M_78_series.pdf).
+- [Reporte técnico e imagen](../M105_225_optimizacion/README.md).
+- [Decisión financiera](../seleccion_M105_225_2026-11-24/README.md).
+- [Validación funcional](../M105_225_implementacion/README.md).
 
-Los 70 CSV recreados ya están publicados comprimidos junto con el índice y los hashes en el nuevo reporte. No hace falta volver a generarlos. La política elegida sigue siendo una referencia Python: su traslado y validación en la placa son el trabajo pendiente. El código y las imágenes de D no se modifican por esta publicación.
+La FPGA no se programó. El trabajo está en pausa antes de conectar/programar la placa, comprobar arranque y transacciones SPI físicas y probar la maestra del curso. `make build-final` genera la imagen; `make program-final` solo se debe ejecutar cuando corresponda esa etapa. No cambiar las bandas financieras durante una validación de hardware.
