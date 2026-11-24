@@ -1,0 +1,10 @@
+Validación física M105-225 — Go Board 17
+Fecha: 24 de noviembre de 2026.
+
+La placa 17 es la Go Board asignada al equipo, identificada con un número en plumón. No es un identificador electrónico.
+
+Se reemplazó la implementación anterior D por la imagen ya preparada de M105-225, software optimizado e ISA original Espino. No se modificaron fuentes, configuración ni estrategia; no se regeneró el bitstream. No se eligieron QCAP ni shifter.
+
+Se respaldaron los primeros 64 KiB mediante dos lecturas idénticas. El respaldo queda localmente en build/placa17_2026-11-24, sin publicar su contenido. La programación terminó con VERIFY OK y CDONE alto. El detalle y hashes están en validacion.json; se conservan los registros del programador.
+
+Persistencia comprobada: el usuario desconectó y reconectó USB, observó 00 en los displays y luego iceprog -c comparó la memoria contra la imagen aprobada sin escribirla: VERIFY OK y CDONE alto. La lectura mediante el programador también reinicia la configuración; esta comprobación certifica persistencia y carga, no el estado interno de cartera. La comunicación física SPI, las decisiones y el reinicio de cartera requieren la maestra, que hoy no está disponible. No confundir la verificación de la memoria con una validación física bursátil completa.

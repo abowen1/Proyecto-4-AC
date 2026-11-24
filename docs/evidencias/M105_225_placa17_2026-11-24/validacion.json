@@ -1,0 +1,38 @@
+{
+  "fecha": "2026-11-24",
+  "zona_horaria": "America/Santiago",
+  "placa": {
+    "modelo": "Go Board",
+    "identificador_humano": "17",
+    "tipo_identificador": "Número escrito con plumón en la placa; no es un número de serie electrónico.",
+    "confirmada_por_usuario": true
+  },
+  "estrategia": "M105-225",
+  "alias_conversacion": "Mdip",
+  "implementacion": "Software optimizado; ISA original Espino; sin extensiones QCAP ni shifter",
+  "imagen_sha256": "5be11e8803854d23bc61d15b504b2621084c08c01417fb07f629ad3abd841551",
+  "imagen_bytes": 32220,
+  "respaldo_previo": {
+    "ruta_local": "build/placa17_2026-11-24/flash_antes.bin",
+    "bytes": 65536,
+    "sha256": "d24186e12fb0bb6e288cf123882925bb8a1375119d54be64212b4a5ed738daff",
+    "dos_lecturas_identicas": true,
+    "contenido_no_publicado": true
+  },
+  "programacion": {
+    "exit_code": 0,
+    "verify_ok": true,
+    "cdone": "high"
+  },
+  "advertencia_identificacion_flash": "iceprog informa FF FF FF FF; no se tomó como identificación válida. Se respaldó con dos lecturas idénticas y la escritura pasó verificación.",
+  "persistencia_tras_corte_usb": {
+    "exit_code": 0,
+    "verify_ok": true,
+    "cdone_al_final": true
+  },
+  "validacion_spi_fisica": "PENDIENTE: el usuario confirma que hoy no dispone de FPGA maestra; se prevé para mañana.",
+  "reinicio_estado_bursatil": "PENDIENTE de comprobar con maestra y precios reales de prueba; no existe reset de cartera mediante botones.",
+  "cambios_fuente_rtl_configuracion": false,
+  "imagen_regenerada": false,
+  "observacion_usuario_tras_reconexion": "El usuario desconectó y reconectó el USB e informó 00 en los displays."
+}
