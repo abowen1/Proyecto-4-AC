@@ -1,5 +1,7 @@
 # M105-225: carga en Go Board 17 y estado para el informe
 
+**Actualización posterior del 25/11:** el equipo confirmó una prueba física exitosa con la maestra. [Nota de seguimiento](../M105_225_placa17_2026-11-25/README.md). El texto siguiente conserva el estado y las comprobaciones del 24/11.
+
 24 de noviembre de 2026. **Se puede iniciar el informe con la estrategia y la implementación ya elegidas.** La imagen fue cargada y verificada en la placa; la comunicación física con la maestra y el reinicio de la cartera entre rondas siguen pendientes de prueba.
 
 ## Decisión definitiva de implementación

@@ -1,10 +1,10 @@
 # Proyecto 4 AC — Pochoco Trader
 
-**Estado vigente al 24/11: M105-225 optimizada ya está cargada en la Go Board 17.** [Validación física, registros y estado para iniciar el informe](docs/evidencias/M105_225_placa17_2026-11-24/README.md). La escritura y la persistencia tras reconectar USB pasaron verificación; **SPI físico y reinicio de cartera con la maestra siguen pendientes**. El número 17 es la marca en plumón de la placa, no un identificador electrónico.
+**Estado vigente al 25/11: prueba física con la maestra realizada con éxito, según lo informado por el equipo.** La Go Board 17 ejecutó M105-225 con software optimizado e ISA original; los resultados fueron favorables. [Nota de la prueba física](docs/evidencias/M105_225_placa17_2026-11-25/README.md). Los puestos exactos y patrimonios se documentarán cuando el equipo los comparta. El número 17 es la marca en plumón de la placa, no un identificador electrónico.
 
 La implementación definitiva es **software optimizado e ISA original Espino**, sin QCAP ni shifter. El equipo decidió detener nuevas optimizaciones y justificarlo con las mediciones, Amdahl y roofline, siguiendo la orientación del profesor. [Reporte técnico, PDF, métricas y bitstream](docs/estrategia/M105_225_optimizacion/README.md). `sw/trade.s`, `make test-final` y los objetivos de imagen final corresponden a M105-225. Las [etapas de implementación y equivalencia](docs/estrategia/M105_225_implementacion/README.md) están completadas.
 
-La [elección financiera de M105-225](docs/estrategia/seleccion_M105_225_2026-11-24/README.md) se basa en la mayor media conjunta de las 78 series ($18.079,33), aunque otra variante alcanzó un mejor máximo puntual. **Ya se puede redactar el informe**; el resultado físico con la maestra se añadirá después de comprobarlo. `main` sigue reservado para la entrega evaluada.
+La [elección financiera de M105-225](docs/estrategia/seleccion_M105_225_2026-11-24/README.md) se basa en la mayor media conjunta de las 78 series ($18.079,33), aunque otra variante alcanzó un mejor máximo puntual. **Ya se puede redactar el informe**; la confirmación general de la prueba física está registrada y los resultados detallados se añadirán cuando estén disponibles. `main` sigue reservado para la entrega evaluada.
 
 ## Historial anterior — consultar arriba el estado vigente
 

@@ -102,3 +102,6 @@ make program-final
 - Unidades/instrucciones de shifter y QCAP aprobadas de nuevo. Se conserva el RTL base, incluidos pines, SPI y reset común ya validado.
 
 **Actualización física del 24/11:** la imagen elegida ya se cargó en la **Go Board 17** y pasó la verificación de escritura y la comparación tras cortar y reconectar la alimentación. [Registro físico, logs y estado para el informe](../../evidencias/M105_225_placa17_2026-11-24/README.md). Sigue pendiente la comunicación física con la maestra y comprobar el reinicio de caja e inventario entre rondas. El equipo mantiene software optimizado e ISA original y decidió detener nuevas optimizaciones. No se modificó `main`; el trabajo se conserva en `pre-entrega`.
+
+
+**Actualización del 25/11:** el equipo informó que la prueba física de M105-225 con la maestra salió correctamente. [Nota breve](../../evidencias/M105_225_placa17_2026-11-25/README.md). Los puestos y patrimonios exactos se documentarán posteriormente; se mantiene software optimizado e ISA original.
