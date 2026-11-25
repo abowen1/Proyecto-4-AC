@@ -1,0 +1,58 @@
+{
+  "D": {
+    "mean_final_equity": 6317.25,
+    "worst_final_equity": 5242,
+    "wins_vs_cash": 0,
+    "mean_orders": 638.75,
+    "worst_drawdown_percent": 59.717218407994025
+  },
+  "Baltazar_100": {
+    "mean_final_equity": 4701.0,
+    "worst_final_equity": 3496,
+    "wins_vs_cash": 0,
+    "mean_orders": 936.0,
+    "worst_drawdown_percent": 72.83971679604197
+  },
+  "Baltazar_50": {
+    "mean_final_equity": 5136.75,
+    "worst_final_equity": 4208,
+    "wins_vs_cash": 0,
+    "mean_orders": 936.0,
+    "worst_drawdown_percent": 62.81645569620253
+  },
+  "Baltazar_15": {
+    "mean_final_equity": 5302.75,
+    "worst_final_equity": 4343,
+    "wins_vs_cash": 0,
+    "mean_orders": 936.0,
+    "worst_drawdown_percent": 57.63400376498563
+  },
+  "Baltazar_50_SL": {
+    "mean_final_equity": 5185.0,
+    "worst_final_equity": 4266,
+    "wins_vs_cash": 0,
+    "mean_orders": 950.0,
+    "worst_drawdown_percent": 62.276619508562916
+  },
+  "Baltazar_50_TP_SL": {
+    "mean_final_equity": 5087.5,
+    "worst_final_equity": 4097,
+    "wins_vs_cash": 0,
+    "mean_orders": 1062.0,
+    "worst_drawdown_percent": 60.730374772356946
+  },
+  "Baltazar_50_trailing": {
+    "mean_final_equity": 5219.25,
+    "worst_final_equity": 3704,
+    "wins_vs_cash": 0,
+    "mean_orders": 955.5,
+    "worst_drawdown_percent": 67.5690658782223
+  },
+  "D_gestion_Baltazar": {
+    "mean_final_equity": 4994.5,
+    "worst_final_equity": 3803,
+    "wins_vs_cash": 0,
+    "mean_orders": 908.5,
+    "worst_drawdown_percent": 62.946209066771566
+  }
+}

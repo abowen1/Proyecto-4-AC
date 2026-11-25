@@ -1,0 +1,159 @@
+strategy,label,ticks,equity,profit,orders,commissions,max_drawdown,cash,shares,drawdown_percent,dataset,series_label,group,symbol
+Paciente_1,Baltazar Paciente 1,20000,11794,1794,179,895,1427,5912,34,13.83690487733928,C_practica_amd_2022_ene,AMD 2022 - enero,catedra,AMD
+Paciente_2,Baltazar Paciente 2,20000,10453,453,145,725,1732,5263,30,14.874613534867741,C_practica_amd_2022_ene,AMD 2022 - enero,catedra,AMD
+Paciente_1,Baltazar Paciente 1,20000,9417,-583,142,710,2465,9417,0,22.50114103149247,C_practica_amd_2022_may,AMD 2022 - mayo,catedra,AMD
+Paciente_2,Baltazar Paciente 2,20000,9825,-175,110,550,2858,9825,0,23.992612491605104,C_practica_amd_2022_may,AMD 2022 - mayo,catedra,AMD
+Paciente_1,Baltazar Paciente 1,20000,10286,286,142,710,2059,10286,0,17.517440871192786,C_practica_apple_2022,Apple 2022,catedra,AAPL
+Paciente_2,Baltazar Paciente 2,20000,11536,1536,110,550,1533,11536,0,12.658959537572253,C_practica_apple_2022,Apple 2022,catedra,AAPL
+Paciente_1,Baltazar Paciente 1,20000,10003,3,151,755,2694,5053,45,21.870433511933758,C_practica_apple_2023,Apple 2023,catedra,AAPL
+Paciente_2,Baltazar Paciente 2,20000,8638,-1362,125,625,2070,4458,38,19.504381419014415,C_practica_apple_2023,Apple 2023,catedra,AAPL
+Paciente_1,Baltazar Paciente 1,20000,8529,-1471,136,680,2087,8529,0,19.946478065564367,C_practica_meta_2022,Meta 2022,catedra,META
+Paciente_2,Baltazar Paciente 2,20000,12237,2237,110,550,1768,12237,0,16.223160212883098,C_practica_meta_2022,Meta 2022,catedra,META
+Paciente_1,Baltazar Paciente 1,20000,11097,1097,145,725,2781,5603,41,21.44344205412908,C_practica_netflix_2022,Netflix 2022,catedra,NFLX
+Paciente_2,Baltazar Paciente 2,20000,12444,2444,113,565,2112,6280,46,16.60638465167479,C_practica_netflix_2022,Netflix 2022,catedra,NFLX
+Paciente_1,Baltazar Paciente 1,20000,9804,-196,152,760,2375,9804,0,21.653902261123267,C_practica_netflix_2023,Netflix 2023,catedra,NFLX
+Paciente_2,Baltazar Paciente 2,20000,9628,-372,132,660,1391,9628,0,13.824289405684754,C_practica_netflix_2023,Netflix 2023,catedra,NFLX
+Paciente_1,Baltazar Paciente 1,20000,14992,4992,126,630,1195,14992,0,11.560414046628615,C_practica_tesla_2022,Tesla 2022,catedra,TSLA
+Paciente_2,Baltazar Paciente 2,20000,11330,1330,108,540,1397,11330,0,12.805940049500414,C_practica_tesla_2022,Tesla 2022,catedra,TSLA
+Paciente_1,Baltazar Paciente 1,20000,4619,-5381,224,1120,5648,4619,0,55.01120093503458,C_practica,Práctica original anterior,original,ORIGINAL
+Paciente_2,Baltazar Paciente 2,20000,6518,-3482,159,795,3980,3284,33,38.272910856813155,C_practica,Práctica original anterior,original,ORIGINAL
+Paciente_1,Baltazar Paciente 1,20000,9965,-35,148,740,1767,9965,0,17.40029542097489,R_AAPL_01,Apple - bloque 01,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,9778,-222,112,560,1300,9778,0,13.0,R_AAPL_01,Apple - bloque 01,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,8571,-1429,109,545,3183,4278,27,30.09359931927768,R_AAPL_02,Apple - bloque 02,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,9358,-642,81,405,2199,4747,29,20.790394251678173,R_AAPL_02,Apple - bloque 02,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,10810,810,93,465,1609,5455,21,15.831939387975991,R_AAPL_03,Apple - bloque 03,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,9830,-170,83,415,1557,4985,19,15.452560539896783,R_AAPL_03,Apple - bloque 03,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,9270,-730,98,490,1900,9270,0,18.6347587289133,R_AAPL_04,Apple - bloque 04,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,8873,-1127,90,450,1980,8873,0,19.536260483473114,R_AAPL_04,Apple - bloque 04,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,8284,-1716,126,630,2671,8284,0,25.300748318651134,R_AAPL_05,Apple - bloque 05,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,9279,-721,94,470,2097,9279,0,19.307614400147315,R_AAPL_05,Apple - bloque 05,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,12013,2013,97,485,1370,6133,24,10.564466378778532,R_AAPL_06,Apple - bloque 06,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,13291,3291,76,380,1159,13291,0,8.765693541067918,R_AAPL_06,Apple - bloque 06,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,12008,2008,92,460,1341,12008,0,12.001073921603723,R_AAPL_07,Apple - bloque 07,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,10569,569,84,420,1462,10569,0,12.941488890855979,R_AAPL_07,Apple - bloque 07,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,7862,-2138,115,575,3189,4014,26,29.689973000651708,R_AAPL_08,Apple - bloque 08,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,8286,-1714,101,505,2753,4290,27,25.630760636812216,R_AAPL_08,Apple - bloque 08,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,9095,-905,165,825,2951,4559,27,27.81076241636038,R_AAPL_09,Apple - bloque 09,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,10389,389,137,685,2260,5181,31,19.852424455375967,R_AAPL_09,Apple - bloque 09,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,11281,1281,100,500,1663,11281,0,14.910786335515109,R_AAPL_10,Apple - bloque 10,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,10960,960,86,430,2181,10960,0,19.061352910330363,R_AAPL_10,Apple - bloque 10,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,8076,-1924,109,545,2529,3946,35,25.252121817274087,R_AAPL_11,Apple - bloque 11,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,8009,-1991,91,455,2713,3997,34,26.768623581647756,R_AAPL_11,Apple - bloque 11,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,12507,2507,45,225,938,6257,25,8.618155090040426,R_AAPL_12,Apple - bloque 12,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,12310,2310,39,195,748,6060,25,6.799381874375057,R_AAPL_12,Apple - bloque 12,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,8714,-1286,126,630,2225,8714,0,21.99703410776075,R_AAPL_13,Apple - bloque 13,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,8998,-1002,106,530,1710,8998,0,17.057356608478802,R_AAPL_13,Apple - bloque 13,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,7148,-2852,181,905,4321,3599,21,38.154525386313466,R_AAPL_14,Apple - bloque 14,recreada,AAPL
+Paciente_2,Baltazar Paciente 2,20000,5780,-4220,158,790,4617,5780,0,44.66479636258102,R_AAPL_14,Apple - bloque 14,recreada,AAPL
+Paciente_1,Baltazar Paciente 1,20000,12054,2054,136,680,1788,12054,0,17.60709010339734,R_AMD_01,AMD - bloque 01,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,10137,137,116,580,1616,10137,0,14.064403829416886,R_AMD_01,AMD - bloque 01,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,7480,-2520,168,840,3027,7480,0,30.026783057236383,R_AMD_02,AMD - bloque 02,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,8245,-1755,138,690,2810,8245,0,27.747605411276783,R_AMD_02,AMD - bloque 02,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,9910,-90,113,565,2227,5070,22,21.04318246243976,R_AMD_03,AMD - bloque 03,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,9824,-176,91,455,2537,4984,22,23.761356186194625,R_AMD_03,AMD - bloque 03,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,9508,-492,60,300,1307,9508,0,12.855316219140356,R_AMD_04,AMD - bloque 04,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,9945,-55,50,250,964,9945,0,9.481656339136421,R_AMD_04,AMD - bloque 04,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,9627,-373,160,800,3867,9627,0,32.81289775137887,R_AMD_05,AMD - bloque 05,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,11557,1557,117,585,2442,5881,33,20.16348773841962,R_AMD_05,AMD - bloque 05,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,9341,-659,114,570,2418,9341,0,20.870015535991715,R_AMD_06,AMD - bloque 06,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,10030,30,92,460,2287,10030,0,18.620745806871845,R_AMD_06,AMD - bloque 06,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,12119,2119,63,315,1244,6217,26,12.364576085876156,R_AMD_07,AMD - bloque 07,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,12231,2231,51,255,941,6102,27,9.352947023158732,R_AMD_07,AMD - bloque 07,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,11039,1039,157,785,1634,5586,41,15.01010472166085,R_AMD_08,AMD - bloque 08,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,9707,-293,125,625,1721,4919,36,16.884136171882663,R_AMD_08,AMD - bloque 08,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,7133,-2867,207,1035,3680,3647,14,35.7663524152007,R_AMD_09,AMD - bloque 09,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,7921,-2079,167,835,3452,4186,15,33.550393624258916,R_AMD_09,AMD - bloque 09,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,13138,3138,56,280,635,13138,0,6.097560975609756,R_AMD_10,AMD - bloque 10,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,12942,2942,52,260,727,12942,0,6.867560929529567,R_AMD_10,AMD - bloque 10,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,10046,46,142,710,2223,10046,0,19.35905251240965,R_AMD_11,AMD - bloque 11,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,10576,576,116,580,2116,10576,0,20.718691863311467,R_AMD_11,AMD - bloque 11,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,7752,-2248,159,795,3132,3902,22,31.319999999999997,R_AMD_12,AMD - bloque 12,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,9711,-289,123,615,2678,4811,28,26.048049800603053,R_AMD_12,AMD - bloque 12,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,9203,-797,110,550,1620,9203,0,15.30756874232259,R_AMD_13,AMD - bloque 13,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,9510,-490,88,440,1368,9510,0,12.926391382405743,R_AMD_13,AMD - bloque 13,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,9543,-457,111,555,2530,4923,33,21.561274927560934,R_AMD_14,AMD - bloque 14,recreada,AMD
+Paciente_2,Baltazar Paciente 2,20000,9549,-451,96,480,2394,9549,0,20.616603513606613,R_AMD_14,AMD - bloque 14,recreada,AMD
+Paciente_1,Baltazar Paciente 1,20000,7544,-2456,53,265,2800,3768,32,27.736503219415553,R_META_01,Meta - bloque 01,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,8316,-1684,39,195,2102,4186,35,20.73591792443524,R_META_01,Meta - bloque 01,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,8577,-1423,139,695,2634,4257,27,24.272023590121634,R_META_02,Meta - bloque 02,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,11622,1622,121,605,1853,5862,36,16.244745446053248,R_META_02,Meta - bloque 02,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,10987,987,174,870,3156,10987,0,28.424750067549308,R_META_03,Meta - bloque 03,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,9899,-101,148,740,2979,9899,0,27.183137147549957,R_META_03,Meta - bloque 03,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,7423,-2577,104,520,2643,7423,0,26.390414378432354,R_META_04,Meta - bloque 04,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,7306,-2694,90,450,2760,7306,0,27.558662006989515,R_META_04,Meta - bloque 04,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,7352,-2648,99,495,3000,3647,15,29.73240832507433,R_META_05,Meta - bloque 05,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,9568,-432,85,425,1706,4875,19,15.338967811544688,R_META_05,Meta - bloque 05,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,12299,2299,67,335,1630,6347,24,12.198772638826522,R_META_06,Meta - bloque 06,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,12234,2234,61,305,1743,6282,24,13.076749943731713,R_META_06,Meta - bloque 06,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,9659,-341,63,315,1506,4959,20,13.917382866648184,R_META_07,Meta - bloque 07,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,9890,-110,51,255,1173,4955,21,11.064993868502972,R_META_07,Meta - bloque 07,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,10304,304,135,675,2188,5200,29,18.34493166764484,R_META_08,Meta - bloque 08,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,10515,515,109,545,2106,5235,30,17.446773258222184,R_META_08,Meta - bloque 08,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,11648,1648,176,880,2068,11648,0,16.881632653061224,R_META_09,Meta - bloque 09,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,10065,65,140,700,2163,10065,0,19.546358214350263,R_META_09,Meta - bloque 09,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,10575,575,104,520,2283,10575,0,21.578449905482042,R_META_10,Meta - bloque 10,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,10680,680,94,470,2105,10680,0,20.33227083937023,R_META_10,Meta - bloque 10,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,11585,1585,57,285,689,5489,24,6.138631503920171,R_META_11,Meta - bloque 11,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,11304,1304,53,265,650,5462,23,5.776750799857803,R_META_11,Meta - bloque 11,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,8170,-1830,93,465,3394,4102,18,32.61266455270491,R_META_12,Meta - bloque 12,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,7691,-2309,85,425,3868,3849,17,37.571636716852844,R_META_12,Meta - bloque 12,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,10284,284,140,700,2284,10284,0,20.351064777688674,R_META_13,Meta - bloque 13,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,9538,-462,112,560,2053,9538,0,18.397705887624337,R_META_13,Meta - bloque 13,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,11318,1318,106,530,2280,11318,0,18.225419664268586,R_META_14,Meta - bloque 14,recreada,META
+Paciente_2,Baltazar Paciente 2,20000,10556,556,98,490,2144,10556,0,18.09282700421941,R_META_14,Meta - bloque 14,recreada,META
+Paciente_1,Baltazar Paciente 1,20000,10616,616,67,335,1070,5188,46,9.561254579572871,R_NFLX_01,Netflix - bloque 01,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,10797,797,57,285,1066,5369,46,9.381325354219836,R_NFLX_01,Netflix - bloque 01,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,8089,-1911,45,225,2347,4030,33,23.249133234274392,R_NFLX_02,Netflix - bloque 02,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,8164,-1836,39,195,2248,4105,33,22.268449727587917,R_NFLX_02,Netflix - bloque 02,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,10353,353,121,605,2068,5373,20,20.040701618373873,R_NFLX_03,Netflix - bloque 03,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,10615,615,107,535,1887,5386,21,18.014319809069214,R_NFLX_03,Netflix - bloque 03,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,14227,4227,159,795,1364,7115,28,13.639999999999999,R_NFLX_04,Netflix - bloque 04,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,11538,1538,143,715,1709,5950,22,13.925427751953318,R_NFLX_04,Netflix - bloque 04,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,10008,8,143,715,2205,4842,21,21.68141592920354,R_NFLX_05,Netflix - bloque 05,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,9687,-313,119,595,2290,4767,20,22.740814299900695,R_NFLX_05,Netflix - bloque 05,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,8025,-1975,132,660,2644,8025,0,26.074950690335307,R_NFLX_06,Netflix - bloque 06,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,9475,-525,106,530,1450,9475,0,14.299802761341224,R_NFLX_06,Netflix - bloque 06,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,9887,-113,119,595,2456,4889,21,22.835890283589027,R_NFLX_07,Netflix - bloque 07,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,9471,-529,107,535,2633,4711,20,25.133638793432606,R_NFLX_07,Netflix - bloque 07,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,11260,1260,157,785,2414,5500,36,18.68565678458085,R_NFLX_08,Netflix - bloque 08,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,11716,1716,131,655,1888,5796,37,15.107625830199249,R_NFLX_08,Netflix - bloque 08,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,8214,-1786,91,455,2848,4146,18,26.85019326859621,R_NFLX_09,Netflix - bloque 09,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,8336,-1664,77,385,2949,4042,19,27.270205289439613,R_NFLX_09,Netflix - bloque 09,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,11076,1076,129,645,1676,5626,25,13.380169247964236,R_NFLX_10,Netflix - bloque 10,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,11459,1459,109,545,1443,5791,26,11.391805478803189,R_NFLX_10,Netflix - bloque 10,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,9496,-504,69,345,1177,4689,19,11.662703131193023,R_NFLX_11,Netflix - bloque 11,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,11808,1808,59,295,1718,5736,24,13.338509316770185,R_NFLX_11,Netflix - bloque 11,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,8289,-1711,95,475,2827,4241,16,27.221954742416948,R_NFLX_12,Netflix - bloque 12,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,9137,-863,87,435,1965,4583,18,19.227005870841488,R_NFLX_12,Netflix - bloque 12,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,11865,1865,122,610,1443,11865,0,13.266525696423646,R_NFLX_13,Netflix - bloque 13,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,10455,455,108,540,1428,10455,0,13.909994155464641,R_NFLX_13,Netflix - bloque 13,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,11200,1200,97,485,1210,5590,22,11.233415233415233,R_NFLX_14,Netflix - bloque 14,recreada,NFLX
+Paciente_2,Baltazar Paciente 2,20000,10203,203,87,435,1552,5103,20,14.259463432561558,R_NFLX_14,Netflix - bloque 14,recreada,NFLX
+Paciente_1,Baltazar Paciente 1,20000,9831,-169,130,650,1604,9831,0,15.641150658215505,R_TSLA_01,Tesla - bloque 01,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,9151,-849,96,480,1471,9151,0,14.687968047928107,R_TSLA_01,Tesla - bloque 01,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,10264,264,84,420,1535,10264,0,13.911546130143194,R_TSLA_02,Tesla - bloque 02,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,10834,834,72,360,1015,10834,0,9.1971728887278,R_TSLA_02,Tesla - bloque 02,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,9381,-619,141,705,2451,4701,20,24.51,R_TSLA_03,Tesla - bloque 03,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,10266,266,113,565,1991,5118,22,19.748065859948422,R_TSLA_03,Tesla - bloque 03,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,8367,-1633,84,420,2699,8367,0,25.262074129539496,R_TSLA_04,Tesla - bloque 04,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,7969,-2031,75,375,2973,4077,28,28.190783235349897,R_TSLA_04,Tesla - bloque 04,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,8589,-1411,58,290,2072,8589,0,20.72,R_TSLA_05,Tesla - bloque 05,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,8225,-1775,54,270,2370,8225,0,23.523573200992555,R_TSLA_05,Tesla - bloque 05,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,11985,1985,71,355,1120,6018,27,9.111617312072893,R_TSLA_06,Tesla - bloque 06,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,11464,1464,63,315,1113,5939,25,9.375789739701794,R_TSLA_06,Tesla - bloque 06,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,10296,296,83,415,1551,5216,20,14.805269186712486,R_TSLA_07,Tesla - bloque 07,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,10110,110,73,365,1918,5030,20,18.308514700267278,R_TSLA_07,Tesla - bloque 07,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,7233,-2767,131,655,4378,3645,26,39.78914841406889,R_TSLA_08,Tesla - bloque 08,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,7461,-2539,107,535,3978,3735,27,36.49541284403669,R_TSLA_08,Tesla - bloque 08,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,10585,585,107,535,1746,5370,35,16.258497066765994,R_TSLA_09,Tesla - bloque 09,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,10223,223,86,430,1921,10223,0,18.076597346381856,R_TSLA_09,Tesla - bloque 09,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,7061,-2939,156,780,3227,7061,0,31.366640746500778,R_TSLA_10,Tesla - bloque 10,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,7919,-2081,128,640,2448,7919,0,23.677338233871748,R_TSLA_10,Tesla - bloque 10,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,10064,64,137,685,2864,4736,37,24.201453439242858,R_TSLA_11,Tesla - bloque 11,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,9098,-902,115,575,3577,4202,34,30.352142554094186,R_TSLA_11,Tesla - bloque 11,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,9098,-902,97,485,1621,4373,21,16.127748482738035,R_TSLA_12,Tesla - bloque 12,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,9251,-749,77,385,1569,4526,21,15.34174244646524,R_TSLA_12,Tesla - bloque 12,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,8484,-1516,125,625,2864,4312,28,25.984394846670295,R_TSLA_13,Tesla - bloque 13,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,10200,200,95,475,1229,5283,33,11.397570249466753,R_TSLA_13,Tesla - bloque 13,recreada,TSLA
+Paciente_1,Baltazar Paciente 1,20000,11565,1565,75,375,1407,5840,25,12.683674389254485,R_TSLA_14,Tesla - bloque 14,recreada,TSLA
+Paciente_2,Baltazar Paciente 2,20000,11514,1514,64,320,1309,11514,0,11.853662953907453,R_TSLA_14,Tesla - bloque 14,recreada,TSLA

@@ -1,0 +1,932 @@
+{
+  "date": "2026-11-23",
+  "strategies": {
+    "Paciente_1": {
+      "case": {
+        "label": "Baltazar Paciente 1",
+        "parent": "B6_paciente",
+        "entry": "original"
+      },
+      "parameters": {
+        "model": "momentum",
+        "cap": 50,
+        "sl": 30,
+        "trailing": 30,
+        "activate": 40,
+        "intervals": 32,
+        "threshold": 20,
+        "confirm": 3,
+        "cooldown": 64,
+        "min_hold": 32,
+        "description": "B5 sin TP fijo, trailing3% activado desde+4% neto; conserva stop3 y salida por señal"
+      }
+    },
+    "Paciente_2": {
+      "case": {
+        "label": "Baltazar Paciente 2",
+        "parent": "B6_paciente",
+        "entry": "trend"
+      },
+      "parameters": {
+        "model": "momentum",
+        "cap": 50,
+        "sl": 30,
+        "trailing": 30,
+        "activate": 40,
+        "intervals": 32,
+        "threshold": 20,
+        "confirm": 3,
+        "cooldown": 64,
+        "min_hold": 32,
+        "description": "B5 sin TP fijo, trailing3% activado desde+4% neto; conserva stop3 y salida por señal"
+      }
+    }
+  },
+  "entry_parameters": {
+    "short_trend_window": 32,
+    "long_trend_window": 128,
+    "trend": "SMA32>SMA128 AND current price>SMA128; strict, include current price",
+    "fast_momentum_intervals": 16,
+    "fast_momentum_per_mille": 10,
+    "fast_confirmation": 2,
+    "patient2": "Only adds trend gate to original momentum32>2% confirmed3 entry",
+    "slow2": "Replaces slow entry trigger with momentum16>1% confirmed2 AND trend gate; retains original momentum128 signal for exits",
+    "risk": "All risk and quantity rules inherited unchanged; entry filters never block exits"
+  },
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "sources": [
+    {
+      "id": "C_practica_amd_2022_ene",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_amd_2022_ene.csv",
+      "filename": "practica_amd_2022_ene.csv",
+      "sha256": "0c1c5e791578a59ec0f077d263f6103a4d1fde8e0f8ffbe1e775c05f442a0bc7",
+      "label": "AMD 2022 - enero",
+      "group": "catedra",
+      "symbol": "AMD"
+    },
+    {
+      "id": "C_practica_amd_2022_may",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_amd_2022_may.csv",
+      "filename": "practica_amd_2022_may.csv",
+      "sha256": "20e2ead37cdeb3ba0d38c4feba9f0b606665f277bde8214e1c7fdb6d92a69a2a",
+      "label": "AMD 2022 - mayo",
+      "group": "catedra",
+      "symbol": "AMD"
+    },
+    {
+      "id": "C_practica_apple_2022",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_apple_2022.csv",
+      "filename": "practica_apple_2022.csv",
+      "sha256": "0c28c0a53f6fd55ee6216916c1d7d529a5998bbe7ad4d8f940e439d78fe2dbb8",
+      "label": "Apple 2022",
+      "group": "catedra",
+      "symbol": "AAPL"
+    },
+    {
+      "id": "C_practica_apple_2023",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_apple_2023.csv",
+      "filename": "practica_apple_2023.csv",
+      "sha256": "6a28f5a36754f82cf17187100a5d1e55554ebc17b6c40528167e8525d16fa675",
+      "label": "Apple 2023",
+      "group": "catedra",
+      "symbol": "AAPL"
+    },
+    {
+      "id": "C_practica_meta_2022",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_meta_2022.csv",
+      "filename": "practica_meta_2022.csv",
+      "sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+      "label": "Meta 2022",
+      "group": "catedra",
+      "symbol": "META"
+    },
+    {
+      "id": "C_practica_netflix_2022",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_netflix_2022.csv",
+      "filename": "practica_netflix_2022.csv",
+      "sha256": "71e96fc05c3dca67e30d27a8baf8cbef39d0186a385ebf3e9a719ab1bef19846",
+      "label": "Netflix 2022",
+      "group": "catedra",
+      "symbol": "NFLX"
+    },
+    {
+      "id": "C_practica_netflix_2023",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_netflix_2023.csv",
+      "filename": "practica_netflix_2023.csv",
+      "sha256": "30b59beaa67efe60949fa00f020a3f38981fa72aa4d2ccb1a7230a03de214bcd",
+      "label": "Netflix 2023",
+      "group": "catedra",
+      "symbol": "NFLX"
+    },
+    {
+      "id": "C_practica_tesla_2022",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_tesla_2022.csv",
+      "filename": "practica_tesla_2022.csv",
+      "sha256": "a48617cc5a91023f16731d24f86814204bdad9d48367d7559c0c6fac6bfd7db6",
+      "label": "Tesla 2022",
+      "group": "catedra",
+      "symbol": "TSLA"
+    },
+    {
+      "id": "C_practica",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/practica.csv",
+      "filename": "practica.csv",
+      "sha256": "9db90594ce790c7d046f4045a0affcefdb04012a7f2e2ab989ba45d15794ec7f",
+      "label": "Práctica original anterior",
+      "group": "original",
+      "symbol": "ORIGINAL"
+    },
+    {
+      "id": "R_AAPL_01",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_01_20220103_20220317.csv",
+      "filename": "AAPL_01_20220103_20220317.csv",
+      "sha256": "150b0bb04915adc506cf1d23f429a888d63cbd81daba87eeee8c8485cb7b089d",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 01",
+      "start_ny": "2022-01-03 09:30:00",
+      "end_ny": "2022-03-17 11:19:00"
+    },
+    {
+      "id": "R_AAPL_02",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_02_20220317_20220531.csv",
+      "filename": "AAPL_02_20220317_20220531.csv",
+      "sha256": "be0e015a7c02cd6fae7c34bcfb51c6f90a624f00fb8d24639502276c4889ec20",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 02",
+      "start_ny": "2022-03-17 11:20:00",
+      "end_ny": "2022-05-31 13:09:00"
+    },
+    {
+      "id": "R_AAPL_03",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_03_20220531_20220812.csv",
+      "filename": "AAPL_03_20220531_20220812.csv",
+      "sha256": "e02f64825345a104bd4cb30a949b7450710933a74cb2dee34bde3adff450265b",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 03",
+      "start_ny": "2022-05-31 13:10:00",
+      "end_ny": "2022-08-12 14:59:00"
+    },
+    {
+      "id": "R_AAPL_04",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_04_20220812_20221026.csv",
+      "filename": "AAPL_04_20220812_20221026.csv",
+      "sha256": "365fc419868e966230b382c3b72b2ea6dfd8a5ed1c673d6f3d4e22b9f5e89e80",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 04",
+      "start_ny": "2022-08-12 15:00:00",
+      "end_ny": "2022-10-26 10:19:00"
+    },
+    {
+      "id": "R_AAPL_05",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_05_20221026_20230110.csv",
+      "filename": "AAPL_05_20221026_20230110.csv",
+      "sha256": "02dfbfd850b9d6530e78160fd46884f1797d51ae91fdc3db80a7beab27cb2044",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 05",
+      "start_ny": "2022-10-26 10:20:00",
+      "end_ny": "2023-01-10 15:09:00"
+    },
+    {
+      "id": "R_AAPL_06",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_06_20230110_20230327.csv",
+      "filename": "AAPL_06_20230110_20230327.csv",
+      "sha256": "dac6f549217ac8c204438f1841029aeeff5d842b712f9def22ca7f992419e6cf",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 06",
+      "start_ny": "2023-01-10 15:10:00",
+      "end_ny": "2023-03-27 10:29:00"
+    },
+    {
+      "id": "R_AAPL_07",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_07_20230327_20230608.csv",
+      "filename": "AAPL_07_20230327_20230608.csv",
+      "sha256": "847ec1aef975fbf78c9011be779238f95d22d9472fcdcb0baaadc865be0a4b76",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 07",
+      "start_ny": "2023-03-27 10:30:00",
+      "end_ny": "2023-06-08 12:19:00"
+    },
+    {
+      "id": "R_AAPL_08",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_08_20230608_20230823.csv",
+      "filename": "AAPL_08_20230608_20230823.csv",
+      "sha256": "a32e65ec97112a221b3495167e5155f2d1f4d1b9eb58b8e0bcb5002cb6be933c",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 08",
+      "start_ny": "2023-06-08 12:20:00",
+      "end_ny": "2023-08-23 10:39:00"
+    },
+    {
+      "id": "R_AAPL_09",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_09_20230823_20231103.csv",
+      "filename": "AAPL_09_20230823_20231103.csv",
+      "sha256": "d2dcbbe34b80b63db20feec0d973f66ab33276b6b7927720f6606733739d46c8",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 09",
+      "start_ny": "2023-08-23 10:40:00",
+      "end_ny": "2023-11-03 12:29:00"
+    },
+    {
+      "id": "R_AAPL_10",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_10_20231103_20240122.csv",
+      "filename": "AAPL_10_20231103_20240122.csv",
+      "sha256": "1f4753bc3c8733e6d227e9021392dde7852c3ba413ebaf4c70816bdd8447efcc",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 10",
+      "start_ny": "2023-11-03 12:30:00",
+      "end_ny": "2024-01-22 10:49:00"
+    },
+    {
+      "id": "R_AAPL_11",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_11_20240122_20240404.csv",
+      "filename": "AAPL_11_20240122_20240404.csv",
+      "sha256": "cb212d06ba8e3d0ab4d4aad350060c1a0ab7b32a18d061a2efde79b9604d5da4",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 11",
+      "start_ny": "2024-01-22 10:50:00",
+      "end_ny": "2024-04-04 12:39:00"
+    },
+    {
+      "id": "R_AAPL_12",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_12_20240404_20240617.csv",
+      "filename": "AAPL_12_20240404_20240617.csv",
+      "sha256": "9f074182228874df6917b46ebf446b21085fd89ba13e1f202a889dd6b656da0e",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 12",
+      "start_ny": "2024-04-04 12:40:00",
+      "end_ny": "2024-06-17 14:29:00"
+    },
+    {
+      "id": "R_AAPL_13",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_13_20240617_20240830.csv",
+      "filename": "AAPL_13_20240617_20240830.csv",
+      "sha256": "dc8977ad3466c043e366139d431fa302b00c410b8e0dd37f7aecdb2050090639",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 13",
+      "start_ny": "2024-06-17 14:30:00",
+      "end_ny": "2024-08-30 12:49:00"
+    },
+    {
+      "id": "R_AAPL_14",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Apple/AAPL_14_20240830_20241112.csv",
+      "filename": "AAPL_14_20240830_20241112.csv",
+      "sha256": "eec6cd4ff4d2e3aa2b3a4d769185e6e858d37867cd4063052842b38b686c062c",
+      "group": "recreada",
+      "symbol": "AAPL",
+      "label": "Apple - bloque 14",
+      "start_ny": "2024-08-30 12:50:00",
+      "end_ny": "2024-11-12 14:39:00"
+    },
+    {
+      "id": "R_AMD_01",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_01_20220103_20220317.csv",
+      "filename": "AMD_01_20220103_20220317.csv",
+      "sha256": "91da59c4e0b3ce3febaf44a85cb6671e3b7b3c974649eeb8373dcd37a4e7cdc2",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 01",
+      "start_ny": "2022-01-03 09:30:00",
+      "end_ny": "2022-03-17 11:19:00"
+    },
+    {
+      "id": "R_AMD_02",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_02_20220317_20220531.csv",
+      "filename": "AMD_02_20220317_20220531.csv",
+      "sha256": "9ad567fe0b87eb4e108c23b5e9bdd1a9073dc201a25314cc5785924718a279fa",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 02",
+      "start_ny": "2022-03-17 11:20:00",
+      "end_ny": "2022-05-31 13:09:00"
+    },
+    {
+      "id": "R_AMD_03",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_03_20220531_20220812.csv",
+      "filename": "AMD_03_20220531_20220812.csv",
+      "sha256": "016d36aa88d711578109b57784f33d083383db30495c464eccca91ca08a21ce3",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 03",
+      "start_ny": "2022-05-31 13:10:00",
+      "end_ny": "2022-08-12 14:59:00"
+    },
+    {
+      "id": "R_AMD_04",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_04_20220812_20221026.csv",
+      "filename": "AMD_04_20220812_20221026.csv",
+      "sha256": "2d8f30cdc69cf0f4094931a19b456b2aeb77da7b6cf10794bfc33e0c1cf63a40",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 04",
+      "start_ny": "2022-08-12 15:00:00",
+      "end_ny": "2022-10-26 10:19:00"
+    },
+    {
+      "id": "R_AMD_05",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_05_20221026_20230110.csv",
+      "filename": "AMD_05_20221026_20230110.csv",
+      "sha256": "4b59682469c36b7af388cd047247845edec7d661bed00c0f4b531c3d75382f08",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 05",
+      "start_ny": "2022-10-26 10:20:00",
+      "end_ny": "2023-01-10 15:09:00"
+    },
+    {
+      "id": "R_AMD_06",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_06_20230110_20230327.csv",
+      "filename": "AMD_06_20230110_20230327.csv",
+      "sha256": "ec654149adde279e5613f7255b34bcb6614d17a92d3f64d3a61a0c3f4751dc1c",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 06",
+      "start_ny": "2023-01-10 15:10:00",
+      "end_ny": "2023-03-27 10:29:00"
+    },
+    {
+      "id": "R_AMD_07",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_07_20230327_20230608.csv",
+      "filename": "AMD_07_20230327_20230608.csv",
+      "sha256": "aa77b000da3539bc74d6345286b860e78f31b439b08e2998d34b23c4a5ccaffa",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 07",
+      "start_ny": "2023-03-27 10:30:00",
+      "end_ny": "2023-06-08 12:19:00"
+    },
+    {
+      "id": "R_AMD_08",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_08_20230608_20230823.csv",
+      "filename": "AMD_08_20230608_20230823.csv",
+      "sha256": "7a956a5d34e3dab819aba0547c31a70225f4d1f18edb7bc91549f41076e98c93",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 08",
+      "start_ny": "2023-06-08 12:20:00",
+      "end_ny": "2023-08-23 10:39:00"
+    },
+    {
+      "id": "R_AMD_09",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_09_20230823_20231103.csv",
+      "filename": "AMD_09_20230823_20231103.csv",
+      "sha256": "e31c3f88cda3200dd69ad3940cd6bc2f9ef21d9e98409087629d9164e095dcd2",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 09",
+      "start_ny": "2023-08-23 10:40:00",
+      "end_ny": "2023-11-03 12:29:00"
+    },
+    {
+      "id": "R_AMD_10",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_10_20231103_20240122.csv",
+      "filename": "AMD_10_20231103_20240122.csv",
+      "sha256": "98d5da3de3553ad81610957b3ab31315d2dcaadd27f11ce1a07e73bb6683b73e",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 10",
+      "start_ny": "2023-11-03 12:30:00",
+      "end_ny": "2024-01-22 10:49:00"
+    },
+    {
+      "id": "R_AMD_11",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_11_20240122_20240404.csv",
+      "filename": "AMD_11_20240122_20240404.csv",
+      "sha256": "9af4a4bb1a0c452e54bdb50895679af2d972f725d9ed3eaed4923d9623c05108",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 11",
+      "start_ny": "2024-01-22 10:50:00",
+      "end_ny": "2024-04-04 12:39:00"
+    },
+    {
+      "id": "R_AMD_12",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_12_20240404_20240617.csv",
+      "filename": "AMD_12_20240404_20240617.csv",
+      "sha256": "57f108e64bed69714ae2e1352f2b3bea97c249b5086ec35b63b0c93d2879fb90",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 12",
+      "start_ny": "2024-04-04 12:40:00",
+      "end_ny": "2024-06-17 14:29:00"
+    },
+    {
+      "id": "R_AMD_13",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_13_20240617_20240830.csv",
+      "filename": "AMD_13_20240617_20240830.csv",
+      "sha256": "8fa4c92433dc6e80eea2d59f13d29bea3d454720debe129caa8a8b216119931e",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 13",
+      "start_ny": "2024-06-17 14:30:00",
+      "end_ny": "2024-08-30 12:49:00"
+    },
+    {
+      "id": "R_AMD_14",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/AMD/AMD_14_20240830_20241112.csv",
+      "filename": "AMD_14_20240830_20241112.csv",
+      "sha256": "d8141f3903013d28765f126054b4e121e12b0bc60d903e9ca3111888755f0ad7",
+      "group": "recreada",
+      "symbol": "AMD",
+      "label": "AMD - bloque 14",
+      "start_ny": "2024-08-30 12:50:00",
+      "end_ny": "2024-11-12 14:39:00"
+    },
+    {
+      "id": "R_META_01",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_01_20220103_20220317.csv",
+      "filename": "META_01_20220103_20220317.csv",
+      "sha256": "d698c75c61e13c764ef2b661f2d5f4ab6238ee7924772f547d78cb39fbbef75a",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 01",
+      "start_ny": "2022-01-03 09:30:00",
+      "end_ny": "2022-03-17 11:19:00"
+    },
+    {
+      "id": "R_META_02",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_02_20220317_20220531.csv",
+      "filename": "META_02_20220317_20220531.csv",
+      "sha256": "42f02eb0ff664aa14040e47f568cd60fa74c97b227e371491bb5cc053ae2992c",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 02",
+      "start_ny": "2022-03-17 11:20:00",
+      "end_ny": "2022-05-31 13:09:00"
+    },
+    {
+      "id": "R_META_03",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_03_20220531_20220812.csv",
+      "filename": "META_03_20220531_20220812.csv",
+      "sha256": "8c20475956a322f55c0e317548c5dc4bf6ed0ff0161c66c76b1c28b89c31b0ef",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 03",
+      "start_ny": "2022-05-31 13:10:00",
+      "end_ny": "2022-08-12 14:59:00"
+    },
+    {
+      "id": "R_META_04",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_04_20220812_20221026.csv",
+      "filename": "META_04_20220812_20221026.csv",
+      "sha256": "9bfe541754b9b27a114371e9764cfc0fc7a0d0350d4b0e4d6973df6d9aa9e2b9",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 04",
+      "start_ny": "2022-08-12 15:00:00",
+      "end_ny": "2022-10-26 10:19:00"
+    },
+    {
+      "id": "R_META_05",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_05_20221026_20230110.csv",
+      "filename": "META_05_20221026_20230110.csv",
+      "sha256": "1770f0ef269a50ad34e8e3246d1f74e31feafc8cb676d9dadebb59cce52f4d6d",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 05",
+      "start_ny": "2022-10-26 10:20:00",
+      "end_ny": "2023-01-10 15:09:00"
+    },
+    {
+      "id": "R_META_06",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_06_20230110_20230327.csv",
+      "filename": "META_06_20230110_20230327.csv",
+      "sha256": "60e4bf2aad045f8dd8f780c3725e9487692b8027210aee828c28e2947d300ca0",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 06",
+      "start_ny": "2023-01-10 15:10:00",
+      "end_ny": "2023-03-27 10:29:00"
+    },
+    {
+      "id": "R_META_07",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_07_20230327_20230608.csv",
+      "filename": "META_07_20230327_20230608.csv",
+      "sha256": "ce68f6741f6e7095516bef763ecd70d6c15806c6be1bad486bddfcd563550137",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 07",
+      "start_ny": "2023-03-27 10:30:00",
+      "end_ny": "2023-06-08 12:19:00"
+    },
+    {
+      "id": "R_META_08",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_08_20230608_20230823.csv",
+      "filename": "META_08_20230608_20230823.csv",
+      "sha256": "e8e9b634496bec889bb63c6d8a8ca3754efb0d29e0cedc4a11fc0f2c57dd318f",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 08",
+      "start_ny": "2023-06-08 12:20:00",
+      "end_ny": "2023-08-23 10:39:00"
+    },
+    {
+      "id": "R_META_09",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_09_20230823_20231103.csv",
+      "filename": "META_09_20230823_20231103.csv",
+      "sha256": "3cd48d0b0df507c0f81ac17c8acbdaca38f1ce9551e91e582e05962a9854bd34",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 09",
+      "start_ny": "2023-08-23 10:40:00",
+      "end_ny": "2023-11-03 12:29:00"
+    },
+    {
+      "id": "R_META_10",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_10_20231103_20240122.csv",
+      "filename": "META_10_20231103_20240122.csv",
+      "sha256": "74749286295e839c13d087e4d74a82b319b90ce3b3bb3dc826f3a87fbceeb2cd",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 10",
+      "start_ny": "2023-11-03 12:30:00",
+      "end_ny": "2024-01-22 10:49:00"
+    },
+    {
+      "id": "R_META_11",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_11_20240122_20240404.csv",
+      "filename": "META_11_20240122_20240404.csv",
+      "sha256": "c329a0995055f9e2172c00afd0e45090c82a6491c518976efcb7f667331d62f5",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 11",
+      "start_ny": "2024-01-22 10:50:00",
+      "end_ny": "2024-04-04 12:39:00"
+    },
+    {
+      "id": "R_META_12",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_12_20240404_20240617.csv",
+      "filename": "META_12_20240404_20240617.csv",
+      "sha256": "862ac4b3f7f581b71df5ac4750ad152b4b44655a1a45e24ac8edbda6c417dba3",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 12",
+      "start_ny": "2024-04-04 12:40:00",
+      "end_ny": "2024-06-17 14:29:00"
+    },
+    {
+      "id": "R_META_13",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_13_20240617_20240830.csv",
+      "filename": "META_13_20240617_20240830.csv",
+      "sha256": "b45a6b387e730ab54e4ea610baf2d5c5dac73250f2ed54c5d48f9232681c5ad6",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 13",
+      "start_ny": "2024-06-17 14:30:00",
+      "end_ny": "2024-08-30 12:49:00"
+    },
+    {
+      "id": "R_META_14",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Meta/META_14_20240830_20241112.csv",
+      "filename": "META_14_20240830_20241112.csv",
+      "sha256": "3646459c3f3bfd4f66116ce365eb058b4a39201e764e2da4e048aa2ea1baf43a",
+      "group": "recreada",
+      "symbol": "META",
+      "label": "Meta - bloque 14",
+      "start_ny": "2024-08-30 12:50:00",
+      "end_ny": "2024-11-12 14:39:00"
+    },
+    {
+      "id": "R_NFLX_01",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_01_20220103_20220317.csv",
+      "filename": "NFLX_01_20220103_20220317.csv",
+      "sha256": "5943eca53b9fd744664925565825ccbc5d0129855ef0f4ebd718de10f047d715",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 01",
+      "start_ny": "2022-01-03 09:30:00",
+      "end_ny": "2022-03-17 11:21:00"
+    },
+    {
+      "id": "R_NFLX_02",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_02_20220317_20220531.csv",
+      "filename": "NFLX_02_20220317_20220531.csv",
+      "sha256": "52dce6d37e88734c5dfbc7704d8b33975d802f8297c03e4d8dbb5f0c78e116dd",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 02",
+      "start_ny": "2022-03-17 11:22:00",
+      "end_ny": "2022-05-31 13:12:00"
+    },
+    {
+      "id": "R_NFLX_03",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_03_20220531_20220812.csv",
+      "filename": "NFLX_03_20220531_20220812.csv",
+      "sha256": "2885ba4aa19d31a0ceaa77fd008af953f56329825938f91609ceeefaa361a709",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 03",
+      "start_ny": "2022-05-31 13:13:00",
+      "end_ny": "2022-08-12 15:02:00"
+    },
+    {
+      "id": "R_NFLX_04",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_04_20220812_20221026.csv",
+      "filename": "NFLX_04_20220812_20221026.csv",
+      "sha256": "183f7df6d4efbbe7df5d6dd8c58dd0a7ff34c02403bccab1bed67e772069bcea",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 04",
+      "start_ny": "2022-08-12 15:03:00",
+      "end_ny": "2022-10-26 10:22:00"
+    },
+    {
+      "id": "R_NFLX_05",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_05_20221026_20230110.csv",
+      "filename": "NFLX_05_20221026_20230110.csv",
+      "sha256": "0c69faed4a9bae9e92bd6efd946b025ea747d26d9ac49cc4efbe876f3fc3e785",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 05",
+      "start_ny": "2022-10-26 10:23:00",
+      "end_ny": "2023-01-10 15:12:00"
+    },
+    {
+      "id": "R_NFLX_06",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_06_20230110_20230327.csv",
+      "filename": "NFLX_06_20230110_20230327.csv",
+      "sha256": "81ff8b7efe18faddf2c29d405c23761912692db61e29371ca0331d4cbe009b6a",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 06",
+      "start_ny": "2023-01-10 15:13:00",
+      "end_ny": "2023-03-27 10:32:00"
+    },
+    {
+      "id": "R_NFLX_07",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_07_20230327_20230608.csv",
+      "filename": "NFLX_07_20230327_20230608.csv",
+      "sha256": "1b82e27030d9f6e6ceb2bef300544e687794a7f3f0289c8362b6de2b1ad43e5a",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 07",
+      "start_ny": "2023-03-27 10:33:00",
+      "end_ny": "2023-06-08 12:22:00"
+    },
+    {
+      "id": "R_NFLX_08",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_08_20230608_20230823.csv",
+      "filename": "NFLX_08_20230608_20230823.csv",
+      "sha256": "82766da875e9f95003059b649db99772dcf14454a68cadbc469960371cb07c7e",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 08",
+      "start_ny": "2023-06-08 12:23:00",
+      "end_ny": "2023-08-23 10:42:00"
+    },
+    {
+      "id": "R_NFLX_09",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_09_20230823_20231103.csv",
+      "filename": "NFLX_09_20230823_20231103.csv",
+      "sha256": "87dccb8094bbd51db303af107b9f28ef48d729c7742517b963166b1d667d9a97",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 09",
+      "start_ny": "2023-08-23 10:43:00",
+      "end_ny": "2023-11-03 12:32:00"
+    },
+    {
+      "id": "R_NFLX_10",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_10_20231103_20240122.csv",
+      "filename": "NFLX_10_20231103_20240122.csv",
+      "sha256": "3ef4fa7b48f9ea155b2b874c1c1557fd708fb1c54abd62827925246d28441fd8",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 10",
+      "start_ny": "2023-11-03 12:33:00",
+      "end_ny": "2024-01-22 10:52:00"
+    },
+    {
+      "id": "R_NFLX_11",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_11_20240122_20240404.csv",
+      "filename": "NFLX_11_20240122_20240404.csv",
+      "sha256": "bfb78b412af0d74bdec5ecaf02b7eae765767c0ed8dd3a319fa757fa9294394e",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 11",
+      "start_ny": "2024-01-22 10:53:00",
+      "end_ny": "2024-04-04 12:44:00"
+    },
+    {
+      "id": "R_NFLX_12",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_12_20240404_20240617.csv",
+      "filename": "NFLX_12_20240404_20240617.csv",
+      "sha256": "61f63a2592922bc3beef0d0d1ebbdea72f9b5a4bfe19a4ded22c63cd676e6233",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 12",
+      "start_ny": "2024-04-04 12:45:00",
+      "end_ny": "2024-06-17 14:34:00"
+    },
+    {
+      "id": "R_NFLX_13",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_13_20240617_20240830.csv",
+      "filename": "NFLX_13_20240617_20240830.csv",
+      "sha256": "d5799cb1b39e255d415529a4a0a1710e2a5e40bbad3fe65706620da8336c275d",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 13",
+      "start_ny": "2024-06-17 14:35:00",
+      "end_ny": "2024-08-30 12:54:00"
+    },
+    {
+      "id": "R_NFLX_14",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Netflix/NFLX_14_20240830_20241112.csv",
+      "filename": "NFLX_14_20240830_20241112.csv",
+      "sha256": "9d742f105b48dbfac101fa1f872f58dd4f7a2f0569756e39debe523528d25fe2",
+      "group": "recreada",
+      "symbol": "NFLX",
+      "label": "Netflix - bloque 14",
+      "start_ny": "2024-08-30 12:55:00",
+      "end_ny": "2024-11-12 14:44:00"
+    },
+    {
+      "id": "R_TSLA_01",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_01_20220103_20220317.csv",
+      "filename": "TSLA_01_20220103_20220317.csv",
+      "sha256": "a8bcbed2e4eabdb36884526a4073e4433a37552ed6597f5c01682a09825be45a",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 01",
+      "start_ny": "2022-01-03 09:30:00",
+      "end_ny": "2022-03-17 11:19:00"
+    },
+    {
+      "id": "R_TSLA_02",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_02_20220317_20220531.csv",
+      "filename": "TSLA_02_20220317_20220531.csv",
+      "sha256": "08deb20e92453b11abcc9f756ed252860a8ca422c225040f9c1eb4931a63f9d6",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 02",
+      "start_ny": "2022-03-17 11:20:00",
+      "end_ny": "2022-05-31 13:09:00"
+    },
+    {
+      "id": "R_TSLA_03",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_03_20220531_20220812.csv",
+      "filename": "TSLA_03_20220531_20220812.csv",
+      "sha256": "9f22e4988f162b3bcf38af23d54859a4b9ba0707b6430e8f3d054352d7644dfa",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 03",
+      "start_ny": "2022-05-31 13:10:00",
+      "end_ny": "2022-08-12 14:59:00"
+    },
+    {
+      "id": "R_TSLA_04",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_04_20220812_20221026.csv",
+      "filename": "TSLA_04_20220812_20221026.csv",
+      "sha256": "e13ad25a5b1bac5889be25f52e3706c6f53607a59966cc7394f85ac205f1769d",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 04",
+      "start_ny": "2022-08-12 15:00:00",
+      "end_ny": "2022-10-26 10:19:00"
+    },
+    {
+      "id": "R_TSLA_05",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_05_20221026_20230110.csv",
+      "filename": "TSLA_05_20221026_20230110.csv",
+      "sha256": "3f6ebb9d2aa08872ddf72985fd9acca3e5bc70b360bc4ebc0555352114d33ffe",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 05",
+      "start_ny": "2022-10-26 10:20:00",
+      "end_ny": "2023-01-10 15:09:00"
+    },
+    {
+      "id": "R_TSLA_06",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_06_20230110_20230327.csv",
+      "filename": "TSLA_06_20230110_20230327.csv",
+      "sha256": "fb8e8a9fba75d4b2708f569bde2d94a65e8e294bece1f59e84dd240b6111ec67",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 06",
+      "start_ny": "2023-01-10 15:10:00",
+      "end_ny": "2023-03-27 10:29:00"
+    },
+    {
+      "id": "R_TSLA_07",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_07_20230327_20230608.csv",
+      "filename": "TSLA_07_20230327_20230608.csv",
+      "sha256": "b14597d0b29dccbde3bff5fc9eed00cde7147a6c8fc81855f0b6372f16b09e65",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 07",
+      "start_ny": "2023-03-27 10:30:00",
+      "end_ny": "2023-06-08 12:19:00"
+    },
+    {
+      "id": "R_TSLA_08",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_08_20230608_20230823.csv",
+      "filename": "TSLA_08_20230608_20230823.csv",
+      "sha256": "36b83f41c5ed8abb1351ed079c6e779e0dc8ce4fde3d9443d5ea8dfd532144b7",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 08",
+      "start_ny": "2023-06-08 12:20:00",
+      "end_ny": "2023-08-23 10:39:00"
+    },
+    {
+      "id": "R_TSLA_09",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_09_20230823_20231103.csv",
+      "filename": "TSLA_09_20230823_20231103.csv",
+      "sha256": "4dbc116750aadc383f94fec518941208609c71f535ef9c8c9e5e53d86c9cfd88",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 09",
+      "start_ny": "2023-08-23 10:40:00",
+      "end_ny": "2023-11-03 12:29:00"
+    },
+    {
+      "id": "R_TSLA_10",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_10_20231103_20240122.csv",
+      "filename": "TSLA_10_20231103_20240122.csv",
+      "sha256": "1a9574b084069803836433f1618811f7358caeb8dc85e3f15802df3b66899834",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 10",
+      "start_ny": "2023-11-03 12:30:00",
+      "end_ny": "2024-01-22 10:49:00"
+    },
+    {
+      "id": "R_TSLA_11",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_11_20240122_20240404.csv",
+      "filename": "TSLA_11_20240122_20240404.csv",
+      "sha256": "199877ef0f09ac0a1ca5fe68a72ddf18b42f8e5e6422ee2e80658460ae3fc3b3",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 11",
+      "start_ny": "2024-01-22 10:50:00",
+      "end_ny": "2024-04-04 12:39:00"
+    },
+    {
+      "id": "R_TSLA_12",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_12_20240404_20240617.csv",
+      "filename": "TSLA_12_20240404_20240617.csv",
+      "sha256": "9f5d0d27a103efe6d02cfd4e2ce1f0ac023352bf7749badc0808202357208f93",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 12",
+      "start_ny": "2024-04-04 12:40:00",
+      "end_ny": "2024-06-17 14:29:00"
+    },
+    {
+      "id": "R_TSLA_13",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_13_20240617_20240830.csv",
+      "filename": "TSLA_13_20240617_20240830.csv",
+      "sha256": "8a82ca8960cd80181d2247bd44f8920a99b0962eafe7b9918c8cfa43c81ff349",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 13",
+      "start_ny": "2024-06-17 14:30:00",
+      "end_ny": "2024-08-30 12:49:00"
+    },
+    {
+      "id": "R_TSLA_14",
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/series recreadas/Tesla/TSLA_14_20240830_20241112.csv",
+      "filename": "TSLA_14_20240830_20241112.csv",
+      "sha256": "804b3f62c396da299f79a5b4823d3708f5e7ba611070f4d8e2c20abe6ebe8078",
+      "group": "recreada",
+      "symbol": "TSLA",
+      "label": "Tesla - bloque 14",
+      "start_ny": "2024-08-30 12:50:00",
+      "end_ny": "2024-11-12 14:39:00"
+    }
+  ],
+  "duplicates_excluded": [
+    {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/practica_meta.csv",
+      "same_as": "C_practica_meta_2022",
+      "sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f"
+    }
+  ],
+  "averaging": "Arithmetic mean at same relative tick over all79 unique series, equal weight1/79, each restarts at10000. Not chronological portfolio; groups also reported.",
+  "scope": "8 real-market official series +1 older original practice +70 recreated blocks. Official and recreated periods can overlap. Not79 independent samples. No parameter tuning.",
+  "production_code_changed": false,
+  "fpga_programmed": false,
+  "source_sha256": {
+    "compare_generations.py": "432e2492f0ec1347c3751fbb66faa81984c27531c3044862975a7379a6e77b49",
+    "generations.py": "b09893a2d3b456854e24c23ce0ed5ea5922a3666e2502f513d78aaa062a1f023",
+    "run_patients.py": "7c2f4a8bc4a7ad37bfae00419b6f9c24e0eb2958e652c9d565535ba89551dd79",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "baltazar.py": "4f61ef505b8b1db5cd6b87c7a29323742cac1fa9fba0e7da865b421440f10d1e"
+  }
+}

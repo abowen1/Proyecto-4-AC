@@ -1,0 +1,32 @@
+{
+  "D": {
+    "mean_equity": 6317.25,
+    "mean_commissions": 3193.75,
+    "min_equity": 5242,
+    "wins_vs_initial_cash": 0
+  },
+  "Paciente_1": {
+    "mean_equity": 11400.25,
+    "mean_commissions": 728.75,
+    "min_equity": 8529,
+    "wins_vs_initial_cash": 3
+  },
+  "Paciente_2": {
+    "mean_equity": 11389.0,
+    "mean_commissions": 591.25,
+    "min_equity": 10453,
+    "wins_vs_initial_cash": 4
+  },
+  "Lento_1": {
+    "mean_equity": 10892.5,
+    "mean_commissions": 437.5,
+    "min_equity": 8254,
+    "wins_vs_initial_cash": 3
+  },
+  "Lento_2": {
+    "mean_equity": 10518.0,
+    "mean_commissions": 527.5,
+    "min_equity": 9406,
+    "wins_vs_initial_cash": 3
+  }
+}

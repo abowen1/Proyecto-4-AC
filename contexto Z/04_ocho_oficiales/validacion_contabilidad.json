@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "compared_ticks": 800160,
+  "datasets": 8,
+  "runs": 40,
+  "historical_trace_equivalence_runs": 20,
+  "scope": "Contabilidad, no ejecuci\u00f3n de estrategias en Espino ni deadlines"
+}

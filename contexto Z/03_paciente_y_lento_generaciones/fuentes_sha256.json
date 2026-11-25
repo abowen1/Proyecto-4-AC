@@ -1,0 +1,8 @@
+{
+  "compare_generations.py": "432e2492f0ec1347c3751fbb66faa81984c27531c3044862975a7379a6e77b49",
+  "generations.py": "b09893a2d3b456854e24c23ce0ed5ea5922a3666e2502f513d78aaa062a1f023",
+  "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+  "check_generations.py": "768f8b454059329c20bae13117dfb2c226d713b3168bb2ae3025334af3907c2b",
+  "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+  "baltazar.py": "4f61ef505b8b1db5cd6b87c7a29323742cac1fa9fba0e7da865b421440f10d1e"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Baltazar",
+  "stage": "Python prototype; not installed on FPGA; no GitHub publication",
+  "main_case": "Baltazar_50_TP_SL",
+  "known_official_results": {
+    "Tesla_oficial": {
+      "final_equity": 5974,
+      "orders": 992,
+      "commissions": 4960
+    },
+    "AMD_oficial": {
+      "final_equity": 4935,
+      "orders": 1286,
+      "commissions": 6430
+    },
+    "Apple_oficial": {
+      "final_equity": 5344,
+      "orders": 1022,
+      "commissions": 5110
+    },
+    "Meta_oficial": {
+      "final_equity": 4097,
+      "orders": 948,
+      "commissions": 4740
+    }
+  },
+  "findings": [
+    "None of these eight configurations finished above10000 on any of the four known official series",
+    "Main TP/SL case beat D on Tesla and lost to D on AMD,Apple,Meta",
+    "Momentum over five intervals plus tight exits trades frequently; AMD main case paid6430 commission on1286 executed orders",
+    "Reconstructed twins are sensitivity checks, not independent validation; main Tesla final equity5974 official versus7237 reconstruction",
+    "0.8% and1.5% refer to normalized price/accounting, not original USD market returns",
+    "Observed-price exposure cap can be exceeded at the next execution price",
+    "One entry at most63; cap100 does not imply investing100%",
+    "Main case also exits on opposite momentum; this is an adaptation, not a literal copy of supplied bot"
+  ],
+  "preserved": [
+    "D source",
+    "commission5",
+    "cash10000",
+    "next-price execution",
+    "no debt or shorting",
+    "market CSVs",
+    "Desarrollo AC4",
+    "FPGA image"
+  ],
+  "reproduce": [
+    "python3 -B tools/check_baltazar.py",
+    "python3 -B tools/compare_baltazar.py"
+  ],
+  "validation": {
+    "status": "PASS",
+    "compared_ticks": 1120140,
+    "datasets": 7,
+    "scope": "Contabilidad, no ejecución de estrategias en Espino ni deadlines"
+  }
+}

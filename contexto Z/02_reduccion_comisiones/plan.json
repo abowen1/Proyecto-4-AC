@@ -1,0 +1,136 @@
+{
+  "cases": {
+    "D": {
+      "model": "D",
+      "original": true,
+      "description": "D original, SMA32 banda1, cantidades originales"
+    },
+    "B0_original": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 15,
+      "sl": 15,
+      "description": "Control: Baltazar50 TP/SL1.5%, momentum5>0.8%, espera8"
+    },
+    "B1_espera": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 15,
+      "sl": 15,
+      "cooldown": 64,
+      "description": "Solo aumenta espera tras venta de8 a64 ticks"
+    },
+    "B2_momentum": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 15,
+      "sl": 15,
+      "intervals": 32,
+      "threshold": 20,
+      "confirm": 3,
+      "description": "Solo señal más persistente: momentum32>2%, tres confirmaciones para entrar/salir"
+    },
+    "B3_salidas": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 40,
+      "sl": 30,
+      "description": "Solo amplía TP a4% y SL a3%; conserva salida por momentum5"
+    },
+    "B4_solo_TP_SL": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 40,
+      "sl": 30,
+      "exit_on_signal": false,
+      "description": "B3 sin venta por momentum contrario; sale por TP4% o SL3%"
+    },
+    "B5_persistente": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 40,
+      "sl": 30,
+      "intervals": 32,
+      "threshold": 20,
+      "confirm": 3,
+      "cooldown": 64,
+      "min_hold": 32,
+      "description": "Combina momentum32>2% confirmado3, espera64, TP4/SL3; salida por señal tras32 ticks mínimo"
+    },
+    "B6_paciente": {
+      "model": "momentum",
+      "cap": 50,
+      "sl": 30,
+      "trailing": 30,
+      "activate": 40,
+      "intervals": 32,
+      "threshold": 20,
+      "confirm": 3,
+      "cooldown": 64,
+      "min_hold": 32,
+      "description": "B5 sin TP fijo, trailing3% activado desde+4% neto; conserva stop3 y salida por señal"
+    },
+    "B7_lento": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 60,
+      "sl": 40,
+      "intervals": 128,
+      "threshold": 30,
+      "confirm": 4,
+      "cooldown": 128,
+      "min_hold": 64,
+      "description": "Momentum128>3%, cuatro confirmaciones, espera128, TP6/SL4; señal de salida tras64 ticks"
+    }
+  },
+  "common": {
+    "momentum_intervals": 5,
+    "momentum_per_mille": 8,
+    "cooldown_ticks": 8,
+    "position": "one buy order per position, no adding until flat",
+    "quantity": "integer, maximum63, clipped by actual funds next tick",
+    "exposure": "cap limits new entry at observed price after estimated buy fee; no forced rebalancing",
+    "exit": "opposite momentum (or D sell), stop, take profit or activated trailing; whichever occurs first",
+    "return_basis": "net liquidation value shares*price minus sell fee, versus actual entry cost including buy fee",
+    "stop_execution": "decision now executes next price, no guarantee at threshold",
+    "horizon": "no ticker/date/remaining ticks/end-of-series inputs; no forced final liquidation"
+  },
+  "rules": {
+    "cash": 10000,
+    "commission": 5
+  },
+  "sources": {
+    "Tesla_oficial": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_tesla_2022.csv",
+      "sha256": "a48617cc5a91023f16731d24f86814204bdad9d48367d7559c0c6fac6bfd7db6"
+    },
+    "AMD_oficial": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_amd_2022_ene.csv",
+      "sha256": "0c1c5e791578a59ec0f077d263f6103a4d1fde8e0f8ffbe1e775c05f442a0bc7"
+    },
+    "Apple_oficial": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/Proyecto 4 Series Practica/practica_apple_2022.csv",
+      "sha256": "0c28c0a53f6fd55ee6216916c1d7d529a5998bbe7ad4d8f940e439d78fe2dbb8"
+    },
+    "Meta_oficial": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Material de Canvas AC4/practica_meta.csv",
+      "sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f"
+    },
+    "Tesla_reconstruida": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Investigacion generador series 2026-11-23/validacion_tres_series/v2_alineada/TSLA/precios_reconstruidos.csv",
+      "sha256": "99c09bc50aa185fd874977e86acc5eec021dbe841af3f3e70f3060b148d4e3c9"
+    },
+    "AMD_reconstruida": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Investigacion generador series 2026-11-23/validacion_tres_series/v2_alineada/AMD/precios_reconstruidos.csv",
+      "sha256": "7e3dddd3d6b6f778bfd8eb54ac60250a0649239ac4fc5506f6cf0cb778656ac6"
+    },
+    "Apple_reconstruida": {
+      "path": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Investigacion generador series 2026-11-23/validacion_tres_series/v2_alineada/AAPL/precios_reconstruidos.csv",
+      "sha256": "fda543a0ae564bb4225592e40d989e43da9495563a92f46218d1ed4ddfc9bde8"
+    }
+  },
+  "interpretation": "Second exploration after examining v1; fixed bounded candidate list before this run, no grid search. Known official series; twins test sensitivity, not independent validation.",
+  "production_code_changed": false,
+  "fpga_programmed": false,
+  "grid_search": false
+}

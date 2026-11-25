@@ -1,0 +1,65 @@
+{
+  "D": {
+    "mean_final_equity": 6317.25,
+    "worst_final_equity": 5242,
+    "wins_vs_cash": 0,
+    "mean_orders": 638.75,
+    "worst_drawdown_percent": 59.717218407994025
+  },
+  "B0_original": {
+    "mean_final_equity": 5087.5,
+    "worst_final_equity": 4097,
+    "wins_vs_cash": 0,
+    "mean_orders": 1062.0,
+    "worst_drawdown_percent": 60.730374772356946
+  },
+  "B1_espera": {
+    "mean_final_equity": 8448.75,
+    "worst_final_equity": 7549,
+    "wins_vs_cash": 0,
+    "mean_orders": 400.5,
+    "worst_drawdown_percent": 25.07980845969673
+  },
+  "B2_momentum": {
+    "mean_final_equity": 8150.75,
+    "worst_final_equity": 7371,
+    "wins_vs_cash": 0,
+    "mean_orders": 405.0,
+    "worst_drawdown_percent": 30.065611732921653
+  },
+  "B3_salidas": {
+    "mean_final_equity": 5017.25,
+    "worst_final_equity": 3963,
+    "wins_vs_cash": 0,
+    "mean_orders": 966.0,
+    "worst_drawdown_percent": 64.20705882352942
+  },
+  "B4_solo_TP_SL": {
+    "mean_final_equity": 8044.75,
+    "worst_final_equity": 6864,
+    "wins_vs_cash": 0,
+    "mean_orders": 363.5,
+    "worst_drawdown_percent": 50.352700946723594
+  },
+  "B5_persistente": {
+    "mean_final_equity": 10047.5,
+    "worst_final_equity": 8704,
+    "wins_vs_cash": 2,
+    "mean_orders": 167.75,
+    "worst_drawdown_percent": 20.75030405089344
+  },
+  "B6_paciente": {
+    "mean_final_equity": 11400.25,
+    "worst_final_equity": 8529,
+    "wins_vs_cash": 3,
+    "mean_orders": 145.75,
+    "worst_drawdown_percent": 19.946478065564367
+  },
+  "B7_lento": {
+    "mean_final_equity": 10892.5,
+    "worst_final_equity": 8254,
+    "wins_vs_cash": 3,
+    "mean_orders": 87.5,
+    "worst_drawdown_percent": 26.99923106497501
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "global": {
+    "count": 79,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 9837.60759493671,
+        "min_equity": 4619,
+        "mean_commissions": 588.1012658227849,
+        "wins_vs_initial": 37,
+        "max_drawdown_percent": 55.01120093503458,
+        "series_wins": 37
+      },
+      "Paciente_2": {
+        "mean_equity": 9948.531645569621,
+        "min_equity": 5780,
+        "mean_commissions": 488.1012658227848,
+        "wins_vs_initial": 38,
+        "max_drawdown_percent": 44.66479636258102,
+        "series_wins": 42
+      }
+    }
+  },
+  "catedra": {
+    "count": 8,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 10740.25,
+        "min_equity": 8529,
+        "mean_commissions": 733.125,
+        "wins_vs_initial": 5,
+        "max_drawdown_percent": 22.50114103149247,
+        "series_wins": 4
+      },
+      "Paciente_2": {
+        "mean_equity": 10761.375,
+        "min_equity": 8638,
+        "mean_commissions": 595.625,
+        "wins_vs_initial": 5,
+        "max_drawdown_percent": 23.992612491605104,
+        "series_wins": 4
+      }
+    }
+  },
+  "original": {
+    "count": 1,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 4619.0,
+        "min_equity": 4619,
+        "mean_commissions": 1120.0,
+        "wins_vs_initial": 0,
+        "max_drawdown_percent": 55.01120093503458,
+        "series_wins": 0
+      },
+      "Paciente_2": {
+        "mean_equity": 6518.0,
+        "min_equity": 6518,
+        "mean_commissions": 795.0,
+        "wins_vs_initial": 0,
+        "max_drawdown_percent": 38.272910856813155,
+        "series_wins": 1
+      }
+    }
+  },
+  "recreada": {
+    "count": 70,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 9809.0,
+        "min_equity": 7061,
+        "mean_commissions": 563.9285714285714,
+        "wins_vs_initial": 32,
+        "max_drawdown_percent": 39.78914841406889,
+        "series_wins": 33
+      },
+      "Paciente_2": {
+        "mean_equity": 9904.642857142857,
+        "min_equity": 5780,
+        "mean_commissions": 471.42857142857144,
+        "wins_vs_initial": 33,
+        "max_drawdown_percent": 44.66479636258102,
+        "series_wins": 37
+      }
+    }
+  },
+  "recreada_AAPL": {
+    "count": 14,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 9686.0,
+        "min_equity": 7148,
+        "mean_commissions": 572.8571428571429,
+        "wins_vs_initial": 5,
+        "max_drawdown_percent": 38.154525386313466,
+        "series_wins": 8
+      },
+      "Paciente_2": {
+        "mean_equity": 9693.57142857143,
+        "min_equity": 5780,
+        "mean_commissions": 477.85714285714283,
+        "wins_vs_initial": 5,
+        "max_drawdown_percent": 44.66479636258102,
+        "series_wins": 6
+      }
+    }
+  },
+  "recreada_AMD": {
+    "count": 14,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 9849.5,
+        "min_equity": 7133,
+        "mean_commissions": 627.1428571428571,
+        "wins_vs_initial": 5,
+        "max_drawdown_percent": 35.7663524152007,
+        "series_wins": 4
+      },
+      "Paciente_2": {
+        "mean_equity": 10134.642857142857,
+        "min_equity": 7921,
+        "mean_commissions": 507.85714285714283,
+        "wins_vs_initial": 6,
+        "max_drawdown_percent": 33.550393624258916,
+        "series_wins": 10
+      }
+    }
+  },
+  "recreada_META": {
+    "count": 14,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 9837.5,
+        "min_equity": 7352,
+        "mean_commissions": 539.2857142857143,
+        "wins_vs_initial": 8,
+        "max_drawdown_percent": 32.61266455270491,
+        "series_wins": 8
+      },
+      "Paciente_2": {
+        "mean_equity": 9941.714285714286,
+        "min_equity": 7306,
+        "mean_commissions": 459.2857142857143,
+        "wins_vs_initial": 7,
+        "max_drawdown_percent": 37.571636716852844,
+        "series_wins": 6
+      }
+    }
+  },
+  "recreada_NFLX": {
+    "count": 14,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 10186.07142857143,
+        "min_equity": 8025,
+        "mean_commissions": 552.1428571428571,
+        "wins_vs_initial": 8,
+        "max_drawdown_percent": 27.221954742416948,
+        "series_wins": 5
+      },
+      "Paciente_2": {
+        "mean_equity": 10204.357142857143,
+        "min_equity": 8164,
+        "mean_commissions": 477.14285714285717,
+        "wins_vs_initial": 8,
+        "max_drawdown_percent": 27.270205289439613,
+        "series_wins": 9
+      }
+    }
+  },
+  "recreada_TSLA": {
+    "count": 14,
+    "strategies": {
+      "Paciente_1": {
+        "mean_equity": 9485.92857142857,
+        "min_equity": 7061,
+        "mean_commissions": 528.2142857142857,
+        "wins_vs_initial": 6,
+        "max_drawdown_percent": 39.78914841406889,
+        "series_wins": 8
+      },
+      "Paciente_2": {
+        "mean_equity": 9548.92857142857,
+        "min_equity": 7461,
+        "mean_commissions": 435.0,
+        "wins_vs_initial": 7,
+        "max_drawdown_percent": 36.49541284403669,
+        "series_wins": 6
+      }
+    }
+  }
+}

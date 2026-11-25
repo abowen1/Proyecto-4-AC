@@ -1,0 +1,68 @@
+{
+  "original_curve": "D original, SMA32 band1",
+  "curves": [
+    "D",
+    "Paciente_1",
+    "Paciente_2",
+    "Lento_1",
+    "Lento_2"
+  ],
+  "official_only": true,
+  "number_of_runs": 20,
+  "changes": {
+    "Paciente_2": "Only adds current price>SMA128 AND SMA32>SMA128 to original entry; same32 interval2% momentum confirmed3,50%cap,SL3%,trailing3% activated4%,cooldown64,min_hold32 for signal exits",
+    "Lento_2": "Replaces entry momentum128>3% confirmed4 with momentum16>1% confirmed2 AND same trend gate; original128 momentum remains exit signal; cap50%,TP6%,SL4%,cooldown128,min_hold64 unchanged"
+  },
+  "scores": {
+    "D": {
+      "mean_equity": 6317.25,
+      "mean_commissions": 3193.75,
+      "min_equity": 5242,
+      "wins_vs_initial_cash": 0
+    },
+    "Paciente_1": {
+      "mean_equity": 11400.25,
+      "mean_commissions": 728.75,
+      "min_equity": 8529,
+      "wins_vs_initial_cash": 3
+    },
+    "Paciente_2": {
+      "mean_equity": 11389.0,
+      "mean_commissions": 591.25,
+      "min_equity": 10453,
+      "wins_vs_initial_cash": 4
+    },
+    "Lento_1": {
+      "mean_equity": 10892.5,
+      "mean_commissions": 437.5,
+      "min_equity": 8254,
+      "wins_vs_initial_cash": 3
+    },
+    "Lento_2": {
+      "mean_equity": 10518.0,
+      "mean_commissions": 527.5,
+      "min_equity": 9406,
+      "wins_vs_initial_cash": 3
+    }
+  },
+  "patient_commission_reduction_percent": 18.867924528301884,
+  "slow_commission_increase_percent": 20.571428571428573,
+  "observations": [
+    "Patient2 improves Meta/Apple and loses upside on Tesla/AMD; all four final equities exceed10000",
+    "Patient2 mean equity11389 vs11400.25 almost unchanged, with a higher worst final outcome on these four datasets",
+    "Slow2 raises AMD final outcome but loses elsewhere; higher commissions and greater maximum drawdown on all four series",
+    "Known series only: exploratory comparison, not independent generalization validation",
+    "No adaptive volatility, partial sale or dynamic exposure changes were mixed into these entry-only experiments"
+  ],
+  "validation": {
+    "status": "PASS",
+    "compared_ticks": 400080,
+    "scope": "Contabilidad, no ejecución de estrategias en Espino ni deadlines"
+  },
+  "reproduce": [
+    "python3 -B tools/check_generations.py",
+    "python3 -B tools/compare_generations.py"
+  ],
+  "production_code_changed": false,
+  "fpga_programmed": false
+}

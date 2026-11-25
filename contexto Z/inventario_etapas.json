@@ -1,0 +1,37 @@
+[
+  {
+    "folder": "01_origen",
+    "local_source": "2026-11-23_Baltazar",
+    "summary_rows": 56,
+    "saved_trace_files": 112,
+    "archive_bytes": 6269839
+  },
+  {
+    "folder": "02_reduccion_comisiones",
+    "local_source": "2026-11-23_Baltazar_v2",
+    "summary_rows": 63,
+    "saved_trace_files": 126,
+    "archive_bytes": 5836853
+  },
+  {
+    "folder": "03_paciente_y_lento_generaciones",
+    "local_source": "2026-11-23_Baltazar_generaciones",
+    "summary_rows": 20,
+    "saved_trace_files": 40,
+    "archive_bytes": 1651194
+  },
+  {
+    "folder": "04_ocho_oficiales",
+    "local_source": "2026-11-23_Baltazar_ocho_series",
+    "summary_rows": 40,
+    "saved_trace_files": 80,
+    "archive_bytes": 3290259
+  },
+  {
+    "folder": "05_pacientes_cobertura_completa",
+    "local_source": "2026-11-23_Pacientes_cobertura_completa",
+    "summary_rows": 158,
+    "saved_trace_files": 395,
+    "archive_bytes": 12651533
+  }
+]

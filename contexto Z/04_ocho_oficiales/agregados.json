@@ -1,0 +1,42 @@
+{
+  "D": {
+    "mean_equity": 6549.5,
+    "min_equity": 5242,
+    "max_equity": 8283,
+    "wins_vs_initial": 0,
+    "mean_commissions": 3199.375,
+    "max_drawdown_percent": 59.717218407994025
+  },
+  "Paciente_1": {
+    "mean_equity": 10740.25,
+    "min_equity": 8529,
+    "max_equity": 14992,
+    "wins_vs_initial": 5,
+    "mean_commissions": 733.125,
+    "max_drawdown_percent": 22.50114103149247
+  },
+  "Paciente_2": {
+    "mean_equity": 10761.375,
+    "min_equity": 8638,
+    "max_equity": 12444,
+    "wins_vs_initial": 5,
+    "mean_commissions": 595.625,
+    "max_drawdown_percent": 23.992612491605104
+  },
+  "Lento_1": {
+    "mean_equity": 10191.375,
+    "min_equity": 8254,
+    "max_equity": 13162,
+    "wins_vs_initial": 4,
+    "mean_commissions": 445.0,
+    "max_drawdown_percent": 26.99923106497501
+  },
+  "Lento_2": {
+    "mean_equity": 9086.375,
+    "min_equity": 6782,
+    "max_equity": 11355,
+    "wins_vs_initial": 3,
+    "mean_commissions": 522.5,
+    "max_drawdown_percent": 38.9621898385191
+  }
+}

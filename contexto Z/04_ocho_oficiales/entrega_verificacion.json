@@ -1,0 +1,26 @@
+{
+  "pdf": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Experimentos estrategia AC4/2026-11-23_Baltazar_ocho_series/output/pdf/AC4_Comparacion_5_estrategias_8_series.pdf",
+  "sha256": "f5cee3b32320ff91f46ab05b365a40dc43d81b789002fb321723611188dcbebd",
+  "pages": 11,
+  "runs": 40,
+  "series": 8,
+  "curves_per_series": 5,
+  "visual_review": "All eleven rendered pages reviewed; summary and parameter pages inspected at full resolution",
+  "accounting": {
+    "status": "PASS",
+    "compared_ticks": 800160,
+    "datasets": 8,
+    "runs": 40,
+    "historical_trace_equivalence_runs": 20,
+    "scope": "Contabilidad, no ejecución de estrategias en Espino ni deadlines"
+  },
+  "tools": {
+    "compare_generations.py": "432e2492f0ec1347c3751fbb66faa81984c27531c3044862975a7379a6e77b49",
+    "run_all_series.py": "0002d998fd37077f80360ab85a4091896c0158d380d9ad6dba9b7af3d9309f96",
+    "generations.py": "b09893a2d3b456854e24c23ce0ed5ea5922a3666e2502f513d78aaa062a1f023",
+    "build_report.py": "36988e80d1b6f57549ec725f4a556d5e1fbef8d70156b554df674265f0635f45",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "baltazar.py": "4f61ef505b8b1db5cd6b87c7a29323742cac1fa9fba0e7da865b421440f10d1e"
+  }
+}

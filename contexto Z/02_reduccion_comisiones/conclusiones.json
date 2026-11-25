@@ -1,0 +1,192 @@
+{
+  "preferred_for_further_validation": "B6_paciente",
+  "alternative": "B7_lento",
+  "results_are_out_of_sample": false,
+  "official_metrics": {
+    "D": {
+      "mean_equity": 6317.25,
+      "mean_commissions": 3193.75,
+      "commission_reduction_percent": 39.85404896421846,
+      "min_equity": 5242,
+      "wins_over_initial_cash": 0,
+      "worst_drawdown_percent": 59.717218407994025
+    },
+    "B0_original": {
+      "mean_equity": 5087.5,
+      "mean_commissions": 5310.0,
+      "commission_reduction_percent": 0.0,
+      "min_equity": 4097,
+      "wins_over_initial_cash": 0,
+      "worst_drawdown_percent": 60.730374772356946
+    },
+    "B1_espera": {
+      "mean_equity": 8448.75,
+      "mean_commissions": 2002.5,
+      "commission_reduction_percent": 62.28813559322034,
+      "min_equity": 7549,
+      "wins_over_initial_cash": 0,
+      "worst_drawdown_percent": 25.07980845969673
+    },
+    "B2_momentum": {
+      "mean_equity": 8150.75,
+      "mean_commissions": 2025.0,
+      "commission_reduction_percent": 61.86440677966102,
+      "min_equity": 7371,
+      "wins_over_initial_cash": 0,
+      "worst_drawdown_percent": 30.065611732921653
+    },
+    "B3_salidas": {
+      "mean_equity": 5017.25,
+      "mean_commissions": 4830.0,
+      "commission_reduction_percent": 9.039548022598876,
+      "min_equity": 3963,
+      "wins_over_initial_cash": 0,
+      "worst_drawdown_percent": 64.20705882352942
+    },
+    "B4_solo_TP_SL": {
+      "mean_equity": 8044.75,
+      "mean_commissions": 1817.5,
+      "commission_reduction_percent": 65.77212806026364,
+      "min_equity": 6864,
+      "wins_over_initial_cash": 0,
+      "worst_drawdown_percent": 50.352700946723594
+    },
+    "B5_persistente": {
+      "mean_equity": 10047.5,
+      "mean_commissions": 838.75,
+      "commission_reduction_percent": 84.20433145009416,
+      "min_equity": 8704,
+      "wins_over_initial_cash": 2,
+      "worst_drawdown_percent": 20.75030405089344
+    },
+    "B6_paciente": {
+      "mean_equity": 11400.25,
+      "mean_commissions": 728.75,
+      "commission_reduction_percent": 86.2758945386064,
+      "min_equity": 8529,
+      "wins_over_initial_cash": 3,
+      "worst_drawdown_percent": 19.946478065564367
+    },
+    "B7_lento": {
+      "mean_equity": 10892.5,
+      "mean_commissions": 437.5,
+      "commission_reduction_percent": 91.7608286252354,
+      "min_equity": 8254,
+      "wins_over_initial_cash": 3,
+      "worst_drawdown_percent": 26.99923106497501
+    }
+  },
+  "changes": {
+    "D": {
+      "model": "D",
+      "original": true,
+      "description": "D original, SMA32 banda1, cantidades originales"
+    },
+    "B0_original": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 15,
+      "sl": 15,
+      "description": "Control: Baltazar50 TP/SL1.5%, momentum5>0.8%, espera8"
+    },
+    "B1_espera": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 15,
+      "sl": 15,
+      "cooldown": 64,
+      "description": "Solo aumenta espera tras venta de8 a64 ticks"
+    },
+    "B2_momentum": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 15,
+      "sl": 15,
+      "intervals": 32,
+      "threshold": 20,
+      "confirm": 3,
+      "description": "Solo señal más persistente: momentum32>2%, tres confirmaciones para entrar/salir"
+    },
+    "B3_salidas": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 40,
+      "sl": 30,
+      "description": "Solo amplía TP a4% y SL a3%; conserva salida por momentum5"
+    },
+    "B4_solo_TP_SL": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 40,
+      "sl": 30,
+      "exit_on_signal": false,
+      "description": "B3 sin venta por momentum contrario; sale por TP4% o SL3%"
+    },
+    "B5_persistente": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 40,
+      "sl": 30,
+      "intervals": 32,
+      "threshold": 20,
+      "confirm": 3,
+      "cooldown": 64,
+      "min_hold": 32,
+      "description": "Combina momentum32>2% confirmado3, espera64, TP4/SL3; salida por señal tras32 ticks mínimo"
+    },
+    "B6_paciente": {
+      "model": "momentum",
+      "cap": 50,
+      "sl": 30,
+      "trailing": 30,
+      "activate": 40,
+      "intervals": 32,
+      "threshold": 20,
+      "confirm": 3,
+      "cooldown": 64,
+      "min_hold": 32,
+      "description": "B5 sin TP fijo, trailing3% activado desde+4% neto; conserva stop3 y salida por señal"
+    },
+    "B7_lento": {
+      "model": "momentum",
+      "cap": 50,
+      "tp": 60,
+      "sl": 40,
+      "intervals": 128,
+      "threshold": 30,
+      "confirm": 4,
+      "cooldown": 128,
+      "min_hold": 64,
+      "description": "Momentum128>3%, cuatro confirmaciones, espera128, TP6/SL4; señal de salida tras64 ticks"
+    }
+  },
+  "preserved": {
+    "commission": 5,
+    "initial_cash": 10000,
+    "max_order_quantity": 63,
+    "execution": "next tick",
+    "original_D_and_B0_trace_equivalence": true,
+    "fpga_unchanged": true,
+    "development_folder_unchanged": true
+  },
+  "interpretations": [
+    "Waiting64 instead of8 alone improved all four official final equities",
+    "Wider TP/SL alone was not sufficient: B3 still lost heavily",
+    "B6 combines longer confirmed momentum, cooldown, delayed signal exit and no fixed profit cap; all protections remain active before minimum hold",
+    "B6 beats original Baltazar and D on all four observed official series, but still loses on Meta",
+    "B7 has lower fees and wins more on Apple/Meta, but worse AMD outcome",
+    "These settings were chosen after v1 and tested on known datasets; no assertion of performance on unseen series",
+    "Exposure50 is a limit on entry sizing using observed price, not a guaranteed cap after a price gap",
+    "All percentages use normalized-price portfolio accounting, not raw USD returns"
+  ],
+  "validation": {
+    "status": "PASS",
+    "compared_ticks": 1260140,
+    "datasets": 7,
+    "scope": "Contabilidad, no ejecución de estrategias en Espino ni deadlines"
+  },
+  "reproduce": [
+    "python3 -B tools/check_baltazar.py",
+    "python3 -B tools/compare_baltazar.py"
+  ]
+}

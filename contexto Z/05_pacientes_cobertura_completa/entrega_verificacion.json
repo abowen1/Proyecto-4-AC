@@ -1,0 +1,30 @@
+{
+  "pdf": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Experimentos estrategia AC4/2026-11-23_Pacientes_cobertura_completa/output/pdf/AC4_Paciente_1_vs_2_todas_las_series.pdf",
+  "pdf_sha256": "822204c8beada872ca27bdff59684268c4be5c54d64130257ef9115adbedd310",
+  "pages": 87,
+  "unique_series": 79,
+  "recreated_series": 70,
+  "current_official_series": 8,
+  "legacy_original_series": 1,
+  "runs": 158,
+  "input_files_unchanged": true,
+  "final_page": "Arithmetic mean equity curve of Patient1 and Patient2; equal weight1/79 at each relative tick",
+  "visual_review": "All87 rendered pages reviewed in contact sheets; first,parameters,last pages inspected full resolution",
+  "source_sha256": {
+    "compare_generations.py": "432e2492f0ec1347c3751fbb66faa81984c27531c3044862975a7379a6e77b49",
+    "generations.py": "b09893a2d3b456854e24c23ce0ed5ea5922a3666e2502f513d78aaa062a1f023",
+    "build_patients_report.py": "fde365accc535cf33c7f7a113cf0bea0137c601e854825a6fca2592a87e01113",
+    "run_patients.py": "7c2f4a8bc4a7ad37bfae00419b6f9c24e0eb2958e652c9d565535ba89551dd79",
+    "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+    "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+    "baltazar.py": "4f61ef505b8b1db5cd6b87c7a29323742cac1fa9fba0e7da865b421440f10d1e"
+  },
+  "validation": {
+    "status": "PASS",
+    "compared_ticks": 3161580,
+    "series": 79,
+    "runs": 158,
+    "historical_trace_equivalence_runs": 16,
+    "scope": "Contabilidad, no ejecución de estrategias en Espino ni deadlines"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "check_baltazar.py": "603ed17ce012e72c06d9985557d28a98641cf01e99c4aa03e0373842e48b14e4",
+  "verify_market.py": "c13e1510ea7d710c57d0ab6f295e1da26190d9ce272d9930d9d0f25ba9d0b467",
+  "backtest.py": "1ee2b3f2d646fdfac58ad305704a53a11df6991026fe522a8ff966427fc76ceb",
+  "baltazar.py": "16aa989de4c25d487ac9f1ee322b0762a128ed165129a7aa96b7bfbd43c59509",
+  "compare_baltazar.py": "e8cca649d19a786c62a239b58bf645642ea22dcadccd1bf2ab428f242d76ec04"
+}
