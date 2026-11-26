@@ -1,0 +1,2 @@
+# Preservar los bytes originales de los CSV, incluso con core.autocrlf=true.
+*.csv -text

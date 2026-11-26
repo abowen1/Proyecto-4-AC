@@ -1,6 +1,6 @@
 # Alternativa shifter
 
-Añade desplazamientos lógicos y aritméticos (registro e inmediato) en la ALU y su decodificación.
+Añade únicamente desplazamientos lógicos inmediatos: SLLI de 1, 5 y 6 posiciones, y SRLI de 1 posición. No implementa desplazamientos aritméticos ni por registro; el decodificador rechaza los demás desplazamientos.
 
 Las fuentes en `rtl/` sustituyen por nombre los módulos correspondientes del núcleo base. El programa asociado es `sw/trade_m105_225_shifter.s`. Estas fuentes se compilan por separado de la versión final.
 
