@@ -1,0 +1,18 @@
+/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/sw/trade_m105_225.s -> /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/canvas_m105_225/transacciones/48_10000000_verilator/program.hex: 85 palabras (340 bytes)
+Patrimonio final:          941
+Ordenes ejecutadas:        25
+Perdida maxima:            29028
+No operar:                 10000
+Comprar y mantener:        9431
+Peor caso precio->decision: 1473 ciclos (disponibles: 249762)
+Detalle por tick en decisiones.csv
+PASS MISO sin valores X
+PASS el programa escribe DECISION
+PASS el programa lee todos los precios
+PASS la decision llega antes del siguiente tick
+Testbenchs aprobados: 4/4
+- /var/folders/ks/f_j6zjb108vbrvvdx1p2hv4m0000gn/T/ac4_canvas_m105_225_dp5vqzx7/tb_canvas_configurado.sv:149: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.054 2026-11-01
+- Verilator: $finish at 480ms; walltime 3.997 s; speed 120.100 ms/s
+- Verilator: cpu 3.938 s on 1 threads; allocated 2 MB
+{"status": "PASS", "engine": "verilator", "variant": "software", "strategy": "M105-225", "ticks": 48, "period_ns": 10000000, "series": "/Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/m105_225/integration/transacciones.csv", "series_csv_sha256": "8dfd085662bc58fc2b65d80e2e864dc61047ffd7687a7f4492b60f54a8b02d54", "canvas_checks": "4/4", "every_applied_decision_and_accounting_match": true, "original_testbench_sha256": "f83486755fe2b3de385a2bdc39c2f275b9dd690342fb4fc0391401706876f8f3", "program_hex_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021", "expected_summary": {"strategy": "M105-225", "label": "M105-225", "ticks": 48, "equity": 941, "profit": -9059, "orders": 25, "commissions": 125, "max_drawdown": 29028, "cash": 41, "shares": 9, "buy": 105, "sell": 225, "exposure": 100, "drawdown_percent": 99.25799281928535, "closed_episodes": 8}, "scope": "Simulación de la maestra Canvas y del SoC; no señales físicas USB/SPI"}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "strategy": "M105-225",
+  "variant": "software",
+  "program": "sw/trade.s",
+  "clock_hz": 25000000,
+  "program_hex_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+  "bitstream_sha256": "5be11e8803854d23bc61d15b504b2621084c08c01417fb07f629ad3abd841551",
+  "image_bytes": 32220,
+  "fmax": {
+    "i_Clk$SB_IO_IN_$glb_clk": {
+      "achieved": 46.06808853149414,
+      "constraint": 25
+    }
+  },
+  "utilization": {
+    "ICESTORM_LC": {
+      "available": 1280,
+      "used": 1091
+    },
+    "ICESTORM_RAM": {
+      "available": 16,
+      "used": 12
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 3
+    },
+    "SB_IO": {
+      "available": 72,
+      "used": 27
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "assembly_sha256": "d6f781894f460f2baa7c72de2ab9ba25d59f2e48ea52f2da3f6f55539dedea12",
+  "rtl_sha256": {
+    "rtl/pochoco_periph.v": "795bcc27c1a4a93c7f67086f0634be7cf0f9d104f93869eecc0ae21cc47aec66",
+    "rtl/pochoco_ram.v": "0eda65a86c53f468ec10342706a9be87c3cfdf1b64f4b7c6ec64c57db0ba1fd8",
+    "rtl/pochoco_soc.v": "85cf05990213cdc07503104705ab2ee61577fbcc192b0b9d31a9e9213ad9027f",
+    "rtl/pochoco_spi_slave.v": "dab33af8b2cb654590bc708afd3f68f46a6121705cee21f7bc33bb6b61e7e443",
+    "rtl/espino_core/espino_alu.v": "1b958157b3fb1224857e4171d9df8c910523bae6f15d2a84e6ba0dd18b617601",
+    "rtl/espino_core/espino_controller.v": "bd82d8404d8f09de2a6968da87e6a7e9c750af9138a4b74c43b3ec89a742c215",
+    "rtl/espino_core/espino_core.v": "9e3e3cae616a4ff057ddcb01728bf8f912eab721d26e3a5fe68daf1c68e9905c",
+    "rtl/espino_core/espino_decoder.v": "33e913fec63d9fc899e27a10a31493b3bcb634a86cc0fc10d70ed391febf7ad3",
+    "rtl/espino_core/espino_id_stage.v": "740698037d1e4372e3e26c3a828143debb71b62992d7a69e21ed3b6fc128c704",
+    "rtl/espino_core/espino_if_stage.v": "4734ae2fb9cd60c8f5019be50303504e50e6d25bc09d09a3f06d396d1c5902f4",
+    "rtl/espino_core/espino_load_store_unit.v": "76051d9aba219452dc4e80fd47f306d024c40aea47050dd59fc3c821ea7f5954",
+    "rtl/espino_core/espino_register_file.v": "a19d94587e54d05373a257c95e515979d2f7910328ec8920f649d280bc07b212"
+  },
+  "validation": "Same machine code as78 complete RTL equivalence/profile runs; synthesis and place-and-route meet25MHz",
+  "physical_programming": false,
+  "physical_validation": false
+}

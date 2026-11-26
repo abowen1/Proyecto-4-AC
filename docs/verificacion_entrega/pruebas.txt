@@ -1,0 +1,99 @@
+python3 -B -m unittest discover -s tests -v
+test_branch_offsets (test_assembler.AssemblerTests) ... ok
+test_cli_preserves_output_on_invalid_source (test_assembler.AssemblerTests) ... ok
+test_every_alu_variant (test_assembler.AssemblerTests) ... ok
+test_forward_and_backward_labels (test_assembler.AssemblerTests) ... ok
+test_invalid_inputs (test_assembler.AssemblerTests) ... ok
+test_jump_offsets (test_assembler.AssemblerTests) ... ok
+test_known_encodings (test_assembler.AssemblerTests) ... ok
+test_original_board_program (test_assembler.AssemblerTests) ... ok
+test_ram_limit (test_assembler.AssemblerTests) ... ok
+test_signed_immediate_limits (test_assembler.AssemblerTests) ... ok
+test_exact_encoding_of_supported_extensions (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_extensions_do_not_leak_into_baseline_or_each_other (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_unsupported_shift_and_registers_rejected (test_hardware_assembler.HardwareAssemblerTests) ... ok
+test_base_isa_program_fits_ram (test_m105_225.TestM105225) ... ok
+test_delayed_fills_commissions_latched_sale (test_m105_225.TestM105225) ... ok
+test_entry_threshold_and_abandoned_accumulation (test_m105_225.TestM105225) ... ok
+test_no_forced_end_sale_or_execution (test_m105_225.TestM105225) ... ok
+test_prefixes_do_not_depend_on_future (test_m105_225.TestM105225) ... ok
+test_reentry_after_flat (test_m105_225.TestM105225) ... ok
+test_official_trade_is_selected_optimized_software (test_m105_225_delivery.DeliveryM105225) ... ok
+test_variants_fit_soc_and_use_their_own_isa (test_m105_225_delivery.DeliveryM105225) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.064s
+
+OK
+mkdir -p build
+iverilog -g2012 -DNO_ICE40_DEFAULT_ASSIGNMENTS -s tb_spi_ac4 -o build/tb_spi /opt/homebrew/Cellar/yosys/0.70/share/yosys/ice40/cells_sim.v rtl/pochoco_periph.v rtl/pochoco_ram.v rtl/pochoco_soc.v rtl/pochoco_spi_slave.v rtl/espino_core/espino_alu.v rtl/espino_core/espino_controller.v rtl/espino_core/espino_core.v rtl/espino_core/espino_decoder.v rtl/espino_core/espino_id_stage.v rtl/espino_core/espino_if_stage.v rtl/espino_core/espino_load_store_unit.v rtl/espino_core/espino_register_file.v tb/tb_spi_ac4.sv
+iverilog -g2012 -DNO_ICE40_DEFAULT_ASSIGNMENTS -DDIAGNOSTIC -s tb_spi_ac4 -o build/tb_spi_diag /opt/homebrew/Cellar/yosys/0.70/share/yosys/ice40/cells_sim.v rtl/pochoco_periph.v rtl/pochoco_ram.v rtl/pochoco_soc.v rtl/pochoco_spi_slave.v rtl/espino_core/espino_alu.v rtl/espino_core/espino_controller.v rtl/espino_core/espino_core.v rtl/espino_core/espino_decoder.v rtl/espino_core/espino_id_stage.v rtl/espino_core/espino_if_stage.v rtl/espino_core/espino_load_store_unit.v rtl/espino_core/espino_register_file.v tb/tb_spi_ac4.sv
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/hold.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=0 T=10000000 ns: 12 precios y respuestas; max=18 ciclos (720 ns), max_IC=8; presupuesto=249762
+tb/tb_spi_ac4.sv:88: $finish called at 120004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/spi_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=1 T=10000000 ns: 12 precios y respuestas; max=20 ciclos (800 ns), max_IC=9; presupuesto=249762
+tb/tb_spi_ac4.sv:88: $finish called at 120004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/hold.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=0 T=1000000 ns: 12 precios y respuestas; max=18 ciclos (720 ns), max_IC=8; presupuesto=24762
+tb/tb_spi_ac4.sv:88: $finish called at 12004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/spi_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=1 T=1000000 ns: 12 precios y respuestas; max=20 ciclos (800 ns), max_IC=9; presupuesto=24762
+tb/tb_spi_ac4.sv:88: $finish called at 12004013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/hold.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=0 T=100000 ns: 12 precios y respuestas; max=18 ciclos (720 ns), max_IC=8; presupuesto=2262
+tb/tb_spi_ac4.sv:88: $finish called at 1204013000 (1ps)
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/spi_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS SPI diag=1 T=100000 ns: 12 precios y respuestas; max=20 ciclos (800 ns), max_IC=9; presupuesto=2262
+tb/tb_spi_ac4.sv:88: $finish called at 1204013000 (1ps)
+python3 tools/test_hardware.py
+sw/shifter_diagnostic.s -> /private/tmp/ac4-entrega-main-20261126/build/hardware/tests/shifter_diagnostic.hex: 71 palabras (284 bytes)
+PASS shifter: 16387 operaciones RV32 exactas, decoder y restricciones
+/private/tmp/ac4-entrega-main-20261126/tb/tb_shifter_unit.sv:34: $finish called at 16454000 (1ps)
+WARNING: /private/tmp/ac4-entrega-main-20261126/rtl/pochoco_ram.v:36: $readmemh(/private/tmp/ac4-entrega-main-20261126/build/hardware/tests/shifter_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS CPU shifter: resultados RV32, overflow y dependencias
+/private/tmp/ac4-entrega-main-20261126/tb/tb_hw_instructions.sv:30: $finish called at 7500000 (1ps)
+
+sw/qcap_diagnostic.s -> /private/tmp/ac4-entrega-main-20261126/build/hardware/tests/qcap_diagnostic.hex: 51 palabras (204 bytes)
+PASS QCAP: 6649 casos, fronteras, aleatorios, retencion y reset
+/private/tmp/ac4-entrega-main-20261126/tb/tb_qcap_unit.sv:44: $finish called at 2574920000 (1ps)
+WARNING: /private/tmp/ac4-entrega-main-20261126/rtl/pochoco_ram.v:36: $readmemh(/private/tmp/ac4-entrega-main-20261126/build/hardware/tests/qcap_diagnostic.hex): Not enough words in the file for the requested range [0:511].
+PASS CPU QCAP: dependencias, instrucciones consecutivas, rd=rs1, x0 y 32 bits
+/private/tmp/ac4-entrega-main-20261126/tb/tb_hw_instructions.sv:30: $finish called at 7860000 (1ps)
+
+python3 tools/verify_canvas_m105_225.py --program sw/trade.s --variant software --ticks 2000 --engine verilator
+/private/tmp/ac4-entrega-main-20261126/sw/trade.s -> /private/tmp/ac4-entrega-main-20261126/build/canvas_m105_225_variants/software/trade/practica_meta/2000_100000_verilator/program.hex: 217 palabras (868 bytes)
+Patrimonio final:          10000
+Ordenes ejecutadas:        0
+Perdida maxima:            0
+No operar:                 10000
+Comprar y mantener:        11375
+Peor caso precio->decision: 30 ciclos (disponibles: 2262)
+Detalle por tick en decisiones.csv
+PASS MISO sin valores X
+PASS el programa escribe DECISION
+PASS el programa lee todos los precios
+PASS la decision llega antes del siguiente tick
+Testbenchs aprobados: 4/4
+- /var/folders/ks/f_j6zjb108vbrvvdx1p2hv4m0000gn/T/ac4_canvas_m105_225_vk8gvkda/tb_canvas_configurado.sv:149: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.054 2026-11-01
+- Verilator: $finish at 200ms; walltime 1.710 s; speed 116.945 ms/s
+- Verilator: cpu 1.512 s on 1 threads; allocated 2 MB
+{"status": "PASS", "engine": "verilator", "variant": "software", "strategy": "M105-225", "ticks": 2000, "period_ns": 100000, "series": "/private/tmp/ac4-entrega-main-20261126/tb/practica_meta.csv", "series_csv_sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f", "canvas_checks": "4/4", "every_applied_decision_and_accounting_match": true, "original_testbench_sha256": "f83486755fe2b3de385a2bdc39c2f275b9dd690342fb4fc0391401706876f8f3", "program_hex_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd", "expected_summary": {"strategy": "M105-225", "label": "M105-225", "ticks": 2000, "equity": 10000, "profit": 0, "orders": 0, "commissions": 0, "max_drawdown": 0, "cash": 10000, "shares": 0, "buy": 105, "sell": 225, "exposure": 100, "drawdown_percent": 0, "closed_episodes": 0}, "scope": "Simulación de la maestra Canvas y del SoC; no señales físicas USB/SPI"}
+python3 tools/test_m105_225_optimized_integration.py --case soft --fixed
+PASS profile_trade_m105_225_soft_thresholds_iverilog 17 21345
+MEASURE trade_m105_225_soft thresholds_iverilog 118.6470588235294 227
+PASS profile_trade_m105_225_soft_gaps_and_latched_exit_iverilog 14 5846
+MEASURE trade_m105_225_soft gaps_and_latched_exit_iverilog 152.5 224
+PASS profile_trade_m105_225_soft_no_averaging_after_band_iverilog 14 22586
+MEASURE trade_m105_225_soft no_averaging_after_band_iverilog 100.71428571428571 227
+PASS profile_trade_m105_225_soft_budget_and_partial_fills_iverilog 503 73283
+MEASURE trade_m105_225_soft budget_and_partial_fills_iverilog 106.90059642147118 227
+PASS profile_trade_m105_225_soft_no_final_sale_iverilog 10 9990
+MEASURE trade_m105_225_soft no_final_sale_iverilog 72.8 227
+PASS profile_trade_m105_225_soft_fixed_100000 48 941
+MEASURE trade_m105_225_soft fixed_100000 110.33333333333333 230
+PASS profile_trade_m105_225_soft_fixed_1000000 48 941
+MEASURE trade_m105_225_soft fixed_1000000 111.0 230
+PASS profile_trade_m105_225_soft_fixed_10000000 48 941
+MEASURE trade_m105_225_soft fixed_10000000 111.0 230

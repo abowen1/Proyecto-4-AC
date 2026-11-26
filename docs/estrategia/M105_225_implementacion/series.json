@@ -1,0 +1,1410 @@
+{
+  "strategy": "M105-225",
+  "sources": [
+    {
+      "id": "C_Meta_2022",
+      "group": "catedra",
+      "file": "practica_meta_2022.csv",
+      "sha256": "fed122e0a9861276d76b1396b264fd34077c280c80fe6b356b6971d55242da3f",
+      "label": "Meta 2022",
+      "symbol": "META",
+      "expected": {
+        "equity": "16983",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "16983",
+        "shares": "0",
+        "max_drawdown": "2016",
+        "drawdown_percent": "13.995140576188822",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "C_AMD_2022_ene",
+      "group": "catedra",
+      "file": "practica_amd_2022_ene.csv",
+      "sha256": "0c1c5e791578a59ec0f077d263f6103a4d1fde8e0f8ffbe1e775c05f442a0bc7",
+      "label": "AMD enero 2022",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "32555",
+        "orders": "7",
+        "commissions": "35",
+        "cash": "31",
+        "shares": "188",
+        "max_drawdown": "7332",
+        "drawdown_percent": "26.865999780147305",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "C_AMD_2022_may",
+      "group": "catedra",
+      "file": "practica_amd_2022_may.csv",
+      "sha256": "20e2ead37cdeb3ba0d38c4feba9f0b606665f277bde8214e1c7fdb6d92a69a2a",
+      "label": "AMD mayo 2022",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "15693",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "89",
+        "shares": "94",
+        "max_drawdown": "2350",
+        "drawdown_percent": "18.255262953468502",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "C_Tesla_2022",
+      "group": "catedra",
+      "file": "practica_tesla_2022.csv",
+      "sha256": "a48617cc5a91023f16731d24f86814204bdad9d48367d7559c0c6fac6bfd7db6",
+      "label": "Tesla enero 2022",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "21659",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21659",
+        "shares": "0",
+        "max_drawdown": "4896",
+        "drawdown_percent": "30.408049189491337",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "C_Apple_2022",
+      "group": "catedra",
+      "file": "practica_apple_2022.csv",
+      "sha256": "0c28c0a53f6fd55ee6216916c1d7d529a5998bbe7ad4d8f940e439d78fe2dbb8",
+      "label": "Apple julio 2022",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "21434",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21434",
+        "shares": "0",
+        "max_drawdown": "2688",
+        "drawdown_percent": "18.658892128279884",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "C_Apple_2023",
+      "group": "catedra",
+      "file": "practica_apple_2023.csv",
+      "sha256": "6a28f5a36754f82cf17187100a5d1e55554ebc17b6c40528167e8525d16fa675",
+      "label": "Apple 2023",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "17918",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "4058",
+        "shares": "126",
+        "max_drawdown": "3654",
+        "drawdown_percent": "26.334253937448683",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "C_Netflix_2022",
+      "group": "catedra",
+      "file": "practica_netflix_2022.csv",
+      "sha256": "71e96fc05c3dca67e30d27a8baf8cbef39d0186a385ebf3e9a719ab1bef19846",
+      "label": "Netflix 2022",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "12685",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "89",
+        "shares": "94",
+        "max_drawdown": "4794",
+        "drawdown_percent": "28.185078487859368",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "C_Netflix_2023",
+      "group": "catedra",
+      "file": "practica_netflix_2023.csv",
+      "sha256": "30b59beaa67efe60949fa00f020a3f38981fa72aa4d2ccb1a7230a03de214bcd",
+      "label": "Netflix 2023",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "15568",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "58",
+        "shares": "94",
+        "max_drawdown": "5264",
+        "drawdown_percent": "33.01555444054189",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "META_01",
+      "group": "recreada",
+      "file": "Meta/META_01_20220103_20220317.csv",
+      "sha256": "d698c75c61e13c764ef2b661f2d5f4ab6238ee7924772f547d78cb39fbbef75a",
+      "label": "Meta - bloque 01",
+      "symbol": "META",
+      "expected": {
+        "equity": "11225",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "1235",
+        "drawdown_percent": "11.488372093023255",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "META_02",
+      "group": "recreada",
+      "file": "Meta/META_02_20220317_20220531.csv",
+      "sha256": "42f02eb0ff664aa14040e47f568cd60fa74c97b227e371491bb5cc053ae2992c",
+      "label": "Meta - bloque 02",
+      "symbol": "META",
+      "expected": {
+        "equity": "16983",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "16983",
+        "shares": "0",
+        "max_drawdown": "2016",
+        "drawdown_percent": "13.995140576188822",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_03",
+      "group": "recreada",
+      "file": "Meta/META_03_20220531_20220812.csv",
+      "sha256": "8c20475956a322f55c0e317548c5dc4bf6ed0ff0161c66c76b1c28b89c31b0ef",
+      "label": "Meta - bloque 03",
+      "symbol": "META",
+      "expected": {
+        "equity": "14846",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "5859",
+        "drawdown_percent": "37.401851260772425",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "META_04",
+      "group": "recreada",
+      "file": "Meta/META_04_20220812_20221026.csv",
+      "sha256": "9bfe541754b9b27a114371e9764cfc0fc7a0d0350d4b0e4d6973df6d9aa9e2b9",
+      "label": "Meta - bloque 04",
+      "symbol": "META",
+      "expected": {
+        "equity": "12264",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "72",
+        "shares": "96",
+        "max_drawdown": "3264",
+        "drawdown_percent": "24.329159212880143",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "META_05",
+      "group": "recreada",
+      "file": "Meta/META_05_20221026_20230110.csv",
+      "sha256": "1770f0ef269a50ad34e8e3246d1f74e31feafc8cb676d9dadebb59cce52f4d6d",
+      "label": "Meta - bloque 05",
+      "symbol": "META",
+      "expected": {
+        "equity": "21601",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21601",
+        "shares": "0",
+        "max_drawdown": "3705",
+        "drawdown_percent": "17.795389048991357",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_06",
+      "group": "recreada",
+      "file": "Meta/META_06_20230110_20230327.csv",
+      "sha256": "60e4bf2aad045f8dd8f780c3725e9487692b8027210aee828c28e2947d300ca0",
+      "label": "Meta - bloque 06",
+      "symbol": "META",
+      "expected": {
+        "equity": "21253",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21253",
+        "shares": "0",
+        "max_drawdown": "1235",
+        "drawdown_percent": "8.894490457328052",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_07",
+      "group": "recreada",
+      "file": "Meta/META_07_20230327_20230608.csv",
+      "sha256": "ce68f6741f6e7095516bef763ecd70d6c15806c6be1bad486bddfcd563550137",
+      "label": "Meta - bloque 07",
+      "symbol": "META",
+      "expected": {
+        "equity": "21780",
+        "orders": "5",
+        "commissions": "25",
+        "cash": "21780",
+        "shares": "0",
+        "max_drawdown": "2813",
+        "drawdown_percent": "19.64248306682494",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_08",
+      "group": "recreada",
+      "file": "Meta/META_08_20230608_20230823.csv",
+      "sha256": "e8e9b634496bec889bb63c6d8a8ca3754efb0d29e0cedc4a11fc0f2c57dd318f",
+      "label": "Meta - bloque 08",
+      "symbol": "META",
+      "expected": {
+        "equity": "21911",
+        "orders": "5",
+        "commissions": "25",
+        "cash": "21911",
+        "shares": "0",
+        "max_drawdown": "2716",
+        "drawdown_percent": "17.110817110817113",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_09",
+      "group": "recreada",
+      "file": "Meta/META_09_20230823_20231103.csv",
+      "sha256": "3cd48d0b0df507c0f81ac17c8acbdaca38f1ce9551e91e582e05962a9854bd34",
+      "label": "Meta - bloque 09",
+      "symbol": "META",
+      "expected": {
+        "equity": "21593",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21593",
+        "shares": "0",
+        "max_drawdown": "7008",
+        "drawdown_percent": "35.42614498028511",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_10",
+      "group": "recreada",
+      "file": "Meta/META_10_20231103_20240122.csv",
+      "sha256": "74749286295e839c13d087e4d74a82b319b90ce3b3bb3dc826f3a87fbceeb2cd",
+      "label": "Meta - bloque 10",
+      "symbol": "META",
+      "expected": {
+        "equity": "22069",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22069",
+        "shares": "0",
+        "max_drawdown": "5684",
+        "drawdown_percent": "36.0385493279229",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_11",
+      "group": "recreada",
+      "file": "Meta/META_11_20240122_20240404.csv",
+      "sha256": "c329a0995055f9e2172c00afd0e45090c82a6491c518976efcb7f667331d62f5",
+      "label": "Meta - bloque 11",
+      "symbol": "META",
+      "expected": {
+        "equity": "21563",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21563",
+        "shares": "0",
+        "max_drawdown": "3168",
+        "drawdown_percent": "15.709610235049093",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_12",
+      "group": "recreada",
+      "file": "Meta/META_12_20240404_20240617.csv",
+      "sha256": "862ac4b3f7f581b71df5ac4750ad152b4b44655a1a45e24ac8edbda6c417dba3",
+      "label": "Meta - bloque 12",
+      "symbol": "META",
+      "expected": {
+        "equity": "22391",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22391",
+        "shares": "0",
+        "max_drawdown": "3762",
+        "drawdown_percent": "20.086496876501684",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_13",
+      "group": "recreada",
+      "file": "Meta/META_13_20240617_20240830.csv",
+      "sha256": "b45a6b387e730ab54e4ea610baf2d5c5dac73250f2ed54c5d48f9232681c5ad6",
+      "label": "Meta - bloque 13",
+      "symbol": "META",
+      "expected": {
+        "equity": "21602",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21602",
+        "shares": "0",
+        "max_drawdown": "2470",
+        "drawdown_percent": "17.62774764487582",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "META_14",
+      "group": "recreada",
+      "file": "Meta/META_14_20240830_20241112.csv",
+      "sha256": "3646459c3f3bfd4f66116ce365eb058b4a39201e764e2da4e048aa2ea1baf43a",
+      "label": "Meta - bloque 14",
+      "symbol": "META",
+      "expected": {
+        "equity": "17487",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17487",
+        "shares": "0",
+        "max_drawdown": "1764",
+        "drawdown_percent": "14.553531763660596",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_01",
+      "group": "recreada",
+      "file": "Apple/AAPL_01_20220103_20220317.csv",
+      "sha256": "150b0bb04915adc506cf1d23f429a888d63cbd81daba87eeee8c8485cb7b089d",
+      "label": "Apple - bloque 01",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "13350",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "6",
+        "shares": "96",
+        "max_drawdown": "1728",
+        "drawdown_percent": "12.943820224719103",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_02",
+      "group": "recreada",
+      "file": "Apple/AAPL_02_20220317_20220531.csv",
+      "sha256": "be0e015a7c02cd6fae7c34bcfb51c6f90a624f00fb8d24639502276c4889ec20",
+      "label": "Apple - bloque 02",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "15120",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "1805",
+        "drawdown_percent": "14.162416633974107",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_03",
+      "group": "recreada",
+      "file": "Apple/AAPL_03_20220531_20220812.csv",
+      "sha256": "e02f64825345a104bd4cb30a949b7450710933a74cb2dee34bde3adff450265b",
+      "label": "Apple - bloque 03",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "17487",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17487",
+        "shares": "0",
+        "max_drawdown": "2205",
+        "drawdown_percent": "17.10230357558365",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_04",
+      "group": "recreada",
+      "file": "Apple/AAPL_04_20220812_20221026.csv",
+      "sha256": "365fc419868e966230b382c3b72b2ea6dfd8a5ed1c673d6f3d4e22b9f5e89e80",
+      "label": "Apple - bloque 04",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "15860",
+        "orders": "3",
+        "commissions": "15",
+        "cash": "20",
+        "shares": "99",
+        "max_drawdown": "2178",
+        "drawdown_percent": "16.271946208442287",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_05",
+      "group": "recreada",
+      "file": "Apple/AAPL_05_20221026_20230110.csv",
+      "sha256": "02dfbfd850b9d6530e78160fd46884f1797d51ae91fdc3db80a7beab27cb2044",
+      "label": "Apple - bloque 05",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "11318",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "1512",
+        "drawdown_percent": "12.329772486341026",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_06",
+      "group": "recreada",
+      "file": "Apple/AAPL_06_20230110_20230327.csv",
+      "sha256": "dac6f549217ac8c204438f1841029aeeff5d842b712f9def22ca7f992419e6cf",
+      "label": "Apple - bloque 06",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "22427",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22427",
+        "shares": "0",
+        "max_drawdown": "2772",
+        "drawdown_percent": "16.0941475826972",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_07",
+      "group": "recreada",
+      "file": "Apple/AAPL_07_20230327_20230608.csv",
+      "sha256": "847ec1aef975fbf78c9011be779238f95d22d9472fcdcb0baaadc865be0a4b76",
+      "label": "Apple - bloque 07",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "17361",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17361",
+        "shares": "0",
+        "max_drawdown": "2394",
+        "drawdown_percent": "18.039333885916662",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_08",
+      "group": "recreada",
+      "file": "Apple/AAPL_08_20230608_20230823.csv",
+      "sha256": "a32e65ec97112a221b3495167e5155f2d1f4d1b9eb58b8e0bcb5002cb6be933c",
+      "label": "Apple - bloque 08",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "14075",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "1045",
+        "drawdown_percent": "9.231448763250883",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_09",
+      "group": "recreada",
+      "file": "Apple/AAPL_09_20230823_20231103.csv",
+      "sha256": "d2dcbbe34b80b63db20feec0d973f66ab33276b6b7927720f6606733739d46c8",
+      "label": "Apple - bloque 09",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "13838",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3254",
+        "shares": "63",
+        "max_drawdown": "1701",
+        "drawdown_percent": "11.80839986115932",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_10",
+      "group": "recreada",
+      "file": "Apple/AAPL_10_20231103_20240122.csv",
+      "sha256": "1f4753bc3c8733e6d227e9021392dde7852c3ba413ebaf4c70816bdd8447efcc",
+      "label": "Apple - bloque 10",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "21189",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21189",
+        "shares": "0",
+        "max_drawdown": "3230",
+        "drawdown_percent": "15.950617283950615",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_11",
+      "group": "recreada",
+      "file": "Apple/AAPL_11_20240122_20240404.csv",
+      "sha256": "cb212d06ba8e3d0ab4d4aad350060c1a0ab7b32a18d061a2efde79b9604d5da4",
+      "label": "Apple - bloque 11",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "11181",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "89",
+        "shares": "94",
+        "max_drawdown": "5358",
+        "drawdown_percent": "36.088098605778946",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AAPL_12",
+      "group": "recreada",
+      "file": "Apple/AAPL_12_20240404_20240617.csv",
+      "sha256": "9f074182228874df6917b46ebf446b21085fd89ba13e1f202a889dd6b656da0e",
+      "label": "Apple - bloque 12",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "21475",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21475",
+        "shares": "0",
+        "max_drawdown": "1805",
+        "drawdown_percent": "14.268774703557312",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_13",
+      "group": "recreada",
+      "file": "Apple/AAPL_13_20240617_20240830.csv",
+      "sha256": "dc8977ad3466c043e366139d431fa302b00c410b8e0dd37f7aecdb2050090639",
+      "label": "Apple - bloque 13",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "16794",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "16794",
+        "shares": "0",
+        "max_drawdown": "3024",
+        "drawdown_percent": "23.6860656379729",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AAPL_14",
+      "group": "recreada",
+      "file": "Apple/AAPL_14_20240830_20241112.csv",
+      "sha256": "eec6cd4ff4d2e3aa2b3a4d769185e6e858d37867cd4063052842b38b686c062c",
+      "label": "Apple - bloque 14",
+      "symbol": "AAPL",
+      "expected": {
+        "equity": "22069",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22069",
+        "shares": "0",
+        "max_drawdown": "2058",
+        "drawdown_percent": "14.056699291258859",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_01",
+      "group": "recreada",
+      "file": "Netflix/NFLX_01_20220103_20220317.csv",
+      "sha256": "5943eca53b9fd744664925565825ccbc5d0129855ef0f4ebd718de10f047d715",
+      "label": "Netflix - bloque 01",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "10751",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "504",
+        "drawdown_percent": "4.771823518273054",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "NFLX_02",
+      "group": "recreada",
+      "file": "Netflix/NFLX_02_20220317_20220531.csv",
+      "sha256": "52dce6d37e88734c5dfbc7704d8b33975d802f8297c03e4d8dbb5f0c78e116dd",
+      "label": "Netflix - bloque 02",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "11700",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "1235",
+        "drawdown_percent": "10.699202252463632",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "NFLX_03",
+      "group": "recreada",
+      "file": "Netflix/NFLX_03_20220531_20220812.csv",
+      "sha256": "2885ba4aa19d31a0ceaa77fd008af953f56329825938f91609ceeefaa361a709",
+      "label": "Netflix - bloque 03",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "17550",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17550",
+        "shares": "0",
+        "max_drawdown": "2457",
+        "drawdown_percent": "19.34036523929471",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_04",
+      "group": "recreada",
+      "file": "Netflix/NFLX_04_20220812_20221026.csv",
+      "sha256": "183f7df6d4efbbe7df5d6dd8c58dd0a7ff34c02403bccab1bed67e772069bcea",
+      "label": "Netflix - bloque 04",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "21285",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21285",
+        "shares": "0",
+        "max_drawdown": "6460",
+        "drawdown_percent": "40.438184663536774",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_05",
+      "group": "recreada",
+      "file": "Netflix/NFLX_05_20221026_20230110.csv",
+      "sha256": "0c69faed4a9bae9e92bd6efd946b025ea747d26d9ac49cc4efbe876f3fc3e785",
+      "label": "Netflix - bloque 05",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "22065",
+        "orders": "5",
+        "commissions": "25",
+        "cash": "22065",
+        "shares": "0",
+        "max_drawdown": "6790",
+        "drawdown_percent": "32.3656990323657",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_06",
+      "group": "recreada",
+      "file": "Netflix/NFLX_06_20230110_20230327.csv",
+      "sha256": "81ff8b7efe18faddf2c29d405c23761912692db61e29371ca0331d4cbe009b6a",
+      "label": "Netflix - bloque 06",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "17305",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "3515",
+        "drawdown_percent": "24.640729057132845",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "NFLX_07",
+      "group": "recreada",
+      "file": "Netflix/NFLX_07_20230327_20230608.csv",
+      "sha256": "1b82e27030d9f6e6ceb2bef300544e687794a7f3f0289c8362b6de2b1ad43e5a",
+      "label": "Netflix - bloque 07",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "17739",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17739",
+        "shares": "0",
+        "max_drawdown": "2016",
+        "drawdown_percent": "15.499516738423688",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_08",
+      "group": "recreada",
+      "file": "Netflix/NFLX_08_20230608_20230823.csv",
+      "sha256": "82766da875e9f95003059b649db99772dcf14454a68cadbc469960371cb07c7e",
+      "label": "Netflix - bloque 08",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "15129",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "89",
+        "shares": "94",
+        "max_drawdown": "1316",
+        "drawdown_percent": "12.074502247912653",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "NFLX_09",
+      "group": "recreada",
+      "file": "Netflix/NFLX_09_20230823_20231103.csv",
+      "sha256": "87dccb8094bbd51db303af107b9f28ef48d729c7742517b963166b1d667d9a97",
+      "label": "Netflix - bloque 09",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "21380",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21380",
+        "shares": "0",
+        "max_drawdown": "2850",
+        "drawdown_percent": "14.766839378238341",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_10",
+      "group": "recreada",
+      "file": "Netflix/NFLX_10_20231103_20240122.csv",
+      "sha256": "3ef4fa7b48f9ea155b2b874c1c1557fd708fb1c54abd62827925246d28441fd8",
+      "label": "Netflix - bloque 10",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "17676",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17676",
+        "shares": "0",
+        "max_drawdown": "4914",
+        "drawdown_percent": "29.472800335872368",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_11",
+      "group": "recreada",
+      "file": "Netflix/NFLX_11_20240122_20240404.csv",
+      "sha256": "bfb78b412af0d74bdec5ecaf02b7eae765767c0ed8dd3a319fa757fa9294394e",
+      "label": "Netflix - bloque 11",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "21725",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21725",
+        "shares": "0",
+        "max_drawdown": "2880",
+        "drawdown_percent": "15.070643642072213",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_12",
+      "group": "recreada",
+      "file": "Netflix/NFLX_12_20240404_20240617.csv",
+      "sha256": "61f63a2592922bc3beef0d0d1ebbdea72f9b5a4bfe19a4ded22c63cd676e6233",
+      "label": "Netflix - bloque 12",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "17424",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17424",
+        "shares": "0",
+        "max_drawdown": "2394",
+        "drawdown_percent": "19.93172924818916",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_13",
+      "group": "recreada",
+      "file": "Netflix/NFLX_13_20240617_20240830.csv",
+      "sha256": "d5799cb1b39e255d415529a4a0a1710e2a5e40bbad3fe65706620da8336c275d",
+      "label": "Netflix - bloque 13",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "21906",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21906",
+        "shares": "0",
+        "max_drawdown": "2522",
+        "drawdown_percent": "16.67327779981489",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "NFLX_14",
+      "group": "recreada",
+      "file": "Netflix/NFLX_14_20240830_20241112.csv",
+      "sha256": "9d742f105b48dbfac101fa1f872f58dd4f7a2f0569756e39debe523528d25fe2",
+      "label": "Netflix - bloque 14",
+      "symbol": "NFLX",
+      "expected": {
+        "equity": "21348",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21348",
+        "shares": "0",
+        "max_drawdown": "4655",
+        "drawdown_percent": "28.135388334844365",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_01",
+      "group": "recreada",
+      "file": "AMD/AMD_01_20220103_20220317.csv",
+      "sha256": "91da59c4e0b3ce3febaf44a85cb6671e3b7b3c974649eeb8373dcd37a4e7cdc2",
+      "label": "AMD - bloque 01",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "12966",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "46",
+        "shares": "95",
+        "max_drawdown": "9215",
+        "drawdown_percent": "48.62540235343781",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AMD_02",
+      "group": "recreada",
+      "file": "AMD/AMD_02_20220317_20220531.csv",
+      "sha256": "9ad567fe0b87eb4e108c23b5e9bdd1a9073dc201a25314cc5785924718a279fa",
+      "label": "AMD - bloque 02",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "14342",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "3780",
+        "drawdown_percent": "28.215272075837873",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AMD_03",
+      "group": "recreada",
+      "file": "AMD/AMD_03_20220531_20220812.csv",
+      "sha256": "016d36aa88d711578109b57784f33d083383db30495c464eccca91ca08a21ce3",
+      "label": "AMD - bloque 03",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "21198",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21198",
+        "shares": "0",
+        "max_drawdown": "2632",
+        "drawdown_percent": "18.255262953468502",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_04",
+      "group": "recreada",
+      "file": "AMD/AMD_04_20220812_20221026.csv",
+      "sha256": "2d8f30cdc69cf0f4094931a19b456b2aeb77da7b6cf10794bfc33e0c1cf63a40",
+      "label": "AMD - bloque 04",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "11320",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "1330",
+        "drawdown_percent": "12.263715998155831",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AMD_05",
+      "group": "recreada",
+      "file": "AMD/AMD_05_20221026_20230110.csv",
+      "sha256": "4b59682469c36b7af388cd047247845edec7d661bed00c0f4b531c3d75382f08",
+      "label": "AMD - bloque 05",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "21229",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21229",
+        "shares": "0",
+        "max_drawdown": "4042",
+        "drawdown_percent": "29.872145443795727",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_06",
+      "group": "recreada",
+      "file": "AMD/AMD_06_20230110_20230327.csv",
+      "sha256": "ec654149adde279e5613f7255b34bcb6614d17a92d3f64d3a61a0c3f4751dc1c",
+      "label": "AMD - bloque 06",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "21911",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21911",
+        "shares": "0",
+        "max_drawdown": "5626",
+        "drawdown_percent": "29.443165166422443",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_07",
+      "group": "recreada",
+      "file": "AMD/AMD_07_20230327_20230608.csv",
+      "sha256": "aa77b000da3539bc74d6345286b860e78f31b439b08e2998d34b23c4a5ccaffa",
+      "label": "AMD - bloque 07",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "21563",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21563",
+        "shares": "0",
+        "max_drawdown": "2016",
+        "drawdown_percent": "15.782057303898544",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_08",
+      "group": "recreada",
+      "file": "AMD/AMD_08_20230608_20230823.csv",
+      "sha256": "7a956a5d34e3dab819aba0547c31a70225f4d1f18edb7bc91549f41076e98c93",
+      "label": "AMD - bloque 08",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "12807",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "39",
+        "shares": "96",
+        "max_drawdown": "2208",
+        "drawdown_percent": "16.61774666967713",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AMD_09",
+      "group": "recreada",
+      "file": "AMD/AMD_09_20230823_20231103.csv",
+      "sha256": "e31c3f88cda3200dd69ad3940cd6bc2f9ef21d9e98409087629d9164e095dcd2",
+      "label": "AMD - bloque 09",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "21629",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21629",
+        "shares": "0",
+        "max_drawdown": "2496",
+        "drawdown_percent": "19.250347061545583",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_10",
+      "group": "recreada",
+      "file": "AMD/AMD_10_20231103_20240122.csv",
+      "sha256": "98d5da3de3553ad81610957b3ab31315d2dcaadd27f11ce1a07e73bb6683b73e",
+      "label": "AMD - bloque 10",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "22619",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22619",
+        "shares": "0",
+        "max_drawdown": "3977",
+        "drawdown_percent": "20.640440107951008",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_11",
+      "group": "recreada",
+      "file": "AMD/AMD_11_20240122_20240404.csv",
+      "sha256": "9af4a4bb1a0c452e54bdb50895679af2d972f725d9ed3eaed4923d9623c05108",
+      "label": "AMD - bloque 11",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "17298",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17298",
+        "shares": "0",
+        "max_drawdown": "3465",
+        "drawdown_percent": "26.61494738459175",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_12",
+      "group": "recreada",
+      "file": "AMD/AMD_12_20240404_20240617.csv",
+      "sha256": "57f108e64bed69714ae2e1352f2b3bea97c249b5086ec35b63b0c93d2879fb90",
+      "label": "AMD - bloque 12",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "21285",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21285",
+        "shares": "0",
+        "max_drawdown": "3325",
+        "drawdown_percent": "23.635634028892454",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "AMD_13",
+      "group": "recreada",
+      "file": "AMD/AMD_13_20240617_20240830.csv",
+      "sha256": "8fa4c92433dc6e80eea2d59f13d29bea3d454720debe129caa8a8b216119931e",
+      "label": "AMD - bloque 13",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "15000",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "62",
+        "shares": "97",
+        "max_drawdown": "4074",
+        "drawdown_percent": "21.578389830508474",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "AMD_14",
+      "group": "recreada",
+      "file": "AMD/AMD_14_20240830_20241112.csv",
+      "sha256": "d8141f3903013d28765f126054b4e121e12b0bc60d903e9ca3111888755f0ad7",
+      "label": "AMD - bloque 14",
+      "symbol": "AMD",
+      "expected": {
+        "equity": "22109",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22109",
+        "shares": "0",
+        "max_drawdown": "2375",
+        "drawdown_percent": "12.569637883008355",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_01",
+      "group": "recreada",
+      "file": "Tesla/TSLA_01_20220103_20220317.csv",
+      "sha256": "a8bcbed2e4eabdb36884526a4073e4433a37552ed6597f5c01682a09825be45a",
+      "label": "Tesla - bloque 01",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "13701",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "69",
+        "shares": "96",
+        "max_drawdown": "4032",
+        "drawdown_percent": "26.971703792895845",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_02",
+      "group": "recreada",
+      "file": "Tesla/TSLA_02_20220317_20220531.csv",
+      "sha256": "08deb20e92453b11abcc9f756ed252860a8ca422c225040f9c1eb4931a63f9d6",
+      "label": "Tesla - bloque 02",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "12326",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "1071",
+        "drawdown_percent": "10.02058383233533",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_03",
+      "group": "recreada",
+      "file": "Tesla/TSLA_03_20220531_20220812.csv",
+      "sha256": "9f22e4988f162b3bcf38af23d54859a4b9ba0707b6430e8f3d054352d7644dfa",
+      "label": "Tesla - bloque 03",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "17487",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "17487",
+        "shares": "0",
+        "max_drawdown": "3213",
+        "drawdown_percent": "23.649344913881936",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_04",
+      "group": "recreada",
+      "file": "Tesla/TSLA_04_20220812_20221026.csv",
+      "sha256": "e13ad25a5b1bac5889be25f52e3706c6f53607a59966cc7394f85ac205f1769d",
+      "label": "Tesla - bloque 04",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "13220",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "15",
+        "shares": "95",
+        "max_drawdown": "2185",
+        "drawdown_percent": "18.675213675213676",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_05",
+      "group": "recreada",
+      "file": "Tesla/TSLA_05_20221026_20230110.csv",
+      "sha256": "3f6ebb9d2aa08872ddf72985fd9acca3e5bc70b360bc4ebc0555352114d33ffe",
+      "label": "Tesla - bloque 05",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "10688",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "882",
+        "drawdown_percent": "8.400800076197733",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_06",
+      "group": "recreada",
+      "file": "Tesla/TSLA_06_20230110_20230327.csv",
+      "sha256": "fb8e8a9fba75d4b2708f569bde2d94a65e8e294bece1f59e84dd240b6111ec67",
+      "label": "Tesla - bloque 06",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "21945",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21945",
+        "shares": "0",
+        "max_drawdown": "2522",
+        "drawdown_percent": "13.00067013763596",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_07",
+      "group": "recreada",
+      "file": "Tesla/TSLA_07_20230327_20230608.csv",
+      "sha256": "b14597d0b29dccbde3bff5fc9eed00cde7147a6c8fc81855f0b6372f16b09e65",
+      "label": "Tesla - bloque 07",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "21605",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "21605",
+        "shares": "0",
+        "max_drawdown": "2632",
+        "drawdown_percent": "16.22204645142734",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_08",
+      "group": "recreada",
+      "file": "Tesla/TSLA_08_20230608_20230823.csv",
+      "sha256": "36b83f41c5ed8abb1351ed079c6e779e0dc8ce4fde3d9443d5ea8dfd532144b7",
+      "label": "Tesla - bloque 08",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "11948",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3254",
+        "shares": "63",
+        "max_drawdown": "1071",
+        "drawdown_percent": "8.514867228494197",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_09",
+      "group": "recreada",
+      "file": "Tesla/TSLA_09_20230823_20231103.csv",
+      "sha256": "4dbc116750aadc383f94fec518941208609c71f535ef9c8c9e5e53d86c9cfd88",
+      "label": "Tesla - bloque 09",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "12704",
+        "orders": "1",
+        "commissions": "5",
+        "cash": "3317",
+        "shares": "63",
+        "max_drawdown": "882",
+        "drawdown_percent": "7.031904008929402",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_10",
+      "group": "recreada",
+      "file": "Tesla/TSLA_10_20231103_20240122.csv",
+      "sha256": "1a9574b084069803836433f1618811f7358caeb8dc85e3f15802df3b66899834",
+      "label": "Tesla - bloque 10",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "21838",
+        "orders": "6",
+        "commissions": "30",
+        "cash": "8356",
+        "shares": "126",
+        "max_drawdown": "6144",
+        "drawdown_percent": "28.735793461484494",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_11",
+      "group": "recreada",
+      "file": "Tesla/TSLA_11_20240122_20240404.csv",
+      "sha256": "199877ef0f09ac0a1ca5fe68a72ddf18b42f8e5e6422ee2e80658460ae3fc3b3",
+      "label": "Tesla - bloque 11",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "13830",
+        "orders": "2",
+        "commissions": "10",
+        "cash": "6",
+        "shares": "96",
+        "max_drawdown": "5664",
+        "drawdown_percent": "35.3161242050131",
+        "closed_episodes": "0"
+      }
+    },
+    {
+      "id": "TSLA_12",
+      "group": "recreada",
+      "file": "Tesla/TSLA_12_20240404_20240617.csv",
+      "sha256": "9f5d0d27a103efe6d02cfd4e2ce1f0ac023352bf7749badc0808202357208f93",
+      "label": "Tesla - bloque 12",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "22398",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "22398",
+        "shares": "0",
+        "max_drawdown": "2548",
+        "drawdown_percent": "14.8623425104993",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_13",
+      "group": "recreada",
+      "file": "Tesla/TSLA_13_20240617_20240830.csv",
+      "sha256": "8a82ca8960cd80181d2247bd44f8920a99b0962eafe7b9918c8cfa43c81ff349",
+      "label": "Tesla - bloque 13",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "23864",
+        "orders": "5",
+        "commissions": "25",
+        "cash": "14477",
+        "shares": "63",
+        "max_drawdown": "2709",
+        "drawdown_percent": "10.442123116062136",
+        "closed_episodes": "1"
+      }
+    },
+    {
+      "id": "TSLA_14",
+      "group": "recreada",
+      "file": "Tesla/TSLA_14_20240830_20241112.csv",
+      "sha256": "804b3f62c396da299f79a5b4823d3708f5e7ba611070f4d8e2c20abe6ebe8078",
+      "label": "Tesla - bloque 14",
+      "symbol": "TSLA",
+      "expected": {
+        "equity": "23768",
+        "orders": "4",
+        "commissions": "20",
+        "cash": "23768",
+        "shares": "0",
+        "max_drawdown": "5445",
+        "drawdown_percent": "34.610983981693366",
+        "closed_episodes": "1"
+      }
+    }
+  ],
+  "scope": "Frozen78 inputs from selected comparison; no refitting"
+}

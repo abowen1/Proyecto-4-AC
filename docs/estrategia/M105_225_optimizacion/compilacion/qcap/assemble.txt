@@ -1,0 +1,1 @@
+sw/trade_m105_225_qcap.s -> /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/M105_225_qcap/program.hex: 129 palabras (516 bytes)

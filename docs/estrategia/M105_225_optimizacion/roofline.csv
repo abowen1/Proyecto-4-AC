@@ -1,0 +1,4 @@
+case,cycles,instructions,queries,ops_per_second,data_ram_bytes,intensity_data_only,ideal_issue_roof_ops_s,model
+soft,12681,5944,292,575664.3797807744,0,infinity,614064.602960969,Useful op=one bounded quantity query. No data-RAM accesses in this register-only kernel. Ideal issue ceiling is12.5M retired RV instructions/s divided by measured IC/query; not a measured sustainable peak.
+shifter,7321,3264,292,997131.5394071848,0,infinity,1118259.8039215687,Useful op=one bounded quantity query. No data-RAM accesses in this register-only kernel. Ideal issue ceiling is12.5M retired RV instructions/s divided by measured IC/query; not a measured sustainable peak.
+qcap,2580,292,292,2829457.3643410853,0,infinity,12500000.0,Useful op=one bounded quantity query. No data-RAM accesses in this register-only kernel. Ideal issue ceiling is12.5M retired RV instructions/s divided by measured IC/query; not a measured sustainable peak.

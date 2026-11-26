@@ -1,0 +1,4099 @@
+{
+  "status": "PASS",
+  "technical_only": true,
+  "seed": 105225,
+  "ticks": 1710,
+  "results": [
+    {
+      "status": "PASS",
+      "name": "stress1710",
+      "variant": "software",
+      "program": "sw/trade_m105_225.s",
+      "ticks": 1710,
+      "total_cycles": 489548,
+      "total_instructions": 219369,
+      "mean_cycles": 286.28538011695906,
+      "max_cycles": 1474,
+      "mean_ic": 128.2859649122807,
+      "max_ic": 670,
+      "cpi": 2.231618870487626,
+      "mean_us": 11.451415204678362,
+      "max_us": 58.96,
+      "service_decisions_per_second": 87325.45123256555,
+      "worst_tick": 1,
+      "sections": {
+        "io": 25651,
+        "account_control": 10099,
+        "buy_account": 157725,
+        "sell_account": 101141,
+        "policy": 35817,
+        "size_buy": 157133,
+        "sell_quantity": 1982
+      },
+      "pc_details": [
+        {
+          "pc": 32,
+          "instruction": "lw x10, 0(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 36,
+          "instruction": "andi x10, x10, 1",
+          "section": "io",
+          "cycles": 3421,
+          "instructions": 3420
+        },
+        {
+          "pc": 40,
+          "instruction": "beq x10, x0, wait_price",
+          "section": "io",
+          "cycles": 8550,
+          "instructions": 3420
+        },
+        {
+          "pc": 44,
+          "instruction": "lw x5, 4(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 48,
+          "instruction": "andi x10, x9, 63",
+          "section": "account_control",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 52,
+          "instruction": "beq x10, x0, accounted",
+          "section": "account_control",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 56,
+          "instruction": "addi x11, x0, 128",
+          "section": "account_control",
+          "cycles": 886,
+          "instructions": 443
+        },
+        {
+          "pc": 60,
+          "instruction": "bge x9, x11, fill_sell",
+          "section": "account_control",
+          "cycles": 1106,
+          "instructions": 443
+        },
+        {
+          "pc": 64,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 68,
+          "instruction": "addi x12, x0, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 72,
+          "instruction": "beq x12, x10, fill_buy_done",
+          "section": "buy_account",
+          "cycles": 28534,
+          "instructions": 14156
+        },
+        {
+          "pc": 76,
+          "instruction": "blt x11, x5, fill_buy_done",
+          "section": "buy_account",
+          "cycles": 27869,
+          "instructions": 13934
+        },
+        {
+          "pc": 80,
+          "instruction": "sub x11, x11, x5",
+          "section": "buy_account",
+          "cycles": 27866,
+          "instructions": 13933
+        },
+        {
+          "pc": 84,
+          "instruction": "addi x12, x12, 1",
+          "section": "buy_account",
+          "cycles": 27866,
+          "instructions": 13933
+        },
+        {
+          "pc": 88,
+          "instruction": "jal x0, fill_buy_loop",
+          "section": "buy_account",
+          "cycles": 41799,
+          "instructions": 13933
+        },
+        {
+          "pc": 92,
+          "instruction": "beq x12, x0, accounted",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 96,
+          "instruction": "sub x13, x3, x11",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 100,
+          "instruction": "sub x7, x7, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 104,
+          "instruction": "addi x3, x11, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 108,
+          "instruction": "add x4, x4, x12",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 112,
+          "instruction": "jal x0, accounted",
+          "section": "buy_account",
+          "cycles": 669,
+          "instructions": 223
+        },
+        {
+          "pc": 116,
+          "instruction": "bge x4, x10, sell_quantity",
+          "section": "sell_account",
+          "cycles": 660,
+          "instructions": 220
+        },
+        {
+          "pc": 124,
+          "instruction": "beq x10, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 128,
+          "instruction": "addi x11, x3, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 132,
+          "instruction": "addi x12, x10, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 136,
+          "instruction": "add x11, x11, x5",
+          "section": "sell_account",
+          "cycles": 27614,
+          "instructions": 13807
+        },
+        {
+          "pc": 140,
+          "instruction": "addi x12, x12, -1",
+          "section": "sell_account",
+          "cycles": 27614,
+          "instructions": 13807
+        },
+        {
+          "pc": 144,
+          "instruction": "bne x12, x0, fill_sell_loop",
+          "section": "sell_account",
+          "cycles": 41201,
+          "instructions": 13807
+        },
+        {
+          "pc": 148,
+          "instruction": "addi x11, x11, -5",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 152,
+          "instruction": "blt x11, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 156,
+          "instruction": "addi x3, x11, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 160,
+          "instruction": "sub x4, x4, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 164,
+          "instruction": "bne x4, x0, accounted",
+          "section": "sell_account",
+          "cycles": 556,
+          "instructions": 220
+        },
+        {
+          "pc": 168,
+          "instruction": "addi x6, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 172,
+          "instruction": "addi x7, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 176,
+          "instruction": "addi x9, x0, 0",
+          "section": "policy",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 180,
+          "instruction": "beq x4, x0, try_entry",
+          "section": "policy",
+          "cycles": 3863,
+          "instructions": 1710
+        },
+        {
+          "pc": 184,
+          "instruction": "addi x10, x0, 225",
+          "section": "policy",
+          "cycles": 2534,
+          "instructions": 1267
+        },
+        {
+          "pc": 188,
+          "instruction": "blt x5, x10, try_entry",
+          "section": "policy",
+          "cycles": 3670,
+          "instructions": 1267
+        },
+        {
+          "pc": 192,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 262,
+          "instructions": 131
+        },
+        {
+          "pc": 196,
+          "instruction": "bne x6, x0, choose_action",
+          "section": "policy",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 200,
+          "instruction": "addi x10, x0, 105",
+          "section": "policy",
+          "cycles": 886,
+          "instructions": 443
+        },
+        {
+          "pc": 204,
+          "instruction": "blt x10, x5, publish",
+          "section": "policy",
+          "cycles": 1224,
+          "instructions": 443
+        },
+        {
+          "pc": 208,
+          "instruction": "addi x7, x3, 0",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 212,
+          "instruction": "addi x6, x0, 1",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 216,
+          "instruction": "addi x10, x0, 3",
+          "section": "policy",
+          "cycles": 2744,
+          "instructions": 1372
+        },
+        {
+          "pc": 220,
+          "instruction": "beq x6, x10, propose_sell",
+          "section": "policy",
+          "cycles": 2964,
+          "instructions": 1372
+        },
+        {
+          "pc": 224,
+          "instruction": "addi x10, x0, 1",
+          "section": "policy",
+          "cycles": 2304,
+          "instructions": 1152
+        },
+        {
+          "pc": 228,
+          "instruction": "bne x6, x10, publish",
+          "section": "policy",
+          "cycles": 3145,
+          "instructions": 1152
+        },
+        {
+          "pc": 232,
+          "instruction": "addi x10, x0, 105",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 236,
+          "instruction": "blt x10, x5, close_accumulation",
+          "section": "policy",
+          "cycles": 707,
+          "instructions": 311
+        },
+        {
+          "pc": 240,
+          "instruction": "addi x11, x3, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 244,
+          "instruction": "addi x12, x7, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 248,
+          "instruction": "bge x12, x11, size_buy",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 226
+        },
+        {
+          "pc": 256,
+          "instruction": "addi x10, x0, 0",
+          "section": "size_buy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 260,
+          "instruction": "addi x12, x0, 63",
+          "section": "size_buy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 264,
+          "instruction": "beq x10, x12, size_buy_done",
+          "section": "size_buy",
+          "cycles": 28667,
+          "instructions": 14223
+        },
+        {
+          "pc": 268,
+          "instruction": "blt x11, x5, size_buy_done",
+          "section": "size_buy",
+          "cycles": 28009,
+          "instructions": 14002
+        },
+        {
+          "pc": 272,
+          "instruction": "sub x11, x11, x5",
+          "section": "size_buy",
+          "cycles": 27994,
+          "instructions": 13997
+        },
+        {
+          "pc": 276,
+          "instruction": "addi x10, x10, 1",
+          "section": "size_buy",
+          "cycles": 27994,
+          "instructions": 13997
+        },
+        {
+          "pc": 280,
+          "instruction": "jal x0, size_buy_loop",
+          "section": "size_buy",
+          "cycles": 41991,
+          "instructions": 13997
+        },
+        {
+          "pc": 284,
+          "instruction": "beq x10, x0, close_accumulation",
+          "section": "size_buy",
+          "cycles": 454,
+          "instructions": 226
+        },
+        {
+          "pc": 288,
+          "instruction": "ori x9, x10, 64",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 292,
+          "instruction": "jal x0, publish",
+          "section": "size_buy",
+          "cycles": 672,
+          "instructions": 224
+        },
+        {
+          "pc": 296,
+          "instruction": "addi x6, x0, 0",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 300,
+          "instruction": "beq x4, x0, publish",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 304,
+          "instruction": "addi x6, x0, 2",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 308,
+          "instruction": "jal x0, publish",
+          "section": "policy",
+          "cycles": 261,
+          "instructions": 87
+        },
+        {
+          "pc": 312,
+          "instruction": "beq x4, x0, publish",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 316,
+          "instruction": "addi x10, x0, 63",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 320,
+          "instruction": "bge x4, x10, size_sell_done",
+          "section": "sell_quantity",
+          "cycles": 658,
+          "instructions": 220
+        },
+        {
+          "pc": 324,
+          "instruction": "addi x10, x4, 0",
+          "section": "sell_quantity",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 328,
+          "instruction": "ori x9, x10, 128",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 332,
+          "instruction": "sw x9, 8(x2)",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 1710
+        }
+      ],
+      "summary": {
+        "strategy": "M105-225",
+        "label": "M105-225",
+        "ticks": 1710,
+        "equity": 431749,
+        "profit": 421749,
+        "orders": 443,
+        "commissions": 2215,
+        "max_drawdown": 635514,
+        "cash": 430489,
+        "shares": 126,
+        "buy": 105,
+        "sell": 225,
+        "exposure": 100,
+        "drawdown_percent": 98.7519507289676,
+        "closed_episodes": 104
+      },
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "scope": "25MHz response-service window(byte_done,DECISION],includes pipeline stalls; idle waiting omitted only if fast. IC counts commits,not static lines. No clock changes."
+    },
+    {
+      "status": "PASS",
+      "name": "stress1710",
+      "variant": "software",
+      "program": "sw/trade_m105_225_soft.s",
+      "ticks": 1710,
+      "total_cycles": 105143,
+      "total_instructions": 47966,
+      "mean_cycles": 61.48713450292398,
+      "max_cycles": 286,
+      "mean_ic": 28.05029239766082,
+      "max_ic": 135,
+      "cpi": 2.1920318558979277,
+      "mean_us": 2.459485380116959,
+      "max_us": 11.44,
+      "service_decisions_per_second": 406589.1214821719,
+      "worst_tick": 452,
+      "sections": {
+        "io": 25649,
+        "account_control": 10099,
+        "buy_account": 20897,
+        "sell_account": 15707,
+        "policy": 24363,
+        "size_buy": 6446,
+        "sell_quantity": 1982
+      },
+      "pc_details": [
+        {
+          "pc": 44,
+          "instruction": "lw x10, 0(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 48,
+          "instruction": "andi x10, x10, 1",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 3419
+        },
+        {
+          "pc": 52,
+          "instruction": "beq x10, x0, wait_price",
+          "section": "io",
+          "cycles": 8549,
+          "instructions": 3420
+        },
+        {
+          "pc": 56,
+          "instruction": "lw x5, 4(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 60,
+          "instruction": "andi x10, x9, 63",
+          "section": "account_control",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 64,
+          "instruction": "beq x10, x0, accounted",
+          "section": "account_control",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 68,
+          "instruction": "addi x11, x0, 128",
+          "section": "account_control",
+          "cycles": 886,
+          "instructions": 443
+        },
+        {
+          "pc": 72,
+          "instruction": "bge x9, x11, fill_sell",
+          "section": "account_control",
+          "cycles": 1106,
+          "instructions": 443
+        },
+        {
+          "pc": 76,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 80,
+          "instruction": "blt x11, x5, accounted",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 84,
+          "instruction": "add x13, x5, x5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 88,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 92,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 96,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 100,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 104,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 108,
+          "instruction": "sub x13, x13, x5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 112,
+          "instruction": "blt x11, x13, fill_quantity_partial",
+          "section": "buy_account",
+          "cycles": 449,
+          "instructions": 223
+        },
+        {
+          "pc": 116,
+          "instruction": "addi x12, x0, 63",
+          "section": "buy_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 120,
+          "instruction": "jal x0, fill_quantity_done",
+          "section": "buy_account",
+          "cycles": 660,
+          "instructions": 220
+        },
+        {
+          "pc": 124,
+          "instruction": "addi x12, x0, 0",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 128,
+          "instruction": "add x13, x5, x5",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 132,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 136,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 140,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 144,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 148,
+          "instruction": "blt x11, x13, fill_quantity_skip_32",
+          "section": "buy_account",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 152,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 156,
+          "instruction": "addi x12, x12, 32",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 160,
+          "instruction": "add x13, x5, x5",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 164,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 168,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 172,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 176,
+          "instruction": "blt x11, x13, fill_quantity_skip_16",
+          "section": "buy_account",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 180,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 184,
+          "instruction": "addi x12, x12, 16",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 188,
+          "instruction": "add x13, x5, x5",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 192,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 196,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 200,
+          "instruction": "blt x11, x13, fill_quantity_skip_8",
+          "section": "buy_account",
+          "cycles": 9,
+          "instructions": 3
+        },
+        {
+          "pc": 212,
+          "instruction": "add x13, x5, x5",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 216,
+          "instruction": "add x13, x13, x13",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 220,
+          "instruction": "blt x11, x13, fill_quantity_skip_4",
+          "section": "buy_account",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 224,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 228,
+          "instruction": "addi x12, x12, 4",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 232,
+          "instruction": "add x13, x5, x5",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 236,
+          "instruction": "blt x11, x13, fill_quantity_skip_2",
+          "section": "buy_account",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 240,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 244,
+          "instruction": "addi x12, x12, 2",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 248,
+          "instruction": "addi x13, x5, 0",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 252,
+          "instruction": "blt x11, x13, fill_quantity_skip_1",
+          "section": "buy_account",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 256,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 260,
+          "instruction": "addi x12, x12, 1",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 264,
+          "instruction": "bge x10, x12, fill_quantity_clipped",
+          "section": "buy_account",
+          "cycles": 668,
+          "instructions": 223
+        },
+        {
+          "pc": 268,
+          "instruction": "addi x12, x10, 0",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 272,
+          "instruction": "addi x15, x0, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 276,
+          "instruction": "addi x10, x5, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 280,
+          "instruction": "andi x13, x12, 1",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 284,
+          "instruction": "beq x13, x0, buy_product_skip_1",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 288,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 292,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 296,
+          "instruction": "andi x13, x12, 2",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 300,
+          "instruction": "beq x13, x0, buy_product_skip_2",
+          "section": "buy_account",
+          "cycles": 447,
+          "instructions": 223
+        },
+        {
+          "pc": 304,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 444,
+          "instructions": 222
+        },
+        {
+          "pc": 308,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 312,
+          "instruction": "andi x13, x12, 4",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 316,
+          "instruction": "beq x13, x0, buy_product_skip_4",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 320,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 324,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 328,
+          "instruction": "andi x13, x12, 8",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 332,
+          "instruction": "beq x13, x0, buy_product_skip_8",
+          "section": "buy_account",
+          "cycles": 449,
+          "instructions": 223
+        },
+        {
+          "pc": 336,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 340,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 344,
+          "instruction": "andi x13, x12, 16",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 348,
+          "instruction": "beq x13, x0, buy_product_skip_16",
+          "section": "buy_account",
+          "cycles": 447,
+          "instructions": 223
+        },
+        {
+          "pc": 352,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 444,
+          "instructions": 222
+        },
+        {
+          "pc": 356,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 360,
+          "instruction": "andi x13, x12, 32",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 364,
+          "instruction": "beq x13, x0, buy_product_skip_32",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 368,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 372,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 376,
+          "instruction": "sub x11, x11, x15",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 380,
+          "instruction": "sub x13, x3, x11",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 384,
+          "instruction": "sub x7, x7, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 388,
+          "instruction": "addi x3, x11, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 392,
+          "instruction": "add x4, x4, x12",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 396,
+          "instruction": "jal x0, accounted",
+          "section": "buy_account",
+          "cycles": 669,
+          "instructions": 223
+        },
+        {
+          "pc": 400,
+          "instruction": "bge x4, x10, sell_quantity",
+          "section": "sell_account",
+          "cycles": 660,
+          "instructions": 220
+        },
+        {
+          "pc": 408,
+          "instruction": "beq x10, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 412,
+          "instruction": "addi x12, x10, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 416,
+          "instruction": "addi x15, x0, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 420,
+          "instruction": "addi x10, x5, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 424,
+          "instruction": "andi x13, x12, 1",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 428,
+          "instruction": "beq x13, x0, sell_product_skip_1",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 432,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 436,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 440,
+          "instruction": "andi x13, x12, 2",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 444,
+          "instruction": "beq x13, x0, sell_product_skip_2",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 448,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 452,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 456,
+          "instruction": "andi x13, x12, 4",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 460,
+          "instruction": "beq x13, x0, sell_product_skip_4",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 464,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 468,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 472,
+          "instruction": "andi x13, x12, 8",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 476,
+          "instruction": "beq x13, x0, sell_product_skip_8",
+          "section": "sell_account",
+          "cycles": 442,
+          "instructions": 220
+        },
+        {
+          "pc": 480,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 436,
+          "instructions": 218
+        },
+        {
+          "pc": 484,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 488,
+          "instruction": "andi x13, x12, 16",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 492,
+          "instruction": "beq x13, x0, sell_product_skip_16",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 496,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 500,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 504,
+          "instruction": "andi x13, x12, 32",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 508,
+          "instruction": "beq x13, x0, sell_product_skip_32",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 512,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 516,
+          "instruction": "add x11, x3, x15",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 520,
+          "instruction": "addi x11, x11, -5",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 524,
+          "instruction": "blt x11, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 528,
+          "instruction": "addi x3, x11, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 532,
+          "instruction": "sub x4, x4, x12",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 536,
+          "instruction": "bne x4, x0, accounted",
+          "section": "sell_account",
+          "cycles": 556,
+          "instructions": 220
+        },
+        {
+          "pc": 540,
+          "instruction": "addi x6, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 544,
+          "instruction": "addi x7, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 548,
+          "instruction": "addi x9, x0, 0",
+          "section": "policy",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 552,
+          "instruction": "bne x6, x0, position_state",
+          "section": "policy",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 556,
+          "instruction": "blt x1, x5, publish",
+          "section": "policy",
+          "cycles": 1224,
+          "instructions": 443
+        },
+        {
+          "pc": 560,
+          "instruction": "addi x7, x3, 0",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 564,
+          "instruction": "addi x6, x0, 1",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 568,
+          "instruction": "jal x0, choose_action",
+          "section": "policy",
+          "cycles": 315,
+          "instructions": 105
+        },
+        {
+          "pc": 572,
+          "instruction": "beq x6, x14, holding_state",
+          "section": "policy",
+          "cycles": 3462,
+          "instructions": 1267
+        },
+        {
+          "pc": 576,
+          "instruction": "beq x4, x0, choose_action",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 339
+        },
+        {
+          "pc": 580,
+          "instruction": "blt x5, x8, choose_action",
+          "section": "policy",
+          "cycles": 973,
+          "instructions": 339
+        },
+        {
+          "pc": 584,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 88,
+          "instructions": 44
+        },
+        {
+          "pc": 588,
+          "instruction": "addi x10, x0, 3",
+          "section": "policy",
+          "cycles": 888,
+          "instructions": 444
+        },
+        {
+          "pc": 592,
+          "instruction": "beq x6, x10, propose_sell",
+          "section": "policy",
+          "cycles": 1021,
+          "instructions": 444
+        },
+        {
+          "pc": 596,
+          "instruction": "addi x10, x0, 1",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 600,
+          "instruction": "bne x6, x10, publish",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 604,
+          "instruction": "blt x1, x5, close_accumulation",
+          "section": "policy",
+          "cycles": 707,
+          "instructions": 311
+        },
+        {
+          "pc": 608,
+          "instruction": "addi x11, x3, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 612,
+          "instruction": "addi x12, x7, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 616,
+          "instruction": "bge x12, x11, size_buy",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 226
+        },
+        {
+          "pc": 624,
+          "instruction": "blt x11, x5, close_accumulation",
+          "section": "size_buy",
+          "cycles": 454,
+          "instructions": 226
+        },
+        {
+          "pc": 628,
+          "instruction": "add x13, x5, x5",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 632,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 636,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 640,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 644,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 648,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 652,
+          "instruction": "sub x13, x13, x5",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 656,
+          "instruction": "blt x11, x13, size_quantity_partial",
+          "section": "size_buy",
+          "cycles": 451,
+          "instructions": 224
+        },
+        {
+          "pc": 660,
+          "instruction": "addi x10, x0, 63",
+          "section": "size_buy",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 664,
+          "instruction": "jal x0, size_quantity_done",
+          "section": "size_buy",
+          "cycles": 663,
+          "instructions": 221
+        },
+        {
+          "pc": 668,
+          "instruction": "addi x10, x0, 0",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 672,
+          "instruction": "add x13, x5, x5",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 676,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 680,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 684,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 688,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 692,
+          "instruction": "blt x11, x13, size_quantity_skip_32",
+          "section": "size_buy",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 696,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 700,
+          "instruction": "addi x10, x10, 32",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 704,
+          "instruction": "add x13, x5, x5",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 708,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 712,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 716,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 720,
+          "instruction": "blt x11, x13, size_quantity_skip_16",
+          "section": "size_buy",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 724,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 728,
+          "instruction": "addi x10, x10, 16",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 732,
+          "instruction": "add x13, x5, x5",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 736,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 740,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 744,
+          "instruction": "blt x11, x13, size_quantity_skip_8",
+          "section": "size_buy",
+          "cycles": 9,
+          "instructions": 3
+        },
+        {
+          "pc": 756,
+          "instruction": "add x13, x5, x5",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 760,
+          "instruction": "add x13, x13, x13",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 764,
+          "instruction": "blt x11, x13, size_quantity_skip_4",
+          "section": "size_buy",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 768,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 772,
+          "instruction": "addi x10, x10, 4",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 776,
+          "instruction": "add x13, x5, x5",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 780,
+          "instruction": "blt x11, x13, size_quantity_skip_2",
+          "section": "size_buy",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 784,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 788,
+          "instruction": "addi x10, x10, 2",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 792,
+          "instruction": "addi x13, x5, 0",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 796,
+          "instruction": "blt x11, x13, size_quantity_skip_1",
+          "section": "size_buy",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 800,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 804,
+          "instruction": "addi x10, x10, 1",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 808,
+          "instruction": "ori x9, x10, 64",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 812,
+          "instruction": "jal x0, publish",
+          "section": "size_buy",
+          "cycles": 672,
+          "instructions": 224
+        },
+        {
+          "pc": 816,
+          "instruction": "addi x6, x0, 0",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 820,
+          "instruction": "beq x4, x0, publish",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 824,
+          "instruction": "addi x6, x0, 2",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 828,
+          "instruction": "jal x0, publish",
+          "section": "policy",
+          "cycles": 261,
+          "instructions": 87
+        },
+        {
+          "pc": 832,
+          "instruction": "blt x5, x8, publish",
+          "section": "policy",
+          "cycles": 2697,
+          "instructions": 928
+        },
+        {
+          "pc": 836,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 840,
+          "instruction": "beq x4, x0, publish",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 844,
+          "instruction": "addi x10, x0, 63",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 848,
+          "instruction": "bge x4, x10, size_sell_done",
+          "section": "sell_quantity",
+          "cycles": 658,
+          "instructions": 220
+        },
+        {
+          "pc": 852,
+          "instruction": "addi x10, x4, 0",
+          "section": "sell_quantity",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 856,
+          "instruction": "ori x9, x10, 128",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 860,
+          "instruction": "sw x9, 8(x2)",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 1710
+        }
+      ],
+      "summary": {
+        "strategy": "M105-225",
+        "label": "M105-225",
+        "ticks": 1710,
+        "equity": 431749,
+        "profit": 421749,
+        "orders": 443,
+        "commissions": 2215,
+        "max_drawdown": 635514,
+        "cash": 430489,
+        "shares": 126,
+        "buy": 105,
+        "sell": 225,
+        "exposure": 100,
+        "drawdown_percent": 98.7519507289676,
+        "closed_episodes": 104
+      },
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "scope": "25MHz response-service window(byte_done,DECISION],includes pipeline stalls; idle waiting omitted only if fast. IC counts commits,not static lines. No clock changes."
+    },
+    {
+      "status": "PASS",
+      "name": "stress1710",
+      "variant": "shifter",
+      "program": "sw/trade_m105_225_shifter.s",
+      "ticks": 1710,
+      "total_cycles": 100553,
+      "total_instructions": 45671,
+      "mean_cycles": 58.802923976608184,
+      "max_cycles": 226,
+      "mean_ic": 26.708187134502925,
+      "max_ic": 105,
+      "cpi": 2.201681592257669,
+      "mean_us": 2.3521169590643276,
+      "max_us": 9.040000000000001,
+      "service_decisions_per_second": 425148.92643680447,
+      "worst_tick": 452,
+      "sections": {
+        "io": 25649,
+        "account_control": 10099,
+        "buy_account": 18607,
+        "sell_account": 15707,
+        "policy": 24363,
+        "size_buy": 4146,
+        "sell_quantity": 1982
+      },
+      "pc_details": [
+        {
+          "pc": 44,
+          "instruction": "lw x10, 0(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 48,
+          "instruction": "andi x10, x10, 1",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 3419
+        },
+        {
+          "pc": 52,
+          "instruction": "beq x10, x0, wait_price",
+          "section": "io",
+          "cycles": 8549,
+          "instructions": 3420
+        },
+        {
+          "pc": 56,
+          "instruction": "lw x5, 4(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 60,
+          "instruction": "andi x10, x9, 63",
+          "section": "account_control",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 64,
+          "instruction": "beq x10, x0, accounted",
+          "section": "account_control",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 68,
+          "instruction": "addi x11, x0, 128",
+          "section": "account_control",
+          "cycles": 886,
+          "instructions": 443
+        },
+        {
+          "pc": 72,
+          "instruction": "bge x9, x11, fill_sell",
+          "section": "account_control",
+          "cycles": 1106,
+          "instructions": 443
+        },
+        {
+          "pc": 76,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 80,
+          "instruction": "blt x11, x5, accounted",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 84,
+          "instruction": "slli x13, x5, 6",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 88,
+          "instruction": "sub x13, x13, x5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 92,
+          "instruction": "blt x11, x13, fill_quantity_partial",
+          "section": "buy_account",
+          "cycles": 449,
+          "instructions": 223
+        },
+        {
+          "pc": 96,
+          "instruction": "addi x12, x0, 63",
+          "section": "buy_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 100,
+          "instruction": "jal x0, fill_quantity_done",
+          "section": "buy_account",
+          "cycles": 660,
+          "instructions": 220
+        },
+        {
+          "pc": 104,
+          "instruction": "addi x12, x0, 0",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 108,
+          "instruction": "slli x13, x5, 5",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 112,
+          "instruction": "blt x11, x13, fill_quantity_skip_32",
+          "section": "buy_account",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 116,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 120,
+          "instruction": "addi x12, x12, 32",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 124,
+          "instruction": "srli x13, x13, 1",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 128,
+          "instruction": "blt x11, x13, fill_quantity_skip_16",
+          "section": "buy_account",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 132,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 136,
+          "instruction": "addi x12, x12, 16",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 140,
+          "instruction": "srli x13, x13, 1",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 144,
+          "instruction": "blt x11, x13, fill_quantity_skip_8",
+          "section": "buy_account",
+          "cycles": 9,
+          "instructions": 3
+        },
+        {
+          "pc": 156,
+          "instruction": "srli x13, x13, 1",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 160,
+          "instruction": "blt x11, x13, fill_quantity_skip_4",
+          "section": "buy_account",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 164,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 168,
+          "instruction": "addi x12, x12, 4",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 172,
+          "instruction": "srli x13, x13, 1",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 176,
+          "instruction": "blt x11, x13, fill_quantity_skip_2",
+          "section": "buy_account",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 180,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 184,
+          "instruction": "addi x12, x12, 2",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 188,
+          "instruction": "srli x13, x13, 1",
+          "section": "buy_account",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 192,
+          "instruction": "blt x11, x13, fill_quantity_skip_1",
+          "section": "buy_account",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 196,
+          "instruction": "sub x11, x11, x13",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 200,
+          "instruction": "addi x12, x12, 1",
+          "section": "buy_account",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 204,
+          "instruction": "bge x10, x12, fill_quantity_clipped",
+          "section": "buy_account",
+          "cycles": 668,
+          "instructions": 223
+        },
+        {
+          "pc": 208,
+          "instruction": "addi x12, x10, 0",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 212,
+          "instruction": "addi x15, x0, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 216,
+          "instruction": "addi x10, x5, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 220,
+          "instruction": "andi x13, x12, 1",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 224,
+          "instruction": "beq x13, x0, buy_product_skip_1",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 228,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 232,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 236,
+          "instruction": "andi x13, x12, 2",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 240,
+          "instruction": "beq x13, x0, buy_product_skip_2",
+          "section": "buy_account",
+          "cycles": 447,
+          "instructions": 223
+        },
+        {
+          "pc": 244,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 444,
+          "instructions": 222
+        },
+        {
+          "pc": 248,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 252,
+          "instruction": "andi x13, x12, 4",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 256,
+          "instruction": "beq x13, x0, buy_product_skip_4",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 260,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 264,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 268,
+          "instruction": "andi x13, x12, 8",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 272,
+          "instruction": "beq x13, x0, buy_product_skip_8",
+          "section": "buy_account",
+          "cycles": 449,
+          "instructions": 223
+        },
+        {
+          "pc": 276,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 280,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 284,
+          "instruction": "andi x13, x12, 16",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 288,
+          "instruction": "beq x13, x0, buy_product_skip_16",
+          "section": "buy_account",
+          "cycles": 447,
+          "instructions": 223
+        },
+        {
+          "pc": 292,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 444,
+          "instructions": 222
+        },
+        {
+          "pc": 296,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 300,
+          "instruction": "andi x13, x12, 32",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 304,
+          "instruction": "beq x13, x0, buy_product_skip_32",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 308,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 312,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 316,
+          "instruction": "sub x11, x11, x15",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 320,
+          "instruction": "sub x13, x3, x11",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 324,
+          "instruction": "sub x7, x7, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 328,
+          "instruction": "addi x3, x11, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 332,
+          "instruction": "add x4, x4, x12",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 336,
+          "instruction": "jal x0, accounted",
+          "section": "buy_account",
+          "cycles": 669,
+          "instructions": 223
+        },
+        {
+          "pc": 340,
+          "instruction": "bge x4, x10, sell_quantity",
+          "section": "sell_account",
+          "cycles": 660,
+          "instructions": 220
+        },
+        {
+          "pc": 348,
+          "instruction": "beq x10, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 352,
+          "instruction": "addi x12, x10, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 356,
+          "instruction": "addi x15, x0, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 360,
+          "instruction": "addi x10, x5, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 364,
+          "instruction": "andi x13, x12, 1",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 368,
+          "instruction": "beq x13, x0, sell_product_skip_1",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 372,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 376,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 380,
+          "instruction": "andi x13, x12, 2",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 384,
+          "instruction": "beq x13, x0, sell_product_skip_2",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 388,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 392,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 396,
+          "instruction": "andi x13, x12, 4",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 400,
+          "instruction": "beq x13, x0, sell_product_skip_4",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 404,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 408,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 412,
+          "instruction": "andi x13, x12, 8",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 416,
+          "instruction": "beq x13, x0, sell_product_skip_8",
+          "section": "sell_account",
+          "cycles": 442,
+          "instructions": 220
+        },
+        {
+          "pc": 420,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 436,
+          "instructions": 218
+        },
+        {
+          "pc": 424,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 428,
+          "instruction": "andi x13, x12, 16",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 432,
+          "instruction": "beq x13, x0, sell_product_skip_16",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 436,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 440,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 444,
+          "instruction": "andi x13, x12, 32",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 448,
+          "instruction": "beq x13, x0, sell_product_skip_32",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 452,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 456,
+          "instruction": "add x11, x3, x15",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 460,
+          "instruction": "addi x11, x11, -5",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 464,
+          "instruction": "blt x11, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 468,
+          "instruction": "addi x3, x11, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 472,
+          "instruction": "sub x4, x4, x12",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 476,
+          "instruction": "bne x4, x0, accounted",
+          "section": "sell_account",
+          "cycles": 556,
+          "instructions": 220
+        },
+        {
+          "pc": 480,
+          "instruction": "addi x6, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 484,
+          "instruction": "addi x7, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 488,
+          "instruction": "addi x9, x0, 0",
+          "section": "policy",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 492,
+          "instruction": "bne x6, x0, position_state",
+          "section": "policy",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 496,
+          "instruction": "blt x1, x5, publish",
+          "section": "policy",
+          "cycles": 1224,
+          "instructions": 443
+        },
+        {
+          "pc": 500,
+          "instruction": "addi x7, x3, 0",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 504,
+          "instruction": "addi x6, x0, 1",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 508,
+          "instruction": "jal x0, choose_action",
+          "section": "policy",
+          "cycles": 315,
+          "instructions": 105
+        },
+        {
+          "pc": 512,
+          "instruction": "beq x6, x14, holding_state",
+          "section": "policy",
+          "cycles": 3462,
+          "instructions": 1267
+        },
+        {
+          "pc": 516,
+          "instruction": "beq x4, x0, choose_action",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 339
+        },
+        {
+          "pc": 520,
+          "instruction": "blt x5, x8, choose_action",
+          "section": "policy",
+          "cycles": 973,
+          "instructions": 339
+        },
+        {
+          "pc": 524,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 88,
+          "instructions": 44
+        },
+        {
+          "pc": 528,
+          "instruction": "addi x10, x0, 3",
+          "section": "policy",
+          "cycles": 888,
+          "instructions": 444
+        },
+        {
+          "pc": 532,
+          "instruction": "beq x6, x10, propose_sell",
+          "section": "policy",
+          "cycles": 1021,
+          "instructions": 444
+        },
+        {
+          "pc": 536,
+          "instruction": "addi x10, x0, 1",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 540,
+          "instruction": "bne x6, x10, publish",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 544,
+          "instruction": "blt x1, x5, close_accumulation",
+          "section": "policy",
+          "cycles": 707,
+          "instructions": 311
+        },
+        {
+          "pc": 548,
+          "instruction": "addi x11, x3, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 552,
+          "instruction": "addi x12, x7, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 556,
+          "instruction": "bge x12, x11, size_buy",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 226
+        },
+        {
+          "pc": 564,
+          "instruction": "blt x11, x5, close_accumulation",
+          "section": "size_buy",
+          "cycles": 454,
+          "instructions": 226
+        },
+        {
+          "pc": 568,
+          "instruction": "slli x13, x5, 6",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 572,
+          "instruction": "sub x13, x13, x5",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 576,
+          "instruction": "blt x11, x13, size_quantity_partial",
+          "section": "size_buy",
+          "cycles": 451,
+          "instructions": 224
+        },
+        {
+          "pc": 580,
+          "instruction": "addi x10, x0, 63",
+          "section": "size_buy",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 584,
+          "instruction": "jal x0, size_quantity_done",
+          "section": "size_buy",
+          "cycles": 663,
+          "instructions": 221
+        },
+        {
+          "pc": 588,
+          "instruction": "addi x10, x0, 0",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 592,
+          "instruction": "slli x13, x5, 5",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 596,
+          "instruction": "blt x11, x13, size_quantity_skip_32",
+          "section": "size_buy",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 600,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 604,
+          "instruction": "addi x10, x10, 32",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 608,
+          "instruction": "srli x13, x13, 1",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 612,
+          "instruction": "blt x11, x13, size_quantity_skip_16",
+          "section": "size_buy",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 616,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 620,
+          "instruction": "addi x10, x10, 16",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 624,
+          "instruction": "srli x13, x13, 1",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 628,
+          "instruction": "blt x11, x13, size_quantity_skip_8",
+          "section": "size_buy",
+          "cycles": 9,
+          "instructions": 3
+        },
+        {
+          "pc": 640,
+          "instruction": "srli x13, x13, 1",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 644,
+          "instruction": "blt x11, x13, size_quantity_skip_4",
+          "section": "size_buy",
+          "cycles": 8,
+          "instructions": 3
+        },
+        {
+          "pc": 648,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 652,
+          "instruction": "addi x10, x10, 4",
+          "section": "size_buy",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 656,
+          "instruction": "srli x13, x13, 1",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 660,
+          "instruction": "blt x11, x13, size_quantity_skip_2",
+          "section": "size_buy",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 664,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 668,
+          "instruction": "addi x10, x10, 2",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 672,
+          "instruction": "srli x13, x13, 1",
+          "section": "size_buy",
+          "cycles": 6,
+          "instructions": 3
+        },
+        {
+          "pc": 676,
+          "instruction": "blt x11, x13, size_quantity_skip_1",
+          "section": "size_buy",
+          "cycles": 7,
+          "instructions": 3
+        },
+        {
+          "pc": 680,
+          "instruction": "sub x11, x11, x13",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 684,
+          "instruction": "addi x10, x10, 1",
+          "section": "size_buy",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 688,
+          "instruction": "ori x9, x10, 64",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 692,
+          "instruction": "jal x0, publish",
+          "section": "size_buy",
+          "cycles": 672,
+          "instructions": 224
+        },
+        {
+          "pc": 696,
+          "instruction": "addi x6, x0, 0",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 700,
+          "instruction": "beq x4, x0, publish",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 704,
+          "instruction": "addi x6, x0, 2",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 708,
+          "instruction": "jal x0, publish",
+          "section": "policy",
+          "cycles": 261,
+          "instructions": 87
+        },
+        {
+          "pc": 712,
+          "instruction": "blt x5, x8, publish",
+          "section": "policy",
+          "cycles": 2697,
+          "instructions": 928
+        },
+        {
+          "pc": 716,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 720,
+          "instruction": "beq x4, x0, publish",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 724,
+          "instruction": "addi x10, x0, 63",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 728,
+          "instruction": "bge x4, x10, size_sell_done",
+          "section": "sell_quantity",
+          "cycles": 658,
+          "instructions": 220
+        },
+        {
+          "pc": 732,
+          "instruction": "addi x10, x4, 0",
+          "section": "sell_quantity",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 736,
+          "instruction": "ori x9, x10, 128",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 740,
+          "instruction": "sw x9, 8(x2)",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 1710
+        }
+      ],
+      "summary": {
+        "strategy": "M105-225",
+        "label": "M105-225",
+        "ticks": 1710,
+        "equity": 431749,
+        "profit": 421749,
+        "orders": 443,
+        "commissions": 2215,
+        "max_drawdown": 635514,
+        "cash": 430489,
+        "shares": 126,
+        "buy": 105,
+        "sell": 225,
+        "exposure": 100,
+        "drawdown_percent": 98.7519507289676,
+        "closed_episodes": 104
+      },
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "scope": "25MHz response-service window(byte_done,DECISION],includes pipeline stalls; idle waiting omitted only if fast. IC counts commits,not static lines. No clock changes."
+    },
+    {
+      "status": "PASS",
+      "name": "stress1710",
+      "variant": "qcap",
+      "program": "sw/trade_m105_225_qcap.s",
+      "ticks": 1710,
+      "total_cycles": 97025,
+      "total_instructions": 43785,
+      "mean_cycles": 56.739766081871345,
+      "max_cycles": 149,
+      "mean_ic": 25.605263157894736,
+      "max_ic": 65,
+      "cpi": 2.215941532488295,
+      "mean_us": 2.269590643274854,
+      "max_us": 5.96,
+      "service_decisions_per_second": 440608.0906982736,
+      "worst_tick": 1,
+      "sections": {
+        "io": 25649,
+        "account_control": 10099,
+        "buy_account": 16847,
+        "sell_account": 15707,
+        "policy": 24363,
+        "size_buy": 2378,
+        "sell_quantity": 1982
+      },
+      "pc_details": [
+        {
+          "pc": 44,
+          "instruction": "lw x10, 0(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 48,
+          "instruction": "andi x10, x10, 1",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 3419
+        },
+        {
+          "pc": 52,
+          "instruction": "beq x10, x0, wait_price",
+          "section": "io",
+          "cycles": 8549,
+          "instructions": 3420
+        },
+        {
+          "pc": 56,
+          "instruction": "lw x5, 4(x2)",
+          "section": "io",
+          "cycles": 5130,
+          "instructions": 1710
+        },
+        {
+          "pc": 60,
+          "instruction": "andi x10, x9, 63",
+          "section": "account_control",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 64,
+          "instruction": "beq x10, x0, accounted",
+          "section": "account_control",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 68,
+          "instruction": "addi x11, x0, 128",
+          "section": "account_control",
+          "cycles": 886,
+          "instructions": 443
+        },
+        {
+          "pc": 72,
+          "instruction": "bge x9, x11, fill_sell",
+          "section": "account_control",
+          "cycles": 1106,
+          "instructions": 443
+        },
+        {
+          "pc": 76,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 80,
+          "instruction": "blt x11, x5, accounted",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 84,
+          "instruction": "qcap x12, x11, x5",
+          "section": "buy_account",
+          "cycles": 801,
+          "instructions": 223
+        },
+        {
+          "pc": 88,
+          "instruction": "bge x10, x12, fill_quantity_clipped",
+          "section": "buy_account",
+          "cycles": 668,
+          "instructions": 223
+        },
+        {
+          "pc": 92,
+          "instruction": "addi x12, x10, 0",
+          "section": "buy_account",
+          "cycles": 2,
+          "instructions": 1
+        },
+        {
+          "pc": 96,
+          "instruction": "addi x15, x0, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 100,
+          "instruction": "addi x10, x5, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 104,
+          "instruction": "andi x13, x12, 1",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 108,
+          "instruction": "beq x13, x0, buy_product_skip_1",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 112,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 116,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 120,
+          "instruction": "andi x13, x12, 2",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 124,
+          "instruction": "beq x13, x0, buy_product_skip_2",
+          "section": "buy_account",
+          "cycles": 447,
+          "instructions": 223
+        },
+        {
+          "pc": 128,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 444,
+          "instructions": 222
+        },
+        {
+          "pc": 132,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 136,
+          "instruction": "andi x13, x12, 4",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 140,
+          "instruction": "beq x13, x0, buy_product_skip_4",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 144,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 148,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 152,
+          "instruction": "andi x13, x12, 8",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 156,
+          "instruction": "beq x13, x0, buy_product_skip_8",
+          "section": "buy_account",
+          "cycles": 449,
+          "instructions": 223
+        },
+        {
+          "pc": 160,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 164,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 168,
+          "instruction": "andi x13, x12, 16",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 172,
+          "instruction": "beq x13, x0, buy_product_skip_16",
+          "section": "buy_account",
+          "cycles": 447,
+          "instructions": 223
+        },
+        {
+          "pc": 176,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 444,
+          "instructions": 222
+        },
+        {
+          "pc": 180,
+          "instruction": "add x10, x10, x10",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 184,
+          "instruction": "andi x13, x12, 32",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 188,
+          "instruction": "beq x13, x0, buy_product_skip_32",
+          "section": "buy_account",
+          "cycles": 448,
+          "instructions": 223
+        },
+        {
+          "pc": 192,
+          "instruction": "add x15, x15, x10",
+          "section": "buy_account",
+          "cycles": 442,
+          "instructions": 221
+        },
+        {
+          "pc": 196,
+          "instruction": "addi x11, x3, -5",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 200,
+          "instruction": "sub x11, x11, x15",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 204,
+          "instruction": "sub x13, x3, x11",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 208,
+          "instruction": "sub x7, x7, x13",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 212,
+          "instruction": "addi x3, x11, 0",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 216,
+          "instruction": "add x4, x4, x12",
+          "section": "buy_account",
+          "cycles": 446,
+          "instructions": 223
+        },
+        {
+          "pc": 220,
+          "instruction": "jal x0, accounted",
+          "section": "buy_account",
+          "cycles": 669,
+          "instructions": 223
+        },
+        {
+          "pc": 224,
+          "instruction": "bge x4, x10, sell_quantity",
+          "section": "sell_account",
+          "cycles": 660,
+          "instructions": 220
+        },
+        {
+          "pc": 232,
+          "instruction": "beq x10, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 236,
+          "instruction": "addi x12, x10, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 240,
+          "instruction": "addi x15, x0, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 244,
+          "instruction": "addi x10, x5, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 248,
+          "instruction": "andi x13, x12, 1",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 252,
+          "instruction": "beq x13, x0, sell_product_skip_1",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 256,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 260,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 264,
+          "instruction": "andi x13, x12, 2",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 268,
+          "instruction": "beq x13, x0, sell_product_skip_2",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 272,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 276,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 280,
+          "instruction": "andi x13, x12, 4",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 284,
+          "instruction": "beq x13, x0, sell_product_skip_4",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 288,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 292,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 296,
+          "instruction": "andi x13, x12, 8",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 300,
+          "instruction": "beq x13, x0, sell_product_skip_8",
+          "section": "sell_account",
+          "cycles": 442,
+          "instructions": 220
+        },
+        {
+          "pc": 304,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 436,
+          "instructions": 218
+        },
+        {
+          "pc": 308,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 312,
+          "instruction": "andi x13, x12, 16",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 316,
+          "instruction": "beq x13, x0, sell_product_skip_16",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 320,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 324,
+          "instruction": "add x10, x10, x10",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 328,
+          "instruction": "andi x13, x12, 32",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 332,
+          "instruction": "beq x13, x0, sell_product_skip_32",
+          "section": "sell_account",
+          "cycles": 441,
+          "instructions": 220
+        },
+        {
+          "pc": 336,
+          "instruction": "add x15, x15, x10",
+          "section": "sell_account",
+          "cycles": 438,
+          "instructions": 219
+        },
+        {
+          "pc": 340,
+          "instruction": "add x11, x3, x15",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 344,
+          "instruction": "addi x11, x11, -5",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 348,
+          "instruction": "blt x11, x0, accounted",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 352,
+          "instruction": "addi x3, x11, 0",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 356,
+          "instruction": "sub x4, x4, x12",
+          "section": "sell_account",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 360,
+          "instruction": "bne x4, x0, accounted",
+          "section": "sell_account",
+          "cycles": 556,
+          "instructions": 220
+        },
+        {
+          "pc": 364,
+          "instruction": "addi x6, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 368,
+          "instruction": "addi x7, x0, 0",
+          "section": "sell_account",
+          "cycles": 208,
+          "instructions": 104
+        },
+        {
+          "pc": 372,
+          "instruction": "addi x9, x0, 0",
+          "section": "policy",
+          "cycles": 3420,
+          "instructions": 1710
+        },
+        {
+          "pc": 376,
+          "instruction": "bne x6, x0, position_state",
+          "section": "policy",
+          "cycles": 4687,
+          "instructions": 1710
+        },
+        {
+          "pc": 380,
+          "instruction": "blt x1, x5, publish",
+          "section": "policy",
+          "cycles": 1224,
+          "instructions": 443
+        },
+        {
+          "pc": 384,
+          "instruction": "addi x7, x3, 0",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 388,
+          "instruction": "addi x6, x0, 1",
+          "section": "policy",
+          "cycles": 210,
+          "instructions": 105
+        },
+        {
+          "pc": 392,
+          "instruction": "jal x0, choose_action",
+          "section": "policy",
+          "cycles": 315,
+          "instructions": 105
+        },
+        {
+          "pc": 396,
+          "instruction": "beq x6, x14, holding_state",
+          "section": "policy",
+          "cycles": 3462,
+          "instructions": 1267
+        },
+        {
+          "pc": 400,
+          "instruction": "beq x4, x0, choose_action",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 339
+        },
+        {
+          "pc": 404,
+          "instruction": "blt x5, x8, choose_action",
+          "section": "policy",
+          "cycles": 973,
+          "instructions": 339
+        },
+        {
+          "pc": 408,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 88,
+          "instructions": 44
+        },
+        {
+          "pc": 412,
+          "instruction": "addi x10, x0, 3",
+          "section": "policy",
+          "cycles": 888,
+          "instructions": 444
+        },
+        {
+          "pc": 416,
+          "instruction": "beq x6, x10, propose_sell",
+          "section": "policy",
+          "cycles": 1021,
+          "instructions": 444
+        },
+        {
+          "pc": 420,
+          "instruction": "addi x10, x0, 1",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 424,
+          "instruction": "bne x6, x10, publish",
+          "section": "policy",
+          "cycles": 622,
+          "instructions": 311
+        },
+        {
+          "pc": 428,
+          "instruction": "blt x1, x5, close_accumulation",
+          "section": "policy",
+          "cycles": 707,
+          "instructions": 311
+        },
+        {
+          "pc": 432,
+          "instruction": "addi x11, x3, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 436,
+          "instruction": "addi x12, x7, -5",
+          "section": "policy",
+          "cycles": 452,
+          "instructions": 226
+        },
+        {
+          "pc": 440,
+          "instruction": "bge x12, x11, size_buy",
+          "section": "policy",
+          "cycles": 678,
+          "instructions": 226
+        },
+        {
+          "pc": 448,
+          "instruction": "blt x11, x5, close_accumulation",
+          "section": "size_buy",
+          "cycles": 454,
+          "instructions": 226
+        },
+        {
+          "pc": 452,
+          "instruction": "qcap x10, x11, x5",
+          "section": "size_buy",
+          "cycles": 804,
+          "instructions": 224
+        },
+        {
+          "pc": 456,
+          "instruction": "ori x9, x10, 64",
+          "section": "size_buy",
+          "cycles": 448,
+          "instructions": 224
+        },
+        {
+          "pc": 460,
+          "instruction": "jal x0, publish",
+          "section": "size_buy",
+          "cycles": 672,
+          "instructions": 224
+        },
+        {
+          "pc": 464,
+          "instruction": "addi x6, x0, 0",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 468,
+          "instruction": "beq x4, x0, publish",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 472,
+          "instruction": "addi x6, x0, 2",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 476,
+          "instruction": "jal x0, publish",
+          "section": "policy",
+          "cycles": 261,
+          "instructions": 87
+        },
+        {
+          "pc": 480,
+          "instruction": "blt x5, x8, publish",
+          "section": "policy",
+          "cycles": 2697,
+          "instructions": 928
+        },
+        {
+          "pc": 484,
+          "instruction": "addi x6, x0, 3",
+          "section": "policy",
+          "cycles": 174,
+          "instructions": 87
+        },
+        {
+          "pc": 488,
+          "instruction": "beq x4, x0, publish",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 492,
+          "instruction": "addi x10, x0, 63",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 496,
+          "instruction": "bge x4, x10, size_sell_done",
+          "section": "sell_quantity",
+          "cycles": 658,
+          "instructions": 220
+        },
+        {
+          "pc": 500,
+          "instruction": "addi x10, x4, 0",
+          "section": "sell_quantity",
+          "cycles": 4,
+          "instructions": 2
+        },
+        {
+          "pc": 504,
+          "instruction": "ori x9, x10, 128",
+          "section": "sell_quantity",
+          "cycles": 440,
+          "instructions": 220
+        },
+        {
+          "pc": 508,
+          "instruction": "sw x9, 8(x2)",
+          "section": "io",
+          "cycles": 3420,
+          "instructions": 1710
+        }
+      ],
+      "summary": {
+        "strategy": "M105-225",
+        "label": "M105-225",
+        "ticks": 1710,
+        "equity": 431749,
+        "profit": 421749,
+        "orders": 443,
+        "commissions": 2215,
+        "max_drawdown": 635514,
+        "cash": 430489,
+        "shares": 126,
+        "buy": 105,
+        "sell": 225,
+        "exposure": 100,
+        "drawdown_percent": 98.7519507289676,
+        "closed_episodes": 104
+      },
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "scope": "25MHz response-service window(byte_done,DECISION],includes pipeline stalls; idle waiting omitted only if fast. IC counts commits,not static lines. No clock changes."
+    }
+  ]
+}

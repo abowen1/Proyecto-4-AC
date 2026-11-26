@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "strategy": "M105-225",
+  "date": "2026-11-24",
+  "completed_steps": [
+    "Base Espino original ISA implementation",
+    "Python vs complete SoC equivalence for78 full series",
+    "Unit,protocol,and official-master integration regressions"
+  ],
+  "unit_tests": 48,
+  "legacy_spi_rounds": 6,
+  "full_rtl_series": 78,
+  "full_rtl_ticks": 1560000,
+  "technical_cases_per_simulator": 5,
+  "technical_ticks_per_simulator": 558,
+  "simulators": [
+    "Icarus Verilog",
+    "Verilator"
+  ],
+  "fixed_periods_ns": [
+    100000,
+    1000000,
+    10000000
+  ],
+  "official_canvas_checks": "4/4 for each of3 active technical sequences plus2000 official Meta ticks under Icarus",
+  "python_policy_classes_unchanged": true,
+  "previous_rtl_and_D_preserved": true,
+  "isa": "base",
+  "static_program_words": 85,
+  "program_bytes": 340,
+  "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+  "mean_final_equity": 18079.333333333332,
+  "timing_checks_scope": "Response deadline safety checks only,not a performance profile or optimization study",
+  "workflow_stop": "After steps1-3 at user request. No synthesis,place and route,FPGA bitstream,physical programming,performance profile or optimization.",
+  "source_sha256": {
+    "sw/trade_m105_225.s": "be5f697774f39925ea3c42ff1c7a2ffe1f19b787f5d16a10ba6c89c1dff27931",
+    "sw/trade_m105_225.hex": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+    "tools/m105_225.py": "70948fecd7ab8912db42bb29d08188b2eb20a41be56acf2a6351850ec254f1a3",
+    "tools/verify_m105_225.py": "12906d2bc02f86f190d4bb86d55efa8287be900fb775ec8fa023255aa7f626e7",
+    "tools/test_all_m105_225.py": "c1268c73619f666a8a85d889c6f1938cb52a8736930f945d11c3853a18188c50",
+    "tools/verify_canvas_m105_225.py": "25e50f11d09f27f206eaca368289202c87b55ea07b2512943b63f3b0e9858f4e",
+    "tools/test_m105_225_integration.py": "218f387bb955864019427737cde759c2c4cefec2ef468f7c5d95813ccaffd45a",
+    "tests/test_m105_225.py": "7e14e03930064ab00569899b3841ee48b6725ceb36c3b10924b8a55b6ac48efc",
+    "tb/tb_m105_225.sv": "9aa7db4955cb8197ba7d169dd20054f1b79cf2d97a59bd256d3c12235c4a1519"
+  }
+}

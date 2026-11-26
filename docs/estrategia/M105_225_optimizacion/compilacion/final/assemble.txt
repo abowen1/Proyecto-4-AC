@@ -1,0 +1,1 @@
+sw/trade.s -> /Users/abh/Desktop/Loreta/Universidad/UAndes/Semestre 2026-2/Arquitectura de Computadores/Proyecto/Totalidad Proyecto 4/Desarrollo AC4/build/hardware/M105_225_final/program.hex: 217 palabras (868 bytes)

@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-11-23T20:34:59.163416+00:00",
+  "source": "https://huggingface.co/datasets/syncster-data/historical-market-data",
+  "calendar_source": "https://ir.theice.com/press/news-details/2021/NYSE-Group-Announces-2022-2023-and-2024-Holiday-and-Early-Closings-Calendar/default.aspx",
+  "session_timezone": "America/New_York",
+  "standard_session": "09:30 inclusive to 16:00 exclusive",
+  "early_closures": "09:30 inclusive to 13:00 exclusive",
+  "holidays": [
+    "2022-01-17",
+    "2022-02-21",
+    "2022-04-15",
+    "2022-05-30",
+    "2022-06-20",
+    "2022-07-04",
+    "2022-09-05",
+    "2022-11-24",
+    "2022-12-26",
+    "2023-01-02",
+    "2023-01-16",
+    "2023-02-20",
+    "2023-04-07",
+    "2023-05-29",
+    "2023-06-19",
+    "2023-07-04",
+    "2023-09-04",
+    "2023-11-23",
+    "2023-12-25",
+    "2024-01-01",
+    "2024-01-15",
+    "2024-02-19",
+    "2024-03-29",
+    "2024-05-27",
+    "2024-06-19",
+    "2024-07-04",
+    "2024-09-02",
+    "2024-11-28",
+    "2024-12-25"
+  ],
+  "early_close_dates": [
+    "2022-11-25",
+    "2023-07-03",
+    "2023-11-24",
+    "2024-07-03",
+    "2024-11-29",
+    "2024-12-24"
+  ],
+  "sources": {
+    "META": {
+      "source_url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/main/data/stocks/1m/M/META.parquet",
+      "original_sha256": "52906b63cf817d7565cd7df9887abd7608acd2d7da2d931d28d38684a9fed4c0",
+      "local_source": "fuentes_publicas/META_2022_2024.parquet",
+      "local_sha256": "03ea202b347db7577e814cd10e99e6370321c76624af3bd651006053dcb2ed26",
+      "observations": 292590,
+      "expected_market_minutes": 292590,
+      "missing_minutes": 0,
+      "incomplete_sessions": [],
+      "zero_volume_rows": 0
+    },
+    "AAPL": {
+      "source_url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/main/data/stocks/1m/A/AAPL.parquet",
+      "original_sha256": "4097e799ce9159614b5e727479d160b7358f12ed9cad6691841d3e43350d7b94",
+      "local_source": "fuentes_publicas/AAPL_2022_2024.parquet",
+      "local_sha256": "30fb48a35913a4a98ff0a2f099435bd5f83cd68f3c092c91fc04b2239e25a55c",
+      "observations": 292590,
+      "expected_market_minutes": 292590,
+      "missing_minutes": 0,
+      "incomplete_sessions": [],
+      "zero_volume_rows": 0
+    },
+    "NFLX": {
+      "source_url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/main/data/stocks/1m/N/NFLX.parquet",
+      "original_sha256": "f866b86fe474258155e5aa48a1feb79a153e2e03ec5508c00f588fdc22bd1367",
+      "local_source": "fuentes_publicas/NFLX_2022_2024.parquet",
+      "local_sha256": "4b887784575e247f631499571395e97d10c6110fff6140288b034151c75689b8",
+      "observations": 292585,
+      "expected_market_minutes": 292590,
+      "missing_minutes": 5,
+      "incomplete_sessions": [
+        {
+          "date": "2022-01-06",
+          "expected": 390,
+          "observed": 389,
+          "missing": 1
+        },
+        {
+          "date": "2022-01-12",
+          "expected": 390,
+          "observed": 389,
+          "missing": 1
+        },
+        {
+          "date": "2022-04-12",
+          "expected": 390,
+          "observed": 389,
+          "missing": 1
+        },
+        {
+          "date": "2024-02-26",
+          "expected": 390,
+          "observed": 389,
+          "missing": 1
+        },
+        {
+          "date": "2024-03-20",
+          "expected": 390,
+          "observed": 389,
+          "missing": 1
+        }
+      ],
+      "zero_volume_rows": 0
+    },
+    "AMD": {
+      "source_url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/main/data/stocks/1m/A/AMD.parquet",
+      "original_sha256": "3b0ffd18282dc4d6b69ff4f0195408d008ea89753570a7c8987a00dc310ebc60",
+      "local_source": "fuentes_publicas/AMD_2022_2024.parquet",
+      "local_sha256": "f10818a51cd3da677b32374c844a4aa903f65eb9fdd2be1294e97f788e243a00",
+      "observations": 292590,
+      "expected_market_minutes": 292590,
+      "missing_minutes": 0,
+      "incomplete_sessions": [],
+      "zero_volume_rows": 0
+    },
+    "TSLA": {
+      "source_url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/main/data/stocks/1m/T/TSLA.parquet",
+      "original_sha256": "c1dbed2c65cf508b9c5790391b35f5948725c8f2a937f0d73d4f06ddf6e87394",
+      "local_source": "fuentes_publicas/TSLA_2022_2024.parquet",
+      "local_sha256": "b77e3c5776faa3057743ac023556c8e6b8761e164d099b481cb0da82fe1a1470",
+      "observations": 292590,
+      "expected_market_minutes": 292590,
+      "missing_minutes": 0,
+      "incomplete_sessions": [],
+      "zero_volume_rows": 0
+    }
+  }
+}

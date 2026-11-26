@@ -1,0 +1,392 @@
+{
+  "status": "PASS",
+  "strategy": "M105-225",
+  "chosen": "soft",
+  "clock_hz": 25000000,
+  "aggregates": {
+    "base": {
+      "ticks": 1560000,
+      "series": 78,
+      "total_cycles": 55492724,
+      "total_instructions": 24318253,
+      "mean_cycles": 35.572258974358974,
+      "max_cycles": 1474,
+      "mean_ic": 15.588623717948717,
+      "max_ic": 670,
+      "cpi": 2.2819371111896896,
+      "mean_us": 1.422890358974359,
+      "max_us": 58.96,
+      "service_decisions_per_second": 702794.838472878,
+      "sections": {
+        "io": 23400078,
+        "account_control": 7800778,
+        "buy_account": 82736,
+        "sell_account": 31708,
+        "policy": 24093978,
+        "size_buy": 82645,
+        "sell_quantity": 801
+      },
+      "words": 85,
+      "mean_equity": 18079.333333333332,
+      "lut4": 921,
+      "logic_cells": 1091,
+      "bram": 12,
+      "fmax_mhz": 46.06808853149414,
+      "program_sha256": "0c96f8b0f960c8b7575584943d550a286eadef2293f88d7444c5c42f1dbbd021",
+      "speedup_vs_base": 1.0,
+      "time_reduction_vs_base": 0.0
+    },
+    "soft": {
+      "ticks": 1560000,
+      "series": 78,
+      "total_cycles": 44543784,
+      "total_instructions": 19334255,
+      "mean_cycles": 28.553707692307693,
+      "max_cycles": 276,
+      "mean_ic": 12.393753205128204,
+      "max_ic": 128,
+      "cpi": 2.303878996113375,
+      "mean_us": 1.1421483076923078,
+      "max_us": 11.040000000000001,
+      "service_decisions_per_second": 875543.0387324076,
+      "sections": {
+        "io": 23399922,
+        "account_control": 7800778,
+        "buy_account": 16673,
+        "sell_account": 5957,
+        "policy": 13312199,
+        "size_buy": 7454,
+        "sell_quantity": 801
+      },
+      "words": 217,
+      "mean_equity": 18079.333333333332,
+      "lut4": 921,
+      "logic_cells": 1091,
+      "bram": 12,
+      "fmax_mhz": 46.06808853149414,
+      "program_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+      "speedup_vs_base": 1.2458017486794566,
+      "time_reduction_vs_base": 0.19730406458331362
+    },
+    "shifter": {
+      "ticks": 1560000,
+      "series": 78,
+      "total_cycles": 44538424,
+      "total_instructions": 19331575,
+      "mean_cycles": 28.550271794871794,
+      "max_cycles": 216,
+      "mean_ic": 12.392035256410256,
+      "max_ic": 98,
+      "cpi": 2.303921123860834,
+      "mean_us": 1.1420108717948718,
+      "max_us": 8.64,
+      "service_decisions_per_second": 875648.4064186915,
+      "sections": {
+        "io": 23399922,
+        "account_control": 7800778,
+        "buy_account": 13993,
+        "sell_account": 5957,
+        "policy": 13312199,
+        "size_buy": 4774,
+        "sell_quantity": 801
+      },
+      "words": 187,
+      "mean_equity": 18079.333333333332,
+      "lut4": 1031,
+      "logic_cells": 1202,
+      "bram": 12,
+      "fmax_mhz": 42.238651275634766,
+      "program_sha256": "eb7fd1f2087dfcc95ef015ada4b6c292a00801a7a578dcc84ff0e906930a8cb8",
+      "speedup_vs_base": 1.2459516753444173,
+      "time_reduction_vs_base": 0.19740065382265248
+    },
+    "qcap": {
+      "ticks": 1560000,
+      "series": 78,
+      "total_cycles": 44533683,
+      "total_instructions": 19328603,
+      "mean_cycles": 28.54723269230769,
+      "max_cycles": 149,
+      "mean_ic": 12.390130128205127,
+      "max_ic": 64,
+      "cpi": 2.3040300946736814,
+      "mean_us": 1.1418893076923078,
+      "max_us": 5.96,
+      "service_decisions_per_second": 875741.6268490527,
+      "sections": {
+        "io": 23399922,
+        "account_control": 7800778,
+        "buy_account": 11573,
+        "sell_account": 5957,
+        "policy": 13312199,
+        "size_buy": 2453,
+        "sell_quantity": 801
+      },
+      "words": 129,
+      "mean_equity": 18079.333333333332,
+      "lut4": 1008,
+      "logic_cells": 1186,
+      "bram": 12,
+      "fmax_mhz": 43.871192932128906,
+      "program_sha256": "d3404ca8ea0b665047d2c26dc3665204afb4b746b561e3b909049b1cd1d95caa",
+      "speedup_vs_base": 1.2460843177960377,
+      "time_reduction_vs_base": 0.1974860884464782
+    }
+  },
+  "kernel": {
+    "soft": {
+      "cycles": 12681,
+      "instructions": 5944,
+      "queries": 292,
+      "ops_per_second": 575664.3797807744,
+      "data_ram_bytes": 0,
+      "intensity_data_only": "infinity",
+      "ideal_issue_roof_ops_s": 614064.602960969,
+      "model": "Useful op=one bounded quantity query. No data-RAM accesses in this register-only kernel. Ideal issue ceiling is12.5M retired RV instructions/s divided by measured IC/query; not a measured sustainable peak."
+    },
+    "shifter": {
+      "cycles": 7321,
+      "instructions": 3264,
+      "queries": 292,
+      "ops_per_second": 997131.5394071848,
+      "data_ram_bytes": 0,
+      "intensity_data_only": "infinity",
+      "ideal_issue_roof_ops_s": 1118259.8039215687,
+      "model": "Useful op=one bounded quantity query. No data-RAM accesses in this register-only kernel. Ideal issue ceiling is12.5M retired RV instructions/s divided by measured IC/query; not a measured sustainable peak."
+    },
+    "qcap": {
+      "cycles": 2580,
+      "instructions": 292,
+      "queries": 292,
+      "ops_per_second": 2829457.3643410853,
+      "data_ram_bytes": 0,
+      "intensity_data_only": "infinity",
+      "ideal_issue_roof_ops_s": 12500000.0,
+      "model": "Useful op=one bounded quantity query. No data-RAM accesses in this register-only kernel. Ideal issue ceiling is12.5M retired RV instructions/s divided by measured IC/query; not a measured sustainable peak."
+    }
+  },
+  "policy_kernel": {
+    "cycles": 13312199,
+    "instructions": 5279337,
+    "operations": 1560000,
+    "ops_per_second": 2929643.704995696,
+    "data_ram_bytes": 0,
+    "intensity_data_only": "infinity",
+    "ideal_issue_roof_ops_s": 3693645.622546922,
+    "definition": "One policy evaluation per input tick; excludes IO,accounting and quantity kernel."
+  },
+  "amdahl": [
+    {
+      "target": "software",
+      "fraction": 0.43773426945125277,
+      "local_speedup": 2,
+      "predicted_speedup": 1.2801919423128472,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.2458017486794566
+    },
+    {
+      "target": "software",
+      "fraction": 0.43773426945125277,
+      "local_speedup": 4,
+      "predicted_speedup": 1.4887614191486997,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.2458017486794566
+    },
+    {
+      "target": "software",
+      "fraction": 0.43773426945125277,
+      "local_speedup": 10,
+      "predicted_speedup": 1.6500583957895667,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.2458017486794566
+    },
+    {
+      "target": "software",
+      "fraction": 0.43773426945125277,
+      "local_speedup": "infinity",
+      "predicted_speedup": 1.7785184934248843,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.2458017486794566
+    },
+    {
+      "target": "software",
+      "fraction": 0.43773426945125277,
+      "local_speedup": 1.820607987403655,
+      "predicted_speedup": 1.2457973856825417,
+      "kind": "retrospective_using_measured_local_cost",
+      "measured_global_speedup": 1.2458017486794566
+    },
+    {
+      "target": "shifter",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 2,
+      "predicted_speedup": 1.0001423633576993,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.0001203455245746
+    },
+    {
+      "target": "shifter",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 4,
+      "predicted_speedup": 1.0002135602381252,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.0001203455245746
+    },
+    {
+      "target": "shifter",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 10,
+      "predicted_speedup": 1.0002562832321318,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.0001203455245746
+    },
+    {
+      "target": "shifter",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": "infinity",
+      "predicted_speedup": 1.0002847672558213,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.0001203455245746
+    },
+    {
+      "target": "shifter",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 1.7321404179756863,
+      "predicted_speedup": 1.0001203455245746,
+      "kind": "retrospective_using_measured_local_cost",
+      "measured_global_speedup": 1.0001203455245746
+    },
+    {
+      "target": "qcap",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 2,
+      "predicted_speedup": 1.0001423633576993,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.000226817081354
+    },
+    {
+      "target": "qcap",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 4,
+      "predicted_speedup": 1.0002135602381252,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.000226817081354
+    },
+    {
+      "target": "qcap",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 10,
+      "predicted_speedup": 1.0002562832321318,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.000226817081354
+    },
+    {
+      "target": "qcap",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": "infinity",
+      "predicted_speedup": 1.0002847672558213,
+      "kind": "hypothetical",
+      "measured_global_speedup": 1.000226817081354
+    },
+    {
+      "target": "qcap",
+      "fraction": 0.00028468618651706826,
+      "local_speedup": 4.915116279069768,
+      "predicted_speedup": 1.000226817081354,
+      "kind": "retrospective_using_measured_local_cost",
+      "measured_global_speedup": 1.000226817081354
+    }
+  ],
+  "financial_references": {
+    "M105-225": {
+      "mean": 18079.333333333332,
+      "minimum": 10688,
+      "mean_orders": 2.9615384615384617,
+      "mean_commissions": 14.807692307692308,
+      "max_dd": 9215
+    },
+    "No operar": {
+      "mean": 10000,
+      "minimum": 10000,
+      "mean_orders": 0,
+      "mean_commissions": 0,
+      "max_dd": 0
+    },
+    "Comprar y mantener (maestra)": {
+      "mean": 12210.051282051281,
+      "minimum": 4691,
+      "mean_orders": 1,
+      "mean_commissions": 5,
+      "max_dd": 14570
+    }
+  },
+  "selected_mean_time_reduction": 0.19730406458331362,
+  "selected_worst_time_reduction": 0.8127544097693351,
+  "official_tick_traces": 32,
+  "full_profiles": 312,
+  "full_profile_ticks": 6240000,
+  "hardware_alternatives": [
+    "shifter",
+    "qcap"
+  ],
+  "physical_programming": false,
+  "physical_validation": false,
+  "final_image": {
+    "status": "PASS",
+    "strategy": "M105-225",
+    "variant": "software",
+    "program": "sw/trade.s",
+    "clock_hz": 25000000,
+    "program_hex_sha256": "493ffe8d837b06015c4520ae4055168e48d0e876a73e66c742fd4d5f9f5a4ecd",
+    "bitstream_sha256": "5be11e8803854d23bc61d15b504b2621084c08c01417fb07f629ad3abd841551",
+    "image_bytes": 32220,
+    "fmax": {
+      "i_Clk$SB_IO_IN_$glb_clk": {
+        "achieved": 46.06808853149414,
+        "constraint": 25
+      }
+    },
+    "utilization": {
+      "ICESTORM_LC": {
+        "available": 1280,
+        "used": 1091
+      },
+      "ICESTORM_RAM": {
+        "available": 16,
+        "used": 12
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 3
+      },
+      "SB_IO": {
+        "available": 72,
+        "used": 27
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "assembly_sha256": "d6f781894f460f2baa7c72de2ab9ba25d59f2e48ea52f2da3f6f55539dedea12",
+    "rtl_sha256": {
+      "rtl/pochoco_periph.v": "795bcc27c1a4a93c7f67086f0634be7cf0f9d104f93869eecc0ae21cc47aec66",
+      "rtl/pochoco_ram.v": "0eda65a86c53f468ec10342706a9be87c3cfdf1b64f4b7c6ec64c57db0ba1fd8",
+      "rtl/pochoco_soc.v": "85cf05990213cdc07503104705ab2ee61577fbcc192b0b9d31a9e9213ad9027f",
+      "rtl/pochoco_spi_slave.v": "dab33af8b2cb654590bc708afd3f68f46a6121705cee21f7bc33bb6b61e7e443",
+      "rtl/espino_core/espino_alu.v": "1b958157b3fb1224857e4171d9df8c910523bae6f15d2a84e6ba0dd18b617601",
+      "rtl/espino_core/espino_controller.v": "bd82d8404d8f09de2a6968da87e6a7e9c750af9138a4b74c43b3ec89a742c215",
+      "rtl/espino_core/espino_core.v": "9e3e3cae616a4ff057ddcb01728bf8f912eab721d26e3a5fe68daf1c68e9905c",
+      "rtl/espino_core/espino_decoder.v": "33e913fec63d9fc899e27a10a31493b3bcb634a86cc0fc10d70ed391febf7ad3",
+      "rtl/espino_core/espino_id_stage.v": "740698037d1e4372e3e26c3a828143debb71b62992d7a69e21ed3b6fc128c704",
+      "rtl/espino_core/espino_if_stage.v": "4734ae2fb9cd60c8f5019be50303504e50e6d25bc09d09a3f06d396d1c5902f4",
+      "rtl/espino_core/espino_load_store_unit.v": "76051d9aba219452dc4e80fd47f306d024c40aea47050dd59fc3c821ea7f5954",
+      "rtl/espino_core/espino_register_file.v": "a19d94587e54d05373a257c95e515979d2f7910328ec8920f649d280bc07b212"
+    },
+    "validation": "Same machine code as78 complete RTL equivalence/profile runs; synthesis and place-and-route meet25MHz",
+    "physical_programming": false,
+    "physical_validation": false
+  },
+  "deadline_fastest_round_cycles": 2262,
+  "deadline_margin_cycles": 1986
+}

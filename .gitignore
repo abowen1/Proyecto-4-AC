@@ -1,0 +1,6 @@
+build/
+__pycache__/
+*.py[cod]
+*.vcd
+.DS_Store
+.venv/

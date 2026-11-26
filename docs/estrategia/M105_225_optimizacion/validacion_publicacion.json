@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "strategy": "M105-225",
+  "date": "2026-11-24",
+  "financial_decisions_unchanged": true,
+  "full_profiles": 312,
+  "profile_ticks": 6240000,
+  "base_profiles_reused": 78,
+  "new_final_profiles": 234,
+  "official_per_tick_traces": 32,
+  "official_per_tick_rows": 640000,
+  "public_unit_tests": 39,
+  "local_unit_tests": 50,
+  "hardware_variants": 2,
+  "all_variants_meet_timing_25MHz": true,
+  "selected": "soft",
+  "final_image_reproduced_from_publication_sources": true,
+  "bitstream_sha256": "5be11e8803854d23bc61d15b504b2621084c08c01417fb07f629ad3abd841551",
+  "physical_programming": false,
+  "physical_validation": false,
+  "workflow_stop": "After steps4-5; awaiting physical FPGA test",
+  "pdf_sha256": "892f622be82e5cc0e8131b3b5b04d97120a6ce0ac2ab495e339094e61013e693"
+}

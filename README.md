@@ -1,21 +1,68 @@
-# Proyecto 4 — Arquitectura de Computadores
+# Proyecto 4 — Pochoco Trader
 
-Repositorio del grupo para AC4, Pochoco Trader sobre Espino Core.
+Implementación de **M105-225**, denominada internamente **MDIP**: software optimizado sobre la ISA original de Espino Core, en Pochoco SoC para Go Board iCE40 HX1K a **25 MHz**.
 
-## Trabajo previo a la entrega
+**Pendiente de entrega:** incorporar el PDF definitivo en `informe/`. El resto del contenido de esta rama es autocontenido. La rama `pre-entrega` conserva los antecedentes de trabajo.
 
-Los borradores, estrategias candidatas, simulaciones, código experimental y contexto de trabajo se mantienen en la **[rama pre-entrega](https://github.com/abowen1/Proyecto-4-AC/tree/pre-entrega)**.
+## Contenido
 
-- [README de estrategias para Coni y su Work](https://github.com/abowen1/Proyecto-4-AC/blob/pre-entrega/README_ESTRATEGIAS.md): reglas exactas, las 15 configuraciones exploradas, resultados, validación y guía para el informe.
-- [Base de desarrollo y reproducción](https://github.com/abowen1/Proyecto-4-AC/blob/pre-entrega/README.md).
-- [README inicial del repositorio, conservado](https://github.com/abowen1/Proyecto-4-AC/blob/pre-entrega/README_INICIAL_GITHUB.md).
+- `informe/`: reservado exclusivamente para el PDF definitivo.
+- `rtl/`, `sw/`, `goboard.pcf`: implementación y programa final (`sw/trade.s`, `sw/trade.hex`).
+- [`imagen/`](docs/estrategia/M105_225_optimizacion/imagen/): bitstream verificado y manifiesto con hashes, recursos y timing.
+- [`datos/`](datos/README.md): ocho series oficiales, 70 reconstruidas, procedencia y resumen numérico de comparación.
+- [`mediciones`](docs/estrategia/M105_225_optimizacion/README.md): implementación inicial de MDIP, software optimizado, alternativas shifter y QCAP, y mediciones conservadas.
+- [`verificación`](docs/estrategia/M105_225_implementacion/README.md), `tests/`, `tb/`, `tools/`: referencia Python y pruebas reproducibles.
+- [`evidencia física`](docs/evidencia_fisica/README.md): programación, persistencia y funcionamiento con la maestra.
+- [`enunciado original`](material/enunciado/Proyecto_4_arq.pdf).
 
-## Rama de entrega
+Comprobación de esta copia de entrega: [`validacion.json`](docs/verificacion_entrega/validacion.json).
 
-`main` se reserva para incorporar el material que el equipo seleccione para evaluación. Por ahora contiene este índice y el enunciado original como referencia; todavía no constituye una entrega final.
+## Referencia de la estrategia
 
-Publicar avances y propuestas en `pre-entrega` o en ramas derivadas de ella. El equipo revisará explícitamente qué cambios pasan a `main` antes de entregar. La separación por ramas organiza el trabajo; no restringe la visibilidad entre personas con acceso al repositorio.
+Se activa la compra con precio observado **≤105**. Se acumula con el presupuesto fijado al iniciar el episodio mientras se permanezca en esa banda; se deja de agregar al salir de ella o agotar el presupuesto. Con precio **≥225** se enclava la venta hasta liquidar el inventario. Las órdenes se fraccionan en cantidades de hasta 63. Una vez sin acciones puede comenzar otro episodio.
 
-## Material del curso
+La decisión se ejecuta al tick siguiente. Se conservan las reglas del curso: caja inicial $10.000, comisión $5 por orden ejecutada, sin deuda ni ventas cortas. El patrimonio final es caja más inventario valorado al último precio, sin venta final forzada. La referencia ejecutable es `tools/m105_225.py`.
 
-[Enunciado original de AC4 (PDF)](material/enunciado/Proyecto_4_arq.pdf). Las fechas del PDF están pendientes de confirmación frente a los cambios del curso.
+## Herramientas
+
+Python 3.10 o superior (biblioteca estándar), Make, Yosys con `yosys-config`, nextpnr-ice40, IceStorm (`icepack`, `iceprog`), Icarus Verilog y Verilator con compilador C++.
+
+Versiones utilizadas: Python 3.10.2; Yosys 0.70+post; nextpnr-ice40 0.11.1_1; IceStorm 1.1; Icarus Verilog 13.0; Verilator 5.054; Apple Clang 21.0.0. Detalles en `docs/estrategia/M105_225_optimizacion/herramientas.json`.
+
+Ejecutar desde la raíz del repositorio:
+
+```sh
+python3 tools/reference_m105_225.py datos/oficiales/practica_meta_2022.csv
+make assemble          # Ensamblar, sin conectarse a una placa
+make test              # Unitarias, SPI, extensiones y programa final
+make test-equivalence  # Software optimizado contra Python en las 78 series completas
+make measure           # Perfil completo de Meta con el software final
+make compare-implementations # Repetir la comparación de las cuatro implementaciones
+make build-final       # Síntesis y place-and-route a 25 MHz; no programa la placa
+```
+
+`make test` incluye casos activos en los tres períodos (10 ms, 1 ms y 100 µs) y el testbench oficial sobre los primeros 2.000 ticks de Meta. `make test-equivalence` procesa 20.000 ticks de cada serie con el SoC completo y compara decisiones, caja e inventario con Python; acorta esperas inactivas para acelerar la simulación. No sustituye las pruebas con períodos reales.
+
+La implementación inicial se comprueba adicionalmente con `python3 tools/test_all_m105_225.py`. Para probar integración de una alternativa: `python3 tools/test_m105_225_optimized_integration.py --case shifter --fixed` (o `--case qcap`). Los resultados nuevos se escriben en `build/`; los resultados de referencia se conservan en `docs/estrategia/`.
+
+## Imagen y programación
+
+La imagen incluida es `docs/estrategia/M105_225_optimizacion/imagen/M105_225.bin` (32.220 bytes). SHA-256:
+
+```text
+5be11e8803854d23bc61d15b504b2621084c08c01417fb07f629ad3abd841551
+```
+
+Con la Go Board conectada por USB, `make program-final` graba esa imagen incluida. `make build-final` permite regenerarla previamente; su salida se encuentra en `build/final/M105_225.bin`. No se seleccionan las extensiones de hardware al compilar la versión final.
+
+Para comprobar la memoria sin reprogramar:
+
+```sh
+iceprog -c docs/estrategia/M105_225_optimizacion/imagen/M105_225.bin
+```
+
+## Conexión y comienzo de cada serie
+
+SPI modo 0, MSB primero, reloj de hasta 1 MHz, señales de 3,3 V y tierra común. La asignación de pines se conserva en `goboard.pcf` y en el enunciado. Usar el cableado establecido por el curso con la FPGA maestra.
+
+El estado de caja e inventario se inicializa al encender la placa; **los botones no reinician la estrategia**. Para comenzar una serie independiente, cortar y restablecer la alimentación. El reinicio interno al encendido dura 63 ciclos. La placa del equipo está identificada a mano como **17**.

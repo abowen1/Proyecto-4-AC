@@ -1,0 +1,9 @@
+{
+  "strategy": "M105-225",
+  "case": "soft",
+  "variant": "software",
+  "isa": "base",
+  "program": "sw/trade.s",
+  "measured_program": "sw/trade_m105_225_soft.s",
+  "clock_hz": 25000000
+}
