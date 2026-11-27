@@ -1844,5 +1844,12 @@
   "bitstream_sha256": "5be11e8803854d23bc61d15b504b2621084c08c01417fb07f629ad3abd841551",
   "fpga_programmed_during_packaging": false,
   "reference_pre_entrega_commit": "07a8a52a5da2ff222054d29dc5d0eefafa6345b5",
-  "pending": "Final report PDF in informe/"
+  "report": {
+    "path": "informe/Informe_Proyecto_4_AC.pdf",
+    "title": "Informe Proyecto 4 AC",
+    "sha256": "7fa421f87539b5938559c675f77668402a708df6e3e3b8a1094cf0a518c04882",
+    "bytes": 12843172,
+    "pages": 85,
+    "incorporated_on": "2026-11-27"
+  }
 }

@@ -2,11 +2,11 @@
 
 Implementación de **M105-225**, denominada internamente **MDIP**: software optimizado sobre la ISA original de Espino Core, en Pochoco SoC para Go Board iCE40 HX1K a **25 MHz**.
 
-**Pendiente de entrega:** incorporar el PDF definitivo en `informe/`. El resto del contenido de esta rama es autocontenido. La rama `pre-entrega` conserva los antecedentes de trabajo.
+**Informe:** [Informe Proyecto 4 AC](informe/Informe_Proyecto_4_AC.pdf). El contenido de esta rama es autocontenido. La rama `pre-entrega` conserva los antecedentes de trabajo.
 
 ## Contenido
 
-- `informe/`: reservado exclusivamente para el PDF definitivo.
+- [`Informe Proyecto 4 AC`](informe/Informe_Proyecto_4_AC.pdf): informe del desarrollo bursátil, la implementación y la optimización.
 - `rtl/`, `sw/`, `goboard.pcf`: implementación y programa final (`sw/trade.s`, `sw/trade.hex`).
 - [`imagen/`](docs/estrategia/M105_225_optimizacion/imagen/): bitstream verificado y manifiesto con hashes, recursos y timing.
 - [`datos/`](datos/README.md): ocho series oficiales, 70 reconstruidas, procedencia y resumen numérico de comparación.

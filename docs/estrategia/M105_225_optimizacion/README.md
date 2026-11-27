@@ -9,7 +9,7 @@
 | Shifter | `sw/trade_m105_225_shifter.s`, `variants/shifter/rtl/` | Shifter |
 | QCAP | `sw/trade_m105_225_qcap.s`, `variants/qcap/rtl/` | QCAP |
 
-Las rutas de fuentes se expresan respecto de la raíz del repositorio. La fundamentación de la elección pertenece al informe final.
+Las rutas de fuentes se expresan respecto de la raíz del repositorio. La fundamentación de la elección se presenta en el [Informe Proyecto 4 AC](../../../informe/Informe_Proyecto_4_AC.pdf).
 
 ## Datos conservados
 
