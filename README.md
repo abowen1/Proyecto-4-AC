@@ -2,7 +2,7 @@
 
 Implementación de **M105-225**, denominada internamente **MDIP**: software optimizado sobre la ISA original de Espino Core, en Pochoco SoC para Go Board iCE40 HX1K a **25 MHz**.
 
-**Informe:** [Informe Proyecto 4 AC](informe/Informe_Proyecto_4_AC.pdf). El contenido de esta rama es autocontenido. La rama `pre-entrega` conserva los antecedentes de trabajo.
+**Informe:** [Informe Proyecto 4 AC](informe/Informe_Proyecto_4_AC.pdf). El contenido de esta rama es autocontenido.
 
 ## Contenido
 
@@ -16,6 +16,12 @@ Implementación de **M105-225**, denominada internamente **MDIP**: software opti
 - [`enunciado original`](material/enunciado/Proyecto_4_arq.pdf).
 
 Comprobación de esta copia de entrega: [`validacion.json`](docs/verificacion_entrega/validacion.json).
+
+## Material de trabajo complementario
+
+La rama [`pre-entrega`](https://github.com/abowen1/Proyecto-4-AC/tree/pre-entrega) se utilizó para la coordinación interna del equipo y para registrar avances, experimentos y resultados durante el desarrollo. Se conserva como archivo de consulta opcional para profundizar en los antecedentes o reproducir gráficos y comparaciones con los datos y herramientas allí disponibles.
+
+**No es necesario revisar ni corregir `pre-entrega` como parte de la entrega.** El material presentado para evaluación está organizado en `main` e incluye el [Informe Proyecto 4 AC](informe/Informe_Proyecto_4_AC.pdf). Los contenidos de `pre-entrega` corresponden a distintas etapas de trabajo y pueden incluir alternativas que posteriormente fueron descartadas.
 
 ## Referencia de la estrategia
 
